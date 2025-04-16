@@ -8,13 +8,13 @@
 -   논문 내용 요약 생성
 -   요약 결과 저장 및 관리
 
-## 설치 방법
+## 사용 방법
 
 1. 이 저장소를 클론합니다:
     ```bash
     git clone https://github.com/your-repo/arxiv-summary.git
     ```
-2. 필요한 의존성을 설치합니다:
+2. uv를 통해 `main.py`파일을 실행합니다:
     ```bash
     uv run main.py
     ```
