@@ -66,7 +66,7 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
     for i, summary in enumerate(summaries):
         summary["korean_summary"] = translations[i] if i < len(translations) else "[번역 누락]"
 
-    return summaries
+    return summaries[:len(translations)] if len(translations) < len(summaries) else summaries
 
 
 def write_document(section: str, summary: dict) -> None:
