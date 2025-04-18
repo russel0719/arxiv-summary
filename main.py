@@ -14,7 +14,7 @@ client = arxiv.Client()
 DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{section}.docx")
 
     
-def get_papers(section: str, last_submitted_date: str=None, max_results: int=50) -> List[arxiv.Result]:
+def get_papers(section: str, last_submitted_date: str=None, max_results: int=25) -> List[arxiv.Result]:
     now = datetime.now().strftime("%Y%m%d%H%M")
     search = arxiv.Search(
         query=f"cat:{section} AND submittedDate:[{last_submitted_date} TO {now}]" if last_submitted_date else f"cat:{section}",
@@ -41,10 +41,9 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
         formatted_abstracts.append(f"{idx}. {s['summary'].strip().replace('\n', ' ')}")
 
     prompt = (
-        "You will receive a numbered list of paper abstracts. "
-        "Summarize and translate each one into Korean in 5 sentences."
+        "You will receive a numbered list of paper abstracts. Provide korean summary for each of the abstracts of all papers. Each summary should be written in 5 sentences\n"
         "Return the result in the format:\n\n"
-        "1. <번역>\n2. <번역>\n...\n"
+        "1. <요약>\n2. <요약>\n...\n"
         "Do not skip any number. Only output the translations. Do not write in markdown format."
     )
 
@@ -54,6 +53,7 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
     ]
 
     ai_message = llm.invoke(messages)
+    print(ai_message.content)
     print("Bulk Translations Received.")
 
     # 파싱: "1. 번역내용" 형식에서 번호를 기준으로 split
@@ -62,11 +62,13 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
 
     if len(translations) != len(summaries):
         print(f"[Warning] Mismatch in count: {len(translations)} translations for {len(summaries)} summaries.")
+        print(f"[Warning] {len(translations) - 1} translations will be applied.")
 
     for i, summary in enumerate(summaries):
         summary["korean_summary"] = translations[i] if i < len(translations) else "[번역 누락]"
-
-    return summaries[:len(translations)] if len(translations) < len(summaries) else summaries
+    
+    last_idx = len(translations) - 1 if len(translations) < len(summaries) and len(translations) > 0 else len(translations)
+    return summaries[:last_idx]
 
 
 def write_document(section: str, summary: dict) -> None:
@@ -104,13 +106,12 @@ def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
         summaries = add_translations(llm, summaries)
         for summary in summaries:
             write_document(section, summary)
-
-    with open("last_submitted_date.txt", "w") as f:
-        if summaries:
+    
+    # Update the last submitted date
+    if summaries:
+        with open("last_submitted_date.txt", "w") as f:
             last_submitted_date = summaries[-1]["submitted_date"].strftime("%Y%m%d%H%M")
-        else:
-            last_submitted_date = datetime.now().strftime("%Y%m%d%H%M")
-        f.write(last_submitted_date)
+            f.write(last_submitted_date)
 
     
 if __name__ == "__main__":
