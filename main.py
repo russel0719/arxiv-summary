@@ -9,15 +9,20 @@ from datetime import datetime
 from docx import Document
 
 PPLX_API_KEY = os.getenv("PPLX_API_KEY")
+EXCEPT_KEYWORDS = ["robot", "security", "cripto", "emotion", "study", "report", "survey", "review"]
+BATCH_SIZE = 25
 
 client = arxiv.Client()
 DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{section}.docx")
 
     
-def get_papers(section: str, last_submitted_date: str=None, max_results: int=25) -> List[arxiv.Result]:
+def get_papers(section: str, last_submitted_date: str=None, max_results: int=BATCH_SIZE) -> List[arxiv.Result]:
+    last_submitted_date = str(int(last_submitted_date) + 1) if last_submitted_date else None
     now = datetime.now().strftime("%Y%m%d%H%M")
+    except_query = " OR ".join([f"ti:{keyword}" for keyword in EXCEPT_KEYWORDS])
+    default_query = f"cat:{section} AND submittedDate:[{last_submitted_date} TO {now}]" if last_submitted_date else f"cat:{section}"
     search = arxiv.Search(
-        query=f"cat:{section} AND submittedDate:[{last_submitted_date} TO {now}]" if last_submitted_date else f"cat:{section}",
+        query=f"{default_query} ANDNOT ({except_query})",
         max_results=max_results,
         sort_by=arxiv.SortCriterion.SubmittedDate,
         sort_order=arxiv.SortOrder.Ascending,
@@ -118,4 +123,10 @@ if __name__ == "__main__":
     # Initialize the LLM and agent
     llm = ChatPerplexity(model="sonar", pplx_api_key=PPLX_API_KEY, temperature=0.1)
 
-    write_document_with_latest_papers("cs.CV", llm)
+    num_papers = input(f"How many papers do you want to fetch? (default: {BATCH_SIZE}): ")
+    if not num_papers:
+        num_papers = BATCH_SIZE
+    else:
+        num_papers = int(num_papers)
+    for i in range(num_papers // BATCH_SIZE):
+        write_document_with_latest_papers("cs.CV", llm)
