@@ -10,10 +10,10 @@ from docx import Document
 
 PPLX_API_KEY = os.getenv("PPLX_API_KEY")
 EXCEPT_KEYWORDS = ["robot", "security", "cripto", "emotion", "study", "report", "survey", "review"]
-BATCH_SIZE = 25
+BATCH_SIZE = 30
 
 client = arxiv.Client()
-DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{section}.docx")
+DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{date}_{section}.docx")
 
     
 def get_papers(section: str, last_submitted_date: str=None, max_results: int=BATCH_SIZE) -> List[arxiv.Result]:
@@ -28,7 +28,6 @@ def get_papers(section: str, last_submitted_date: str=None, max_results: int=BAT
         sort_order=arxiv.SortOrder.Ascending,
     )
     results = list(client.results(search))
-    print(f"Found {len(results)} papers in {section} section")
     return results
 
 
@@ -46,10 +45,10 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
         formatted_abstracts.append(f"{idx}. {s['summary'].strip().replace('\n', ' ')}")
 
     prompt = (
-        "You will receive a numbered list of paper abstracts. Provide korean summary for each of the abstracts of all papers. Each summary should be written in 5 sentences\n"
+        "You will receive a numbered list of paper abstracts. Provide korean summary for each of the abstracts of all papers. Each summary should be important thoughts of the abstracts.\n"
         "Return the result in the format:\n\n"
-        "1. <요약>\n2. <요약>\n...\n"
-        "Do not skip any number. Only output the translations. Do not write in markdown format."
+        "1. <요약1>\n2. <요약2>\n...\n"
+        "Do not skip any number. Only output the korean summary. Do not write in markdown format."
     )
 
     messages = [
@@ -78,11 +77,13 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
 
 def write_document(section: str, summary: dict) -> None:
     print(f"Writing summary for `{summary['title']}` in {section} section")
-    if not os.path.exists(DOCUMENT_PATH.format(section=section)):
+    date = summary["submitted_date"].strftime("%Y%m%d")
+    document_path = DOCUMENT_PATH.format(date=date, section=section)
+    if not os.path.exists(document_path):
         doc = Document()
-        doc.add_heading(f"Papers Summary in {section} section", level=0)
-        doc.save(DOCUMENT_PATH.format(section=section))
-    doc = Document(DOCUMENT_PATH.format(section=section))
+        doc.add_heading(f"{date} Papers Summary in {section} section", level=0)
+        doc.save(document_path)
+    doc = Document(document_path)
     doc.add_heading(summary["title"], level=2)
     p = doc.add_paragraph()
     p.add_run("URL: ").bold = True
@@ -94,7 +95,7 @@ def write_document(section: str, summary: dict) -> None:
     p.add_run("Korean Summary: ").bold = True
     p.add_run(summary["korean_summary"])
     p.add_run("\n")
-    doc.save(DOCUMENT_PATH.format(section=section))
+    doc.save(document_path)
 
 
 def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
@@ -105,6 +106,9 @@ def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
         last_submitted_date = None
     
     papers = get_papers(section, last_submitted_date)
+    print(f"Fetched {len(papers)} papers from {section} section.")
+    if len(papers) == 0:
+        return 0
     summaries = get_summary_from_abstract(papers)
 
     if summaries:
@@ -117,6 +121,7 @@ def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
         with open("last_submitted_date.txt", "w") as f:
             last_submitted_date = summaries[-1]["submitted_date"].strftime("%Y%m%d%H%M")
             f.write(last_submitted_date)
+    return len(summaries)
 
     
 if __name__ == "__main__":
@@ -128,5 +133,10 @@ if __name__ == "__main__":
         num_papers = BATCH_SIZE
     else:
         num_papers = int(num_papers)
-    for i in range(num_papers // BATCH_SIZE):
-        write_document_with_latest_papers("cs.CV", llm)
+    total_cnt = 0
+    while total_cnt < num_papers:
+        cnt = write_document_with_latest_papers("cs.CV", llm)
+        total_cnt += cnt
+        if cnt == 0:
+            print("No more papers to fetch.")
+            break
