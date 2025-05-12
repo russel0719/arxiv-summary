@@ -4,16 +4,21 @@ from langchain_core.messages import HumanMessage, SystemMessage
 import os
 import re
 import arxiv
+from pydantic import BaseModel, Field
 from typing import List
 from datetime import datetime
 from docx import Document
 
 PPLX_API_KEY = os.getenv("PPLX_API_KEY")
 EXCEPT_KEYWORDS = ["robot", "security", "cripto", "emotion", "study", "report", "survey", "review"]
-BATCH_SIZE = 30
+BATCH_SIZE = 25
 
 client = arxiv.Client()
-DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{date}_{section}.docx")
+DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{year}/{month}/{day}_{section}.docx")
+
+
+class Answerformat(BaseModel):
+    korean_summaries: List[str] = Field(description="List of Korean summaries for each paper abstract.")
 
     
 def get_papers(section: str, last_submitted_date: str=None, max_results: int=BATCH_SIZE) -> List[arxiv.Result]:
@@ -44,11 +49,13 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
     for idx, s in enumerate(summaries, start=1):
         formatted_abstracts.append(f"{idx}. {s['summary'].strip().replace('\n', ' ')}")
 
+    num_summaries = len(formatted_abstracts)
     prompt = (
-        "You will receive a numbered list of paper abstracts. Provide korean summary for each of the abstracts of all papers. Each summary should be important thoughts of the abstracts.\n"
-        "Return the result in the format:\n\n"
-        "1. <요약1>\n2. <요약2>\n...\n"
-        "Do not skip any number. Only output the korean summary. Do not write in markdown format."
+        f"You will receive a numbered list of {num_summaries} paper abstracts. Provide korean summaries for each of the abstracts of ALL papers. Each summary should be important thoughts of the abstract.\n"
+        f"Return your answer as JSON format with the key 'korean_summaries' and the value as a list of {num_summaries} korean summaries.\n"
+        "For example, if you receive 3 abstracts, your answer should be like this:\n\n"
+        '{"korean_summaries": ["번역내용1", "번역내용2", "번역내용3"]}\n\n'
+        "Do not use any LaTeX symbol and XML tags in your answer.\n"
     )
 
     messages = [
@@ -56,19 +63,18 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
         HumanMessage(content="\n".join(formatted_abstracts))
     ]
 
-    ai_message = llm.invoke(messages)
-    print(ai_message.content)
-    print("Bulk Translations Received.")
-
-    # 파싱: "1. 번역내용" 형식에서 번호를 기준으로 split
-    translations = re.findall(r"\d+\.\s+(.*?)(?=\n\d+\.|\Z)", ai_message.content.strip(), re.DOTALL)
-    translations = [t.strip().replace("\n", " ") for t in translations]
+    ai_message = llm.invoke(messages) # type: Answerformat
+    translations = ai_message.korean_summaries
+    translations = [re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', translation.replace("$", "")).strip() for translation in translations]
 
     if len(translations) != len(summaries):
         print(f"[Warning] Mismatch in count: {len(translations)} translations for {len(summaries)} summaries.")
         print(f"[Warning] {len(translations) - 1} translations will be applied.")
 
     for i, summary in enumerate(summaries):
+        print(f"[{i + 1}] {summary['title']}:")
+        print(translations[i] if i < len(translations) else "[번역 누락]")
+        print()
         summary["korean_summary"] = translations[i] if i < len(translations) else "[번역 누락]"
     
     last_idx = len(translations) - 1 if len(translations) < len(summaries) and len(translations) > 0 else len(translations)
@@ -78,7 +84,9 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
 def write_document(section: str, summary: dict) -> None:
     print(f"Writing summary for `{summary['title']}` in {section} section")
     date = summary["submitted_date"].strftime("%Y%m%d")
-    document_path = DOCUMENT_PATH.format(date=date, section=section)
+    year, month, day = date[:4], date[4:6], date[6:8]
+    document_path = DOCUMENT_PATH.format(year=year, month=month, day=day, section=section)
+    os.makedirs(os.path.dirname(document_path), exist_ok=True)
     if not os.path.exists(document_path):
         doc = Document()
         doc.add_heading(f"{date} Papers Summary in {section} section", level=0)
@@ -126,7 +134,8 @@ def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
     
 if __name__ == "__main__":
     # Initialize the LLM and agent
-    llm = ChatPerplexity(model="sonar", pplx_api_key=PPLX_API_KEY, temperature=0.1)
+    llm = ChatPerplexity(model="sonar", pplx_api_key=PPLX_API_KEY, temperature=0.0)
+    structed_llm = llm.with_structured_output(Answerformat)
 
     num_papers = input(f"How many papers do you want to fetch? (default: {BATCH_SIZE}): ")
     if not num_papers:
@@ -135,7 +144,7 @@ if __name__ == "__main__":
         num_papers = int(num_papers)
     total_cnt = 0
     while total_cnt < num_papers:
-        cnt = write_document_with_latest_papers("cs.CV", llm)
+        cnt = write_document_with_latest_papers("cs.CV", structed_llm)
         total_cnt += cnt
         if cnt == 0:
             print("No more papers to fetch.")
