@@ -12,6 +12,7 @@ from docx import Document
 PPLX_API_KEY = os.getenv("PPLX_API_KEY")
 EXCEPT_KEYWORDS = ["robot", "security", "cripto", "emotion", "study", "report", "survey", "review"]
 BATCH_SIZE = 25
+MAX_SIZE = 1000
 
 client = arxiv.Client()
 DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{year}/{month}/{day}_{section}.docx")
@@ -55,7 +56,7 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
         f"Return your answer as JSON format with the key 'korean_summaries' and the value as a list of {num_summaries} korean summaries.\n"
         "For example, if you receive 3 abstracts, your answer should be like this:\n\n"
         '{"korean_summaries": ["번역내용1", "번역내용2", "번역내용3"]}\n\n'
-        "Do not use any LaTeX symbol and XML tags in your answer.\n"
+        "Do not skip any paper's abstract translation in answer. Do not use any LaTeX symbol and XML tags in your answer.\n"
     )
 
     messages = [
@@ -115,7 +116,7 @@ def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
     
     papers = get_papers(section, last_submitted_date)
     print(f"Fetched {len(papers)} papers from {section} section.")
-    if len(papers) == 0:
+    if len(papers) < BATCH_SIZE:
         return 0
     summaries = get_summary_from_abstract(papers)
 
@@ -137,9 +138,9 @@ if __name__ == "__main__":
     llm = ChatPerplexity(model="sonar", pplx_api_key=PPLX_API_KEY, temperature=0.0)
     structed_llm = llm.with_structured_output(Answerformat)
 
-    num_papers = input(f"How many papers do you want to fetch? (default: {BATCH_SIZE}): ")
+    num_papers = input(f"How many papers do you want to fetch? (default: max): ")
     if not num_papers:
-        num_papers = BATCH_SIZE
+        num_papers = MAX_SIZE
     else:
         num_papers = int(num_papers)
     total_cnt = 0
@@ -149,3 +150,4 @@ if __name__ == "__main__":
         if cnt == 0:
             print("No more papers to fetch.")
             break
+    print(f"Total {total_cnt} papers are summarized.")
