@@ -14,7 +14,14 @@
     ```bash
     git clone https://github.com/your-repo/arxiv-summary.git
     ```
-2. uv를 통해 `main.py`파일을 실행합니다:
+2. `.env` 파일을 생성하고 필요한 환경 변수(Perplexity API key)를 설정합니다. 예시:
+    ```bash
+    touch .env
+    ```
+    ```env
+    PPLX_API_KEY=pplx-xxxxxxxxxxxxxxxxxxxx
+    ```
+3. uv를 통해 `main.py`파일을 실행합니다:
     ```bash
     uv run main.py
     ```
