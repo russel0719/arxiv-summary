@@ -2,6 +2,7 @@ from langchain_perplexity import ChatPerplexity
 from langchain_core.messages import HumanMessage, SystemMessage
 
 import os
+from dotenv import load_dotenv
 import re
 import arxiv
 from pydantic import BaseModel, Field
@@ -9,12 +10,13 @@ from typing import List
 from datetime import datetime
 from docx import Document
 
+load_dotenv()
 PPLX_API_KEY = os.getenv("PPLX_API_KEY")
 EXCEPT_KEYWORDS = ["robot", "security", "cripto", "emotion", "study", "report", "survey", "review"]
 BATCH_SIZE = 25
 MAX_SIZE = 1000
 
-client = arxiv.Client()
+client = arxiv.Client(page_size=100, delay_seconds=3, num_retries=5)
 DOCUMENT_PATH = os.path.join(os.path.dirname(__file__), "{year}/{month}/{day}_{section}.docx")
 
 
@@ -56,12 +58,12 @@ def add_translations(llm: ChatPerplexity, summaries: List[dict]) -> List[dict]:
         f"Return your answer as JSON format with the key 'korean_summaries' and the value as a list of {num_summaries} korean summaries.\n"
         "For example, if you receive 3 abstracts, your answer should be like this:\n\n"
         '{"korean_summaries": ["번역내용1", "번역내용2", "번역내용3"]}\n\n'
-        "Do not skip any paper's abstract translation in answer. Do not use any LaTeX symbol and XML tags in your answer.\n"
+        "Do not skip any paper's abstract translation in answer. Maintain the input order strictly. Do not use any LaTeX symbol and XML tags in your answer.\n"
     )
 
     messages = [
         SystemMessage(content=prompt),
-        HumanMessage(content="\n".join(formatted_abstracts))
+        HumanMessage(content="\n\n".join(formatted_abstracts))
     ]
 
     ai_message = llm.invoke(messages) # type: Answerformat
@@ -135,7 +137,7 @@ def write_document_with_latest_papers(section: str, llm: ChatPerplexity):
     
 if __name__ == "__main__":
     # Initialize the LLM and agent
-    llm = ChatPerplexity(model="sonar", pplx_api_key=PPLX_API_KEY, temperature=0.0)
+    llm = ChatPerplexity(model="sonar", api_key=PPLX_API_KEY, temperature=0.0)
     structed_llm = llm.with_structured_output(Answerformat)
 
     num_papers = input(f"How many papers do you want to fetch? (default: max): ")
