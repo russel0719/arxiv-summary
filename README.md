@@ -21,7 +21,16 @@
     ```env
     PPLX_API_KEY=pplx-xxxxxxxxxxxxxxxxxxxx
     ```
-3. uv를 통해 `main.py`파일을 실행합니다:
+3. uv를 통해 `summarize.py`파일을 실행합니다:
     ```bash
-    uv run main.py
+    uv run summarize.py
     ```
+4. uv를 통해 `evaluate.py`파일을 실행합니다:
+    ```bash
+    uv run evaluate.py
+    ```
+
+## API 사용량 분석
+
+-   summarize.py(1 요청 = 25 논문): 40 요청 1.0 USD
+-   evaluate.py(1 요청 = 1 논문): 100 요청 0.6 USD
