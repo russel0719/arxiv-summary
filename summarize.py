@@ -139,6 +139,7 @@ if __name__ == "__main__":
     # Initialize the LLM and agent
     llm = ChatPerplexity(model="sonar", api_key=PPLX_API_KEY, temperature=0.0)
     structed_llm = llm.with_structured_output(Answerformat)
+    print(structed_llm)
 
     num_papers = input(f"How many papers do you want to fetch? (default: max): ")
     if not num_papers:
