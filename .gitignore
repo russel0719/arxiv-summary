@@ -9,10 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
-# env file
-.env
+# Output files
+logs/
+pdfs/
 
-# results
-last_submitted_date.txt
-*.docx
-*.csv
+# Credentials
+.env
