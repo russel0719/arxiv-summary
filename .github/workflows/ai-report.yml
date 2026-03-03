@@ -1,0 +1,51 @@
+name: AI Report Scheduler
+
+on:
+    schedule:
+        - cron: "0 0 * * 1-5" # KST 09:00
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+jobs:
+    run-report:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Install uv
+              run: |
+                  curl -Ls https://astral.sh/uv/install.sh | sh
+                  echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+            - name: Sync environment
+              run: uv sync
+
+            - name: Create directories
+              run: |
+                  mkdir -p logs
+                  mkdir -p reports
+
+            - name: Run main.py
+              run: |
+                  LOG_FILE="logs/ai_report_$(date +%Y%m%d).log"
+                  uv run python main.py > reports/ai_report_$(date +%Y%m%d).md 2>> $LOG_FILE
+
+            - name: Upload log as artifact
+              uses: actions/upload-artifact@v3
+              with:
+                  name: ai-report-log
+                  path: logs/
+
+            - name: Commit report if changed
+              run: |
+                  git config user.name "github-actions"
+                  git config user.email "actions@github.com"
+                  git add reports/
+                  if ! git diff --cached --quiet; then
+                    git commit -m "auto: update AI report $(date +%Y-%m-%d)"
+                    git push
+                  fi
