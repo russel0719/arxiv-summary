@@ -31,14 +31,14 @@ jobs:
 
       - name: Run main.py
         run: |
-          LOG_FILE="logs/ai_report_$(date +%Y%m%d).log"
+          LOG_FILE="ai_report_$(date +%Y%m%d).log"
           uv run python main.py > reports/ai_report_$(date +%Y%m%d).md 2>> $LOG_FILE
 
       - name: Upload log as artifact
         uses: actions/upload-artifact@v4
         with:
           name: ai-report-log
-          path: logs/
+          path: $LOG_FILE
 
       - name: Commit report if changed
         run: |
