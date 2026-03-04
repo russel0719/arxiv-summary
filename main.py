@@ -28,6 +28,8 @@ CATEGORIES = ["cs.AI", "cs.LG", "cs.CV", "cs.CL", "stat.ML"]
 
 OUTPUT_DIR = "daily_reports"
 PDF_DIR = "pdfs"
+
+os.makedirs("logs", exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(PDF_DIR, exist_ok=True)
 
