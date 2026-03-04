@@ -24,29 +24,25 @@ jobs:
       - name: Sync environment
         run: uv sync
 
-      - name: Create directories
-        run: |
-          mkdir -p logs
-          mkdir -p reports
-
       - name: Run main.py
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           LOG_FILE="ai_report_$(date +%Y%m%d).log"
-          uv run python main.py > $LOG_FILE
+          echo "LOG_FILE=$LOG_FILE" >> $GITHUB_ENV
+          uv run python main.py > $LOG_FILE 2>&1
 
       - name: Upload log as artifact
         uses: actions/upload-artifact@v4
         with:
           name: ai-report-log
-          path: $LOG_FILE
+          path: ${{ env.LOG_FILE }}
 
       - name: Commit report if changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add reports/
+          git add daily_reports/
           if ! git diff --cached --quiet; then
             git commit -m "auto: update AI report $(date +%Y-%m-%d)"
             git push

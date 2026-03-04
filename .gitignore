@@ -15,3 +15,6 @@ pdfs/
 
 # Credentials
 .env
+
+# Claude AI related files
+.claude/
