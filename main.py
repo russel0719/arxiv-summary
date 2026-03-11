@@ -346,6 +346,20 @@ Format in Markdown.
 """
     return call_llm(prompt + "\n" + merged, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL)
 
+
+def update_readme(report: str, date_str: str, report_path: str):
+    readme_content = (
+        "# arxiv-summary — AI Daily Trend\n\n"
+        f"> 최신 보고서: **{date_str}** | "
+        f"[원본 파일]({report_path}) | "
+        "[전체 목록](daily_reports/) | "
+        "[프로젝트 문서](DOCS.md)\n\n"
+        "---\n\n"
+        f"{report}\n"
+    )
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(readme_content)
+
 # ====================================================
 # Main Pipeline
 # ====================================================
@@ -414,13 +428,21 @@ def run(date: str = None):
             f"- Why It Matters: {fs['why_it_matters']}\n\n"
         )
 
-    out_path = os.path.join(
-        OUTPUT_DIR, f"AI_Daily_Trend_{target.strftime('%Y-%m-%d')}.md"
+    year_month_dir = os.path.join(
+        OUTPUT_DIR, target.strftime("%Y"), target.strftime("%m")
     )
+    os.makedirs(year_month_dir, exist_ok=True)
+
+    date_str = target.strftime("%Y-%m-%d")
+    out_path = os.path.join(year_month_dir, f"AI_Daily_Trend_{date_str}.md")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(report)
 
     print(f"✅ Report saved: {out_path}")
+
+    update_readme(report, date_str, out_path)
+    print(f"✅ README.md updated")
+
     token_monitor.report()
 
 # ====================================================
