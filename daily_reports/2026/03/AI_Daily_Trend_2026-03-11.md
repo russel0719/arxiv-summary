@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-11** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-11.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # 📅 2026년 3월 12일 AI 연구 동향 보고서
 
 > **주제**: *Riemannian MeanFlow for One‑Step Generation on Manifolds*  
@@ -150,5 +144,4 @@
 - Key Contribution: 1) 팔 집합에 의존하는 하한(Adjacency‑based lower bound) 2) 기하학을 활용한 Adjacent‑optimal design 3) 하한과 일치하는 Adjacent‑BAI 알고리즘 4) 전통적 차원 기반 한계보다 훨씬 낮은 복잡도 가능성을 증명.
 - Method Overview: 극단점(Convex hull vertices) 사이의 인접성 정의 → 인접 팔만 비교해 어려움을 측정하는 H_Adjacent 복잡도 도출 → 이 복잡도에 대한 하한 증명 → 인접 팔 간 분산을 최소화하는 Adjacent‑optimal design 설계 → 해당 디자인을 사용해 샘플을 할당하고 누적 보상을 비교해 최적 팔을 출력하는 Adjacent‑BAI 알고리즘 개발.
 - Why It Matters: 팔 집합의 기하학적 풍부함을 반영함으로써 비정상적 환경에서도 샘플 효율을 크게 향상시킬 수 있다. 기존 차원 기반 한계보다 낮은 복잡도를 제공해 실제 응용에서 더 적은 실험으로 정확한 팔을 찾을 수 있다.
-
 
