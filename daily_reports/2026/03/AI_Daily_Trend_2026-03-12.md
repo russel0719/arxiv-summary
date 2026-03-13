@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-12** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-12.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # 📅 일간 AI 연구 동향 보고서  
 **Paper Title: LoV3D: Grounding Cognitive Prognosis Reasoning in Longitudinal 3D Brain MRI via Regional Volume Assessments**
 
@@ -135,5 +129,4 @@
 - Key Contribution: 1) 데이터만으로 대칭군의 직접적 분해를 자동으로 추론하는 알고리즘, 2) 그 분해를 이용해 선형 대칭 기반 분해(LSBD) 표현을 학습하는 방법, 3) 최소 가정 하에서 분해가 식별 가능함을 증명한 이론적 보장, 4) 세 가지 서로 다른 환경에서 기존 LSBD보다 우수한 실험 결과.
 - Method Overview: 첫 단계에서는 에이전트가 수집한 전이 데이터를 이용해 그룹 분해를 추정한다. 두 번째 단계에서는 추정된 분해를 반영한 선형 표현을 학습하며, 이때 특정 서브그룹 가정(가령 교환성 등)을 필요로 하지 않는다. 전체 과정은 Action‑based VAE와 그룹 이론 기반의 유사도 측정으로 구현된다.
 - Why It Matters: 사전 그룹 지식이나 제한적인 서브그룹 가정 없이도 일반적이고 이론적으로 정당화된 분해 기반 표현을 얻을 수 있어, 다양한 환경에서의 비지도 해석 가능한 학습이 가능해진다. 이는 로봇 제어, 시각 인식 등에서 자연스러운 대칭성을 활용한 효율적 모델링을 촉진한다.
-
 
