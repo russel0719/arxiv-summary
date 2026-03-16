@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-13** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-13.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # **Steve‑Evolving: Open‑World Embodied Self‑Evolution via Fine‑Grained Diagnosis and Dual‑Track Knowledge Distillation**  
 **일간 AI 연구 동향 보고서 (2026‑03‑16)**  
 
@@ -154,5 +148,4 @@
 - Key Contribution: 1) 의미적 요소별 구획화된 워터마크로 지역 편집에도 견고함 2) 이론적 거짓 수락률 보장 및 재생 공격에 대한 강인성 3) 사전 훈련된 모델에 추가 학습 없이 바로 적용 가능한 실용적 프레임워크
 - Method Overview: 확산 모델의 초기 노이즈 벡터를 주제·환경·행동·디테일 네 영역으로 나누고, 각 영역에 시크릿 키와 의미 태그를 결합해 워터마크를 삽입한다. 검증 시 동일한 의미 추출 과정을 거쳐 역변환된 노이즈와 비교해 각 영역의 일치 여부를 판단하고, 픽셀‑레벨 거리와 매치‑비율을 통해 위조 여부와 위치를 판별한다.
 - Why It Matters: AI 생성 이미지의 출처 추적이 필수화된 현시점에서, 기존 전역 워터마크는 지역 편집에 취약했다. SLICE는 의미 기반 구획화를 통해 지역 편집·재생 공격에도 견고하며, 추가 학습 없이 바로 적용 가능해 실제 서비스에 바로 배포할 수 있다.
-
 
