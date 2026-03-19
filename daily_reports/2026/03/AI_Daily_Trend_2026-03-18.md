@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-18** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-18.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # 📅 2026년 3월 19일 AI 연구 트렌드 보고서
 
 > **제목**: Variational Kernel Design for Internal Noise: Gaussian Chaos Noise, Representation Compatibility, and Reliable Deep Learning  
@@ -181,5 +175,4 @@
 - Key Contribution: 다중 모델을 플러그‑앤‑플레이 방식으로 동적으로 조율하고, GRPO로 이진 라벨만으로 정책을 학습해 재학습 없이 새로운 탐지기를 추가할 수 있으며, 최소한의 연산으로 최고 정확도를 달성한다.
 - Method Overview: 1) 도구 캡슐화: 각 탐지기를 가벼운 인터페이스로 래핑한다. 2) 동적 오케스트레이션: 에이전트가 계획·반영 모듈을 통해 필요한 도구를 선택한다. 3) 다중 턴 추론: 여러 도구를 순차 호출해 중간 결과를 집계·반영하며 결정한다. 4) GRPO 학습: 이진 진짜/가짜 라벨만으로 정책을 강화학습한다.
 - Why It Matters: 생성 모델이 급변하는 상황에서도 새로운 도구를 즉시 추가해 성능을 향상시킬 수 있고, 라벨 비용이 낮아 대규모 데이터셋이 필요 없으며, 실제 서비스에 바로 적용 가능한 경량화된 솔루션을 제공한다.
-
 
