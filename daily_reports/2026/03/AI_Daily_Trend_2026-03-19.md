@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-19** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-19.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # 📅 2026‑03‑20 AI 연구 동향 일간 보고서  
 > **DA-Mamba**: Learning Domain‑Aware State Space Model for Global‑Local Alignment in Domain Adaptive Object Detection
 
@@ -133,5 +127,4 @@
 - Key Contribution: 공통지식이 필요 없는 상황에서도 Bayesian belief‑forming과 asymptotic best‑response 학습을 통해 LLM이 안정적인 전략적 행동을 보이는 것을 증명하고, finite‑menu + KL‑분리 조건을 도입해 posterior concentration을 확보한다. 또한, 실제 5개 게임(Prisoner’s Dilemma, 마케팅 프로모션 등)에서 실험적으로 검증했다.
 - Method Overview: 1) 게임을 formalize하고 grain‑of‑truth(Kalai‑Lehrer) 가정과 on‑path relaxation을 적용한다. 2) finite menu와 KL‑분리 조건을 도입해 posterior가 단일 포인트로 수렴하도록 보장한다. 3) posterior가 수렴하면 predict‑then‑act가 사실상 deterministic이 되어 asymptotic best‑response가 성립한다. 4) GPT, Claude, Gemini 등 다양한 LLM을 실험 환경에 배치해 무작위 초기화에서도 균형에 수렴하는지 측정한다.
 - Why It Matters: 공통지식과 사전 fine‑tuning 없이도 LLM이 안정적인 전략적 행동을 보인다는 사실은 디지털 시장, 자동 협상, 동적 가격 책정 등 실제 AI‑AI 상호작용에서 안전하고 예측 가능한 배치를 가능하게 하며, 이론적 게임‑이론 보장과 실무 적용 사이의 격차를 해소한다.
-
 
