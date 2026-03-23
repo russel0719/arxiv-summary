@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-20** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-20.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # 📅 2026년 3월 23일 AI 연구 동향 보고서
 
 > **주제**: 최신 논문 8편을 중심으로 한 AI 연구 트렌드  
@@ -167,5 +161,4 @@
 - Key Contribution: Perception–Language–Action–Discovery(PLAD) 프레임워크를 도입해 인지와 실행을 통합하고, 장기적 자율 탐색을 위한 통합 로드맵을 제공한다.
 - Method Overview: 1) LLM 기반 고수준 가설 생성·계획 설계 2) 로봇 플랫폼이 실험을 수행하고 실시간 데이터를 수집 3) 결과를 AI에 피드백해 모델을 갱신하고 다음 주기를 설계하는 닫힌 루프.
 - Why It Matters: 인간 개입 없이 지속 가능한 과학 탐사를 가능하게 하여 실험 효율을 극대화하고, 재현성·안전성을 확보하며, 신속한 혁신을 촉진한다.
-
 
