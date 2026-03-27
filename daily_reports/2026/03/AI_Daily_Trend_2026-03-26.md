@@ -1,9 +1,3 @@
-# arxiv-summary — AI Daily Trend
-
-> 최신 보고서: **2026-03-26** | [원본 파일](daily_reports/2026/03/AI_Daily_Trend_2026-03-26.md) | [전체 목록](daily_reports/) | [프로젝트 문서](DOCS.md)
-
----
-
 # 📅 2026년 3월 27일 AI 연구 동향 보고서  
 (한국어 요약, Markdown 형식)
 
@@ -157,5 +151,4 @@
 - Key Contribution: Hessian 라벨을 2~4 차수 감소시키면서도 전이상, Gibbs 자유에너지, 강한 비조화성 하이드라이드의 음향 특성까지 정확히 예측할 수 있는 데이터 효율적 프레임워크 제공
 - Method Overview: HINT는 Hessian 프리트레이닝, 대표 구조 샘플링, 커리큘럼 학습, 스토캐스틱 프로젝션 Hessian 손실을 결합한 4단계 프로세스이며, Hi‑MLIP은 에너지·힘·Hessian을 일관되게 예측하기 위해 분석적 미분을 사용
 - Why It Matters: 첫 번째 원리 시뮬레이션과 실험 관측 사이의 정밀도를 크게 향상시키며, 고비용 DFT Hessian 계산 없이도 전이상 탐색, 자유에너지 계산, 비조화성 물리학 연구를 가능하게 함
-
 
