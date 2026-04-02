@@ -8,7 +8,7 @@ import requests
 import feedparser
 import fitz
 from datetime import datetime, timedelta, timezone
-from groq import Groq
+from groq import Groq, BadRequestError
 from dotenv import load_dotenv
 
 # ====================================================
@@ -99,19 +99,57 @@ token_monitor = TokenMonitor()
 # ====================================================
 # Rate-limit-safe LLM call
 # ====================================================
-def call_llm(prompt, model_name, interval, max_tokens=10000):
-    res = client.chat.completions.create(
-        model=model_name,
-        messages=[
-            {"role": "system", "content": "You are a senior AI researcher."},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=0.3,
-        max_tokens=max_tokens,
-    )
-    time.sleep(interval)
-    token_monitor.log_usage(res.usage.total_tokens)
-    return res.choices[0].message.content
+def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0):
+    try:
+        res = client.chat.completions.create(
+            model=model_name,
+            messages=[
+                {"role": "system", "content": "You are a senior AI researcher."},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.3,
+            max_tokens=max_tokens,
+        )
+        time.sleep(interval)
+        token_monitor.log_usage(res.usage.total_tokens)
+        return res.choices[0].message.content
+    except BadRequestError as e:
+        if e.status_code == 413 and _retry < 3:
+            truncated = prompt[:int(len(prompt) * 0.75)]
+            print(f"⚠️ 413 Too Large — truncating prompt to 75% and retrying ({_retry + 1}/3)")
+            return call_llm(truncated, model_name, interval, max_tokens, _retry + 1)
+        raise
+
+# ====================================================
+# Checkpoint
+# ====================================================
+def _checkpoint_path(target_str):
+    return os.path.join("logs", f"checkpoint_{target_str}.json")
+
+def save_checkpoint(target_str, stage, scored, summarized=None):
+    def serialize(p):
+        d = {k: v for k, v in p.items()}
+        if isinstance(d.get("published"), datetime):
+            d["published"] = d["published"].isoformat()
+        return d
+
+    data = {"stage": stage, "scored": [serialize(p) for p in scored]}
+    if summarized is not None:
+        data["summarized"] = [serialize(p) for p in summarized]
+    with open(_checkpoint_path(target_str), "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+
+def load_checkpoint(target_str):
+    path = _checkpoint_path(target_str)
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+def clear_checkpoint(target_str):
+    path = _checkpoint_path(target_str)
+    if os.path.exists(path):
+        os.remove(path)
 
 # ====================================================
 # Date Utilities
@@ -162,13 +200,16 @@ def fetch_all_papers(target_date_str, batch_size=200):
             ).replace(tzinfo=timezone.utc)
 
             if target_date <= published_dt < next_date:
+                pdf_url = next(
+                    (l.href for l in e.links if l.type == "application/pdf"), None
+                )
+                if pdf_url is None:
+                    continue
                 papers.append({
                     "id": e.id.split("/")[-1],
                     "title": e.title.replace("\n", " "),
                     "summary": e.summary,
-                    "pdf_url": next(
-                        l.href for l in e.links if l.type == "application/pdf"
-                    ),
+                    "pdf_url": pdf_url,
                     "published": published_dt,
                 })
 
@@ -376,28 +417,51 @@ def run(date: str = None):
     target_str = target.strftime("%Y%m%d")
     print(f"📅 Target date: {target_str}")
 
-    papers = fetch_all_papers(target_str)
-    print(f"📄 Total fetched: {len(papers)}")
-    if len(papers) == 0:
-        print("⏭️ No papers found - skipping")
-        return
+    cp = load_checkpoint(target_str)
 
-    papers = cheap_filter(papers)
-    print(f"🔎 After cheap filter: {len(papers)}")
+    # ── Scoring stage ──────────────────────────────
+    if cp and cp["stage"] in ("summarization",):
+        scored = cp["scored"]
+        print(f"📂 Checkpoint restored: {len(scored)} scored papers")
+    else:
+        papers = fetch_all_papers(target_str)
+        print(f"📄 Total fetched: {len(papers)}")
+        if len(papers) == 0:
+            print("⏭️ No papers found - skipping")
+            return
 
-    token_monitor.init_monitoring("scoring")
-    scored = []
-    for paper in papers:
-        result = score_paper(paper)
-        if result is not None:
-            paper["score"] = result["score"]
-            paper["reason"] = result["reason"]
-            scored.append(paper)
-    print(f"📝 Scoring completed")
+        papers = cheap_filter(papers)
+        print(f"🔎 After cheap filter: {len(papers)}")
+
+        already_scored = {p["id"]: p for p in (cp or {}).get("scored", [])}
+
+        token_monitor.init_monitoring("scoring")
+        scored = list(already_scored.values())
+        for paper in papers:
+            if paper["id"] in already_scored:
+                continue
+            result = score_paper(paper)
+            if result is not None:
+                paper["score"] = result["score"]
+                paper["reason"] = result["reason"]
+                scored.append(paper)
+                save_checkpoint(target_str, "scoring", scored)
+        print(f"📝 Scoring completed")
+
+    # ── Summarization stage ────────────────────────
+    already_summarized = {
+        p["id"]: p for p in (cp or {}).get("summarized", [])
+        if "text_summary" in p
+    }
 
     token_monitor.init_monitoring("summarization")
     top_papers = sorted(scored, key=lambda x: x["score"], reverse=True)[:TOP_K]
+    summarized = []
     for p in top_papers:
+        if p["id"] in already_summarized:
+            summarized.append(already_summarized[p["id"]])
+            print(f"  ↩️  Skipping (cached): {p['title'][:60]}")
+            continue
         pdf = download_pdf(p)
         text = load_pdf_text(pdf)
         summary = summarize_paper(text)
@@ -409,6 +473,9 @@ def run(date: str = None):
         ])
         p["final_summary"] = summary
         remove_pdf(p)
+        summarized.append(p)
+        save_checkpoint(target_str, "summarization", scored, summarized)
+    top_papers = summarized
     print(f"📰 Summarization completed")
 
     token_monitor.init_monitoring("report_generation")
@@ -443,6 +510,7 @@ def run(date: str = None):
     update_readme(report, date_str, out_path)
     print(f"✅ README.md updated")
 
+    clear_checkpoint(target_str)
     token_monitor.report()
 
 # ====================================================
