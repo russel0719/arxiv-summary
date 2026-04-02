@@ -33,10 +33,12 @@ jobs:
           uv run python main.py > $LOG_FILE 2>&1
 
       - name: Upload log as artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ai-report-log
           path: ${{ env.LOG_FILE }}
+          compression-level: 0
 
       - name: Commit report if changed
         run: |
