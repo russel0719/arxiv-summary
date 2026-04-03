@@ -32,13 +32,9 @@ jobs:
           echo "LOG_FILE=$LOG_FILE" >> $GITHUB_ENV
           uv run python main.py > $LOG_FILE 2>&1
 
-      - name: Upload log as artifact
+      - name: Print log
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ai-report-log
-          path: ${{ env.LOG_FILE }}
-          compression-level: 0
+        run: cat ${{ env.LOG_FILE }}
 
       - name: Commit report if changed
         run: |
