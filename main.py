@@ -8,7 +8,7 @@ import requests
 import feedparser
 import fitz
 from datetime import datetime, timedelta, timezone
-from groq import Groq, BadRequestError
+from groq import Groq, BadRequestError, RateLimitError
 from dotenv import load_dotenv
 
 # ====================================================
@@ -17,11 +17,11 @@ from dotenv import load_dotenv
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-SCORE_MODEL_NAME = "openai/gpt-oss-20b"
+SCORE_MODEL_NAME = "moonshotai/kimi-k2-instruct"
 REPORT_MODEL_NAME = "openai/gpt-oss-20b"
 
 SCORE_CALL_INTERVAL = 5  # seconds
-SUMMARY_CALL_INTERVAL = 20  # seconds
+SUMMARY_CALL_INTERVAL = 30  # seconds
 REPORT_CALL_INTERVAL = 60  # seconds
 
 CATEGORIES = ["cs.AI", "cs.LG", "cs.CV", "cs.CL", "stat.ML"]
@@ -46,14 +46,6 @@ CV_KEYWORDS = [
     "diffusion", "image generation", "video generation",
 ]
 
-NLP_KEYWORDS = [
-    "language", "text", "language model", "llm",
-    "transformer", "attention",
-    "instruction tuning", "alignment",
-    "retrieval", "rag", "question answering",
-    "reasoning", "summarization",
-]
-
 ML_KEYWORDS = [
     "representation learning", "self-supervised", "contrastive",
     "foundation model", "multimodal", "vision-language",
@@ -68,7 +60,7 @@ NEGATIVE_KEYWORDS = [
     "tutorial", "position paper",
 ]
 
-POSITIVE_KEYWORDS = CV_KEYWORDS + NLP_KEYWORDS + ML_KEYWORDS
+POSITIVE_KEYWORDS = CV_KEYWORDS + ML_KEYWORDS
 
 # ====================================================
 # Token Usage Monitoring
@@ -118,6 +110,17 @@ def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0):
             truncated = prompt[:int(len(prompt) * 0.75)]
             print(f"⚠️ 413 Too Large — truncating prompt to 75% and retrying ({_retry + 1}/3)")
             return call_llm(truncated, model_name, interval, max_tokens, _retry + 1)
+        raise
+    except RateLimitError as e:
+        err_msg = str(e)
+        if "TPD" in err_msg or "per day" in err_msg.lower():
+            print(f"🚫 Daily token limit exceeded — aborting")
+            raise
+        if _retry < 5:
+            wait = 60 * (_retry + 1)
+            print(f"⚠️ 429 Rate Limit — waiting {wait}s and retrying ({_retry + 1}/5)")
+            time.sleep(wait)
+            return call_llm(prompt, model_name, interval, max_tokens, _retry + 1)
         raise
 
 # ====================================================
@@ -288,7 +291,7 @@ Papers:
 {block}
 """
 
-    raw = call_llm(prompt, SCORE_MODEL_NAME, SCORE_CALL_INTERVAL)
+    raw = call_llm(prompt, SCORE_MODEL_NAME, SCORE_CALL_INTERVAL, max_tokens=400)
     json_text = extract_json(raw)
 
     if json_text is None:
@@ -336,7 +339,7 @@ Summarize this section focusing on method and contribution.
 Text:
 {c}
 """
-        partials.append(call_llm(prompt, REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL))
+        partials.append(call_llm(prompt, REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL, max_tokens=1000))
 
     final_prompt = f"""
 Create a concise research summary in Korean including following subjects.
@@ -352,7 +355,7 @@ Format:
   "main_idea": str, "key_contribution": str, "method_overview": str, "why_it_matters": str
 }}
 """
-    raw = call_llm(final_prompt + "\n" + "\n".join(partials), REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL)
+    raw = call_llm(final_prompt + "\n" + "\n".join(partials), REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL, max_tokens=800)
     json_text = extract_json(raw)
     
     if json_text is None:
@@ -380,12 +383,11 @@ Generate a daily AI research trend report in Korean.
 Include:
 1. Overall trend
 2. CV-related themes
-3. NLP-related themes
-4. Cross-domain directions
+3. ML-related themes
 
 Format in Markdown.
 """
-    return call_llm(prompt + "\n" + merged, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL)
+    return call_llm(prompt + "\n" + merged, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL, max_tokens=3000)
 
 
 def update_readme(report: str, date_str: str, report_path: str):
