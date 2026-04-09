@@ -20,11 +20,12 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 SCORE_MODEL_NAME = "moonshotai/kimi-k2-instruct"
 REPORT_MODEL_NAME = "openai/gpt-oss-20b"
 
-SCORE_CALL_INTERVAL = 5  # seconds
-SUMMARY_CALL_INTERVAL = 30  # seconds
-REPORT_CALL_INTERVAL = 60  # seconds
+# Groq free tier: ~30 req/min per model, conservative intervals to stay safe
+SCORE_CALL_INTERVAL = 12    # ~5 req/min
+SUMMARY_CALL_INTERVAL = 20  # ~3 req/min per chunk
+REPORT_CALL_INTERVAL = 60   # 1 req/min for large outputs
 
-CATEGORIES = ["cs.AI", "cs.LG", "cs.CV", "cs.CL", "stat.ML"]
+CATEGORIES = ["cs.CV"]
 
 OUTPUT_DIR = "daily_reports"
 PDF_DIR = "pdfs"
@@ -33,34 +34,45 @@ os.makedirs("logs", exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(PDF_DIR, exist_ok=True)
 
-TOP_K = 8
+TOP_K = 10
 
 # ====================================================
-# Keyword Sets (Balanced)
+# Keyword Sets (CV-focused)
 # ====================================================
 CV_KEYWORDS = [
-    "image", "vision", "object detection", "segmentation",
-    "3d reconstruction", "point cloud", "depth estimation",
-    "video understanding", "optical flow", "tracking",
-    "vision transformer", "vit", "cnn",
-    "diffusion", "image generation", "video generation",
-]
-
-ML_KEYWORDS = [
-    "representation learning", "self-supervised", "contrastive",
-    "foundation model", "multimodal", "vision-language",
-    "agent", "reinforcement learning",
-    "world model", "planning",
-    "few-shot", "zero-shot",
+    # Core vision tasks
+    "detection", "segmentation", "recognition", "classification",
+    "tracking", "pose estimation", "depth estimation",
+    "optical flow", "stereo", "3d reconstruction", "point cloud",
+    "scene understanding", "semantic", "instance",
+    # Generation & synthesis
+    "image generation", "video generation", "image synthesis",
+    "inpainting", "super-resolution", "style transfer",
+    "diffusion", "gan", "vae", "nerf", "3d generation",
+    # Architecture & methods
+    "vision transformer", "vit", "convolution", "attention mechanism",
+    "self-supervised", "contrastive learning",
+    "few-shot", "zero-shot", "transfer learning",
+    "multimodal", "vision-language", "visual grounding",
+    # Applications
+    "medical imaging", "autonomous driving",
+    "action recognition", "video understanding",
+    "face", "person re-identification", "anomaly detection",
+    "remote sensing", "satellite",
 ]
 
 NEGATIVE_KEYWORDS = [
-    "survey", "review", "benchmark",
-    "dataset", "challenge",
-    "tutorial", "position paper",
+    # Review / survey types
+    "survey", "review", "overview", "systematic review",
+    "meta-analysis", "tutorial", "position paper",
+    # Data & eval
+    "dataset", "benchmark", "challenge", "competition",
+    "leaderboard", "annotation tool",
+    # Non-research
+    "technical report", "extended abstract", "workshop paper",
 ]
 
-POSITIVE_KEYWORDS = CV_KEYWORDS + ML_KEYWORDS
+POSITIVE_KEYWORDS = CV_KEYWORDS
 
 # ====================================================
 # Token Usage Monitoring
@@ -258,8 +270,8 @@ def extract_json(text: str):
     if match:
         return match.group(1)
 
-    # JSON object fallback
-    match = re.search(r"(\{\s*\".*?\"\s*\})", text, re.DOTALL)
+    # JSON object fallback (greedy: 중첩 배열 포함 전체 object 추출)
+    match = re.search(r"(\{.*\})", text, re.DOTALL)
     if match:
         return match.group(1)
 
@@ -268,17 +280,19 @@ def extract_json(text: str):
 def score_paper(paper):
     block = f"Title: {paper['title']}\nAbstract: {paper['summary']}"
     prompt = f"""
-Evaluate the following AI research paper with brief reason.
+You are a senior computer vision researcher. Evaluate the following CV paper and assign a score from 0.0 to 10.0.
 
-Criteria:
-- Novel algorithmic idea
-- Technical depth
-- Long-term research impact
+Scoring criteria (all must apply for a high score):
+1. Novel algorithmic or architectural contribution to computer vision
+2. Technical depth — concrete method, not just an application or analysis
+3. Long-term research impact on CV tasks (detection, segmentation, generation, 3D, etc.)
 
-Ignore:
-- Surveys
-- Datasets
-- Benchmarks
+Penalize heavily (score <= 4.0) if the paper is:
+- A survey, review, or overview
+- A new dataset or benchmark paper (primary contribution is data collection)
+- A position paper, tutorial, or workshop summary
+- A pure application paper with no new CV method
+- A minor incremental improvement
 
 Return ONLY valid JSON object, no explanation.
 
@@ -287,7 +301,7 @@ Format:
   "score": float, "reason": str
 }}
 
-Papers:
+Paper:
 {block}
 """
 
@@ -371,23 +385,117 @@ Format:
 # ====================================================
 # Trend Synthesis
 # ====================================================
-def generate_trend_report(papers):
+TREND_JSON_SCHEMA = """\
+{
+  "overall_trends":      [{"field": str, "key_issue": str, "representative_paper": str}],
+  "task_classification": [{"task": str, "key_content": str, "representative_paper": str}],
+  "methodology_trends":  [{"methodology": str, "application_case": str, "representative_paper": str}],
+  "cross_domain":        [{"fusion_field": str, "key_point": str, "expected_effect": str}],
+  "headline": str
+}"""
+
+def generate_trend_report(papers) -> dict:
     merged = "\n\n".join(
         f"Title: {p['title']}\n{p['text_summary']}"
         for p in papers
     )
-
     prompt = f"""
-Generate a daily AI research trend report in Korean.
+You are a senior computer vision researcher.
+Analyze today's top CV papers and extract structured trend information in Korean.
 
-Include:
-1. Overall trend
-2. CV-related themes
-3. ML-related themes
+Return ONLY a valid JSON object, no explanation, no markdown fences.
 
-Format in Markdown.
+JSON Schema:
+{TREND_JSON_SCHEMA}
+
+Field descriptions:
+- overall_trends: 오늘 논문 전체의 연구 흐름을 분야별로 정리 (3~5개 행)
+- task_classification: detection/segmentation/generation/3D/video/medical 등 CV 태스크별 분류 (등장한 태스크만 포함)
+- methodology_trends: 오늘 논문에서 두드러진 아키텍처·학습 방법 (transformer, diffusion, self-supervised 등)
+- cross_domain: CV와 다른 분야(의료, 자율주행, 로보틱스 등)의 융합 포인트 (없으면 빈 배열)
+- headline: 오늘 CV 연구 전체를 한 문장으로 요약
+
+Papers:
+{merged}
 """
-    return call_llm(prompt + "\n" + merged, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL, max_tokens=3000)
+    raw = call_llm(prompt, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL, max_tokens=3000)
+    json_text = extract_json(raw)
+    empty = {
+        "overall_trends": [], "task_classification": [],
+        "methodology_trends": [], "cross_domain": [], "headline": ""
+    }
+    if json_text is None:
+        print("⚠️ Trend JSON extraction failed — using empty structure")
+        return empty
+    try:
+        return json.loads(json_text)
+    except json.JSONDecodeError:
+        print("⚠️ Trend JSON parse error — using empty structure")
+        return empty
+
+
+def assemble_report(trend: dict, top_papers: list, date_str: str) -> str:
+    def table_row(*cells):
+        return "| " + " | ".join(str(c) for c in cells) + " |"
+
+    lines = [f"# CV 연구 동향 보고서 — {date_str}\n"]
+
+    # 1. 전체 트렌드
+    lines += [
+        "## 1. 전체 트렌드\n",
+        table_row("분야", "핵심 이슈", "대표 논문"),
+        table_row("------", "---------", "---------"),
+    ]
+    for r in trend.get("overall_trends", []):
+        lines.append(table_row(r.get("field", ""), r.get("key_issue", ""), r.get("representative_paper", "")))
+    if trend.get("headline"):
+        lines.append(f"\n> 핵심 메시지: {trend['headline']}\n")
+
+    # 2. CV 태스크별 분류
+    lines += [
+        "\n## 2. CV 태스크별 분류\n",
+        table_row("태스크", "핵심 내용", "대표 논문"),
+        table_row("------", "---------", "---------"),
+    ]
+    for r in trend.get("task_classification", []):
+        lines.append(table_row(r.get("task", ""), r.get("key_content", ""), r.get("representative_paper", "")))
+
+    # 3. 방법론 트렌드
+    lines += [
+        "\n## 3. 방법론 트렌드\n",
+        table_row("방법론", "적용 사례", "대표 논문"),
+        table_row("------", "---------", "---------"),
+    ]
+    for r in trend.get("methodology_trends", []):
+        lines.append(table_row(r.get("methodology", ""), r.get("application_case", ""), r.get("representative_paper", "")))
+
+    # 4. 크로스 도메인 융합
+    lines += [
+        "\n## 4. 크로스 도메인 융합\n",
+        table_row("융합 분야", "핵심 포인트", "기대 효과"),
+        table_row("---------", "-----------", "---------"),
+    ]
+    for r in trend.get("cross_domain", []):
+        lines.append(table_row(r.get("fusion_field", ""), r.get("key_point", ""), r.get("expected_effect", "")))
+
+    lines.append("\n---\n")
+
+    # 5. 개별 논문 요약
+    lines.append("## 5. 개별 논문 요약\n")
+    for idx, p in enumerate(top_papers, start=1):
+        arxiv_id = p["id"].split("v")[0]
+        fs = p["final_summary"]
+        lines += [
+            f"### {idx}. {p['title']}\n",
+            f"- **arXiv**: https://arxiv.org/abs/{arxiv_id}",
+            f"- **Score**: {p['score']} / 10",
+            f"- **한줄 요약**: {fs['main_idea']}",
+            f"- **핵심 기여**: {fs['key_contribution']}",
+            f"- **방법론 개요**: {fs['method_overview']}",
+            f"- **의의**: {fs['why_it_matters']}\n",
+        ]
+
+    return "\n".join(lines)
 
 
 def update_readme(report: str, date_str: str, report_path: str):
@@ -457,7 +565,10 @@ def run(date: str = None):
     }
 
     token_monitor.init_monitoring("summarization")
-    top_papers = sorted(scored, key=lambda x: x["score"], reverse=True)[:TOP_K]
+    # 점수가 낮은 논문(survey/dataset 등으로 판단된 것) 제외 후 상위 TOP_K 선택
+    qualified = [p for p in scored if p.get("score", 0) >= 5.0]
+    top_papers = sorted(qualified, key=lambda x: x["score"], reverse=True)[:TOP_K]
+    print(f"🏆 Qualified papers (score >= 5.0): {len(qualified)}, selecting top {len(top_papers)}")
     summarized = []
     for p in top_papers:
         if p["id"] in already_summarized:
@@ -481,29 +592,17 @@ def run(date: str = None):
     print(f"📰 Summarization completed")
 
     token_monitor.init_monitoring("report_generation")
-    report = generate_trend_report(top_papers)
+    trend_data = generate_trend_report(top_papers)
     print(f"🗞️ Trend report generated")
 
-    report += "\n\n## 개별 논문 요약\n\n"
-    for p in top_papers:
-        report += f"### {p['title']}\n"
-        report += f"- Score: {p['score']}\n"
-        report += f"- Reason: {p['reason']}\n"
-        fs = p["final_summary"]
-        report += (
-            f"- Main Idea: {fs['main_idea']}\n"
-            f"- Key Contribution: {fs['key_contribution']}\n"
-            f"- Method Overview: {fs['method_overview']}\n"
-            f"- Why It Matters: {fs['why_it_matters']}\n\n"
-        )
+    date_str = target.strftime("%Y-%m-%d")
+    report = assemble_report(trend_data, top_papers, date_str)
 
     year_month_dir = os.path.join(
         OUTPUT_DIR, target.strftime("%Y"), target.strftime("%m")
     )
     os.makedirs(year_month_dir, exist_ok=True)
-
-    date_str = target.strftime("%Y-%m-%d")
-    out_path = os.path.join(year_month_dir, f"AI_Daily_Trend_{date_str}.md")
+    out_path = os.path.join(year_month_dir, f"CV_Daily_Trend_{date_str}.md")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(report)
 
