@@ -419,16 +419,26 @@ Papers:
 {merged}
 """
     raw = call_llm(prompt, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL, max_tokens=3000)
-    json_text = extract_json(raw)
     empty = {
         "overall_trends": [], "task_classification": [],
         "methodology_trends": [], "cross_domain": [], "headline": ""
     }
+    # 트렌드 응답은 반드시 object여야 함 — array 우선 추출을 피하고 object만 파싱
+    if raw:
+        text = re.sub(r"```json|```", "", raw).strip()
+        match = re.search(r"(\{.*\})", text, re.DOTALL)
+        json_text = match.group(1) if match else None
+    else:
+        json_text = None
     if json_text is None:
         print("⚠️ Trend JSON extraction failed — using empty structure")
         return empty
     try:
-        return json.loads(json_text)
+        result = json.loads(json_text)
+        if not isinstance(result, dict):
+            print("⚠️ Trend JSON is not an object — using empty structure")
+            return empty
+        return result
     except json.JSONDecodeError:
         print("⚠️ Trend JSON parse error — using empty structure")
         return empty
