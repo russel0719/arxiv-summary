@@ -2,7 +2,7 @@ name: AI Report Scheduler
 
 on:
   schedule:
-    - cron: "0 0 * * 1-5" # KST 09:00
+    - cron: "0 8 * * 1-5" # KST 17:00 (arXiv 발표 ~UTC 01:00 이후 충분한 여유)
   workflow_dispatch:
 
 permissions:

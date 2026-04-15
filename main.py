@@ -194,11 +194,12 @@ def fetch_all_papers(target_date_str, batch_size=200):
         tzinfo=timezone.utc
     )
     next_date = target_date + timedelta(days=1)
+    next_date_str = next_date.strftime("%Y%m%d")
 
     while True:
         url = (
             f"http://export.arxiv.org/api/query?"
-            f"search_query={query}&"
+            f"search_query={query}+AND+submittedDate:[{target_date_str}+TO+{next_date_str}]&"
             f"sortBy=submittedDate&sortOrder=descending&"
             f"start={start}&max_results={batch_size}"
         )
