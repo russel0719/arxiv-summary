@@ -278,6 +278,15 @@ def extract_json(text: str):
 
     return None
 
+
+def repair_json(text: str) -> str:
+    """LLM이 자주 출력하는 비표준 JSON 패턴을 수정"""
+    # Python 리터럴 → JSON 표준
+    text = text.replace("None", "null").replace("True", "true").replace("False", "false")
+    # trailing comma before } or ]
+    text = re.sub(r",\s*([}\]])", r"\1", text)
+    return text
+
 def score_paper(paper):
     block = f"Title: {paper['title']}\nAbstract: {paper['summary']}"
     prompt = f"""
@@ -310,13 +319,13 @@ Paper:
     json_text = extract_json(raw)
 
     if json_text is None:
-        print("⚠️ JSON extraction failed, skipping batch")
+        print(f"⚠️ JSON extraction failed, skipping paper (raw: {raw[:200]!r})")
         return {"score": 0.0, "reason": ""}
 
     try:
-        return json.loads(json_text)
+        return json.loads(repair_json(json_text))
     except json.JSONDecodeError:
-        print("⚠️ JSON parse error, skipping batch")
+        print(f"⚠️ JSON parse error, skipping paper (extracted: {json_text[:200]!r})")
         return {"score": 0.0, "reason": ""}
 
 # ====================================================
@@ -374,13 +383,13 @@ Format:
     json_text = extract_json(raw)
     
     if json_text is None:
-        print("⚠️ JSON extraction failed, skipping paper")
+        print(f"⚠️ Summary JSON extraction failed (raw: {raw[:200]!r})")
         return {"main_idea": "", "key_contribution": "", "method_overview": "", "why_it_matters": ""}
 
     try:
-        return json.loads(json_text)
+        return json.loads(repair_json(json_text))
     except json.JSONDecodeError:
-        print("⚠️ JSON parse error, skipping paper")
+        print(f"⚠️ Summary JSON parse error (extracted: {json_text[:200]!r})")
         return {"main_idea": "", "key_contribution": "", "method_overview": "", "why_it_matters": ""}
 
 # ====================================================
@@ -432,16 +441,16 @@ Papers:
     else:
         json_text = None
     if json_text is None:
-        print("⚠️ Trend JSON extraction failed — using empty structure")
+        print(f"⚠️ Trend JSON extraction failed — using empty structure (raw: {raw[:200]!r})")
         return empty
     try:
-        result = json.loads(json_text)
+        result = json.loads(repair_json(json_text))
         if not isinstance(result, dict):
-            print("⚠️ Trend JSON is not an object — using empty structure")
+            print(f"⚠️ Trend JSON is not an object — using empty structure (type: {type(result).__name__})")
             return empty
         return result
     except json.JSONDecodeError:
-        print("⚠️ Trend JSON parse error — using empty structure")
+        print(f"⚠️ Trend JSON parse error — using empty structure (extracted: {json_text[:200]!r})")
         return empty
 
 

@@ -43,5 +43,6 @@ jobs:
           git add daily_reports/ README.md
           if ! git diff --cached --quiet; then
             git commit -m "auto: update AI report $(date +%Y-%m-%d)"
+            git pull --rebase
             git push
           fi
