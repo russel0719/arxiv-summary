@@ -8,22 +8,23 @@ import requests
 import feedparser
 import fitz
 from datetime import datetime, timedelta, timezone
-from groq import Groq, BadRequestError, RateLimitError
+from google import genai
+from google.genai import types
 from dotenv import load_dotenv
 
 # ====================================================
 # Setup
 # ====================================================
 load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-SCORE_MODEL_NAME = "moonshotai/kimi-k2-instruct"
-REPORT_MODEL_NAME = "openai/gpt-oss-20b"
+SCORE_MODEL_NAME = "gemini-3.1-flash-lite-preview"
+REPORT_MODEL_NAME = "gemini-3.1-flash-lite-preview"
 
-# Groq free tier: ~30 req/min per model, conservative intervals to stay safe
-SCORE_CALL_INTERVAL = 12    # ~5 req/min
-SUMMARY_CALL_INTERVAL = 20  # ~3 req/min per chunk
-REPORT_CALL_INTERVAL = 60   # 1 req/min for large outputs
+# Gemini free tier: conservative intervals to stay within rate limits
+SCORE_CALL_INTERVAL = 4     # ~15 req/min
+SUMMARY_CALL_INTERVAL = 6   # ~10 req/min per chunk
+REPORT_CALL_INTERVAL = 10   # ~6 req/min for large outputs
 
 CATEGORIES = ["cs.CV"]
 
@@ -105,34 +106,37 @@ token_monitor = TokenMonitor()
 # ====================================================
 def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0):
     try:
-        res = client.chat.completions.create(
+        res = client.models.generate_content(
             model=model_name,
-            messages=[
-                {"role": "system", "content": "You are a senior AI researcher."},
-                {"role": "user", "content": prompt},
-            ],
-            temperature=0.3,
-            max_tokens=max_tokens,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                system_instruction="You are a senior AI researcher.",
+                temperature=0.3,
+                max_output_tokens=max_tokens,
+            ),
         )
         time.sleep(interval)
-        token_monitor.log_usage(res.usage.total_tokens)
-        return res.choices[0].message.content
-    except BadRequestError as e:
-        if e.status_code == 413 and _retry < 3:
-            truncated = prompt[:int(len(prompt) * 0.75)]
-            print(f"⚠️ 413 Too Large — truncating prompt to 75% and retrying ({_retry + 1}/3)")
-            return call_llm(truncated, model_name, interval, max_tokens, _retry + 1)
-        raise
-    except RateLimitError as e:
+        if res.usage_metadata:
+            token_monitor.log_usage(res.usage_metadata.total_token_count or 0)
+        return res.text
+    except Exception as e:
         err_msg = str(e)
-        if "TPD" in err_msg or "per day" in err_msg.lower():
-            print(f"🚫 Daily token limit exceeded — aborting")
+        # 요청이 너무 큰 경우 (413 또는 payload size 관련)
+        if ("413" in err_msg or "too large" in err_msg.lower() or "payload" in err_msg.lower()) and _retry < 3:
+            truncated = prompt[:int(len(prompt) * 0.75)]
+            print(f"⚠️ Payload Too Large — truncating prompt to 75% and retrying ({_retry + 1}/3)")
+            return call_llm(truncated, model_name, interval, max_tokens, _retry + 1)
+        # 일일 한도 초과
+        if "quota" in err_msg.lower() and ("day" in err_msg.lower() or "daily" in err_msg.lower()):
+            print(f"🚫 Daily quota exceeded — aborting")
             raise
-        if _retry < 5:
-            wait = 60 * (_retry + 1)
-            print(f"⚠️ 429 Rate Limit — waiting {wait}s and retrying ({_retry + 1}/5)")
-            time.sleep(wait)
-            return call_llm(prompt, model_name, interval, max_tokens, _retry + 1)
+        # 요청 속도 제한 (429)
+        if "429" in err_msg or "rate" in err_msg.lower() or "quota" in err_msg.lower():
+            if _retry < 5:
+                wait = 60 * (_retry + 1)
+                print(f"⚠️ Rate Limit — waiting {wait}s and retrying ({_retry + 1}/5)")
+                time.sleep(wait)
+                return call_llm(prompt, model_name, interval, max_tokens, _retry + 1)
         raise
 
 # ====================================================
