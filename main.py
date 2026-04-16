@@ -20,9 +20,10 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 SCORE_MODEL_NAME = "gemini-3.1-flash-lite-preview"
 REPORT_MODEL_NAME = "gemini-3.1-flash-lite-preview"
+FALLBACK_MODEL_NAME = "gemini-2.5-flash-lite"
 
 # Gemini free tier: conservative intervals to stay within rate limits
-SCORE_CALL_INTERVAL = 4     # ~15 req/min
+SCORE_CALL_INTERVAL = 6     # ~10 req/min (preview model free tier limit)
 SUMMARY_CALL_INTERVAL = 6   # ~10 req/min per chunk
 REPORT_CALL_INTERVAL = 10   # ~6 req/min for large outputs
 
@@ -104,7 +105,7 @@ token_monitor = TokenMonitor()
 # ====================================================
 # Rate-limit-safe LLM call
 # ====================================================
-def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0):
+def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0, _fallback=False):
     try:
         res = client.models.generate_content(
             model=model_name,
@@ -137,6 +138,11 @@ def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0):
                 print(f"⚠️ Rate Limit — waiting {wait}s and retrying ({_retry + 1}/5)")
                 time.sleep(wait)
                 return call_llm(prompt, model_name, interval, max_tokens, _retry + 1)
+        # 서버 과부하 (503) — fallback 모델로 전환
+        if "503" in err_msg or "unavailable" in err_msg.lower():
+            if not _fallback:
+                print(f"⚠️ Server Unavailable (503) — switching to fallback model: {FALLBACK_MODEL_NAME}")
+                return call_llm(prompt, FALLBACK_MODEL_NAME, interval, max_tokens, _retry=0, _fallback=True)
         raise
 
 # ====================================================
