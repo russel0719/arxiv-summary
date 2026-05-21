@@ -23,9 +23,9 @@ REPORT_MODEL_NAME = "gemini-3.1-flash-lite-preview"
 FALLBACK_MODEL_NAME = "gemini-2.5-flash-lite"
 
 # Gemini free tier: conservative intervals to stay within rate limits
-SCORE_CALL_INTERVAL = 6     # ~10 req/min (preview model free tier limit)
-SUMMARY_CALL_INTERVAL = 6   # ~10 req/min per chunk
-REPORT_CALL_INTERVAL = 10   # ~6 req/min for large outputs
+SCORE_CALL_INTERVAL = 6  # ~10 req/min (preview model free tier limit)
+SUMMARY_CALL_INTERVAL = 6  # ~10 req/min per chunk
+REPORT_CALL_INTERVAL = 10  # ~6 req/min for large outputs
 
 CATEGORIES = ["cs.CV"]
 
@@ -43,38 +43,81 @@ TOP_K = 10
 # ====================================================
 CV_KEYWORDS = [
     # Core vision tasks
-    "detection", "segmentation", "recognition", "classification",
-    "tracking", "pose estimation", "depth estimation",
-    "optical flow", "stereo", "3d reconstruction", "point cloud",
-    "scene understanding", "semantic", "instance",
+    "detection",
+    "segmentation",
+    "recognition",
+    "classification",
+    "tracking",
+    "pose estimation",
+    "depth estimation",
+    "optical flow",
+    "stereo",
+    "3d reconstruction",
+    "point cloud",
+    "scene understanding",
+    "semantic",
+    "instance",
     # Generation & synthesis
-    "image generation", "video generation", "image synthesis",
-    "inpainting", "super-resolution", "style transfer",
-    "diffusion", "gan", "vae", "nerf", "3d generation",
+    "image generation",
+    "video generation",
+    "image synthesis",
+    "inpainting",
+    "super-resolution",
+    "style transfer",
+    "diffusion",
+    "gan",
+    "vae",
+    "nerf",
+    "3d generation",
     # Architecture & methods
-    "vision transformer", "vit", "convolution", "attention mechanism",
-    "self-supervised", "contrastive learning",
-    "few-shot", "zero-shot", "transfer learning",
-    "multimodal", "vision-language", "visual grounding",
+    "vision transformer",
+    "vit",
+    "convolution",
+    "attention mechanism",
+    "self-supervised",
+    "contrastive learning",
+    "few-shot",
+    "zero-shot",
+    "transfer learning",
+    "multimodal",
+    "vision-language",
+    "visual grounding",
     # Applications
-    "medical imaging", "autonomous driving",
-    "action recognition", "video understanding",
-    "face", "person re-identification", "anomaly detection",
-    "remote sensing", "satellite",
+    "medical imaging",
+    "autonomous driving",
+    "action recognition",
+    "video understanding",
+    "face",
+    "person re-identification",
+    "anomaly detection",
+    "remote sensing",
+    "satellite",
 ]
 
 NEGATIVE_KEYWORDS = [
     # Review / survey types
-    "survey", "review", "overview", "systematic review",
-    "meta-analysis", "tutorial", "position paper",
+    "survey",
+    "review",
+    "overview",
+    "systematic review",
+    "meta-analysis",
+    "tutorial",
+    "position paper",
     # Data & eval
-    "dataset", "benchmark", "challenge", "competition",
-    "leaderboard", "annotation tool",
+    "dataset",
+    "benchmark",
+    "challenge",
+    "competition",
+    "leaderboard",
+    "annotation tool",
     # Non-research
-    "technical report", "extended abstract", "workshop paper",
+    "technical report",
+    "extended abstract",
+    "workshop paper",
 ]
 
 POSITIVE_KEYWORDS = CV_KEYWORDS
+
 
 # ====================================================
 # Token Usage Monitoring
@@ -87,7 +130,7 @@ class TokenMonitor:
     def init_monitoring(self, name):
         self.usages[name] = 0
         self.current_name = name
-    
+
     def log_usage(self, tokens):
         if self.current_name is not None:
             self.usages[self.current_name] += tokens
@@ -95,12 +138,14 @@ class TokenMonitor:
     def reset(self):
         self.usages = {}
         self.current_name = None
-    
+
     def report(self):
         for name, count in self.usages.items():
             print(f"💡 {name} - Tokens used: {count}")
 
+
 token_monitor = TokenMonitor()
+
 
 # ====================================================
 # Rate-limit-safe LLM call
@@ -123,12 +168,20 @@ def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0, _fallback
     except Exception as e:
         err_msg = str(e)
         # 요청이 너무 큰 경우 (413 또는 payload size 관련)
-        if ("413" in err_msg or "too large" in err_msg.lower() or "payload" in err_msg.lower()) and _retry < 3:
-            truncated = prompt[:int(len(prompt) * 0.75)]
-            print(f"⚠️ Payload Too Large — truncating prompt to 75% and retrying ({_retry + 1}/3)")
+        if (
+            "413" in err_msg
+            or "too large" in err_msg.lower()
+            or "payload" in err_msg.lower()
+        ) and _retry < 3:
+            truncated = prompt[: int(len(prompt) * 0.75)]
+            print(
+                f"⚠️ Payload Too Large — truncating prompt to 75% and retrying ({_retry + 1}/3)"
+            )
             return call_llm(truncated, model_name, interval, max_tokens, _retry + 1)
         # 일일 한도 초과
-        if "quota" in err_msg.lower() and ("day" in err_msg.lower() or "daily" in err_msg.lower()):
+        if "quota" in err_msg.lower() and (
+            "day" in err_msg.lower() or "daily" in err_msg.lower()
+        ):
             print(f"🚫 Daily quota exceeded — aborting")
             raise
         # 요청 속도 제한 (429)
@@ -141,15 +194,26 @@ def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0, _fallback
         # 서버 과부하 (503) — fallback 모델로 전환
         if "503" in err_msg or "unavailable" in err_msg.lower():
             if not _fallback:
-                print(f"⚠️ Server Unavailable (503) — switching to fallback model: {FALLBACK_MODEL_NAME}")
-                return call_llm(prompt, FALLBACK_MODEL_NAME, interval, max_tokens, _retry=0, _fallback=True)
+                print(
+                    f"⚠️ Server Unavailable (503) — switching to fallback model: {FALLBACK_MODEL_NAME}"
+                )
+                return call_llm(
+                    prompt,
+                    FALLBACK_MODEL_NAME,
+                    interval,
+                    max_tokens,
+                    _retry=0,
+                    _fallback=True,
+                )
         raise
+
 
 # ====================================================
 # Checkpoint
 # ====================================================
 def _checkpoint_path(target_str):
     return os.path.join("logs", f"checkpoint_{target_str}.json")
+
 
 def save_checkpoint(target_str, stage, scored, summarized=None):
     def serialize(p):
@@ -164,6 +228,7 @@ def save_checkpoint(target_str, stage, scored, summarized=None):
     with open(_checkpoint_path(target_str), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False)
 
+
 def load_checkpoint(target_str):
     path = _checkpoint_path(target_str)
     if not os.path.exists(path):
@@ -171,10 +236,12 @@ def load_checkpoint(target_str):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
+
 def clear_checkpoint(target_str):
     path = _checkpoint_path(target_str)
     if os.path.exists(path):
         os.remove(path)
+
 
 # ====================================================
 # Date Utilities
@@ -186,6 +253,7 @@ def get_previous_business_day(ref: datetime):
     if wd in [5, 6]:
         return None
     return ref - timedelta(days=1)
+
 
 # ====================================================
 # arXiv Fetch (Pagination)
@@ -221,9 +289,9 @@ def fetch_all_papers(target_date_str, batch_size=200):
         stop = False
         for e in feed.entries:
             # arXiv published timestamp (UTC)
-            published_dt = datetime.strptime(
-                e.published, "%Y-%m-%dT%H:%M:%SZ"
-            ).replace(tzinfo=timezone.utc)
+            published_dt = datetime.strptime(e.published, "%Y-%m-%dT%H:%M:%SZ").replace(
+                tzinfo=timezone.utc
+            )
 
             if target_date <= published_dt < next_date:
                 pdf_url = next(
@@ -231,13 +299,15 @@ def fetch_all_papers(target_date_str, batch_size=200):
                 )
                 if pdf_url is None:
                     continue
-                papers.append({
-                    "id": e.id.split("/")[-1],
-                    "title": e.title.replace("\n", " "),
-                    "summary": e.summary,
-                    "pdf_url": pdf_url,
-                    "published": published_dt,
-                })
+                papers.append(
+                    {
+                        "id": e.id.split("/")[-1],
+                        "title": e.title.replace("\n", " "),
+                        "summary": e.summary,
+                        "pdf_url": pdf_url,
+                        "published": published_dt,
+                    }
+                )
 
             elif published_dt < target_date:
                 stop = True
@@ -249,6 +319,7 @@ def fetch_all_papers(target_date_str, batch_size=200):
         start += batch_size
 
     return papers
+
 
 # ====================================================
 # Cheap Keyword Filter
@@ -262,6 +333,7 @@ def cheap_filter(papers):
         if any(pk in text for pk in POSITIVE_KEYWORDS):
             out.append(p)
     return out
+
 
 # ====================================================
 # Batch Scoring
@@ -292,10 +364,13 @@ def extract_json(text: str):
 def repair_json(text: str) -> str:
     """LLM이 자주 출력하는 비표준 JSON 패턴을 수정"""
     # Python 리터럴 → JSON 표준
-    text = text.replace("None", "null").replace("True", "true").replace("False", "false")
+    text = (
+        text.replace("None", "null").replace("True", "true").replace("False", "false")
+    )
     # trailing comma before } or ]
     text = re.sub(r",\s*([}\]])", r"\1", text)
     return text
+
 
 def score_paper(paper):
     block = f"Title: {paper['title']}\nAbstract: {paper['summary']}"
@@ -338,6 +413,7 @@ Paper:
         print(f"⚠️ JSON parse error, skipping paper (extracted: {json_text[:200]!r})")
         return {"score": 0.0, "reason": ""}
 
+
 # ====================================================
 # PDF Processing
 # ====================================================
@@ -349,17 +425,21 @@ def download_pdf(p):
             f.write(r.content)
     return path
 
+
 def remove_pdf(p):
     path = os.path.join(PDF_DIR, f"{p['id']}.pdf")
     if os.path.exists(path):
         os.remove(path)
 
+
 def load_pdf_text(path):
     doc = fitz.open(path)
     return "\n".join(page.get_text() for page in doc)
 
+
 def chunk_text(text, size=2000):
     return textwrap.wrap(text, size)
+
 
 def summarize_paper(text):
     chunks = chunk_text(text)
@@ -373,7 +453,9 @@ Summarize this section focusing on method and contribution.
 Text:
 {c}
 """
-        partials.append(call_llm(prompt, REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL, max_tokens=1000))
+        partials.append(
+            call_llm(prompt, REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL, max_tokens=1000)
+        )
 
     final_prompt = f"""
 Create a concise research summary in Korean including following subjects.
@@ -389,18 +471,34 @@ Format:
   "main_idea": str, "key_contribution": str, "method_overview": str, "why_it_matters": str
 }}
 """
-    raw = call_llm(final_prompt + "\n" + "\n".join(partials), REPORT_MODEL_NAME, SUMMARY_CALL_INTERVAL, max_tokens=800)
+    raw = call_llm(
+        final_prompt + "\n" + "\n".join(partials),
+        REPORT_MODEL_NAME,
+        SUMMARY_CALL_INTERVAL,
+        max_tokens=800,
+    )
     json_text = extract_json(raw)
-    
+
     if json_text is None:
         print(f"⚠️ Summary JSON extraction failed (raw: {raw[:200]!r})")
-        return {"main_idea": "", "key_contribution": "", "method_overview": "", "why_it_matters": ""}
+        return {
+            "main_idea": "",
+            "key_contribution": "",
+            "method_overview": "",
+            "why_it_matters": "",
+        }
 
     try:
         return json.loads(repair_json(json_text))
     except json.JSONDecodeError:
         print(f"⚠️ Summary JSON parse error (extracted: {json_text[:200]!r})")
-        return {"main_idea": "", "key_contribution": "", "method_overview": "", "why_it_matters": ""}
+        return {
+            "main_idea": "",
+            "key_contribution": "",
+            "method_overview": "",
+            "why_it_matters": "",
+        }
+
 
 # ====================================================
 # Trend Synthesis
@@ -414,11 +512,9 @@ TREND_JSON_SCHEMA = """\
   "headline": str
 }"""
 
+
 def generate_trend_report(papers) -> dict:
-    merged = "\n\n".join(
-        f"Title: {p['title']}\n{p['text_summary']}"
-        for p in papers
-    )
+    merged = "\n\n".join(f"Title: {p['title']}\n{p['text_summary']}" for p in papers)
     prompt = f"""
 You are a senior computer vision researcher.
 Analyze today's top CV papers and extract structured trend information in Korean.
@@ -440,8 +536,11 @@ Papers:
 """
     raw = call_llm(prompt, REPORT_MODEL_NAME, REPORT_CALL_INTERVAL, max_tokens=3000)
     empty = {
-        "overall_trends": [], "task_classification": [],
-        "methodology_trends": [], "cross_domain": [], "headline": ""
+        "overall_trends": [],
+        "task_classification": [],
+        "methodology_trends": [],
+        "cross_domain": [],
+        "headline": "",
     }
     # 트렌드 응답은 반드시 object여야 함 — array 우선 추출을 피하고 object만 파싱
     if raw:
@@ -451,16 +550,22 @@ Papers:
     else:
         json_text = None
     if json_text is None:
-        print(f"⚠️ Trend JSON extraction failed — using empty structure (raw: {raw[:200]!r})")
+        print(
+            f"⚠️ Trend JSON extraction failed — using empty structure (raw: {raw[:200]!r})"
+        )
         return empty
     try:
         result = json.loads(repair_json(json_text))
         if not isinstance(result, dict):
-            print(f"⚠️ Trend JSON is not an object — using empty structure (type: {type(result).__name__})")
+            print(
+                f"⚠️ Trend JSON is not an object — using empty structure (type: {type(result).__name__})"
+            )
             return empty
         return result
     except json.JSONDecodeError:
-        print(f"⚠️ Trend JSON parse error — using empty structure (extracted: {json_text[:200]!r})")
+        print(
+            f"⚠️ Trend JSON parse error — using empty structure (extracted: {json_text[:200]!r})"
+        )
         return empty
 
 
@@ -477,7 +582,13 @@ def assemble_report(trend: dict, top_papers: list, date_str: str) -> str:
         table_row("------", "---------", "---------"),
     ]
     for r in trend.get("overall_trends", []):
-        lines.append(table_row(r.get("field", ""), r.get("key_issue", ""), r.get("representative_paper", "")))
+        lines.append(
+            table_row(
+                r.get("field", ""),
+                r.get("key_issue", ""),
+                r.get("representative_paper", ""),
+            )
+        )
     if trend.get("headline"):
         lines.append(f"\n> 핵심 메시지: {trend['headline']}\n")
 
@@ -488,7 +599,13 @@ def assemble_report(trend: dict, top_papers: list, date_str: str) -> str:
         table_row("------", "---------", "---------"),
     ]
     for r in trend.get("task_classification", []):
-        lines.append(table_row(r.get("task", ""), r.get("key_content", ""), r.get("representative_paper", "")))
+        lines.append(
+            table_row(
+                r.get("task", ""),
+                r.get("key_content", ""),
+                r.get("representative_paper", ""),
+            )
+        )
 
     # 3. 방법론 트렌드
     lines += [
@@ -497,7 +614,13 @@ def assemble_report(trend: dict, top_papers: list, date_str: str) -> str:
         table_row("------", "---------", "---------"),
     ]
     for r in trend.get("methodology_trends", []):
-        lines.append(table_row(r.get("methodology", ""), r.get("application_case", ""), r.get("representative_paper", "")))
+        lines.append(
+            table_row(
+                r.get("methodology", ""),
+                r.get("application_case", ""),
+                r.get("representative_paper", ""),
+            )
+        )
 
     # 4. 크로스 도메인 융합
     lines += [
@@ -506,7 +629,13 @@ def assemble_report(trend: dict, top_papers: list, date_str: str) -> str:
         table_row("---------", "-----------", "---------"),
     ]
     for r in trend.get("cross_domain", []):
-        lines.append(table_row(r.get("fusion_field", ""), r.get("key_point", ""), r.get("expected_effect", "")))
+        lines.append(
+            table_row(
+                r.get("fusion_field", ""),
+                r.get("key_point", ""),
+                r.get("expected_effect", ""),
+            )
+        )
 
     lines.append("\n---\n")
 
@@ -540,6 +669,7 @@ def update_readme(report: str, date_str: str, report_path: str):
     )
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
+
 
 # ====================================================
 # Main Pipeline
@@ -590,15 +720,16 @@ def run(date: str = None):
 
     # ── Summarization stage ────────────────────────
     already_summarized = {
-        p["id"]: p for p in (cp or {}).get("summarized", [])
-        if "text_summary" in p
+        p["id"]: p for p in (cp or {}).get("summarized", []) if "text_summary" in p
     }
 
     token_monitor.init_monitoring("summarization")
     # 점수가 낮은 논문(survey/dataset 등으로 판단된 것) 제외 후 상위 TOP_K 선택
     qualified = [p for p in scored if p.get("score", 0) >= 5.0]
     top_papers = sorted(qualified, key=lambda x: x["score"], reverse=True)[:TOP_K]
-    print(f"🏆 Qualified papers (score >= 5.0): {len(qualified)}, selecting top {len(top_papers)}")
+    print(
+        f"🏆 Qualified papers (score >= 5.0): {len(qualified)}, selecting top {len(top_papers)}"
+    )
     summarized = []
     for p in top_papers:
         if p["id"] in already_summarized:
@@ -608,12 +739,14 @@ def run(date: str = None):
         pdf = download_pdf(p)
         text = load_pdf_text(pdf)
         summary = summarize_paper(text)
-        p["text_summary"] = "\n".join([
-            f"- Main Idea: {summary['main_idea']}",
-            f"- Key Contribution: {summary['key_contribution']}",
-            f"- Method Overview: {summary['method_overview']}",
-            f"- Why It Matters: {summary['why_it_matters']}",
-        ])
+        p["text_summary"] = "\n".join(
+            [
+                f"- Main Idea: {summary['main_idea']}",
+                f"- Key Contribution: {summary['key_contribution']}",
+                f"- Method Overview: {summary['method_overview']}",
+                f"- Why It Matters: {summary['why_it_matters']}",
+            ]
+        )
         p["final_summary"] = summary
         remove_pdf(p)
         summarized.append(p)
@@ -644,12 +777,94 @@ def run(date: str = None):
     clear_checkpoint(target_str)
     token_monitor.report()
 
+
+# ====================================================
+# From-Selection Mode
+# ====================================================
+def run_from_selection(selection_file="selected_papers.json"):
+    with open(selection_file, encoding="utf-8") as f:
+        data = json.load(f)
+
+    target = datetime.strptime(data["date"], "%Y-%m-%d")
+    target_str = target.strftime("%Y%m%d")
+    scored = data["papers"]
+    print(f"📅 From selection: {data['date']}, {len(scored)} papers")
+
+    cp = load_checkpoint(target_str)
+    already_summarized = {
+        p["id"]: p for p in (cp or {}).get("summarized", []) if "text_summary" in p
+    }
+
+    token_monitor.init_monitoring("summarization")
+    qualified = [p for p in scored if p.get("score", 0) >= 5.0]
+    top_papers = sorted(qualified, key=lambda x: x["score"], reverse=True)[:TOP_K]
+    print(f"🏆 Selected papers: {len(top_papers)}")
+
+    summarized = []
+    for p in top_papers:
+        if p["id"] in already_summarized:
+            summarized.append(already_summarized[p["id"]])
+            print(f"  ↩️  Skipping (cached): {p['title'][:60]}")
+            continue
+        pdf = download_pdf(p)
+        text = load_pdf_text(pdf)
+        summary = summarize_paper(text)
+        p["text_summary"] = "\n".join(
+            [
+                f"- Main Idea: {summary['main_idea']}",
+                f"- Key Contribution: {summary['key_contribution']}",
+                f"- Method Overview: {summary['method_overview']}",
+                f"- Why It Matters: {summary['why_it_matters']}",
+            ]
+        )
+        p["final_summary"] = summary
+        remove_pdf(p)
+        summarized.append(p)
+        save_checkpoint(target_str, "summarization", scored, summarized)
+
+    top_papers = summarized
+    print(f"📰 Summarization completed")
+
+    token_monitor.init_monitoring("report_generation")
+    trend_data = generate_trend_report(top_papers)
+
+    date_str = target.strftime("%Y-%m-%d")
+    report = assemble_report(trend_data, top_papers, date_str)
+
+    year_month_dir = os.path.join(
+        OUTPUT_DIR, target.strftime("%Y"), target.strftime("%m")
+    )
+    os.makedirs(year_month_dir, exist_ok=True)
+    out_path = os.path.join(year_month_dir, f"CV_Daily_Trend_{date_str}.md")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(report)
+
+    print(f"✅ Report saved: {out_path}")
+    update_readme(report, date_str, out_path)
+    print(f"✅ README.md updated")
+    clear_checkpoint(target_str)
+    token_monitor.report()
+
+
 # ====================================================
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="AI Research Daily Trend Report Generator")
+    parser = argparse.ArgumentParser(
+        description="AI Research Daily Trend Report Generator"
+    )
     parser.add_argument("--date", type=str, help="Target date in YYYYMMDD format")
+    parser.add_argument(
+        "--from-selection",
+        type=str,
+        nargs="?",
+        const="selected_papers.json",
+        metavar="FILE",
+        help="Run from pre-selected papers JSON file",
+    )
     args = parser.parse_args()
-    if args.date:
+
+    if args.from_selection:
+        run_from_selection(args.from_selection)
+    elif args.date:
         run(args.date)
     else:
         run()

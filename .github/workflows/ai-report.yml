@@ -30,7 +30,13 @@ jobs:
         run: |
           LOG_FILE="ai_report_$(date +%Y%m%d).log"
           echo "LOG_FILE=$LOG_FILE" >> $GITHUB_ENV
-          uv run python main.py > $LOG_FILE 2>&1
+          if [ -f selected_papers.json ]; then
+            echo "Using pre-selected papers from Claude agent..."
+            uv run python main.py --from-selection > $LOG_FILE 2>&1
+          else
+            echo "No selection file, running full pipeline..."
+            uv run python main.py > $LOG_FILE 2>&1
+          fi
 
       - name: Print log
         if: always()
