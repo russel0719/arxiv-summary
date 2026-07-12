@@ -38,13 +38,21 @@ if [ -f "digests/$DATE.md" ]; then
   if [ "${DIGEST_SKIP_PUSH:-0}" = "1" ]; then
     echo "[$(date '+%F %T')] DIGEST_SKIP_PUSH=1 → skip git push" >> "$LOG"
   else
-    # 결과물을 원격 repo에 반영 (원격 push 인증은 머신에 미리 설정되어 있어야 함)
+    # 결과물을 원격 repo에 반영.
+    # cron 무인 push: 무암호 deploy key가 있으면 SSH로 push (origin은 HTTPS 유지 → gh/수동 git 그대로)
+    DEPLOY_KEY="$HOME/.ssh/id_arxiv_digest"
+    if [ -f "$DEPLOY_KEY" ]; then
+      export GIT_SSH_COMMAND="ssh -i $DEPLOY_KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+      REMOTE="git@github.com:russel0719/arxiv-summary.git"
+    else
+      REMOTE="origin"
+    fi
     git -C "$DIR" add "digests/$DATE.md"
     if ! git -C "$DIR" diff --cached --quiet; then
       echo "[$(date '+%F %T')] pushing to remote..." >> "$LOG"
       git -C "$DIR" commit -m "auto: update digest $DATE" >> "$LOG" 2>&1
-      git -C "$DIR" pull --rebase --autostash >> "$LOG" 2>&1
-      git -C "$DIR" push >> "$LOG" 2>&1
+      git -C "$DIR" pull --rebase --autostash "$REMOTE" main >> "$LOG" 2>&1
+      git -C "$DIR" push "$REMOTE" HEAD:main >> "$LOG" 2>&1
     fi
   fi
 else
