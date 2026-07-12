@@ -1,8 +1,11 @@
 name: AI Report Scheduler
 
 on:
-  schedule:
-    - cron: "0 8 * * 1-5" # KST 17:00 (arXiv 발표 ~UTC 01:00 이후 충분한 여유)
+  # arXiv digest는 로컬/원격 cron 머신(src/run_digest.sh)으로 전환됨.
+  # 이중 실행·커밋 충돌 방지를 위해 스케줄 자동 실행을 비활성화하고
+  # 수동 실행(workflow_dispatch)만 남긴다. Gemini 파이프라인은 fallback으로 보존.
+  # schedule:
+  #   - cron: "0 8 * * 1-5" # KST 17:00 (arXiv 발표 ~UTC 01:00 이후 충분한 여유)
   workflow_dispatch:
 
 permissions:
@@ -46,6 +49,8 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          git rm --cached selected_papers.json 2>/dev/null || true
+          rm -f selected_papers.json
           git add daily_reports/ README.md
           if ! git diff --cached --quiet; then
             git commit -m "auto: update AI report $(date +%Y-%m-%d)"
