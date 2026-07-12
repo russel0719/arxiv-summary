@@ -13,6 +13,10 @@ wheels/
 logs/
 pdfs/
 
+# arXiv digest working files (결과물 digests/ 는 커밋 대상)
+today_papers.json
+seen_ids.txt
+
 # Credentials
 .env
 
