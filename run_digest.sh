@@ -26,7 +26,8 @@ fi
 echo "[$(date '+%F %T')] running claude..." >> "$LOG"
 
 claude -p "CLAUDE.md의 요약 작업 규칙에 따라 today_papers.json을 처리하고 \
-digests/$DATE.md 파일을 생성해줘." \
+digests/$DATE.md 파일을 생성해줘. 파일 생성만 하고 git add/commit/push 등 git 명령은 \
+절대 실행하지 마 — 커밋과 푸시는 이 스크립트가 처리한다." \
   --allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)" \
   --max-turns 40 \
   >> "$LOG" 2>&1
@@ -47,13 +48,13 @@ if [ -f "digests/$DATE.md" ]; then
     else
       REMOTE="origin"
     fi
+    # claude가 (settings.local.json 허용으로) 직접 커밋하는 경우까지 대비:
+    # 스테이징분이 있으면 커밋(없으면 no-op), 그 뒤 로컬이 앞서면 무조건 push.
     git -C "$DIR" add "digests/$DATE.md"
-    if ! git -C "$DIR" diff --cached --quiet; then
-      echo "[$(date '+%F %T')] pushing to remote..." >> "$LOG"
-      git -C "$DIR" commit -m "auto: update digest $DATE" >> "$LOG" 2>&1
-      git -C "$DIR" pull --rebase --autostash "$REMOTE" main >> "$LOG" 2>&1
-      git -C "$DIR" push "$REMOTE" HEAD:main >> "$LOG" 2>&1
-    fi
+    git -C "$DIR" commit -m "auto: update digest $DATE" >> "$LOG" 2>&1 || true
+    echo "[$(date '+%F %T')] pushing to remote..." >> "$LOG"
+    git -C "$DIR" pull --rebase --autostash "$REMOTE" main >> "$LOG" 2>&1
+    git -C "$DIR" push "$REMOTE" HEAD:main >> "$LOG" 2>&1
   fi
 else
   echo "[$(date '+%F %T')] WARNING: digest file not created. check log." >> "$LOG"
