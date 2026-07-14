@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""arXiv cs.CV 신규 논문 수집 스크립트.
+"""arXiv cs.CV 신규 공개(announcement) 논문 수집 스크립트.
 
-- arXiv API에서 최근 제출된 cs.CV 논문을 가져온다.
+- arXiv RSS 공개 피드에서 최근 공개된 cs.CV 논문(announce_type: new, cross)을 가져온다.
+  (제출일 기준이 아니라 '공개일' 기준이라, 주말 직후에도 그날 공개분을 놓치지 않는다.)
 - seen_ids.txt로 이미 처리한 논문을 중복 제거한다.
 - 결과를 today_papers.json으로 저장한다 (Claude Code가 읽을 입력 파일).
 
@@ -14,19 +15,19 @@ import sys
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 SEEN_FILE = BASE_DIR / "seen_ids.txt"
 OUT_FILE = BASE_DIR / "today_papers.json"
 
-# 수집 대상 카테고리 (필요시 cs.LG, cs.AI 등 추가)
+# 수집 대상 카테고리 (필요시 cs.LG, cs.AI 등 추가 — 각 카테고리별 RSS 피드)
 CATEGORIES = ["cs.CV"]
-MAX_RESULTS = 300          # 하루 cs.CV 신규 제출은 보통 100~250편
-LOOKBACK_HOURS = 36        # 최근 36시간 내 제출분만 (주말 건너뛴 월요일은 아래에서 확장)
+# 수집할 공개 유형: new(순수 신규 제출), cross(타 분야에서 cs.CV로 cross-list)
+WANT_TYPES = {"new", "cross"}
 
-ATOM_NS = {"atom": "http://www.w3.org/2005/Atom"}
+DC = "{http://purl.org/dc/elements/1.1/}"
+ARX = "{http://arxiv.org/schemas/atom}"
 
 
 def load_seen() -> set:
@@ -41,33 +42,40 @@ def save_seen(seen: set) -> None:
     SEEN_FILE.write_text("\n".join(ids))
 
 
+def _clean(text: str) -> str:
+    return re.sub(r"\s+", " ", text or "").strip()
+
+
 def fetch_category(cat: str) -> list:
-    url = (
-        "http://export.arxiv.org/api/query?"
-        f"search_query=cat:{cat}"
-        f"&sortBy=submittedDate&sortOrder=descending&max_results={MAX_RESULTS}"
-    )
+    url = f"http://export.arxiv.org/rss/{cat}"
     req = urllib.request.Request(url, headers={"User-Agent": "arxiv-digest/1.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         data = resp.read()
     root = ET.fromstring(data)
+    channel = root.find("channel")
+    if channel is None:
+        return []
+    pub = channel.findtext("pubDate", "")  # 공개(announcement) 일자
+
     entries = []
-    for e in root.findall("atom:entry", ATOM_NS):
-        arxiv_id = e.findtext("atom:id", "", ATOM_NS).rsplit("/", 1)[-1]
-        published = e.findtext("atom:published", "", ATOM_NS)
+    for it in channel.findall("item"):
+        if it.findtext(f"{ARX}announce_type", "") not in WANT_TYPES:
+            continue
+        arxiv_id = it.findtext("link", "").rsplit("/", 1)[-1]
+        # description 형식: "arXiv:ID Announce Type: new  Abstract: <초록>"
+        desc = it.findtext("description", "")
+        m = re.search(r"Abstract:\s*(.*)", desc, re.DOTALL)
+        abstract = _clean(m.group(1)) if m else _clean(desc)
+        creator = it.findtext(f"{DC}creator", "")
         entries.append(
             {
                 "id": arxiv_id,
-                "title": re.sub(r"\s+", " ", e.findtext("atom:title", "", ATOM_NS)).strip(),
-                "abstract": re.sub(r"\s+", " ", e.findtext("atom:summary", "", ATOM_NS)).strip(),
-                "authors": [
-                    a.findtext("atom:name", "", ATOM_NS)
-                    for a in e.findall("atom:author", ATOM_NS)
-                ],
-                "published": published,
-                "categories": [
-                    c.get("term") for c in e.findall("atom:category", ATOM_NS)
-                ],
+                "title": _clean(it.findtext("title", "")),
+                "abstract": abstract,
+                "authors": [a.strip() for a in creator.split(",") if a.strip()],
+                "published": pub,
+                "announce_type": it.findtext(f"{ARX}announce_type", ""),
+                "categories": [c.text for c in it.findall("category") if c.text],
                 "url": f"https://arxiv.org/abs/{arxiv_id}",
             }
         )
@@ -75,13 +83,6 @@ def fetch_category(cat: str) -> list:
 
 
 def main() -> int:
-    now = datetime.now(timezone.utc)
-    lookback = LOOKBACK_HOURS
-    # 월요일(KST 기준)에는 주말 제출분까지 포함
-    if now.astimezone(timezone(timedelta(hours=9))).weekday() == 0:
-        lookback = 84
-
-    cutoff = now - timedelta(hours=lookback)
     seen = load_seen()
 
     papers = []
@@ -94,12 +95,6 @@ def main() -> int:
     for p in papers:
         base_id = p["id"].split("v")[0]
         if base_id in seen or base_id in dedup:
-            continue
-        try:
-            pub = datetime.fromisoformat(p["published"].replace("Z", "+00:00"))
-        except ValueError:
-            continue
-        if pub < cutoff:
             continue
         dedup.add(base_id)
         fresh.append(p)
