@@ -12,7 +12,7 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
 ├── run_digest.sh         # cron이 호출하는 실행 스크립트 (fetch → claude → git push)
 ├── seen_ids.txt          # 중복 제거용 (자동 생성, gitignore)
 ├── today_papers.json     # 당일 수집 결과 (자동 생성, gitignore)
-├── digests/              # 최종 산출물: YYYY-MM-DD.md (git에 커밋·push)
+├── reports/              # 최종 산출물: YYYY/MM/report_DD.md (git에 커밋·push)
 ├── logs/                 # 실행 로그 (gitignore)
 └── main.py               # (legacy) Gemini API 기반 파이프라인 — 수동 실행용으로 보존
 ```
@@ -43,7 +43,7 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
 
     ```bash
     DIGEST_SKIP_PUSH=1 ./run_digest.sh
-    cat digests/$(TZ=Asia/Seoul date +%F).md
+    cat reports/$(TZ=Asia/Seoul date '+%Y/%m/report_%d').md
     ```
 
     같은 날 다시 테스트하려면 중복 제거 상태를 초기화한다:

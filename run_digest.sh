@@ -5,12 +5,14 @@ set -uo pipefail
 
 # 모든 날짜/시각을 KST로 통일 (fetch_arxiv.py는 내부적으로 UTC를 쓰므로 영향 없음)
 export TZ="Asia/Seoul"
-DATE="$(date +%F)"
+DATE="$(date +%F)"                                  # YYYY-MM-DD
+YEAR="$(date +%Y)"; MONTH="$(date +%m)"; DAY="$(date +%d)"
+REPORT="reports/$YEAR/$MONTH/report_$DAY.md"
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DIR"
 
-mkdir -p digests logs
+mkdir -p "reports/$YEAR/$MONTH" logs
 LOG="logs/$DATE.log"
 
 # claude가 PATH에 없을 수 있으므로 cron 환경 대비 (npm global 경로 등 환경에 맞게 수정)
@@ -26,14 +28,14 @@ fi
 echo "[$(date '+%F %T')] running claude..." >> "$LOG"
 
 claude -p "CLAUDE.md의 요약 작업 규칙에 따라 today_papers.json을 처리하고 \
-digests/$DATE.md 파일을 생성해줘. 파일 생성만 하고 git add/commit/push 등 git 명령은 \
+$REPORT 파일을 생성해줘. 파일 생성만 하고 git add/commit/push 등 git 명령은 \
 절대 실행하지 마 — 커밋과 푸시는 이 스크립트가 처리한다." \
   --allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)" \
   --max-turns 40 \
   >> "$LOG" 2>&1
 
-if [ -f "digests/$DATE.md" ]; then
-  echo "[$(date '+%F %T')] done: digests/$DATE.md" >> "$LOG"
+if [ -f "$REPORT" ]; then
+  echo "[$(date '+%F %T')] done: $REPORT" >> "$LOG"
 
   # 테스트 시 DIGEST_SKIP_PUSH=1 로 원격 push 생략 가능
   if [ "${DIGEST_SKIP_PUSH:-0}" = "1" ]; then
@@ -50,12 +52,12 @@ if [ -f "digests/$DATE.md" ]; then
     fi
     # claude가 (settings.local.json 허용으로) 직접 커밋하는 경우까지 대비:
     # 스테이징분이 있으면 커밋(없으면 no-op), 그 뒤 로컬이 앞서면 무조건 push.
-    git -C "$DIR" add "digests/$DATE.md"
-    git -C "$DIR" commit -m "auto: update digest $DATE" >> "$LOG" 2>&1 || true
+    git -C "$DIR" add "$REPORT"
+    git -C "$DIR" commit -m "auto: update report $DATE" >> "$LOG" 2>&1 || true
     echo "[$(date '+%F %T')] pushing to remote..." >> "$LOG"
     git -C "$DIR" pull --rebase --autostash "$REMOTE" main >> "$LOG" 2>&1
     git -C "$DIR" push "$REMOTE" HEAD:main >> "$LOG" 2>&1
   fi
 else
-  echo "[$(date '+%F %T')] WARNING: digest file not created. check log." >> "$LOG"
+  echo "[$(date '+%F %T')] WARNING: report file not created. check log." >> "$LOG"
 fi
