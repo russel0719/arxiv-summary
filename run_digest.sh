@@ -37,6 +37,9 @@ $REPORT 파일을 생성해줘. 파일 생성만 하고 git add/commit/push 등 
 if [ -f "$REPORT" ]; then
   echo "[$(date '+%F %T')] done: $REPORT" >> "$LOG"
 
+  # 사이트(index.html)가 읽는 리포트 인덱스 갱신
+  uv run python build_manifest.py >> "$LOG" 2>&1 || true
+
   # 테스트 시 DIGEST_SKIP_PUSH=1 로 원격 push 생략 가능
   if [ "${DIGEST_SKIP_PUSH:-0}" = "1" ]; then
     echo "[$(date '+%F %T')] DIGEST_SKIP_PUSH=1 → skip git push" >> "$LOG"
@@ -52,7 +55,7 @@ if [ -f "$REPORT" ]; then
     fi
     # claude가 (settings.local.json 허용으로) 직접 커밋하는 경우까지 대비:
     # 스테이징분이 있으면 커밋(없으면 no-op), 그 뒤 로컬이 앞서면 무조건 push.
-    git -C "$DIR" add "$REPORT"
+    git -C "$DIR" add "$REPORT" manifest.json
     git -C "$DIR" commit -m "auto: update report $DATE" >> "$LOG" 2>&1 || true
     echo "[$(date '+%F %T')] pushing to remote..." >> "$LOG"
     git -C "$DIR" pull --rebase --autostash "$REMOTE" main >> "$LOG" 2>&1
