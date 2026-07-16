@@ -1,542 +1,1588 @@
-[
- {
-  "path": "reports/2026/07/report_16.md",
-  "date": "2026-07-16",
-  "title": "arXiv cs.CV Daily Digest — 2026-07-16 (KST)",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/report_15.md",
-  "date": "2026-07-15",
-  "title": "arXiv cs.CV Daily Digest — 2026-07-15 (KST)",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/report_14.md",
-  "date": "2026-07-14",
-  "title": "arXiv cs.CV Daily Digest — 2026-07-14 (KST)",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/CV_Daily_Trend_2026-07-09.md",
-  "date": "2026-07-09",
-  "title": "CV 연구 동향 보고서 — 2026-07-09",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/CV_Daily_Trend_2026-07-08.md",
-  "date": "2026-07-08",
-  "title": "CV 연구 동향 보고서 — 2026-07-08",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/CV_Daily_Trend_2026-07-07.md",
-  "date": "2026-07-07",
-  "title": "CV 연구 동향 보고서 — 2026-07-07",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/CV_Daily_Trend_2026-07-06.md",
-  "date": "2026-07-06",
-  "title": "CV 연구 동향 보고서 — 2026-07-06",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/CV_Daily_Trend_2026-07-02.md",
-  "date": "2026-07-02",
-  "title": "CV 연구 동향 보고서 — 2026-07-02",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/07/CV_Daily_Trend_2026-07-01.md",
-  "date": "2026-07-01",
-  "title": "CV 연구 동향 보고서 — 2026-07-01",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-30.md",
-  "date": "2026-06-30",
-  "title": "CV 연구 동향 보고서 — 2026-06-30",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-29.md",
-  "date": "2026-06-29",
-  "title": "CV 연구 동향 보고서 — 2026-06-29",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-26.md",
-  "date": "2026-06-26",
-  "title": "CV 연구 동향 보고서 — 2026-06-26",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-24.md",
-  "date": "2026-06-24",
-  "title": "CV 연구 동향 보고서 — 2026-06-24",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-23.md",
-  "date": "2026-06-23",
-  "title": "CV 연구 동향 보고서 — 2026-06-23",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-22.md",
-  "date": "2026-06-22",
-  "title": "CV 연구 동향 보고서 — 2026-06-22",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-18.md",
-  "date": "2026-06-18",
-  "title": "CV 연구 동향 보고서 — 2026-06-18",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-17.md",
-  "date": "2026-06-17",
-  "title": "CV 연구 동향 보고서 — 2026-06-17",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-16.md",
-  "date": "2026-06-16",
-  "title": "CV 연구 동향 보고서 — 2026-06-16",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-15.md",
-  "date": "2026-06-15",
-  "title": "CV 연구 동향 보고서 — 2026-06-15",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-12.md",
-  "date": "2026-06-12",
-  "title": "CV 연구 동향 보고서 — 2026-06-12",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-11.md",
-  "date": "2026-06-11",
-  "title": "CV 연구 동향 보고서 — 2026-06-11",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-10.md",
-  "date": "2026-06-10",
-  "title": "CV 연구 동향 보고서 — 2026-06-10",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-09.md",
-  "date": "2026-06-09",
-  "title": "CV 연구 동향 보고서 — 2026-06-09",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-08.md",
-  "date": "2026-06-08",
-  "title": "CV 연구 동향 보고서 — 2026-06-08",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-05.md",
-  "date": "2026-06-05",
-  "title": "CV 연구 동향 보고서 — 2026-06-05",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/06/CV_Daily_Trend_2026-06-04.md",
-  "date": "2026-06-04",
-  "title": "CV 연구 동향 보고서 — 2026-06-04",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-27.md",
-  "date": "2026-05-27",
-  "title": "CV 연구 동향 보고서 — 2026-05-27",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-22.md",
-  "date": "2026-05-22",
-  "title": "CV 연구 동향 보고서 — 2026-05-22",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-20.md",
-  "date": "2026-05-20",
-  "title": "CV 연구 동향 보고서 — 2026-05-20",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-18.md",
-  "date": "2026-05-18",
-  "title": "CV 연구 동향 보고서 — 2026-05-18",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-14.md",
-  "date": "2026-05-14",
-  "title": "CV 연구 동향 보고서 — 2026-05-14",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-13.md",
-  "date": "2026-05-13",
-  "title": "CV 연구 동향 보고서 — 2026-05-13",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-08.md",
-  "date": "2026-05-08",
-  "title": "CV 연구 동향 보고서 — 2026-05-08",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/05/CV_Daily_Trend_2026-05-01.md",
-  "date": "2026-05-01",
-  "title": "CV 연구 동향 보고서 — 2026-05-01",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-29.md",
-  "date": "2026-04-29",
-  "title": "CV 연구 동향 보고서 — 2026-04-29",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-27.md",
-  "date": "2026-04-27",
-  "title": "CV 연구 동향 보고서 — 2026-04-27",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-23.md",
-  "date": "2026-04-23",
-  "title": "CV 연구 동향 보고서 — 2026-04-23",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-22.md",
-  "date": "2026-04-22",
-  "title": "CV 연구 동향 보고서 — 2026-04-22",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-21.md",
-  "date": "2026-04-21",
-  "title": "CV 연구 동향 보고서 — 2026-04-21",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-20.md",
-  "date": "2026-04-20",
-  "title": "CV 연구 동향 보고서 — 2026-04-20",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-17.md",
-  "date": "2026-04-17",
-  "title": "CV 연구 동향 보고서 — 2026-04-17",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-16.md",
-  "date": "2026-04-16",
-  "title": "CV 연구 동향 보고서 — 2026-04-16",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/CV_Daily_Trend_2026-04-15.md",
-  "date": "2026-04-15",
-  "title": "CV 연구 동향 보고서 — 2026-04-15",
-  "cat": "CV"
- },
- {
-  "path": "reports/2026/04/AI_Daily_Trend_2026-04-08.md",
-  "date": "2026-04-08",
-  "title": "📅 2026‑04‑09 AI 연구 트렌드 일간 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/04/AI_Daily_Trend_2026-04-07.md",
-  "date": "2026-04-07",
-  "title": "📅 2026년 4월 8일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/04/AI_Daily_Trend_2026-04-03.md",
-  "date": "2026-04-03",
-  "title": "📅 2026년 4월 6일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-26.md",
-  "date": "2026-03-26",
-  "title": "📅 2026년 3월 27일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-25.md",
-  "date": "2026-03-25",
-  "title": "📅 2026년 3월 26일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-24.md",
-  "date": "2026-03-24",
-  "title": "📅 2026년 3월 25일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-20.md",
-  "date": "2026-03-20",
-  "title": "📅 2026년 3월 23일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-19.md",
-  "date": "2026-03-19",
-  "title": "📅 2026‑03‑20 AI 연구 동향 일간 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-18.md",
-  "date": "2026-03-18",
-  "title": "📅 2026년 3월 19일 AI 연구 트렌드 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-17.md",
-  "date": "2026-03-17",
-  "title": "$D^3$‑RSMDE: 40× Faster and High‑Fidelity Remote Sensing Monocular Depth Estimation",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-13.md",
-  "date": "2026-03-13",
-  "title": "**Steve‑Evolving: Open‑World Embodied Self‑Evolution via Fine‑Grained Diagnosis and Dual‑Track Knowledge Distillation**",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-12.md",
-  "date": "2026-03-12",
-  "title": "📅 일간 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-11.md",
-  "date": "2026-03-11",
-  "title": "📅 2026년 3월 12일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-10.md",
-  "date": "2026-03-10",
-  "title": "📅 2026‑03‑11 AI 연구 트렌드 요약 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/03/AI_Daily_Trend_2026-03-06.md",
-  "date": "2026-03-06",
-  "title": "📅 2026‑03‑09 AI 연구 트렌드 요약 (한국어)",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-27.md",
-  "date": "2026-02-27",
-  "title": "AI 연구 동향 보고서 (2026년 3월 2일)",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-26.md",
-  "date": "2026-02-26",
-  "title": "📅 2026년 2월 27일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-25.md",
-  "date": "2026-02-25",
-  "title": "📅 2026년 2월 26일 AI 연구 트렌드 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-24.md",
-  "date": "2026-02-24",
-  "title": "📅 2026‑02‑25 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-23.md",
-  "date": "2026-02-23",
-  "title": "📅 2026‑02‑24 AI 연구 트렌드 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-20.md",
-  "date": "2026-02-20",
-  "title": "📅 2026년 2월 23일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-19.md",
-  "date": "2026-02-19",
-  "title": "📅 2026년 02월 20일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-18.md",
-  "date": "2026-02-18",
-  "title": "📅 2026‑02‑19 AI 연구 트렌드 일간 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-17.md",
-  "date": "2026-02-17",
-  "title": "📅 2026‑02‑18 AI 연구 동향 보고서 (한국어)",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-16.md",
-  "date": "2026-02-16",
-  "title": "📅 2026년 02월 17일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-13.md",
-  "date": "2026-02-13",
-  "title": "📅 2026년 2월 16일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-12.md",
-  "date": "2026-02-12",
-  "title": "2026년 2월 13일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-11.md",
-  "date": "2026-02-11",
-  "title": "📅 2026‑02‑12 AI 연구 동향 일간 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-10.md",
-  "date": "2026-02-10",
-  "title": "📅 2026년 02월 11일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-09.md",
-  "date": "2026-02-09",
-  "title": "Thermodynamic Isomorphism of Transformers: A Lagrangian Approach to Attention Dynamics",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-06.md",
-  "date": "2026-02-06",
-  "title": "From Kepler to Newton: Inductive Biases Guide Learned World Models in Transformers",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-05.md",
-  "date": "2026-02-05",
-  "title": "📅 2026년 02월 06일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-04.md",
-  "date": "2026-02-04",
-  "title": "오늘의 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-03.md",
-  "date": "2026-02-03",
-  "title": "**Conformal Reachability for Safe Control in Unknown Environments**",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/02/AI_Daily_Trend_2026-02-02.md",
-  "date": "2026-02-02",
-  "title": "📅 2026‑02‑03 AI 연구 트렌드 일간 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-30.md",
-  "date": "2026-01-30",
-  "title": "📅 2026‑02‑02 AI 연구 트렌드 일간 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-29.md",
-  "date": "2026-01-29",
-  "title": "2026년 1월 30일 AI 연구 트렌드 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-28.md",
-  "date": "2026-01-28",
-  "title": "📅 2026년 1월 29일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-27.md",
-  "date": "2026-01-27",
-  "title": "Daily AI Research Trend Report – 2026‑01‑28",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-26.md",
-  "date": "2026-01-26",
-  "title": "📅 2026년 01월 27일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-22.md",
-  "date": "2026-01-22",
-  "title": "📅 2026‑01‑23 AI 연구 트렌드 일간 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-19.md",
-  "date": "2026-01-19",
-  "title": "📅 2026‑01‑20 AI 연구 동향 일간 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-16.md",
-  "date": "2026-01-16",
-  "title": "📅 2026‑01‑21 AI 연구 동향 보고서 (한국어)",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-15.md",
-  "date": "2026-01-15",
-  "title": "📅 2026년 1월 20일 AI 연구 트렌드 리포트",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-14.md",
-  "date": "2026-01-14",
-  "title": "📅 2026년 1월 15일 AI 연구 동향 보고서",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-13.md",
-  "date": "2026-01-13",
-  "title": "Coverage Improvement and Fast Convergence of On‑policy Preference Learning",
-  "cat": "AI"
- },
- {
-  "path": "reports/2026/01/AI_Daily_Trend_2026-01-12.md",
-  "date": "2026-01-12",
-  "title": "📅 2026‑01‑13 AI 연구 트렌드 요약 (한국어)",
-  "cat": "AI"
- }
-]
+{
+ "reports": [
+  {
+   "path": "reports/2026/07/report_16.md",
+   "date": "2026-07-16",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-16 (KST)",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/report_15.md",
+   "date": "2026-07-15",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-15 (KST)",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/report_14.md",
+   "date": "2026-07-14",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-14 (KST)",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/CV_Daily_Trend_2026-07-09.md",
+   "date": "2026-07-09",
+   "title": "CV 연구 동향 보고서 — 2026-07-09",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/CV_Daily_Trend_2026-07-08.md",
+   "date": "2026-07-08",
+   "title": "CV 연구 동향 보고서 — 2026-07-08",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/CV_Daily_Trend_2026-07-07.md",
+   "date": "2026-07-07",
+   "title": "CV 연구 동향 보고서 — 2026-07-07",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/CV_Daily_Trend_2026-07-06.md",
+   "date": "2026-07-06",
+   "title": "CV 연구 동향 보고서 — 2026-07-06",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/CV_Daily_Trend_2026-07-02.md",
+   "date": "2026-07-02",
+   "title": "CV 연구 동향 보고서 — 2026-07-02",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/07/CV_Daily_Trend_2026-07-01.md",
+   "date": "2026-07-01",
+   "title": "CV 연구 동향 보고서 — 2026-07-01",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-30.md",
+   "date": "2026-06-30",
+   "title": "CV 연구 동향 보고서 — 2026-06-30",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-29.md",
+   "date": "2026-06-29",
+   "title": "CV 연구 동향 보고서 — 2026-06-29",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-26.md",
+   "date": "2026-06-26",
+   "title": "CV 연구 동향 보고서 — 2026-06-26",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-24.md",
+   "date": "2026-06-24",
+   "title": "CV 연구 동향 보고서 — 2026-06-24",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-23.md",
+   "date": "2026-06-23",
+   "title": "CV 연구 동향 보고서 — 2026-06-23",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-22.md",
+   "date": "2026-06-22",
+   "title": "CV 연구 동향 보고서 — 2026-06-22",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-18.md",
+   "date": "2026-06-18",
+   "title": "CV 연구 동향 보고서 — 2026-06-18",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-17.md",
+   "date": "2026-06-17",
+   "title": "CV 연구 동향 보고서 — 2026-06-17",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-16.md",
+   "date": "2026-06-16",
+   "title": "CV 연구 동향 보고서 — 2026-06-16",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-15.md",
+   "date": "2026-06-15",
+   "title": "CV 연구 동향 보고서 — 2026-06-15",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-12.md",
+   "date": "2026-06-12",
+   "title": "CV 연구 동향 보고서 — 2026-06-12",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-11.md",
+   "date": "2026-06-11",
+   "title": "CV 연구 동향 보고서 — 2026-06-11",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-10.md",
+   "date": "2026-06-10",
+   "title": "CV 연구 동향 보고서 — 2026-06-10",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-09.md",
+   "date": "2026-06-09",
+   "title": "CV 연구 동향 보고서 — 2026-06-09",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-08.md",
+   "date": "2026-06-08",
+   "title": "CV 연구 동향 보고서 — 2026-06-08",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-05.md",
+   "date": "2026-06-05",
+   "title": "CV 연구 동향 보고서 — 2026-06-05",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/06/CV_Daily_Trend_2026-06-04.md",
+   "date": "2026-06-04",
+   "title": "CV 연구 동향 보고서 — 2026-06-04",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-27.md",
+   "date": "2026-05-27",
+   "title": "CV 연구 동향 보고서 — 2026-05-27",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-22.md",
+   "date": "2026-05-22",
+   "title": "CV 연구 동향 보고서 — 2026-05-22",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-20.md",
+   "date": "2026-05-20",
+   "title": "CV 연구 동향 보고서 — 2026-05-20",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-18.md",
+   "date": "2026-05-18",
+   "title": "CV 연구 동향 보고서 — 2026-05-18",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-14.md",
+   "date": "2026-05-14",
+   "title": "CV 연구 동향 보고서 — 2026-05-14",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-13.md",
+   "date": "2026-05-13",
+   "title": "CV 연구 동향 보고서 — 2026-05-13",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-08.md",
+   "date": "2026-05-08",
+   "title": "CV 연구 동향 보고서 — 2026-05-08",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/05/CV_Daily_Trend_2026-05-01.md",
+   "date": "2026-05-01",
+   "title": "CV 연구 동향 보고서 — 2026-05-01",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-29.md",
+   "date": "2026-04-29",
+   "title": "CV 연구 동향 보고서 — 2026-04-29",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-27.md",
+   "date": "2026-04-27",
+   "title": "CV 연구 동향 보고서 — 2026-04-27",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-23.md",
+   "date": "2026-04-23",
+   "title": "CV 연구 동향 보고서 — 2026-04-23",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-22.md",
+   "date": "2026-04-22",
+   "title": "CV 연구 동향 보고서 — 2026-04-22",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-21.md",
+   "date": "2026-04-21",
+   "title": "CV 연구 동향 보고서 — 2026-04-21",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-20.md",
+   "date": "2026-04-20",
+   "title": "CV 연구 동향 보고서 — 2026-04-20",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-17.md",
+   "date": "2026-04-17",
+   "title": "CV 연구 동향 보고서 — 2026-04-17",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-16.md",
+   "date": "2026-04-16",
+   "title": "CV 연구 동향 보고서 — 2026-04-16",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/CV_Daily_Trend_2026-04-15.md",
+   "date": "2026-04-15",
+   "title": "CV 연구 동향 보고서 — 2026-04-15",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/04/AI_Daily_Trend_2026-04-08.md",
+   "date": "2026-04-08",
+   "title": "📅 2026‑04‑09 AI 연구 트렌드 일간 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/04/AI_Daily_Trend_2026-04-07.md",
+   "date": "2026-04-07",
+   "title": "📅 2026년 4월 8일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/04/AI_Daily_Trend_2026-04-03.md",
+   "date": "2026-04-03",
+   "title": "📅 2026년 4월 6일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-26.md",
+   "date": "2026-03-26",
+   "title": "📅 2026년 3월 27일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-25.md",
+   "date": "2026-03-25",
+   "title": "📅 2026년 3월 26일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-24.md",
+   "date": "2026-03-24",
+   "title": "📅 2026년 3월 25일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-20.md",
+   "date": "2026-03-20",
+   "title": "📅 2026년 3월 23일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-19.md",
+   "date": "2026-03-19",
+   "title": "📅 2026‑03‑20 AI 연구 동향 일간 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-18.md",
+   "date": "2026-03-18",
+   "title": "📅 2026년 3월 19일 AI 연구 트렌드 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-17.md",
+   "date": "2026-03-17",
+   "title": "$D^3$‑RSMDE: 40× Faster and High‑Fidelity Remote Sensing Monocular Depth Estimation",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-13.md",
+   "date": "2026-03-13",
+   "title": "**Steve‑Evolving: Open‑World Embodied Self‑Evolution via Fine‑Grained Diagnosis and Dual‑Track Knowledge Distillation**",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-12.md",
+   "date": "2026-03-12",
+   "title": "📅 일간 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-11.md",
+   "date": "2026-03-11",
+   "title": "📅 2026년 3월 12일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-10.md",
+   "date": "2026-03-10",
+   "title": "📅 2026‑03‑11 AI 연구 트렌드 요약 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/03/AI_Daily_Trend_2026-03-06.md",
+   "date": "2026-03-06",
+   "title": "📅 2026‑03‑09 AI 연구 트렌드 요약 (한국어)",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-27.md",
+   "date": "2026-02-27",
+   "title": "AI 연구 동향 보고서 (2026년 3월 2일)",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-26.md",
+   "date": "2026-02-26",
+   "title": "📅 2026년 2월 27일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-25.md",
+   "date": "2026-02-25",
+   "title": "📅 2026년 2월 26일 AI 연구 트렌드 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-24.md",
+   "date": "2026-02-24",
+   "title": "📅 2026‑02‑25 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-23.md",
+   "date": "2026-02-23",
+   "title": "📅 2026‑02‑24 AI 연구 트렌드 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-20.md",
+   "date": "2026-02-20",
+   "title": "📅 2026년 2월 23일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-19.md",
+   "date": "2026-02-19",
+   "title": "📅 2026년 02월 20일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-18.md",
+   "date": "2026-02-18",
+   "title": "📅 2026‑02‑19 AI 연구 트렌드 일간 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-17.md",
+   "date": "2026-02-17",
+   "title": "📅 2026‑02‑18 AI 연구 동향 보고서 (한국어)",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-16.md",
+   "date": "2026-02-16",
+   "title": "📅 2026년 02월 17일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-13.md",
+   "date": "2026-02-13",
+   "title": "📅 2026년 2월 16일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-12.md",
+   "date": "2026-02-12",
+   "title": "2026년 2월 13일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-11.md",
+   "date": "2026-02-11",
+   "title": "📅 2026‑02‑12 AI 연구 동향 일간 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-10.md",
+   "date": "2026-02-10",
+   "title": "📅 2026년 02월 11일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-09.md",
+   "date": "2026-02-09",
+   "title": "Thermodynamic Isomorphism of Transformers: A Lagrangian Approach to Attention Dynamics",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-06.md",
+   "date": "2026-02-06",
+   "title": "From Kepler to Newton: Inductive Biases Guide Learned World Models in Transformers",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-05.md",
+   "date": "2026-02-05",
+   "title": "📅 2026년 02월 06일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-04.md",
+   "date": "2026-02-04",
+   "title": "오늘의 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-03.md",
+   "date": "2026-02-03",
+   "title": "**Conformal Reachability for Safe Control in Unknown Environments**",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/02/AI_Daily_Trend_2026-02-02.md",
+   "date": "2026-02-02",
+   "title": "📅 2026‑02‑03 AI 연구 트렌드 일간 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-30.md",
+   "date": "2026-01-30",
+   "title": "📅 2026‑02‑02 AI 연구 트렌드 일간 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-29.md",
+   "date": "2026-01-29",
+   "title": "2026년 1월 30일 AI 연구 트렌드 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-28.md",
+   "date": "2026-01-28",
+   "title": "📅 2026년 1월 29일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-27.md",
+   "date": "2026-01-27",
+   "title": "Daily AI Research Trend Report – 2026‑01‑28",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-26.md",
+   "date": "2026-01-26",
+   "title": "📅 2026년 01월 27일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-22.md",
+   "date": "2026-01-22",
+   "title": "📅 2026‑01‑23 AI 연구 트렌드 일간 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-19.md",
+   "date": "2026-01-19",
+   "title": "📅 2026‑01‑20 AI 연구 동향 일간 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-16.md",
+   "date": "2026-01-16",
+   "title": "📅 2026‑01‑21 AI 연구 동향 보고서 (한국어)",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-15.md",
+   "date": "2026-01-15",
+   "title": "📅 2026년 1월 20일 AI 연구 트렌드 리포트",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-14.md",
+   "date": "2026-01-14",
+   "title": "📅 2026년 1월 15일 AI 연구 동향 보고서",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-13.md",
+   "date": "2026-01-13",
+   "title": "Coverage Improvement and Fast Convergence of On‑policy Preference Learning",
+   "cat": "AI"
+  },
+  {
+   "path": "reports/2026/01/AI_Daily_Trend_2026-01-12.md",
+   "date": "2026-01-12",
+   "title": "📅 2026‑01‑13 AI 연구 트렌드 요약 (한국어)",
+   "cat": "AI"
+  }
+ ],
+ "papers": [
+  {
+   "title": "MobileSAM2: Lightweight Segment Anything for Spatial Intelligence",
+   "url": "https://arxiv.org/abs/2607.12297",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "sam2",
+    "knowledge-distillation",
+    "hypergraph",
+    "lightweight",
+    "on-device"
+   ]
+  },
+  {
+   "title": "Semantic-Edge Response Decoding of SAM3 for Zero-Shot Crack Segmentation",
+   "url": "https://arxiv.org/abs/2607.12292",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "sam3",
+    "zero-shot-segmentation",
+    "crack-detection",
+    "infrastructure-inspection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Statistical Non-linear Reconstruction Loss for Image Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.12866",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "industrial-anomaly-detection",
+    "reconstruction-loss",
+    "mvtec-ad",
+    "outlier-leakage",
+    "unsupervised"
+   ]
+  },
+  {
+   "title": "Rough Path Signature-Guided Geometry Augmentation for Few-Shot Industrial Surface Defect Detection",
+   "url": "https://arxiv.org/abs/2607.12245",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "industrial-defect-detection",
+    "few-shot",
+    "path-signature",
+    "data-augmentation",
+    "yolov8"
+   ]
+  },
+  {
+   "title": "Anomalous Frame Detection Using VLM-Based Description Comparison for Extracting Expert-Specific Actions and Contextual Decision-Making Scenes",
+   "url": "https://arxiv.org/abs/2607.11957",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "anomaly-detection",
+    "vision-language-model",
+    "industrial-maintenance",
+    "self-similarity",
+    "video-understanding"
+   ]
+  },
+  {
+   "title": "UMSS: Towards Unsupervised Multi-modal Semantic Segmentation",
+   "url": "https://arxiv.org/abs/2607.12372",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "unsupervised-segmentation",
+    "dinov3",
+    "multimodal-fusion",
+    "self-supervised",
+    "cross-modal"
+   ]
+  },
+  {
+   "title": "Representation and Reference Selection in Training-Free Synthetic Image Attribution",
+   "url": "https://arxiv.org/abs/2607.12052",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "synthetic-image-attribution",
+    "forgery-forensics",
+    "clip",
+    "dinov2",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Towards Vision-Free CIR: Attribute-Augmented Scoring and LLM-Based Reranking for Zero-Shot Composed Image Retrieval",
+   "url": "https://arxiv.org/abs/2607.12621",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "composed-image-retrieval",
+    "zero-shot",
+    "vision-free",
+    "llm-reranking",
+    "attribute-matching"
+   ]
+  },
+  {
+   "title": "Rank-1 Identity Consensus Predicts Gallery Enrollment in 1:N Face Matching More Accurately than Score Thresholding",
+   "url": "https://arxiv.org/abs/2607.12903",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "face-identification",
+    "1n-matching",
+    "rank-consensus",
+    "metric-learning",
+    "threshold-free"
+   ]
+  },
+  {
+   "title": "MambaPSA: A Mamba-based Replacement for C2PSA in YOLO26",
+   "url": "https://arxiv.org/abs/2607.12681",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "object-detection",
+    "yolo",
+    "mamba",
+    "state-space-model",
+    "lightweight"
+   ]
+  },
+  {
+   "title": "Text-Aided Multi-Modal Panoptic Symbol Spotting for CAD Floor Plan Drawings",
+   "url": "https://arxiv.org/abs/2607.12678",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "document-ai",
+    "symbol-spotting",
+    "cad-floor-plan",
+    "multimodal",
+    "panoptic"
+   ]
+  },
+  {
+   "title": "Real-time fall detection based on vision for low-power edge platforms",
+   "url": "https://arxiv.org/abs/2607.12909",
+   "date": "2026-07-16",
+   "report": "reports/2026/07/report_16.md",
+   "tags": [
+    "fall-detection",
+    "edge-deployment",
+    "lightweight",
+    "liquid-time-constant",
+    "real-time"
+   ]
+  },
+  {
+   "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+   "url": "https://arxiv.org/abs/2607.11562",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "document-ai",
+    "ocr",
+    "visual-text-pretraining",
+    "foundation-model",
+    "document-tampering"
+   ]
+  },
+  {
+   "title": "Bridging the Catalog-to-Real Gap: Scalable Product Recognition via Multi-Stage Contrastive Learning",
+   "url": "https://arxiv.org/abs/2607.09888",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "product-recognition",
+    "cross-domain-retrieval",
+    "contrastive-learning",
+    "hard-negative-mining",
+    "zero-shot"
+   ]
+  },
+  {
+   "title": "GFR-SAM: Training-Free Referring Camouflaged Object Segmentation via Cross-Image Prompting",
+   "url": "https://arxiv.org/abs/2607.11732",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "sam3",
+    "dinov3",
+    "training-free-segmentation",
+    "referring-segmentation",
+    "in-context-prompting"
+   ]
+  },
+  {
+   "title": "SynCLIP: Synonym-Coherent Language-Image Pretraining for Robust Open-Vocabulary Dense Perception",
+   "url": "https://arxiv.org/abs/2607.11008",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "open-vocabulary",
+    "clip",
+    "dense-perception",
+    "grounding-consistency",
+    "synonym-robustness"
+   ]
+  },
+  {
+   "title": "Confidence Scores in Open-Vocabulary Detection Are a Biased Mixture of Scale and Semantics",
+   "url": "https://arxiv.org/abs/2607.10993",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "open-vocabulary-detection",
+    "groundingdino",
+    "confidence-calibration",
+    "scale-bias",
+    "clip"
+   ]
+  },
+  {
+   "title": "TC-MAF: Train-Calibrated Bounded Multi-Evidence Fusion for Multimodal Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.11170",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "industrial-anomaly-detection",
+    "multimodal-fusion",
+    "mvtec-3d",
+    "dinomaly",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Physics-inspired Pseudo Anomaly Generation and Prototype Feature Guidance for 3D Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.10544",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "3d-anomaly-detection",
+    "point-cloud",
+    "pseudo-anomaly",
+    "prototype-learning",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "ScratNet: A Swin-Based Multi-Scale Dilated Network with Precision Refinement for Semiconductor Scratch Segmentation",
+   "url": "https://arxiv.org/abs/2607.10214",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "semiconductor-inspection",
+    "scratch-segmentation",
+    "swin-transformer",
+    "defect-detection",
+    "manufacturing"
+   ]
+  },
+  {
+   "title": "Answer-Conditioned Chain-of-Thought Distillation for Few-Shot Industrial Vision with Small VLMs",
+   "url": "https://arxiv.org/abs/2607.10666",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "industrial-inspection",
+    "vlm-distillation",
+    "chain-of-thought",
+    "lora",
+    "few-shot"
+   ]
+  },
+  {
+   "title": "Towards Efficient Convolutional Neural Network for Embedded Hardware via Multi-Dimensional Pruning",
+   "url": "https://arxiv.org/abs/2607.11473",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "model-pruning",
+    "cnn-compression",
+    "embedded-deployment",
+    "efficiency",
+    "multi-dimensional"
+   ]
+  },
+  {
+   "title": "Effective Synthetic Image Detection via Noise Residual Clustering",
+   "url": "https://arxiv.org/abs/2607.10695",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "synthetic-image-detection",
+    "forgery-detection",
+    "training-free",
+    "noise-residual",
+    "vit"
+   ]
+  },
+  {
+   "title": "Label-Free Target-Domain Adaptation for Unconstrained Event-Image Feature Matching via Dual-Stage Distillation",
+   "url": "https://arxiv.org/abs/2607.10082",
+   "date": "2026-07-15",
+   "report": "reports/2026/07/report_15.md",
+   "tags": [
+    "feature-matching",
+    "event-camera",
+    "self-distillation",
+    "cross-modal",
+    "label-free"
+   ]
+  },
+  {
+   "title": "Subtoken Vision Transformer for Fine-grained Recognition",
+   "url": "https://arxiv.org/abs/2607.09086",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "fine-grained-recognition",
+    "vision-transformer",
+    "dinov2",
+    "gcd",
+    "token-selection"
+   ]
+  },
+  {
+   "title": "Video Generation Models are General-Purpose Vision Learners",
+   "url": "https://arxiv.org/abs/2607.09024",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "video-diffusion",
+    "foundation-model",
+    "general-purpose-vision",
+    "self-supervised",
+    "zero-shot"
+   ]
+  },
+  {
+   "title": "SigLIP-HD by Fine-to-Coarse Supervision",
+   "url": "https://arxiv.org/abs/2607.09488",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "siglip",
+    "representation-learning",
+    "ocr",
+    "knowledge-distillation",
+    "mllm"
+   ]
+  },
+  {
+   "title": "REMIND: RE-Identification with Memory for INDoor Navigation",
+   "url": "https://arxiv.org/abs/2607.09267",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "re-identification",
+    "dinov3",
+    "appearance-memory",
+    "metric-learning",
+    "tracking"
+   ]
+  },
+  {
+   "title": "REBASE: Reference-Background Subspace Elimination for Training-Free In-Context Segmentation",
+   "url": "https://arxiv.org/abs/2607.09082",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "in-context-segmentation",
+    "training-free",
+    "sam",
+    "one-shot",
+    "feature-subspace"
+   ]
+  },
+  {
+   "title": "C-GAP: Class-Aware and Online Prompting Improves Vision-Language Models on Imbalanced Classes",
+   "url": "https://arxiv.org/abs/2607.09008",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "open-vocabulary-detection",
+    "prompt-engineering",
+    "class-imbalance",
+    "llm",
+    "annotation-free"
+   ]
+  },
+  {
+   "title": "Promptable Concept Segmentation from Above: Evaluating SAM 3's Zero-Shot and One-Shot Capabilities in Remote Sensing",
+   "url": "https://arxiv.org/abs/2607.09583",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "sam-3",
+    "open-vocabulary-segmentation",
+    "zero-shot",
+    "prompt-modality",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Joint-Embedding Predictive Architecture for Solar PV Panel Fault Classification",
+   "url": "https://arxiv.org/abs/2607.09205",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "fault-classification",
+    "anomaly-detection",
+    "jepa",
+    "self-supervised",
+    "thermal-imaging"
+   ]
+  },
+  {
+   "title": "MOSAIC: Adaptive Inter-layer Composition for Efficient Heterogeneous Vision-Language Models",
+   "url": "https://arxiv.org/abs/2607.09029",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "model-efficiency",
+    "distillation",
+    "vlm",
+    "architecture-search",
+    "deployment"
+   ]
+  },
+  {
+   "title": "Parameter-Efficient Vision-Language Adaptation with Continuous Metadata Conditioning for Animal Re-Identification",
+   "url": "https://arxiv.org/abs/2607.09443",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "re-identification",
+    "clip",
+    "parameter-efficient-fine-tuning",
+    "metric-learning",
+    "metadata-conditioning"
+   ]
+  },
+  {
+   "title": "Semantic Hardness Is Not Visual Hardness: Sign-Aware Hard Negative Mining for Sign Language Retrieval",
+   "url": "https://arxiv.org/abs/2607.09263",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "hard-negative-mining",
+    "retrieval",
+    "metric-learning",
+    "contrastive-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Seeing is Free, Speaking is Not: Uncovering the True Energy Bottleneck in Edge VLM Inference",
+   "url": "https://arxiv.org/abs/2607.09520",
+   "date": "2026-07-14",
+   "report": "reports/2026/07/report_14.md",
+   "tags": [
+    "edge-inference",
+    "vlm",
+    "energy-efficiency",
+    "deployment",
+    "token-pruning"
+   ]
+  }
+ ],
+ "tags": [
+  {
+   "tag": "clip",
+   "count": 4
+  },
+  {
+   "tag": "foundation-model",
+   "count": 4
+  },
+  {
+   "tag": "metric-learning",
+   "count": 4
+  },
+  {
+   "tag": "zero-shot",
+   "count": 4
+  },
+  {
+   "tag": "dinov3",
+   "count": 3
+  },
+  {
+   "tag": "lightweight",
+   "count": 3
+  },
+  {
+   "tag": "self-supervised",
+   "count": 3
+  },
+  {
+   "tag": "training-free",
+   "count": 3
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 2
+  },
+  {
+   "tag": "contrastive-learning",
+   "count": 2
+  },
+  {
+   "tag": "cross-modal",
+   "count": 2
+  },
+  {
+   "tag": "deployment",
+   "count": 2
+  },
+  {
+   "tag": "dinov2",
+   "count": 2
+  },
+  {
+   "tag": "document-ai",
+   "count": 2
+  },
+  {
+   "tag": "few-shot",
+   "count": 2
+  },
+  {
+   "tag": "hard-negative-mining",
+   "count": 2
+  },
+  {
+   "tag": "industrial-anomaly-detection",
+   "count": 2
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 2
+  },
+  {
+   "tag": "knowledge-distillation",
+   "count": 2
+  },
+  {
+   "tag": "multimodal-fusion",
+   "count": 2
+  },
+  {
+   "tag": "ocr",
+   "count": 2
+  },
+  {
+   "tag": "open-vocabulary-detection",
+   "count": 2
+  },
+  {
+   "tag": "re-identification",
+   "count": 2
+  },
+  {
+   "tag": "sam3",
+   "count": 2
+  },
+  {
+   "tag": "vlm",
+   "count": 2
+  },
+  {
+   "tag": "1n-matching",
+   "count": 1
+  },
+  {
+   "tag": "3d-anomaly-detection",
+   "count": 1
+  },
+  {
+   "tag": "annotation-free",
+   "count": 1
+  },
+  {
+   "tag": "appearance-memory",
+   "count": 1
+  },
+  {
+   "tag": "architecture-search",
+   "count": 1
+  },
+  {
+   "tag": "attribute-matching",
+   "count": 1
+  },
+  {
+   "tag": "cad-floor-plan",
+   "count": 1
+  },
+  {
+   "tag": "calibration",
+   "count": 1
+  },
+  {
+   "tag": "chain-of-thought",
+   "count": 1
+  },
+  {
+   "tag": "class-imbalance",
+   "count": 1
+  },
+  {
+   "tag": "cnn-compression",
+   "count": 1
+  },
+  {
+   "tag": "composed-image-retrieval",
+   "count": 1
+  },
+  {
+   "tag": "confidence-calibration",
+   "count": 1
+  },
+  {
+   "tag": "crack-detection",
+   "count": 1
+  },
+  {
+   "tag": "cross-domain-retrieval",
+   "count": 1
+  },
+  {
+   "tag": "data-augmentation",
+   "count": 1
+  },
+  {
+   "tag": "defect-detection",
+   "count": 1
+  },
+  {
+   "tag": "dense-perception",
+   "count": 1
+  },
+  {
+   "tag": "dinomaly",
+   "count": 1
+  },
+  {
+   "tag": "distillation",
+   "count": 1
+  },
+  {
+   "tag": "document-tampering",
+   "count": 1
+  },
+  {
+   "tag": "edge-deployment",
+   "count": 1
+  },
+  {
+   "tag": "edge-inference",
+   "count": 1
+  },
+  {
+   "tag": "efficiency",
+   "count": 1
+  },
+  {
+   "tag": "embedded-deployment",
+   "count": 1
+  },
+  {
+   "tag": "energy-efficiency",
+   "count": 1
+  },
+  {
+   "tag": "event-camera",
+   "count": 1
+  },
+  {
+   "tag": "face-identification",
+   "count": 1
+  },
+  {
+   "tag": "fall-detection",
+   "count": 1
+  },
+  {
+   "tag": "fault-classification",
+   "count": 1
+  },
+  {
+   "tag": "feature-matching",
+   "count": 1
+  },
+  {
+   "tag": "feature-subspace",
+   "count": 1
+  },
+  {
+   "tag": "fine-grained",
+   "count": 1
+  },
+  {
+   "tag": "fine-grained-recognition",
+   "count": 1
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 1
+  },
+  {
+   "tag": "forgery-forensics",
+   "count": 1
+  },
+  {
+   "tag": "gcd",
+   "count": 1
+  },
+  {
+   "tag": "general-purpose-vision",
+   "count": 1
+  },
+  {
+   "tag": "grounding-consistency",
+   "count": 1
+  },
+  {
+   "tag": "groundingdino",
+   "count": 1
+  },
+  {
+   "tag": "hypergraph",
+   "count": 1
+  },
+  {
+   "tag": "in-context-prompting",
+   "count": 1
+  },
+  {
+   "tag": "in-context-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "industrial-defect-detection",
+   "count": 1
+  },
+  {
+   "tag": "industrial-maintenance",
+   "count": 1
+  },
+  {
+   "tag": "infrastructure-inspection",
+   "count": 1
+  },
+  {
+   "tag": "jepa",
+   "count": 1
+  },
+  {
+   "tag": "label-free",
+   "count": 1
+  },
+  {
+   "tag": "liquid-time-constant",
+   "count": 1
+  },
+  {
+   "tag": "llm",
+   "count": 1
+  },
+  {
+   "tag": "llm-reranking",
+   "count": 1
+  },
+  {
+   "tag": "lora",
+   "count": 1
+  },
+  {
+   "tag": "mamba",
+   "count": 1
+  },
+  {
+   "tag": "manufacturing",
+   "count": 1
+  },
+  {
+   "tag": "metadata-conditioning",
+   "count": 1
+  },
+  {
+   "tag": "mllm",
+   "count": 1
+  },
+  {
+   "tag": "model-efficiency",
+   "count": 1
+  },
+  {
+   "tag": "model-pruning",
+   "count": 1
+  },
+  {
+   "tag": "multi-dimensional",
+   "count": 1
+  },
+  {
+   "tag": "multimodal",
+   "count": 1
+  },
+  {
+   "tag": "mvtec-3d",
+   "count": 1
+  },
+  {
+   "tag": "mvtec-ad",
+   "count": 1
+  },
+  {
+   "tag": "noise-residual",
+   "count": 1
+  },
+  {
+   "tag": "object-detection",
+   "count": 1
+  },
+  {
+   "tag": "on-device",
+   "count": 1
+  },
+  {
+   "tag": "one-shot",
+   "count": 1
+  },
+  {
+   "tag": "open-vocabulary",
+   "count": 1
+  },
+  {
+   "tag": "open-vocabulary-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "outlier-leakage",
+   "count": 1
+  },
+  {
+   "tag": "panoptic",
+   "count": 1
+  },
+  {
+   "tag": "parameter-efficient-fine-tuning",
+   "count": 1
+  },
+  {
+   "tag": "path-signature",
+   "count": 1
+  },
+  {
+   "tag": "point-cloud",
+   "count": 1
+  },
+  {
+   "tag": "product-recognition",
+   "count": 1
+  },
+  {
+   "tag": "prompt-engineering",
+   "count": 1
+  },
+  {
+   "tag": "prompt-modality",
+   "count": 1
+  },
+  {
+   "tag": "prototype-learning",
+   "count": 1
+  },
+  {
+   "tag": "pseudo-anomaly",
+   "count": 1
+  },
+  {
+   "tag": "rank-consensus",
+   "count": 1
+  },
+  {
+   "tag": "real-time",
+   "count": 1
+  },
+  {
+   "tag": "reconstruction-loss",
+   "count": 1
+  },
+  {
+   "tag": "referring-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "representation-learning",
+   "count": 1
+  },
+  {
+   "tag": "retrieval",
+   "count": 1
+  },
+  {
+   "tag": "sam",
+   "count": 1
+  },
+  {
+   "tag": "sam-3",
+   "count": 1
+  },
+  {
+   "tag": "sam2",
+   "count": 1
+  },
+  {
+   "tag": "scale-bias",
+   "count": 1
+  },
+  {
+   "tag": "scratch-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "self-distillation",
+   "count": 1
+  },
+  {
+   "tag": "self-similarity",
+   "count": 1
+  },
+  {
+   "tag": "semiconductor-inspection",
+   "count": 1
+  },
+  {
+   "tag": "siglip",
+   "count": 1
+  },
+  {
+   "tag": "state-space-model",
+   "count": 1
+  },
+  {
+   "tag": "swin-transformer",
+   "count": 1
+  },
+  {
+   "tag": "symbol-spotting",
+   "count": 1
+  },
+  {
+   "tag": "synonym-robustness",
+   "count": 1
+  },
+  {
+   "tag": "synthetic-image-attribution",
+   "count": 1
+  },
+  {
+   "tag": "synthetic-image-detection",
+   "count": 1
+  },
+  {
+   "tag": "thermal-imaging",
+   "count": 1
+  },
+  {
+   "tag": "threshold-free",
+   "count": 1
+  },
+  {
+   "tag": "token-pruning",
+   "count": 1
+  },
+  {
+   "tag": "token-selection",
+   "count": 1
+  },
+  {
+   "tag": "tracking",
+   "count": 1
+  },
+  {
+   "tag": "training-free-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "unsupervised",
+   "count": 1
+  },
+  {
+   "tag": "unsupervised-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "video-diffusion",
+   "count": 1
+  },
+  {
+   "tag": "video-understanding",
+   "count": 1
+  },
+  {
+   "tag": "vision-free",
+   "count": 1
+  },
+  {
+   "tag": "vision-language-model",
+   "count": 1
+  },
+  {
+   "tag": "vision-transformer",
+   "count": 1
+  },
+  {
+   "tag": "visual-text-pretraining",
+   "count": 1
+  },
+  {
+   "tag": "vit",
+   "count": 1
+  },
+  {
+   "tag": "vlm-distillation",
+   "count": 1
+  },
+  {
+   "tag": "yolo",
+   "count": 1
+  },
+  {
+   "tag": "yolov8",
+   "count": 1
+  },
+  {
+   "tag": "zero-shot-segmentation",
+   "count": 1
+  }
+ ]
+}
