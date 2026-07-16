@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_17.md",
+   "date": "2026-07-17",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-17 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_16.md",
    "date": "2026-07-16",
    "title": "arXiv cs.CV Daily Digest — 2026-07-16 (KST)",
@@ -543,6 +549,133 @@
  ],
  "papers": [
   {
+   "title": "Self-Supervised Visual Representation Learning: Pretrain-Finetuning or Joint Training?",
+   "url": "https://arxiv.org/abs/2607.13192",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "semi-supervised",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "A Masked Autoencoder Approach to Unsupervised Steel Surface Defect Recognition",
+   "url": "https://arxiv.org/abs/2607.13178",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "ssl-backbone",
+    "defect-detection",
+    "industrial-inspection",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Fine-grained CLIP fine-tuning with self-annotated region alignment",
+   "url": "https://arxiv.org/abs/2607.13661",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "fine-grained",
+    "correspondence",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "AspectCLIP: Optimizing CLIP Representation Space via Aspect-Guided Consistency Regularization",
+   "url": "https://arxiv.org/abs/2607.13805",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CLIP-Guided Label-Free Discriminative Region Scoring for Fine-Grained Classification",
+   "url": "https://arxiv.org/abs/2607.13437",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "fine-grained",
+    "vlm",
+    "segmentation",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "MGFace: Mask-Gated Face Matching via Conditional Similarity Routing",
+   "url": "https://arxiv.org/abs/2607.13187",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "re-identification",
+    "feature-matching",
+    "image-retrieval",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Continuously Evolving Deepfake Detection: An Architecture and Public-Benchmark Evaluation of a Dynamic Detection System",
+   "url": "https://arxiv.org/abs/2607.13234",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "video"
+   ]
+  },
+  {
+   "title": "DNA: Dual-stage Native Attribution for Generated Image Source Tracing",
+   "url": "https://arxiv.org/abs/2607.13685",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "forgery-detection",
+    "generative",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Symbiosis-Inspired Knowledge Distillation for Incremental Object Detection",
+   "url": "https://arxiv.org/abs/2607.13452",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "object-detection",
+    "distillation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Attention-Free and Lightweight Token Reduction for Efficient Vision-Language Models",
+   "url": "https://arxiv.org/abs/2607.13500",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "vlm",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Beyond Backbone Backpropagation: A Decoupled Strategy for Efficient Transfer Learning",
+   "url": "https://arxiv.org/abs/2607.13043",
+   "date": "2026-07-17",
+   "report": "reports/2026/07/report_17.md",
+   "tags": [
+    "efficient-inference",
+    "peft",
+    "foundation-model"
+   ]
+  },
+  {
    "title": "MobileSAM2: Lightweight Segment Anything for Spatial Intelligence",
    "url": "https://arxiv.org/abs/2607.12297",
    "date": "2026-07-16",
@@ -1013,15 +1146,23 @@
  ],
  "tags": [
   {
+   "tag": "foundation-model",
+   "count": 9
+  },
+  {
+   "tag": "vlm",
+   "count": 6
+  },
+  {
+   "tag": "metric-learning",
+   "count": 5
+  },
+  {
    "tag": "clip",
    "count": 4
   },
   {
-   "tag": "foundation-model",
-   "count": 4
-  },
-  {
-   "tag": "metric-learning",
+   "tag": "image-embedding",
    "count": 4
   },
   {
@@ -1029,11 +1170,35 @@
    "count": 4
   },
   {
+   "tag": "anomaly-detection",
+   "count": 3
+  },
+  {
    "tag": "dinov3",
    "count": 3
   },
   {
+   "tag": "efficient-inference",
+   "count": 3
+  },
+  {
+   "tag": "fine-grained",
+   "count": 3
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 3
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 3
+  },
+  {
    "tag": "lightweight",
+   "count": 3
+  },
+  {
+   "tag": "re-identification",
    "count": 3
   },
   {
@@ -1045,15 +1210,19 @@
    "count": 3
   },
   {
-   "tag": "anomaly-detection",
-   "count": 2
-  },
-  {
    "tag": "contrastive-learning",
    "count": 2
   },
   {
    "tag": "cross-modal",
+   "count": 2
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 2
+  },
+  {
+   "tag": "defect-detection",
    "count": 2
   },
   {
@@ -1065,7 +1234,15 @@
    "count": 2
   },
   {
+   "tag": "distillation",
+   "count": 2
+  },
+  {
    "tag": "document-ai",
+   "count": 2
+  },
+  {
+   "tag": "feature-matching",
    "count": 2
   },
   {
@@ -1081,15 +1258,15 @@
    "count": 2
   },
   {
-   "tag": "industrial-inspection",
-   "count": 2
-  },
-  {
    "tag": "knowledge-distillation",
    "count": 2
   },
   {
    "tag": "multimodal-fusion",
+   "count": 2
+  },
+  {
+   "tag": "object-detection",
    "count": 2
   },
   {
@@ -1101,15 +1278,11 @@
    "count": 2
   },
   {
-   "tag": "re-identification",
-   "count": 2
-  },
-  {
    "tag": "sam3",
    "count": 2
   },
   {
-   "tag": "vlm",
+   "tag": "ssl-backbone",
    "count": 2
   },
   {
@@ -1165,6 +1338,10 @@
    "count": 1
   },
   {
+   "tag": "correspondence",
+   "count": 1
+  },
+  {
    "tag": "crack-detection",
    "count": 1
   },
@@ -1177,19 +1354,11 @@
    "count": 1
   },
   {
-   "tag": "defect-detection",
-   "count": 1
-  },
-  {
    "tag": "dense-perception",
    "count": 1
   },
   {
    "tag": "dinomaly",
-   "count": 1
-  },
-  {
-   "tag": "distillation",
    "count": 1
   },
   {
@@ -1233,23 +1402,11 @@
    "count": 1
   },
   {
-   "tag": "feature-matching",
-   "count": 1
-  },
-  {
    "tag": "feature-subspace",
    "count": 1
   },
   {
-   "tag": "fine-grained",
-   "count": 1
-  },
-  {
    "tag": "fine-grained-recognition",
-   "count": 1
-  },
-  {
-   "tag": "forgery-detection",
    "count": 1
   },
   {
@@ -1265,6 +1422,10 @@
    "count": 1
   },
   {
+   "tag": "generative",
+   "count": 1
+  },
+  {
    "tag": "grounding-consistency",
    "count": 1
   },
@@ -1274,6 +1435,10 @@
   },
   {
    "tag": "hypergraph",
+   "count": 1
+  },
+  {
+   "tag": "image-retrieval",
    "count": 1
   },
   {
@@ -1365,10 +1530,6 @@
    "count": 1
   },
   {
-   "tag": "object-detection",
-   "count": 1
-  },
-  {
    "tag": "on-device",
    "count": 1
   },
@@ -1398,6 +1559,10 @@
   },
   {
    "tag": "path-signature",
+   "count": 1
+  },
+  {
+   "tag": "peft",
    "count": 1
   },
   {
@@ -1469,11 +1634,19 @@
    "count": 1
   },
   {
+   "tag": "segmentation",
+   "count": 1
+  },
+  {
    "tag": "self-distillation",
    "count": 1
   },
   {
    "tag": "self-similarity",
+   "count": 1
+  },
+  {
+   "tag": "semi-supervised",
    "count": 1
   },
   {
@@ -1538,6 +1711,10 @@
   },
   {
    "tag": "unsupervised-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "video",
    "count": 1
   },
   {
