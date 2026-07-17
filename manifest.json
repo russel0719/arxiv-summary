@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_18.md",
+   "date": "2026-07-18",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-18 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_17.md",
    "date": "2026-07-17",
    "title": "arXiv cs.CV Daily Digest — 2026-07-17 (KST)",
@@ -548,6 +554,83 @@
   }
  ],
  "papers": [
+  {
+   "title": "Emergent Region-Level Facial Correspondence in Frozen Vision Foundation Models",
+   "url": "https://arxiv.org/abs/2607.14423",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "SeeSE3: Emergence of 3D Space in Vision Features",
+   "url": "https://arxiv.org/abs/2607.14228",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "Multimodality as Supervision: Self-Supervised Specialization to the Test Environment via Multimodality",
+   "url": "https://arxiv.org/abs/2607.14721",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "SUFLECA: Scaling Up Feature Learning for CAD-to-image Alignment",
+   "url": "https://arxiv.org/abs/2607.15058",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "Hough-SIFT: Robust Image Registration for Linear Structures via Hough Space",
+   "url": "https://arxiv.org/abs/2607.14598",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "Multi-Scale ViT Inference with Habitat-Fit Priors and kNN Retrieval for Multi-Species Plant Identification",
+   "url": "https://arxiv.org/abs/2607.14509",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "Selectivity Drives Efficiency: Dataset Pruning for Visual Place Recognition",
+   "url": "https://arxiv.org/abs/2607.14897",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "AlphaWiSE: Adaptive Weight Interpolation for Continual Multimodal Representation Learning",
+   "url": "https://arxiv.org/abs/2607.15094",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "GlobalForge: Towards Robust AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2607.14684",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "SwinAD: Multi-stage feature reconstruction for unsupervised industrial anomaly detection",
+   "url": "https://arxiv.org/abs/2607.14534",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
+  {
+   "title": "XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation",
+   "url": "https://arxiv.org/abs/2607.14287",
+   "date": "2026-07-18",
+   "report": "reports/2026/07/report_18.md",
+   "tags": []
+  },
   {
    "title": "Self-Supervised Visual Representation Learning: Pretrain-Finetuning or Joint Training?",
    "url": "https://arxiv.org/abs/2607.13192",
