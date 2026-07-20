@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_21.md",
+   "date": "2026-07-21",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-21 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_18.md",
    "date": "2026-07-18",
    "title": "arXiv cs.CV Daily Digest — 2026-07-18 (KST)",
@@ -554,6 +560,69 @@
   }
  ],
  "papers": [
+  {
+   "title": "PIXIE: A Zero-Shot texture-invariant 6D pose estimation framework for unseen objects with assembly defects",
+   "url": "https://arxiv.org/abs/2607.16015",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "Are All Tokens Necessary for Visual Place Recognition? An Empirical Study of Token Reduction for Efficient Inference",
+   "url": "https://arxiv.org/abs/2607.15563",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "Rethinking the Readout: Unlocking Video Backbones for AI-Generated Video Detection",
+   "url": "https://arxiv.org/abs/2607.15321",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "The Third Competition on Document Forgery Detection on ID-Cards and Passports",
+   "url": "https://arxiv.org/abs/2607.15734",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2607.15374",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "IoUPD: IoU-Aware Privileged Distillation for Visual Grounding with Multimodal Large Language Models",
+   "url": "https://arxiv.org/abs/2607.15732",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "Geometric Distillation from Rectified Stereo: Leveraging Epipolar Cues for Monocular Depth",
+   "url": "https://arxiv.org/abs/2607.15600",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "Von Mises-Fisher Mixture Model with Dynamic Shrinkage for Realistic Test-Time Transduction",
+   "url": "https://arxiv.org/abs/2607.15851",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
+  {
+   "title": "DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction",
+   "url": "https://arxiv.org/abs/2607.16012",
+   "date": "2026-07-21",
+   "report": "reports/2026/07/report_21.md",
+   "tags": []
+  },
   {
    "title": "Emergent Region-Level Facial Correspondence in Frozen Vision Foundation Models",
    "url": "https://arxiv.org/abs/2607.14423",
