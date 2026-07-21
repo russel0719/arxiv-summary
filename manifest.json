@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_22.md",
+   "date": "2026-07-22",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-22 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_21.md",
    "date": "2026-07-21",
    "title": "arXiv cs.CV Daily Digest — 2026-07-21 (KST)",
@@ -560,6 +566,90 @@
   }
  ],
  "papers": [
+  {
+   "title": "The JEPA Predictor: A Transferable Operator for Occluded Feature Completion",
+   "url": "https://arxiv.org/abs/2607.16274",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
+   "url": "https://arxiv.org/abs/2607.18237",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "MuViSeg: Multi-View Segment Correspondences from Dense Geometry Priors",
+   "url": "https://arxiv.org/abs/2607.17938",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "DS@GT ARC at AnimalCLEF 2026: Species-Aware Graph Construction for Multi-Species Animal Re-Identification",
+   "url": "https://arxiv.org/abs/2607.16453",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "DARA: Degradation-Aware Low-Rank Residual Adaptation with Original-to-Corrupted Distillation for Corruption-Robust Animal Re-Identification",
+   "url": "https://arxiv.org/abs/2607.16644",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "Miles: Metric Learning with Expandable Subspace for Pre-Trained Model-Based Class-Incremental Learning",
+   "url": "https://arxiv.org/abs/2607.17593",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "Eddy-VL 1.9B: Structural Pruning and Layered Distillation for Edge-Deployable Multimodal Embedding",
+   "url": "https://arxiv.org/abs/2607.16316",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "DepthART: Scaling Foundation Monocular Depth to Tiny Models",
+   "url": "https://arxiv.org/abs/2607.17099",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+   "url": "https://arxiv.org/abs/2607.18142",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "Does Super-Resolution Preserve Defect Evidence? A Low-False-Call Benchmark for Semiconductor Inspection",
+   "url": "https://arxiv.org/abs/2607.17401",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "When 2D Cues Fail: Improving Image Manipulation Localization with Reliable 3D Geometry",
+   "url": "https://arxiv.org/abs/2607.18040",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
+  {
+   "title": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
+   "url": "https://arxiv.org/abs/2607.18230",
+   "date": "2026-07-22",
+   "report": "reports/2026/07/report_22.md",
+   "tags": []
+  },
   {
    "title": "PIXIE: A Zero-Shot texture-invariant 6D pose estimation framework for unseen objects with assembly defects",
    "url": "https://arxiv.org/abs/2607.16015",
