@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_23.md",
+   "date": "2026-07-23",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-23 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_22.md",
    "date": "2026-07-22",
    "title": "arXiv cs.CV Daily Digest — 2026-07-22 (KST)",
@@ -566,6 +572,133 @@
   }
  ],
  "papers": [
+  {
+   "title": "CANDOR: Chance-Calibrated Discordance in Frozen Foundation Encoders",
+   "url": "https://arxiv.org/abs/2607.18451",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "image-embedding",
+    "ssl-backbone",
+    "foundation-model",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "ERank in Latent Space as an Image-Complexity and Richness Measure",
+   "url": "https://arxiv.org/abs/2607.19315",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "image-embedding",
+    "foundation-model",
+    "ssl-backbone",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Attributes Should Come from Images, Not Class Names: Distribution-Conditioned Attribute Selection for Vision-Language Models",
+   "url": "https://arxiv.org/abs/2607.18695",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "vlm",
+    "image-embedding",
+    "image-retrieval",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "SynGallery: A Synthetic Gallery of Real Paintings for Instance-Level Artwork Recognition",
+   "url": "https://arxiv.org/abs/2607.18907",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "image-retrieval",
+    "fine-grained",
+    "correspondence",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Decoupled Pipeline with Proposal Reranking and Score Fusion for Positive-Unlabeled Marine Species Detection",
+   "url": "https://arxiv.org/abs/2607.18700",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "fine-grained",
+    "ssl-backbone",
+    "peft",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "Reliability-Aware 3D Geometric Injection for Universal Person Re-identification",
+   "url": "https://arxiv.org/abs/2607.18863",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "feature-matching"
+   ]
+  },
+  {
+   "title": "GLID: Gated Local Intrinsic Dimension Repairs the Blind Spots of Face-Forgery Detectors",
+   "url": "https://arxiv.org/abs/2607.18770",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "OPD-IAD: From Language Judgment to Industrial Anomaly Detection via On-Policy Self-Distillation",
+   "url": "https://arxiv.org/abs/2607.18850",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Text-conditioned Segmentation for Tomato Phenotyping via Procedural Synthetic Data",
+   "url": "https://arxiv.org/abs/2607.18576",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "open-vocab-detection"
+   ]
+  },
+  {
+   "title": "NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion",
+   "url": "https://arxiv.org/abs/2607.18936",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "Norm or Direction? Decoding Vision Mambas for High-Resolution Vision",
+   "url": "https://arxiv.org/abs/2607.18625",
+   "date": "2026-07-23",
+   "report": "reports/2026/07/report_23.md",
+   "tags": [
+    "vision-backbone",
+    "image-embedding",
+    "segmentation"
+   ]
+  },
   {
    "title": "The JEPA Predictor: A Transferable Operator for Occluded Feature Completion",
    "url": "https://arxiv.org/abs/2607.16274",
@@ -1389,22 +1522,58 @@
  "tags": [
   {
    "tag": "foundation-model",
+   "count": 14
+  },
+  {
+   "tag": "image-embedding",
    "count": 9
   },
   {
    "tag": "vlm",
-   "count": 6
+   "count": 8
   },
   {
    "tag": "metric-learning",
+   "count": 7
+  },
+  {
+   "tag": "fine-grained",
    "count": 5
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 5
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 4
   },
   {
    "tag": "clip",
    "count": 4
   },
   {
-   "tag": "image-embedding",
+   "tag": "dataset-benchmark",
+   "count": 4
+  },
+  {
+   "tag": "feature-matching",
+   "count": 4
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 4
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 4
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 4
+  },
+  {
+   "tag": "re-identification",
    "count": 4
   },
   {
@@ -1412,7 +1581,11 @@
    "count": 4
   },
   {
-   "tag": "anomaly-detection",
+   "tag": "correspondence",
+   "count": 3
+  },
+  {
+   "tag": "defect-detection",
    "count": 3
   },
   {
@@ -1424,23 +1597,15 @@
    "count": 3
   },
   {
-   "tag": "fine-grained",
-   "count": 3
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 3
-  },
-  {
-   "tag": "industrial-inspection",
-   "count": 3
-  },
-  {
    "tag": "lightweight",
    "count": 3
   },
   {
-   "tag": "re-identification",
+   "tag": "object-detection",
+   "count": 3
+  },
+  {
+   "tag": "segmentation",
    "count": 3
   },
   {
@@ -1460,14 +1625,6 @@
    "count": 2
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 2
-  },
-  {
-   "tag": "defect-detection",
-   "count": 2
-  },
-  {
    "tag": "deployment",
    "count": 2
   },
@@ -1481,10 +1638,6 @@
   },
   {
    "tag": "document-ai",
-   "count": 2
-  },
-  {
-   "tag": "feature-matching",
    "count": 2
   },
   {
@@ -1508,10 +1661,6 @@
    "count": 2
   },
   {
-   "tag": "object-detection",
-   "count": 2
-  },
-  {
    "tag": "ocr",
    "count": 2
   },
@@ -1520,11 +1669,11 @@
    "count": 2
   },
   {
-   "tag": "sam3",
+   "tag": "peft",
    "count": 2
   },
   {
-   "tag": "ssl-backbone",
+   "tag": "sam3",
    "count": 2
   },
   {
@@ -1577,10 +1726,6 @@
   },
   {
    "tag": "confidence-calibration",
-   "count": 1
-  },
-  {
-   "tag": "correspondence",
    "count": 1
   },
   {
@@ -1680,10 +1825,6 @@
    "count": 1
   },
   {
-   "tag": "image-retrieval",
-   "count": 1
-  },
-  {
    "tag": "in-context-prompting",
    "count": 1
   },
@@ -1780,6 +1921,10 @@
    "count": 1
   },
   {
+   "tag": "open-vocab-detection",
+   "count": 1
+  },
+  {
    "tag": "open-vocabulary",
    "count": 1
   },
@@ -1801,10 +1946,6 @@
   },
   {
    "tag": "path-signature",
-   "count": 1
-  },
-  {
-   "tag": "peft",
    "count": 1
   },
   {
@@ -1873,10 +2014,6 @@
   },
   {
    "tag": "scratch-segmentation",
-   "count": 1
-  },
-  {
-   "tag": "segmentation",
    "count": 1
   },
   {
@@ -1965,6 +2102,10 @@
   },
   {
    "tag": "video-understanding",
+   "count": 1
+  },
+  {
+   "tag": "vision-backbone",
    "count": 1
   },
   {
