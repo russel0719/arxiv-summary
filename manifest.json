@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_24.md",
+   "date": "2026-07-24",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-24 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_23.md",
    "date": "2026-07-23",
    "title": "arXiv cs.CV Daily Digest — 2026-07-23 (KST)",
@@ -572,6 +578,112 @@
   }
  ],
  "papers": [
+  {
+   "title": "RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs",
+   "url": "https://arxiv.org/abs/2607.20116",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "feature-matching",
+    "image-retrieval",
+    "foundation-model",
+    "distillation",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views",
+   "url": "https://arxiv.org/abs/2607.19951",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "correspondence",
+    "re-identification"
+   ]
+  },
+  {
+   "title": "Diverse-Intent Multi-Turn Fashion Image Retrieval",
+   "url": "https://arxiv.org/abs/2607.20291",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "fine-grained",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Self-supervision drives representational convergence in medical foundation models more than clinical supervision",
+   "url": "https://arxiv.org/abs/2607.20274",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Lean-SAM2: Target-Anchored Memory and Encoder Acceleration for SAM2",
+   "url": "https://arxiv.org/abs/2607.19811",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "segmentation",
+    "efficient-inference",
+    "foundation-model",
+    "video"
+   ]
+  },
+  {
+   "title": "Not All Patches are Equal: Sampling Matters for Visible-Infrared Pre-Training",
+   "url": "https://arxiv.org/abs/2607.20238",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "ssl-backbone",
+    "metric-learning",
+    "image-retrieval",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "Decodable but Not Detectable: A Leakage Fingerprint for Near-OOD Benchmarks",
+   "url": "https://arxiv.org/abs/2607.19393",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "anomaly-detection",
+    "dataset-benchmark",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+   "url": "https://arxiv.org/abs/2607.20357",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "vlm",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Detect Early, Escalate Rarely: Anytime Detection of AI-Generated Video from the Compressed Bitstream",
+   "url": "https://arxiv.org/abs/2607.19476",
+   "date": "2026-07-24",
+   "report": "reports/2026/07/report_24.md",
+   "tags": [
+    "forgery-detection",
+    "efficient-inference",
+    "video"
+   ]
+  },
   {
    "title": "CANDOR: Chance-Calibrated Discordance in Frozen Foundation Encoders",
    "url": "https://arxiv.org/abs/2607.18451",
@@ -1522,50 +1634,62 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 14
+   "count": 18
   },
   {
    "tag": "image-embedding",
-   "count": 9
-  },
-  {
-   "tag": "vlm",
-   "count": 8
+   "count": 12
   },
   {
    "tag": "metric-learning",
-   "count": 7
+   "count": 10
   },
   {
-   "tag": "fine-grained",
-   "count": 5
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 5
-  },
-  {
-   "tag": "anomaly-detection",
-   "count": 4
-  },
-  {
-   "tag": "clip",
-   "count": 4
-  },
-  {
-   "tag": "dataset-benchmark",
-   "count": 4
-  },
-  {
-   "tag": "feature-matching",
-   "count": 4
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 4
+   "tag": "vlm",
+   "count": 10
   },
   {
    "tag": "image-retrieval",
+   "count": 8
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 7
+  },
+  {
+   "tag": "correspondence",
+   "count": 6
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 6
+  },
+  {
+   "tag": "fine-grained",
+   "count": 6
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 5
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 5
+  },
+  {
+   "tag": "feature-matching",
+   "count": 5
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 5
+  },
+  {
+   "tag": "re-identification",
+   "count": 5
+  },
+  {
+   "tag": "clip",
    "count": 4
   },
   {
@@ -1573,16 +1697,12 @@
    "count": 4
   },
   {
-   "tag": "re-identification",
+   "tag": "segmentation",
    "count": 4
   },
   {
    "tag": "zero-shot",
    "count": 4
-  },
-  {
-   "tag": "correspondence",
-   "count": 3
   },
   {
    "tag": "defect-detection",
@@ -1593,7 +1713,7 @@
    "count": 3
   },
   {
-   "tag": "efficient-inference",
+   "tag": "distillation",
    "count": 3
   },
   {
@@ -1605,15 +1725,15 @@
    "count": 3
   },
   {
-   "tag": "segmentation",
-   "count": 3
-  },
-  {
    "tag": "self-supervised",
    "count": 3
   },
   {
    "tag": "training-free",
+   "count": 3
+  },
+  {
+   "tag": "video",
    "count": 3
   },
   {
@@ -1630,10 +1750,6 @@
   },
   {
    "tag": "dinov2",
-   "count": 2
-  },
-  {
-   "tag": "distillation",
    "count": 2
   },
   {
@@ -2090,10 +2206,6 @@
   },
   {
    "tag": "unsupervised-segmentation",
-   "count": 1
-  },
-  {
-   "tag": "video",
    "count": 1
   },
   {
