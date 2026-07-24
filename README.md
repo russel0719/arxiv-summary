@@ -8,8 +8,14 @@
 ```
 arxiv-summary/            # git repo (결과를 push해서 보관)
 ├── fetch_arxiv.py        # arXiv API에서 신규 논문 수집 (표준 라이브러리만 사용)
-├── CLAUDE.md             # 관심사 프로필 + 요약 규칙 (claude -p가 자동으로 읽음)
-├── run_digest.sh         # cron이 호출하는 실행 스크립트 (fetch → claude → git push)
+├── CLAUDE.md             # 일일·주간 공통 규칙 (claude -p가 루트에서 자동 로드)
+├── prompts/              # claude -p 프롬프트 (작업별 규칙 + 태스크 분리 관리)
+│   ├── daily_rules.md    # 일일: 관심사 프로필 + 요약 규칙
+│   ├── daily_digest.md   # 일일: 태스크 프롬프트 ({{PLACEHOLDER}} 치환)
+│   ├── weekly_rules.md   # 주간: 매칭 지침 + 출력 형식
+│   └── weekly_match.md   # 주간: 태스크 프롬프트 ({{PLACEHOLDER}} 치환)
+├── run_digest.sh         # cron이 호출하는 일일 스크립트 (fetch → claude → git push)
+├── weekly_match.sh       # cron이 호출하는 주간 매칭 스크립트 (git push 안 함)
 ├── seen_ids.txt          # 중복 제거용 (자동 생성, gitignore)
 ├── today_papers.json     # 당일 수집 결과 (자동 생성, gitignore)
 ├── reports/              # 최종 산출물: YYYY/MM/report_DD.md (git에 커밋·push)
@@ -67,7 +73,7 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
   KST 오전 10시면 당일 발표분이 안정적으로 잡힌다. `fetch_arxiv.py`는
   36시간 lookback + `seen_ids.txt` 중복 제거로 빠짐/중복을 방지하고,
   월요일에는 lookback을 84시간으로 늘려 주말 공백을 커버한다.
-- **관심사 조정**: `CLAUDE.md`의 프로필만 수정하면 선별 기준이 바뀐다.
+- **관심사 조정**: `prompts/daily_rules.md`의 프로필만 수정하면 선별 기준이 바뀐다.
 - **카테고리 추가**: `fetch_arxiv.py`의 `CATEGORIES`에 `cs.LG`, `cs.AI` 등 추가.
 - **권한**: `--allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)"`로
   최소 권한만 부여했다. Claude가 임의 셸 명령을 실행할 수 없다.
