@@ -1,83 +1,14 @@
-# arXiv Daily Digest — 작업 컨텍스트
+# arXiv 논문 정리 파이프라인 — 공통 규칙
 
-이 프로젝트는 매일 arXiv cs.CV 신규 논문 중 유용한 것을 선별·요약하여
-마크다운 파일로 저장하는 자동화 파이프라인이다.
+이 repo는 arXiv cs.CV 신규 논문을 수집해 (1) 매일 유용한 논문을 선별·요약하고
+(2) 매주 그 논문들을 내 프로젝트에 매칭하는 자동화 파이프라인이다.
+작업별 상세 규칙은 각각 `prompts/daily_rules.md`, `prompts/weekly_rules.md`에 있고,
+이 파일에는 **일일·주간 headless 실행 모두에 공통으로 적용되는 규칙**만 둔다
+(`claude -p`가 repo 루트에서 실행되며 이 파일을 자동 로드한다).
 
-## 내 관심사 프로필 (선별 기준)
+## 공통 규칙
 
-**핵심 전제**: 입력을 **2D 이미지만으로 추론에 쓸 수 있는 모델**을 본다.
-3D·멀티모달(VLM)이라도 2D 이미지 입력만으로 활용 가능하면 포함하고,
-point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 모델은 제외한다.
-선별 시 novelty(새 방법론)와 실서비스 적용 가능성을 **균형 있게** 본다.
-
-### 최우선 관심
-- **Self-supervised vision backbone** — 특히 새로운 SSL 사전학습 백본
-  (DINO/DINOv3, MAE 계열 등)과 image embedding. (이 카테고리가 1순위)
-- **피쳐 매칭 / 대응(correspondence)** — 두 이미지 간 유사도로 활용 가능한 표현 전반:
-  - local feature/keypoint 매칭 (SuperPoint·SuperGlue·LoFTR 계열)
-  - dense / semantic correspondence
-  - 이미지쌍 유사도·검증 (verification, re-identification 성격)
-  - 매칭·검색용 descriptor/임베딩 표현학습
-- **표현학습 + 이미지 검색/유사도** — metric learning, contrastive learning,
-  retrieval, FAISS/벡터 검색과 결합 가능한 표현.
-- **Fine-grained visual recognition / similarity.**
-
-### 우선순위 높음
-- Open-vocabulary detection (GroundingDINO 계열), segmentation (SAM 계열) — 2D 이미지 입력 기준.
-- 산업 응용: 제조/품질검사, 결함·anomaly detection, 위조·딥페이크 판별.
-- Foundation model 실무 적용 기법 (부차적 관심): 증류/경량화, PEFT/LoRA/adapter,
-  양자화·pruning 등 배포 최적화.
-
-### 우선순위 낮음 (특별히 뛰어날 때만)
-- OCR, document AI.
-- 3D·멀티모달(VLM): 2D 이미지 입력만으로 추론 가능한 경우에 한해 검토.
-
-### 제외 (우선순위 낮음)
-- 2D 이미지 입력만으로 사용할 수 없는 모델 (point cloud·multi-view·특수센서 전용 입력).
-- 순수 생성모델 (diffusion 등, 인식·표현학습과 무관한 것).
-- medical imaging 전용, 자율주행 전용 벤치마크 논문.
-- 순수 이론, 단순 데이터셋 공개, 소폭 SOTA 갱신만 있는 논문.
-
-## 요약 작업 규칙
-
-1. `today_papers.json`을 읽는다. (title, abstract, authors, url 포함)
-2. 위 프로필 기준으로 **가치 있는 논문 5~12편**을 선별한다.
-   해당하는 논문이 적으면 적게 뽑아도 된다. 억지로 채우지 말 것.
-3. `reports/YYYY/MM/report_DD.md` 형식으로 저장한다. (오늘 날짜, KST 기준.
-   예: 2026-07-14 → `reports/2026/07/report_14.md`)
-4. 각 논문 항목 형식:
-   - `### [제목](arxiv url)`
-   - **한 줄 요약** (한국어)
-   - **핵심 기여**: 2~4문장 (한국어)
-   - **실무 관련성**: 내 프로젝트/관심사와 어떻게 연결되는지 1~2문장
-   - **태그**: 3~5개, 영문 **kebab-case** (검색·모아보기용). 아래 '표준 태그'에서
-     우선 고르고, 마땅한 게 없으면 새로 만들되 kebab-case를 유지한다.
-     예: `**태그**: ssl-backbone, feature-matching, image-retrieval`
-
-   표준 태그 (우선 선택):
-   `ssl-backbone`, `feature-matching`, `correspondence`, `image-retrieval`,
-   `metric-learning`, `image-embedding`, `fine-grained`, `re-identification`,
-   `open-vocab-detection`, `object-detection`, `segmentation`,
-   `industrial-inspection`, `anomaly-detection`, `defect-detection`, `forgery-detection`,
-   `foundation-model`, `distillation`, `peft`, `quantization`, `efficient-inference`,
-   `vlm`, `ocr-document`, `3d`, `video`, `depth`, `pose`, `generative`, `dataset-benchmark`
-5. 파일은 **아래 고정 형식**을 그대로 따른다 (매일 산출물이 동일 포맷이어야 함):
-
-   ```
-   # arXiv cs.CV Daily Digest — YYYY-MM-DD (KST)
-
-   - **전체 신규 논문 수**: N편 (new N1 + cross-list N2)
-   - **선별 수**: M편
-
-   ## 오늘의 트렌드
-
-   <전반적 트렌드 한 단락>
-
-   ---
-
-   ### [제목](arxiv url)
-   (이하 4번의 논문 항목 형식을 각 논문마다 반복, 항목 사이 `---` 구분)
-   ```
-6. abstract만으로 판단이 어려운 최상위 1~2편은 웹에서 본문/프로젝트
-   페이지를 추가로 확인해도 좋다 (선택 사항, 시간 제한 고려).
-7. 요약은 모두 한국어로 작성한다. 고유 명사/기법명은 영어 유지.
+- **언어**: 모든 산출물은 한국어로 작성한다. 고유명사·기법·모델명은 영어로 유지한다.
+- **git 금지**: `git add`/`commit`/`push` 등 git 명령을 **절대 직접 실행하지 않는다**.
+  커밋·푸시는 래퍼 스크립트(`run_digest.sh`/`weekly_match.sh`)가 처리한다.
+- **산출물 범위**: 요청받은 산출물 파일만 생성/수정한다.

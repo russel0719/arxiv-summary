@@ -27,9 +27,23 @@ fi
 
 echo "[$(date '+%F %T')] running claude..." >> "$LOG"
 
-claude -p "CLAUDE.md의 요약 작업 규칙에 따라 today_papers.json을 처리하고 \
-$REPORT 파일을 생성해줘. 파일 생성만 하고 git add/commit/push 등 git 명령은 \
-절대 실행하지 마 — 커밋과 푸시는 이 스크립트가 처리한다." \
+# 실무 관련성 근거로 쓰는 프로젝트 프로파일(선택). 있으면 경로를 프롬프트로 넘긴다.
+# (weekly_match.sh 와 동일한 WORKSPACE_ROOT 규칙. 없으면 관심사 프로필만으로 생성.)
+WS="${WORKSPACE_ROOT:-$HOME/workspace}"
+PROFILES="$WS/.meta/project_profiles.md"
+if [ -f "$PROFILES" ]; then
+  PROFILE_LINE="실무 관련성은 프로젝트 프로파일($PROFILES)을 함께 읽고 쓰되, 프로젝트를 task·역할로만 지칭하고 내부 모델·제품·repo 이름은 쓰지 마."
+else
+  PROFILE_LINE=""
+fi
+
+# 프롬프트는 prompts/ 에서 관리 (규칙 daily_rules.md + 태스크 daily_digest.md).
+# 규칙 뒤에 태스크를 이어붙이고 {{PLACEHOLDER}} 를 런타임 값으로 치환.
+PROMPT="$(cat "$DIR/prompts/daily_rules.md" "$DIR/prompts/daily_digest.md")"
+PROMPT="${PROMPT//'{{REPORT}}'/$REPORT}"
+PROMPT="${PROMPT//'{{PROFILE_LINE}}'/$PROFILE_LINE}"
+
+claude -p "$PROMPT" \
   --allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)" \
   --max-turns 40 \
   >> "$LOG" 2>&1

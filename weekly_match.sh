@@ -35,15 +35,15 @@ fi
 REPORT_LIST="$(echo "$REPORTS" | sed 's|^|- |')"
 echo "[$(date '+%F %T')] $WEEK 매칭 시작 ($(echo "$REPORTS" | wc -l)개 리포트)..." >> "$LOG"
 
-claude -p "MATCH.md 의 지침에 따라 이번 주 논문 → 프로젝트 적용 매칭 리포트를 작성해줘.
+# 프롬프트는 prompts/ 에서 관리 (규칙 weekly_rules.md + 태스크 weekly_match.md).
+# 규칙 뒤에 태스크를 이어붙이고 {{PLACEHOLDER}} 를 런타임 값으로 치환.
+PROMPT="$(cat "$DIR/prompts/weekly_rules.md" "$DIR/prompts/weekly_match.md")"
+PROMPT="${PROMPT//'{{WEEK}}'/$WEEK}"
+PROMPT="${PROMPT//'{{REPORT_LIST}}'/$REPORT_LIST}"
+PROMPT="${PROMPT//'{{PROFILES}}'/$PROFILES}"
+PROMPT="${PROMPT//'{{OUT}}'/$OUT}"
 
-이번 주(${WEEK}) 일일 다이제스트 파일:
-${REPORT_LIST}
-
-프로젝트 프로파일: ${PROFILES}
-출력 파일(이 경로에 Write): ${OUT}
-
-파일 생성만 하고 git add/commit/push 등 git 명령은 절대 실행하지 마." \
+claude -p "$PROMPT" \
   --allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)" \
   --max-turns 40 \
   >> "$LOG" 2>&1
