@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_25.md",
+   "date": "2026-07-25",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-25 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_24.md",
    "date": "2026-07-24",
    "title": "arXiv cs.CV Daily Digest — 2026-07-24 (KST)",
@@ -578,6 +584,114 @@
   }
  ],
  "papers": [
+  {
+   "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
+   "url": "https://arxiv.org/abs/2607.21371",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "open-vocab-detection",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Visual Contrastive Self-Distillation",
+   "url": "https://arxiv.org/abs/2607.21556",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "distillation",
+    "vlm",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Achieving Text-based Person Retrieval with Any Granularity",
+   "url": "https://arxiv.org/abs/2607.21057",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "re-identification",
+    "fine-grained",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "DINO-VPT: Hierarchical Visual Prompt Tuning for Joint Physical-Digital Face Anti-Spoofing",
+   "url": "https://arxiv.org/abs/2607.20900",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "forgery-detection",
+    "peft",
+    "ssl-backbone",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "SPDCN: Strip-based Deformable Convolutional Network for Steel Surface Defect Segmentation",
+   "url": "https://arxiv.org/abs/2607.21456",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "segmentation",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Synthetic data generation framework for quality control automation in gravure printing",
+   "url": "https://arxiv.org/abs/2607.21577",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "dataset-benchmark",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "Explainable Deepfake Detection Challenge",
+   "url": "https://arxiv.org/abs/2607.21007",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "vlm"
+   ]
+  },
+  {
+   "title": "C-PTQ: Fisher-weighted Channel-wise Sensitivity for Post-training Quantization of MLLMs",
+   "url": "https://arxiv.org/abs/2607.21076",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CT-Merging: Consensus Directions and Task-Level Scaling for LoRA Adapter Merging",
+   "url": "https://arxiv.org/abs/2607.20561",
+   "date": "2026-07-25",
+   "report": "reports/2026/07/report_25.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
   {
    "title": "RIM: A Retrieval-In-Matching Framework for Cross-Domain Global Visual Localization of UAVs",
    "url": "https://arxiv.org/abs/2607.20116",
@@ -1634,26 +1748,42 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 18
+   "count": 22
   },
   {
    "tag": "image-embedding",
-   "count": 12
-  },
-  {
-   "tag": "metric-learning",
-   "count": 10
+   "count": 13
   },
   {
    "tag": "vlm",
+   "count": 13
+  },
+  {
+   "tag": "metric-learning",
+   "count": 11
+  },
+  {
+   "tag": "efficient-inference",
    "count": 10
   },
   {
    "tag": "image-retrieval",
-   "count": 8
+   "count": 9
   },
   {
    "tag": "ssl-backbone",
+   "count": 9
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 8
+  },
+  {
+   "tag": "fine-grained",
+   "count": 8
+  },
+  {
+   "tag": "forgery-detection",
    "count": 7
   },
   {
@@ -1661,11 +1791,15 @@
    "count": 6
   },
   {
-   "tag": "efficient-inference",
+   "tag": "industrial-inspection",
    "count": 6
   },
   {
-   "tag": "fine-grained",
+   "tag": "re-identification",
+   "count": 6
+  },
+  {
+   "tag": "segmentation",
    "count": 6
   },
   {
@@ -1673,7 +1807,7 @@
    "count": 5
   },
   {
-   "tag": "dataset-benchmark",
+   "tag": "defect-detection",
    "count": 5
   },
   {
@@ -1681,23 +1815,19 @@
    "count": 5
   },
   {
-   "tag": "forgery-detection",
-   "count": 5
-  },
-  {
-   "tag": "re-identification",
-   "count": 5
-  },
-  {
    "tag": "clip",
    "count": 4
   },
   {
-   "tag": "industrial-inspection",
+   "tag": "distillation",
    "count": 4
   },
   {
-   "tag": "segmentation",
+   "tag": "object-detection",
+   "count": 4
+  },
+  {
+   "tag": "peft",
    "count": 4
   },
   {
@@ -1705,23 +1835,11 @@
    "count": 4
   },
   {
-   "tag": "defect-detection",
-   "count": 3
-  },
-  {
    "tag": "dinov3",
    "count": 3
   },
   {
-   "tag": "distillation",
-   "count": 3
-  },
-  {
    "tag": "lightweight",
-   "count": 3
-  },
-  {
-   "tag": "object-detection",
    "count": 3
   },
   {
@@ -1781,11 +1899,11 @@
    "count": 2
   },
   {
-   "tag": "open-vocabulary-detection",
+   "tag": "open-vocab-detection",
    "count": 2
   },
   {
-   "tag": "peft",
+   "tag": "open-vocabulary-detection",
    "count": 2
   },
   {
@@ -2037,10 +2155,6 @@
    "count": 1
   },
   {
-   "tag": "open-vocab-detection",
-   "count": 1
-  },
-  {
    "tag": "open-vocabulary",
    "count": 1
   },
@@ -2086,6 +2200,10 @@
   },
   {
    "tag": "pseudo-anomaly",
+   "count": 1
+  },
+  {
+   "tag": "quantization",
    "count": 1
   },
   {
