@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_28.md",
+   "date": "2026-07-28",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-28 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_25.md",
    "date": "2026-07-25",
    "title": "arXiv cs.CV Daily Digest — 2026-07-25 (KST)",
@@ -584,6 +590,110 @@
   }
  ],
  "papers": [
+  {
+   "title": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
+   "url": "https://arxiv.org/abs/2607.22068",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "ssl-backbone",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "dRAE: Representation Autoencoder with Hyper-Spherical Codes",
+   "url": "https://arxiv.org/abs/2607.22148",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "image-embedding",
+    "quantization",
+    "image-retrieval",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Rethinking Layer-Wise Information Allocation for Vision Foundation Model Adaptation",
+   "url": "https://arxiv.org/abs/2607.21973",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "fine-grained",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "Deep Convolutional Large-Margin ℓp-SVDD for Visual Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.22212",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "anomaly-detection",
+    "metric-learning",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "FAIR: Feature-Augmented Implicit Regularization for AI-generated Fake Image Detection",
+   "url": "https://arxiv.org/abs/2607.22087",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "forgery-detection",
+    "domain-generalization",
+    "robustness"
+   ]
+  },
+  {
+   "title": "ISPCloak: Weaponizing ISP for Optimization-Free Physical Camouflage against Deepfake Detectors",
+   "url": "https://arxiv.org/abs/2607.21897",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "forgery-detection",
+    "adversarial-attack",
+    "robustness"
+   ]
+  },
+  {
+   "title": "Physiological Signals as a Forensic Modality for Talking-Face Deepfake Detection",
+   "url": "https://arxiv.org/abs/2607.21776",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "forgery-detection",
+    "video",
+    "robustness"
+   ]
+  },
+  {
+   "title": "Alleviating Regional Shortcuts for Few-Shot Class-Incremental Learning",
+   "url": "https://arxiv.org/abs/2607.22072",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "few-shot-learning",
+    "incremental-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "InnoText: A Unified Model for Visual Text Generation and Editing",
+   "url": "https://arxiv.org/abs/2607.22101",
+   "date": "2026-07-28",
+   "report": "reports/2026/07/report_28.md",
+   "tags": [
+    "generative",
+    "ocr-document",
+    "fine-grained",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
    "url": "https://arxiv.org/abs/2607.21371",
@@ -1748,10 +1858,14 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 22
+   "count": 25
   },
   {
    "tag": "image-embedding",
+   "count": 14
+  },
+  {
+   "tag": "metric-learning",
    "count": 13
   },
   {
@@ -1759,7 +1873,15 @@
    "count": 13
   },
   {
-   "tag": "metric-learning",
+   "tag": "fine-grained",
+   "count": 11
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 11
+  },
+  {
+   "tag": "ssl-backbone",
    "count": 11
   },
   {
@@ -1767,35 +1889,27 @@
    "count": 10
   },
   {
-   "tag": "image-retrieval",
-   "count": 9
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 9
+   "tag": "forgery-detection",
+   "count": 10
   },
   {
    "tag": "dataset-benchmark",
-   "count": 8
-  },
-  {
-   "tag": "fine-grained",
-   "count": 8
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 7
-  },
-  {
-   "tag": "correspondence",
-   "count": 6
+   "count": 9
   },
   {
    "tag": "industrial-inspection",
-   "count": 6
+   "count": 7
   },
   {
    "tag": "re-identification",
+   "count": 7
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 6
+  },
+  {
+   "tag": "correspondence",
    "count": 6
   },
   {
@@ -1803,15 +1917,15 @@
    "count": 6
   },
   {
-   "tag": "anomaly-detection",
-   "count": 5
-  },
-  {
    "tag": "defect-detection",
    "count": 5
   },
   {
    "tag": "feature-matching",
+   "count": 5
+  },
+  {
+   "tag": "peft",
    "count": 5
   },
   {
@@ -1827,7 +1941,7 @@
    "count": 4
   },
   {
-   "tag": "peft",
+   "tag": "video",
    "count": 4
   },
   {
@@ -1843,15 +1957,15 @@
    "count": 3
   },
   {
+   "tag": "robustness",
+   "count": 3
+  },
+  {
    "tag": "self-supervised",
    "count": 3
   },
   {
    "tag": "training-free",
-   "count": 3
-  },
-  {
-   "tag": "video",
    "count": 3
   },
   {
@@ -1876,6 +1990,10 @@
   },
   {
    "tag": "few-shot",
+   "count": 2
+  },
+  {
+   "tag": "generative",
    "count": 2
   },
   {
@@ -1907,6 +2025,10 @@
    "count": 2
   },
   {
+   "tag": "quantization",
+   "count": 2
+  },
+  {
    "tag": "sam3",
    "count": 2
   },
@@ -1916,6 +2038,10 @@
   },
   {
    "tag": "3d-anomaly-detection",
+   "count": 1
+  },
+  {
+   "tag": "adversarial-attack",
    "count": 1
   },
   {
@@ -1987,6 +2113,10 @@
    "count": 1
   },
   {
+   "tag": "domain-generalization",
+   "count": 1
+  },
+  {
    "tag": "edge-deployment",
    "count": 1
   },
@@ -2027,6 +2157,10 @@
    "count": 1
   },
   {
+   "tag": "few-shot-learning",
+   "count": 1
+  },
+  {
    "tag": "fine-grained-recognition",
    "count": 1
   },
@@ -2040,10 +2174,6 @@
   },
   {
    "tag": "general-purpose-vision",
-   "count": 1
-  },
-  {
-   "tag": "generative",
    "count": 1
   },
   {
@@ -2064,6 +2194,10 @@
   },
   {
    "tag": "in-context-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "incremental-learning",
    "count": 1
   },
   {
@@ -2147,6 +2281,10 @@
    "count": 1
   },
   {
+   "tag": "ocr-document",
+   "count": 1
+  },
+  {
    "tag": "on-device",
    "count": 1
   },
@@ -2200,10 +2338,6 @@
   },
   {
    "tag": "pseudo-anomaly",
-   "count": 1
-  },
-  {
-   "tag": "quantization",
    "count": 1
   },
   {
