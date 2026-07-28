@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_29.md",
+   "date": "2026-07-29",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-29 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_28.md",
    "date": "2026-07-28",
    "title": "arXiv cs.CV Daily Digest — 2026-07-28 (KST)",
@@ -590,6 +596,122 @@
   }
  ],
  "papers": [
+  {
+   "title": "Controlling Embedding Spaces with Text-Conditioned Transformations",
+   "url": "https://arxiv.org/abs/2607.22919",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "DSCH-Loss: A Dynamic Semantic Channel Objective for Deep Semantic Hashing",
+   "url": "https://arxiv.org/abs/2607.24567",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "What CLIP Knows but Cannot Say: Recovering Negation from Frozen Intermediate Features",
+   "url": "https://arxiv.org/abs/2607.23271",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "image-embedding",
+    "vlm",
+    "image-retrieval",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Mutual Modality Trust with Lightweight Reconstruction Regularization for Fine-grained Tire Pattern Recognition",
+   "url": "https://arxiv.org/abs/2607.23979",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "fine-grained",
+    "industrial-inspection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "DuoAD: Leveraging [CLS] Dual Characteristics for Training-Free Few-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.23924",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "anomaly-detection",
+    "foundation-model",
+    "industrial-inspection",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "XMatchAD: A Cross-Modal Matching Perspective on Reconstruction-based Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.23658",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "correspondence",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "DailyBench: A Unified Benchmark for AI-Generated and Manipulated Images from Modern Generative Models",
+   "url": "https://arxiv.org/abs/2607.24016",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "generative"
+   ]
+  },
+  {
+   "title": "Hybrid Semantic and Spectral Ensemble for Robust Synthetic Image Source Attribution",
+   "url": "https://arxiv.org/abs/2607.22808",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "forgery-detection",
+    "frequency-analysis",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "IJCB-AFMFR 2026: Competition on Adapting Foundation Models for Face Recognition Using Synthetic Training Data",
+   "url": "https://arxiv.org/abs/2607.24422",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "foundation-model",
+    "peft",
+    "metric-learning",
+    "re-identification"
+   ]
+  },
+  {
+   "title": "Breaking the Synthetic-Real Domain Shortcut for Training-Free Generative Replay-based Class Incremental Learning",
+   "url": "https://arxiv.org/abs/2607.22994",
+   "date": "2026-07-29",
+   "report": "reports/2026/07/report_29.md",
+   "tags": [
+    "continual-learning",
+    "generative",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era",
    "url": "https://arxiv.org/abs/2607.22068",
@@ -1858,58 +1980,66 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 25
+   "count": 29
   },
   {
    "tag": "image-embedding",
-   "count": 14
+   "count": 17
   },
   {
    "tag": "metric-learning",
-   "count": 13
+   "count": 16
   },
   {
    "tag": "vlm",
-   "count": 13
-  },
-  {
-   "tag": "fine-grained",
-   "count": 11
+   "count": 15
   },
   {
    "tag": "image-retrieval",
-   "count": 11
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 11
+   "count": 14
   },
   {
    "tag": "efficient-inference",
-   "count": 10
+   "count": 12
+  },
+  {
+   "tag": "fine-grained",
+   "count": 12
   },
   {
    "tag": "forgery-detection",
-   "count": 10
+   "count": 12
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 12
   },
   {
    "tag": "dataset-benchmark",
-   "count": 9
+   "count": 11
   },
   {
    "tag": "industrial-inspection",
-   "count": 7
-  },
-  {
-   "tag": "re-identification",
-   "count": 7
+   "count": 10
   },
   {
    "tag": "anomaly-detection",
-   "count": 6
+   "count": 8
+  },
+  {
+   "tag": "re-identification",
+   "count": 8
   },
   {
    "tag": "correspondence",
+   "count": 7
+  },
+  {
+   "tag": "defect-detection",
+   "count": 6
+  },
+  {
+   "tag": "peft",
    "count": 6
   },
   {
@@ -1917,15 +2047,7 @@
    "count": 6
   },
   {
-   "tag": "defect-detection",
-   "count": 5
-  },
-  {
    "tag": "feature-matching",
-   "count": 5
-  },
-  {
-   "tag": "peft",
    "count": 5
   },
   {
@@ -1934,6 +2056,10 @@
   },
   {
    "tag": "distillation",
+   "count": 4
+  },
+  {
+   "tag": "generative",
    "count": 4
   },
   {
@@ -1990,10 +2116,6 @@
   },
   {
    "tag": "few-shot",
-   "count": 2
-  },
-  {
-   "tag": "generative",
    "count": 2
   },
   {
@@ -2089,6 +2211,10 @@
    "count": 1
   },
   {
+   "tag": "continual-learning",
+   "count": 1
+  },
+  {
    "tag": "crack-detection",
    "count": 1
   },
@@ -2166,6 +2292,10 @@
   },
   {
    "tag": "forgery-forensics",
+   "count": 1
+  },
+  {
+   "tag": "frequency-analysis",
    "count": 1
   },
   {
