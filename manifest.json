@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_30.md",
+   "date": "2026-07-30",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-30 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_29.md",
    "date": "2026-07-29",
    "title": "arXiv cs.CV Daily Digest — 2026-07-29 (KST)",
@@ -596,6 +602,83 @@
   }
  ],
  "papers": [
+  {
+   "title": "ANFI: Rethinking Neighbor Feature Interaction in Person Re-ID",
+   "url": "https://arxiv.org/abs/2607.25407",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "HOME: Robust Hough-space Matching Method for Structured and Textureless Videos",
+   "url": "https://arxiv.org/abs/2607.25389",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "Few-Shot Open-Vocabulary Remote Sensing Segmentation via Textual Inversion",
+   "url": "https://arxiv.org/abs/2607.25563",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "On the Use of Synthetic Data for Threshold Calibration in Face Recognition",
+   "url": "https://arxiv.org/abs/2607.25990",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "Noise-Free One-Step LoRA for Task-Driven Image Restoration with Diffusion Priors",
+   "url": "https://arxiv.org/abs/2607.25390",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+   "url": "https://arxiv.org/abs/2607.25794",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "FunnelAL: Retrieve-then-Rank Active Learning for Single-Class Discovery",
+   "url": "https://arxiv.org/abs/2607.25276",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "Enabling Fully Integer-Only Inference for Lightweight Detection Transformers",
+   "url": "https://arxiv.org/abs/2607.24981",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "LaP-Forensics: Latent-Pixel Consistency Guided Multimodal Reasoning for Deepfake Detection",
+   "url": "https://arxiv.org/abs/2607.25962",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "Image Quality Dependent Degradation for AI Systems",
+   "url": "https://arxiv.org/abs/2607.25736",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
+  {
+   "title": "Face De-Identification: A Domain-Centric Survey from Capture to Processing",
+   "url": "https://arxiv.org/abs/2607.25926",
+   "date": "2026-07-30",
+   "report": "reports/2026/07/report_30.md",
+   "tags": []
+  },
   {
    "title": "Controlling Embedding Spaces with Text-Conditioned Transformations",
    "url": "https://arxiv.org/abs/2607.22919",
