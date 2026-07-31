@@ -77,6 +77,12 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
 - **카테고리 추가**: `fetch_arxiv.py`의 `CATEGORIES`에 `cs.LG`, `cs.AI` 등 추가.
 - **권한**: `--allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)"`로
   최소 권한만 부여했다. Claude가 임의 셸 명령을 실행할 수 없다.
+- **cron 인증(중요)**: headless `claude -p`는 구독 OAuth 세션을 쓰는데, 인터랙티브
+  세션이 없는 새벽엔 access token 만료 후 refresh가 실패해 실행이 통째로 중단될 수 있다
+  (`Failed to authenticate: OAuth session expired and could not be refreshed`).
+  `claude setup-token`으로 장수명 토큰을 1회 발급해 `~/.claude/arxiv_digest.token`에
+  저장하면(`chmod 600`), `run_digest.sh`/`weekly_match.sh`가 이를 `CLAUDE_CODE_OAUTH_TOKEN`
+  으로 주입해 예방한다. 경로는 `CLAUDE_OAUTH_TOKEN_FILE`로 바꿀 수 있다.
 - **사용량**: Pro 구독 사용량 한도를 공유하므로, 하루 1회 요약 정도는
   일반적으로 문제없지만 낮 업무 시간과 겹치지 않게 스케줄하면 좋다.
 - **PATH 문제**: cron은 로그인 셸 환경이 아니므로 `claude`/`uv` 경로가 다르면
