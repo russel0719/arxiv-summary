@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_01.md",
+   "date": "2026-08-01",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-01 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_31.md",
    "date": "2026-07-31",
    "title": "arXiv cs.CV Daily Digest — 2026-07-31 (KST)",
@@ -608,6 +614,122 @@
   }
  ],
  "papers": [
+  {
+   "title": "BladeYOLO: Wind Turbine Blade Defect Detection with Limited Annotations and Weak-Saliency Awareness",
+   "url": "https://arxiv.org/abs/2607.28065",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "ssl-backbone",
+    "defect-detection",
+    "industrial-inspection",
+    "object-detection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval",
+   "url": "https://arxiv.org/abs/2607.27959",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "image-retrieval",
+    "fine-grained",
+    "vlm",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Explaining Image Similarity with Automatically Extracted Concept Activation Vectors",
+   "url": "https://arxiv.org/abs/2607.28386",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding",
+    "explainability"
+   ]
+  },
+  {
+   "title": "DECODE: Tackling Representation and Decision Degradation in Continual AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2607.27882",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "forgery-detection",
+    "continual-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Can Vision-Language Models Reason about AI Edits in Images?",
+   "url": "https://arxiv.org/abs/2607.28464",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "forgery-detection",
+    "vlm",
+    "segmentation",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "Private Face Recognition Training Dataset Publication via Identity-Decoupled and Geometry-Preserving Face Distillation",
+   "url": "https://arxiv.org/abs/2607.27764",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "metric-learning",
+    "re-identification",
+    "distillation",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Understanding Submodular Information Measure Based Objectives for Representation Learning: A Variance and Separation Perspective",
+   "url": "https://arxiv.org/abs/2607.27660",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "representation-learning"
+   ]
+  },
+  {
+   "title": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+   "url": "https://arxiv.org/abs/2607.28589",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+   "url": "https://arxiv.org/abs/2607.28627",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "image-retrieval",
+    "efficient-inference",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Deep learning-based hierarchical insect classification using camera trap imagery",
+   "url": "https://arxiv.org/abs/2607.28005",
+   "date": "2026-08-01",
+   "report": "reports/2026/08/report_01.md",
+   "tags": [
+    "fine-grained",
+    "image-classification",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "Step-Attention Refinement of DINOv3 Features for Efficient Anterior Eye Segmentation",
    "url": "https://arxiv.org/abs/2607.27087",
@@ -2146,54 +2268,54 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 29
-  },
-  {
-   "tag": "image-embedding",
-   "count": 17
+   "count": 32
   },
   {
    "tag": "metric-learning",
-   "count": 16
+   "count": 20
+  },
+  {
+   "tag": "image-embedding",
+   "count": 19
   },
   {
    "tag": "vlm",
-   "count": 15
+   "count": 18
   },
   {
    "tag": "image-retrieval",
-   "count": 14
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 12
+   "count": 17
   },
   {
    "tag": "fine-grained",
-   "count": 12
+   "count": 15
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 14
   },
   {
    "tag": "forgery-detection",
-   "count": 12
+   "count": 14
   },
   {
    "tag": "ssl-backbone",
-   "count": 12
+   "count": 13
   },
   {
    "tag": "dataset-benchmark",
-   "count": 11
+   "count": 12
   },
   {
    "tag": "industrial-inspection",
-   "count": 10
-  },
-  {
-   "tag": "anomaly-detection",
-   "count": 8
+   "count": 11
   },
   {
    "tag": "re-identification",
+   "count": 9
+  },
+  {
+   "tag": "anomaly-detection",
    "count": 8
   },
   {
@@ -2202,18 +2324,26 @@
   },
   {
    "tag": "defect-detection",
-   "count": 6
+   "count": 7
+  },
+  {
+   "tag": "segmentation",
+   "count": 7
   },
   {
    "tag": "peft",
    "count": 6
   },
   {
-   "tag": "segmentation",
-   "count": 6
+   "tag": "distillation",
+   "count": 5
   },
   {
    "tag": "feature-matching",
+   "count": 5
+  },
+  {
+   "tag": "object-detection",
    "count": 5
   },
   {
@@ -2221,15 +2351,7 @@
    "count": 4
   },
   {
-   "tag": "distillation",
-   "count": 4
-  },
-  {
    "tag": "generative",
-   "count": 4
-  },
-  {
-   "tag": "object-detection",
    "count": 4
   },
   {
@@ -2249,6 +2371,10 @@
    "count": 3
   },
   {
+   "tag": "quantization",
+   "count": 3
+  },
+  {
    "tag": "robustness",
    "count": 3
   },
@@ -2259,6 +2385,10 @@
   {
    "tag": "training-free",
    "count": 3
+  },
+  {
+   "tag": "continual-learning",
+   "count": 2
   },
   {
    "tag": "contrastive-learning",
@@ -2313,7 +2443,7 @@
    "count": 2
   },
   {
-   "tag": "quantization",
+   "tag": "representation-learning",
    "count": 2
   },
   {
@@ -2377,10 +2507,6 @@
    "count": 1
   },
   {
-   "tag": "continual-learning",
-   "count": 1
-  },
-  {
    "tag": "crack-detection",
    "count": 1
   },
@@ -2433,6 +2559,10 @@
    "count": 1
   },
   {
+   "tag": "explainability",
+   "count": 1
+  },
+  {
    "tag": "face-identification",
    "count": 1
   },
@@ -2482,6 +2612,10 @@
   },
   {
    "tag": "hypergraph",
+   "count": 1
+  },
+  {
+   "tag": "image-classification",
    "count": 1
   },
   {
@@ -2653,7 +2787,7 @@
    "count": 1
   },
   {
-   "tag": "representation-learning",
+   "tag": "reinforcement-learning",
    "count": 1
   },
   {
