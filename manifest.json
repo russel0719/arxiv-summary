@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/07/report_31.md",
+   "date": "2026-07-31",
+   "title": "arXiv cs.CV Daily Digest — 2026-07-31 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/07/report_30.md",
    "date": "2026-07-30",
    "title": "arXiv cs.CV Daily Digest — 2026-07-30 (KST)",
@@ -602,6 +608,83 @@
   }
  ],
  "papers": [
+  {
+   "title": "Step-Attention Refinement of DINOv3 Features for Efficient Anterior Eye Segmentation",
+   "url": "https://arxiv.org/abs/2607.27087",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "TraceCLIP: Recovering Local Semantics from Patch-to-CLS Contributions",
+   "url": "https://arxiv.org/abs/2607.26107",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "Representation Trajectories Matters: Complementary Evidence for OOD Detection and Image Classification",
+   "url": "https://arxiv.org/abs/2607.26565",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "Level, Sharpness, and Corpus: Why Zero-Shot OOD Detector Rankings Do Not Transfer",
+   "url": "https://arxiv.org/abs/2607.26582",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "ScratchSim: A Procedural Synthetic Data Pipeline for Surface Scratch Detection",
+   "url": "https://arxiv.org/abs/2607.27065",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "FakeIDet3-DB: Refining Digital Attacks and Patch Extraction for Secure ID Benchmarking",
+   "url": "https://arxiv.org/abs/2607.26641",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "BG-REAL: A Public Real-Data Anchored Benchmark for Background Manipulation Detection and Localization",
+   "url": "https://arxiv.org/abs/2607.26232",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection",
+   "url": "https://arxiv.org/abs/2607.27113",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "Lightweight Image Classification of Raptor Species for Edge Devices",
+   "url": "https://arxiv.org/abs/2607.26238",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "From Keypoints to Predictive Distributions: Post-Hoc Uncertainty for YOLO-Pose Models",
+   "url": "https://arxiv.org/abs/2607.26921",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
+  {
+   "title": "When Fish Look Alike: Tracking Identities with Dual-branch Elasticity",
+   "url": "https://arxiv.org/abs/2607.26412",
+   "date": "2026-07-31",
+   "report": "reports/2026/07/report_31.md",
+   "tags": []
+  },
   {
    "title": "ANFI: Rethinking Neighbor Feature Interaction in Person Re-ID",
    "url": "https://arxiv.org/abs/2607.25407",
