@@ -18,6 +18,14 @@ LOG="logs/$DATE.log"
 # claude가 PATH에 없을 수 있으므로 cron 환경 대비 (npm global 경로 등 환경에 맞게 수정)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
 
+# cron 무인 실행용 장수명 OAuth 토큰(선택, 권장). 있으면 인터랙티브 세션 자격증명 대신 사용해
+# 새벽 refresh 실패("OAuth session expired and could not be refreshed")를 방지한다.
+# 최초 1회: `claude setup-token` 출력 토큰을 $TOKEN_FILE 에 저장 후 chmod 600.
+TOKEN_FILE="${CLAUDE_OAUTH_TOKEN_FILE:-$HOME/.claude/arxiv_digest.token}"
+if [ -z "${CLAUDE_CODE_OAUTH_TOKEN:-}" ] && [ -f "$TOKEN_FILE" ]; then
+  export CLAUDE_CODE_OAUTH_TOKEN="$(tr -d '[:space:]' < "$TOKEN_FILE")"
+fi
+
 echo "[$(date '+%F %T')] fetching arxiv..." >> "$LOG"
 
 if ! uv run python fetch_arxiv.py >> "$LOG" 2>&1; then

@@ -12,6 +12,13 @@ cd "$DIR"
 # claude 가 cron PATH 에 없을 수 있으므로 대비 (run_digest.sh 와 동일)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
 
+# cron 무인 실행용 장수명 OAuth 토큰(선택, 권장). run_digest.sh 와 동일 규칙.
+# 최초 1회: `claude setup-token` 출력 토큰을 $TOKEN_FILE 에 저장 후 chmod 600.
+TOKEN_FILE="${CLAUDE_OAUTH_TOKEN_FILE:-$HOME/.claude/arxiv_digest.token}"
+if [ -z "${CLAUDE_CODE_OAUTH_TOKEN:-}" ] && [ -f "$TOKEN_FILE" ]; then
+  export CLAUDE_CODE_OAUTH_TOKEN="$(tr -d '[:space:]' < "$TOKEN_FILE")"
+fi
+
 WS="${WORKSPACE_ROOT:-$HOME/workspace}"
 PROFILES="$WS/.meta/project_profiles.md"
 OUTDIR="$WS/.meta/paper-match"
