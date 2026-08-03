@@ -39,6 +39,8 @@ echo "[$(date '+%F %T')] running claude..." >> "$LOG"
 # (weekly_match.sh 와 동일한 WORKSPACE_ROOT 규칙. 없으면 관심사 프로필만으로 생성.)
 WS="${WORKSPACE_ROOT:-$HOME/workspace}"
 PROFILES="$WS/.meta/project_profiles.md"
+# 사내 웹 데이터 루트: full 리포트(실무 관련성 포함)를 여기에 보관·서빙(공개 push 안 함).
+WEB_ROOT="${ARXIV_WEB_ROOT:-$WS/.meta/arxiv-web}"
 if [ -f "$PROFILES" ]; then
   PROFILE_LINE="실무 관련성은 프로젝트 프로파일($PROFILES)을 함께 읽고 쓰되, 프로젝트를 task·역할로만 지칭하고 내부 모델·제품·repo 이름은 쓰지 마."
 else
@@ -59,8 +61,16 @@ claude -p "$PROMPT" \
 if [ -f "$REPORT" ]; then
   echo "[$(date '+%F %T')] done: $REPORT" >> "$LOG"
 
-  # 사이트(index.html)가 읽는 리포트 인덱스 갱신
+  # 1) full 리포트(실무 관련성 포함)를 사내 웹 데이터로 보관 (공개 push 대상 아님)
+  mkdir -p "$WEB_ROOT/daily/$YEAR/$MONTH"
+  cp "$REPORT" "$WEB_ROOT/daily/$YEAR/$MONTH/report_$DAY.md"
+
+  # 2) 공개본에서는 '실무 관련성' 줄 제거 (in-place)
+  uv run python strip_relevance.py "$REPORT" >> "$LOG" 2>&1 || true
+
+  # 3) 공개 사이트 manifest + 사내 웹 manifest 각각 갱신
   uv run python build_manifest.py >> "$LOG" 2>&1 || true
+  ARXIV_WEB_ROOT="$WEB_ROOT" uv run python build_internal_manifest.py >> "$LOG" 2>&1 || true
 
   # 테스트 시 DIGEST_SKIP_PUSH=1 로 원격 push 생략 가능
   if [ "${DIGEST_SKIP_PUSH:-0}" = "1" ]; then
