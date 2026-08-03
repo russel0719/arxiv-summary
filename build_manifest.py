@@ -24,7 +24,7 @@ OUT_FILE = BASE_DIR / "manifest.json"
 
 DATE_RE = re.compile(r"(\d{4})-(\d{2})-(\d{2})")
 HEAD_RE = re.compile(r"^###\s+\[(.+?)\]\((.+?)\)\s*$")
-TAG_RE = re.compile(r"^\*\*(?:태그|키워드)\*\*\s*[:：]\s*(.+?)\s*$")
+TAG_RE = re.compile(r"^\s*-?\s*\*\*(?:태그|키워드)\*\*\s*[:：]\s*(.+?)\s*$")
 
 
 def date_of(md: Path) -> str:

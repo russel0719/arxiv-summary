@@ -875,154 +875,251 @@
    "url": "https://arxiv.org/abs/2607.27087",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "foundation-model",
+    "efficient-inference"
+   ]
   },
   {
    "title": "TraceCLIP: Recovering Local Semantics from Patch-to-CLS Contributions",
    "url": "https://arxiv.org/abs/2607.26107",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "segmentation",
+    "vlm",
+    "foundation-model",
+    "image-embedding"
+   ]
   },
   {
    "title": "Representation Trajectories Matters: Complementary Evidence for OOD Detection and Image Classification",
    "url": "https://arxiv.org/abs/2607.26565",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "anomaly-detection",
+    "image-embedding",
+    "foundation-model"
+   ]
   },
   {
    "title": "Level, Sharpness, and Corpus: Why Zero-Shot OOD Detector Rankings Do Not Transfer",
    "url": "https://arxiv.org/abs/2607.26582",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "anomaly-detection",
+    "vlm",
+    "foundation-model"
+   ]
   },
   {
    "title": "ScratchSim: A Procedural Synthetic Data Pipeline for Surface Scratch Detection",
    "url": "https://arxiv.org/abs/2607.27065",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "object-detection",
+    "dataset-benchmark"
+   ]
   },
   {
    "title": "FakeIDet3-DB: Refining Digital Attacks and Patch Extraction for Secure ID Benchmarking",
    "url": "https://arxiv.org/abs/2607.26641",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "fine-grained",
+    "ocr-document"
+   ]
   },
   {
    "title": "BG-REAL: A Public Real-Data Anchored Benchmark for Background Manipulation Detection and Localization",
    "url": "https://arxiv.org/abs/2607.26232",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "anomaly-detection"
+   ]
   },
   {
    "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection",
    "url": "https://arxiv.org/abs/2607.27113",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "vlm",
+    "distillation"
+   ]
   },
   {
    "title": "Lightweight Image Classification of Raptor Species for Edge Devices",
    "url": "https://arxiv.org/abs/2607.26238",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "distillation",
+    "fine-grained",
+    "efficient-inference",
+    "ssl-backbone"
+   ]
   },
   {
    "title": "From Keypoints to Predictive Distributions: Post-Hoc Uncertainty for YOLO-Pose Models",
    "url": "https://arxiv.org/abs/2607.26921",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "pose",
+    "object-detection",
+    "uncertainty-estimation"
+   ]
   },
   {
    "title": "When Fish Look Alike: Tracking Identities with Dual-branch Elasticity",
    "url": "https://arxiv.org/abs/2607.26412",
    "date": "2026-07-31",
    "report": "reports/2026/07/report_31.md",
-   "tags": []
+   "tags": [
+    "video",
+    "re-identification",
+    "efficient-inference",
+    "object-detection"
+   ]
   },
   {
    "title": "ANFI: Rethinking Neighbor Feature Interaction in Person Re-ID",
    "url": "https://arxiv.org/abs/2607.25407",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "metric-learning"
+   ]
   },
   {
    "title": "HOME: Robust Hough-space Matching Method for Structured and Textureless Videos",
    "url": "https://arxiv.org/abs/2607.25389",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "efficient-inference"
+   ]
   },
   {
    "title": "Few-Shot Open-Vocabulary Remote Sensing Segmentation via Textual Inversion",
    "url": "https://arxiv.org/abs/2607.25563",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "open-vocab-detection",
+    "segmentation",
+    "peft",
+    "fine-grained"
+   ]
   },
   {
    "title": "On the Use of Synthetic Data for Threshold Calibration in Face Recognition",
    "url": "https://arxiv.org/abs/2607.25990",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "threshold-calibration",
+    "synthetic-data",
+    "re-identification",
+    "forgery-detection"
+   ]
   },
   {
    "title": "Noise-Free One-Step LoRA for Task-Driven Image Restoration with Diffusion Priors",
    "url": "https://arxiv.org/abs/2607.25390",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "image-restoration",
+    "peft",
+    "foundation-model",
+    "ocr-document"
+   ]
   },
   {
    "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
    "url": "https://arxiv.org/abs/2607.25794",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "fine-grained",
+    "image-retrieval",
+    "vlm"
+   ]
   },
   {
    "title": "FunnelAL: Retrieve-then-Rank Active Learning for Single-Class Discovery",
    "url": "https://arxiv.org/abs/2607.25276",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "active-learning",
+    "image-retrieval",
+    "image-embedding"
+   ]
   },
   {
    "title": "Enabling Fully Integer-Only Inference for Lightweight Detection Transformers",
    "url": "https://arxiv.org/abs/2607.24981",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "object-detection"
+   ]
   },
   {
    "title": "LaP-Forensics: Latent-Pixel Consistency Guided Multimodal Reasoning for Deepfake Detection",
    "url": "https://arxiv.org/abs/2607.25962",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "anomaly-detection",
+    "vlm"
+   ]
   },
   {
    "title": "Image Quality Dependent Degradation for AI Systems",
    "url": "https://arxiv.org/abs/2607.25736",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "image-quality",
+    "threshold-calibration",
+    "object-detection"
+   ]
   },
   {
    "title": "Face De-Identification: A Domain-Centric Survey from Capture to Processing",
    "url": "https://arxiv.org/abs/2607.25926",
    "date": "2026-07-30",
    "report": "reports/2026/07/report_30.md",
-   "tags": []
+   "tags": [
+    "de-identification",
+    "video",
+    "dataset-benchmark"
+   ]
   },
   {
    "title": "Controlling Embedding Spaces with Text-Conditioned Transformations",
@@ -1590,224 +1687,374 @@
    "url": "https://arxiv.org/abs/2607.16274",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "fine-grained"
+   ]
   },
   {
    "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
    "url": "https://arxiv.org/abs/2607.18237",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "fine-grained",
+    "vlm"
+   ]
   },
   {
    "title": "MuViSeg: Multi-View Segment Correspondences from Dense Geometry Priors",
    "url": "https://arxiv.org/abs/2607.17938",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "segmentation",
+    "foundation-model"
+   ]
   },
   {
    "title": "DS@GT ARC at AnimalCLEF 2026: Species-Aware Graph Construction for Multi-Species Animal Re-Identification",
    "url": "https://arxiv.org/abs/2607.16453",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "re-identification",
+    "feature-matching",
+    "image-retrieval",
+    "fine-grained"
+   ]
   },
   {
    "title": "DARA: Degradation-Aware Low-Rank Residual Adaptation with Original-to-Corrupted Distillation for Corruption-Robust Animal Re-Identification",
    "url": "https://arxiv.org/abs/2607.16644",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "peft",
+    "distillation",
+    "image-embedding"
+   ]
   },
   {
    "title": "Miles: Metric Learning with Expandable Subspace for Pre-Trained Model-Based Class-Incremental Learning",
    "url": "https://arxiv.org/abs/2607.17593",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "foundation-model"
+   ]
   },
   {
    "title": "Eddy-VL 1.9B: Structural Pruning and Layered Distillation for Edge-Deployable Multimodal Embedding",
    "url": "https://arxiv.org/abs/2607.16316",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "image-embedding",
+    "distillation",
+    "efficient-inference",
+    "image-retrieval",
+    "vlm"
+   ]
   },
   {
    "title": "DepthART: Scaling Foundation Monocular Depth to Tiny Models",
    "url": "https://arxiv.org/abs/2607.17099",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "distillation",
+    "depth",
+    "efficient-inference",
+    "foundation-model"
+   ]
   },
   {
    "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
    "url": "https://arxiv.org/abs/2607.18142",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "vlm",
+    "video"
+   ]
   },
   {
    "title": "Does Super-Resolution Preserve Defect Evidence? A Low-False-Call Benchmark for Semiconductor Inspection",
    "url": "https://arxiv.org/abs/2607.17401",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "dataset-benchmark"
+   ]
   },
   {
    "title": "When 2D Cues Fail: Improving Image Manipulation Localization with Reliable 3D Geometry",
    "url": "https://arxiv.org/abs/2607.18040",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "depth",
+    "segmentation"
+   ]
   },
   {
    "title": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
    "url": "https://arxiv.org/abs/2607.18230",
    "date": "2026-07-22",
    "report": "reports/2026/07/report_22.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "segmentation",
+    "vlm"
+   ]
   },
   {
    "title": "PIXIE: A Zero-Shot texture-invariant 6D pose estimation framework for unseen objects with assembly defects",
    "url": "https://arxiv.org/abs/2607.16015",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "feature-matching",
+    "pose",
+    "industrial-inspection",
+    "foundation-model"
+   ]
   },
   {
    "title": "Are All Tokens Necessary for Visual Place Recognition? An Empirical Study of Token Reduction for Efficient Inference",
    "url": "https://arxiv.org/abs/2607.15563",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "image-retrieval",
+    "efficient-inference",
+    "foundation-model",
+    "dataset-benchmark"
+   ]
   },
   {
    "title": "Rethinking the Readout: Unlocking Video Backbones for AI-Generated Video Detection",
    "url": "https://arxiv.org/abs/2607.15321",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "video",
+    "foundation-model",
+    "efficient-inference"
+   ]
   },
   {
    "title": "The Third Competition on Document Forgery Detection on ID-Cards and Passports",
    "url": "https://arxiv.org/abs/2607.15734",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "industrial-inspection"
+   ]
   },
   {
    "title": "Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning",
    "url": "https://arxiv.org/abs/2607.15374",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "open-vocab-detection",
+    "vlm",
+    "fine-grained",
+    "segmentation"
+   ]
   },
   {
    "title": "IoUPD: IoU-Aware Privileged Distillation for Visual Grounding with Multimodal Large Language Models",
    "url": "https://arxiv.org/abs/2607.15732",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "vlm",
+    "distillation",
+    "open-vocab-detection"
+   ]
   },
   {
    "title": "Geometric Distillation from Rectified Stereo: Leveraging Epipolar Cues for Monocular Depth",
    "url": "https://arxiv.org/abs/2607.15600",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "depth",
+    "distillation",
+    "foundation-model"
+   ]
   },
   {
    "title": "Von Mises-Fisher Mixture Model with Dynamic Shrinkage for Realistic Test-Time Transduction",
    "url": "https://arxiv.org/abs/2607.15851",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "vlm",
+    "foundation-model",
+    "test-time-adaptation",
+    "image-embedding"
+   ]
   },
   {
    "title": "DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction",
    "url": "https://arxiv.org/abs/2607.16012",
    "date": "2026-07-21",
    "report": "reports/2026/07/report_21.md",
-   "tags": []
+   "tags": [
+    "foundation-model",
+    "segmentation",
+    "depth",
+    "efficient-inference"
+   ]
   },
   {
    "title": "Emergent Region-Level Facial Correspondence in Frozen Vision Foundation Models",
    "url": "https://arxiv.org/abs/2607.14423",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "feature-matching",
+    "foundation-model"
+   ]
   },
   {
    "title": "SeeSE3: Emergence of 3D Space in Vision Features",
    "url": "https://arxiv.org/abs/2607.14228",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "3d"
+   ]
   },
   {
    "title": "Multimodality as Supervision: Self-Supervised Specialization to the Test Environment via Multimodality",
    "url": "https://arxiv.org/abs/2607.14721",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "image-embedding"
+   ]
   },
   {
    "title": "SUFLECA: Scaling Up Feature Learning for CAD-to-image Alignment",
    "url": "https://arxiv.org/abs/2607.15058",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "foundation-model",
+    "pose"
+   ]
   },
   {
    "title": "Hough-SIFT: Robust Image Registration for Linear Structures via Hough Space",
    "url": "https://arxiv.org/abs/2607.14598",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "image-registration"
+   ]
   },
   {
    "title": "Multi-Scale ViT Inference with Habitat-Fit Priors and kNN Retrieval for Multi-Species Plant Identification",
    "url": "https://arxiv.org/abs/2607.14509",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "fine-grained",
+    "image-retrieval",
+    "foundation-model"
+   ]
   },
   {
    "title": "Selectivity Drives Efficiency: Dataset Pruning for Visual Place Recognition",
    "url": "https://arxiv.org/abs/2607.14897",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "dataset-pruning"
+   ]
   },
   {
    "title": "AlphaWiSE: Adaptive Weight Interpolation for Continual Multimodal Representation Learning",
    "url": "https://arxiv.org/abs/2607.15094",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "continual-learning",
+    "foundation-model"
+   ]
   },
   {
    "title": "GlobalForge: Towards Robust AI-Generated Image Detection",
    "url": "https://arxiv.org/abs/2607.14684",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "robustness"
+   ]
   },
   {
    "title": "SwinAD: Multi-stage feature reconstruction for unsupervised industrial anomaly detection",
    "url": "https://arxiv.org/abs/2607.14534",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection"
+   ]
   },
   {
    "title": "XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation",
    "url": "https://arxiv.org/abs/2607.14287",
    "date": "2026-07-18",
    "report": "reports/2026/07/report_18.md",
-   "tags": []
+   "tags": [
+    "segmentation",
+    "defect-detection",
+    "industrial-inspection",
+    "peft"
+   ]
   },
   {
    "title": "Self-Supervised Visual Representation Learning: Pretrain-Finetuning or Joint Training?",
@@ -2408,83 +2655,91 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 38
-  },
-  {
-   "tag": "metric-learning",
-   "count": 23
+   "count": 59
   },
   {
    "tag": "image-embedding",
-   "count": 22
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 18
-  },
-  {
-   "tag": "image-retrieval",
-   "count": 18
+   "count": 34
   },
   {
    "tag": "vlm",
-   "count": 18
+   "count": 30
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 29
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 28
   },
   {
    "tag": "efficient-inference",
-   "count": 17
+   "count": 27
+  },
+  {
+   "tag": "metric-learning",
+   "count": 27
   },
   {
    "tag": "fine-grained",
-   "count": 15
+   "count": 24
   },
   {
    "tag": "dataset-benchmark",
-   "count": 14
+   "count": 22
   },
   {
    "tag": "industrial-inspection",
-   "count": 14
+   "count": 21
   },
   {
    "tag": "ssl-backbone",
-   "count": 14
-  },
-  {
-   "tag": "anomaly-detection",
-   "count": 11
-  },
-  {
-   "tag": "defect-detection",
-   "count": 9
-  },
-  {
-   "tag": "re-identification",
-   "count": 9
+   "count": 20
   },
   {
    "tag": "segmentation",
-   "count": 9
+   "count": 18
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 17
+  },
+  {
+   "tag": "re-identification",
+   "count": 14
+  },
+  {
+   "tag": "defect-detection",
+   "count": 13
   },
   {
    "tag": "correspondence",
-   "count": 7
-  },
-  {
-   "tag": "object-detection",
-   "count": 7
-  },
-  {
-   "tag": "peft",
-   "count": 7
+   "count": 12
   },
   {
    "tag": "distillation",
-   "count": 5
+   "count": 12
   },
   {
    "tag": "feature-matching",
-   "count": 5
+   "count": 12
+  },
+  {
+   "tag": "object-detection",
+   "count": 12
+  },
+  {
+   "tag": "peft",
+   "count": 11
+  },
+  {
+   "tag": "video",
+   "count": 8
+  },
+  {
+   "tag": "open-vocab-detection",
+   "count": 6
   },
   {
    "tag": "generative",
@@ -2495,12 +2750,24 @@
    "count": 4
   },
   {
-   "tag": "video",
+   "tag": "depth",
+   "count": 4
+  },
+  {
+   "tag": "quantization",
+   "count": 4
+  },
+  {
+   "tag": "robustness",
    "count": 4
   },
   {
    "tag": "zero-shot",
    "count": 4
+  },
+  {
+   "tag": "continual-learning",
+   "count": 3
   },
   {
    "tag": "dinov3",
@@ -2511,15 +2778,11 @@
    "count": 3
   },
   {
-   "tag": "open-vocab-detection",
+   "tag": "ocr-document",
    "count": 3
   },
   {
-   "tag": "quantization",
-   "count": 3
-  },
-  {
-   "tag": "robustness",
+   "tag": "pose",
    "count": 3
   },
   {
@@ -2529,10 +2792,6 @@
   {
    "tag": "training-free",
    "count": 3
-  },
-  {
-   "tag": "continual-learning",
-   "count": 2
   },
   {
    "tag": "contrastive-learning",
@@ -2591,11 +2850,23 @@
    "count": 2
   },
   {
+   "tag": "threshold-calibration",
+   "count": 2
+  },
+  {
    "tag": "1n-matching",
    "count": 1
   },
   {
+   "tag": "3d",
+   "count": 1
+  },
+  {
    "tag": "3d-anomaly-detection",
+   "count": 1
+  },
+  {
+   "tag": "active-learning",
    "count": 1
   },
   {
@@ -2656,6 +2927,14 @@
   },
   {
    "tag": "data-augmentation",
+   "count": 1
+  },
+  {
+   "tag": "dataset-pruning",
+   "count": 1
+  },
+  {
+   "tag": "de-identification",
    "count": 1
   },
   {
@@ -2759,6 +3038,18 @@
    "count": 1
   },
   {
+   "tag": "image-quality",
+   "count": 1
+  },
+  {
+   "tag": "image-registration",
+   "count": 1
+  },
+  {
+   "tag": "image-restoration",
+   "count": 1
+  },
+  {
    "tag": "in-context-prompting",
    "count": 1
   },
@@ -2848,10 +3139,6 @@
   },
   {
    "tag": "noise-residual",
-   "count": 1
-  },
-  {
-   "tag": "ocr-document",
    "count": 1
   },
   {
@@ -2991,11 +3278,19 @@
    "count": 1
   },
   {
+   "tag": "synthetic-data",
+   "count": 1
+  },
+  {
    "tag": "synthetic-image-attribution",
    "count": 1
   },
   {
    "tag": "synthetic-image-detection",
+   "count": 1
+  },
+  {
+   "tag": "test-time-adaptation",
    "count": 1
   },
   {
@@ -3020,6 +3315,10 @@
   },
   {
    "tag": "training-free-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "uncertainty-estimation",
    "count": 1
   },
   {
