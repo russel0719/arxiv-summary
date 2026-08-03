@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_04.md",
+   "date": "2026-08-04",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-04 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_01.md",
    "date": "2026-08-01",
    "title": "arXiv cs.CV Daily Digest — 2026-08-01 (KST)",
@@ -614,6 +620,140 @@
   }
  ],
  "papers": [
+  {
+   "title": "ReLoop-UME: Recurrent Depth with Learnable Retrieval Registers for Universal Multimodal Embedding",
+   "url": "https://arxiv.org/abs/2607.28751",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Physics-Aligned Self-Supervised Learning for Scientific Imaging",
+   "url": "https://arxiv.org/abs/2607.28868",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Visual Distribution Anchoring for Efficient Prompt Tuning",
+   "url": "https://arxiv.org/abs/2607.28967",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Learning from Adversity: Semantic-Aware Mask Refinement through Adversarial Perturbation",
+   "url": "https://arxiv.org/abs/2607.29059",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "segmentation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Rethinking Detection Calibration: A Coordinate and Direction Perspective",
+   "url": "https://arxiv.org/abs/2607.29040",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "object-detection",
+    "open-vocab-detection",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Uncertainty-Aware Deepfake Detection via Multi-View Structural Learning",
+   "url": "https://arxiv.org/abs/2607.28769",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "RAID: Towards Robust AI-Generated Image Detection with Bit-Reversed Images",
+   "url": "https://arxiv.org/abs/2607.28974",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Progressive Decision-Making for Localizing Open-Ended AI-Generated Image Forgeries",
+   "url": "https://arxiv.org/abs/2607.29156",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "segmentation",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Explaining AI-Image Detection: What the Heatmap Actually Shows",
+   "url": "https://arxiv.org/abs/2607.29581",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "VFAD: Variational Semantic Prompting Meets Frequency-Adaptive Representation Learning for Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2607.29370",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "OSAGEN: Object-Aware Mask Priors and Multistage Decoupled Diffusion for Industrial Anomaly Generation",
+   "url": "https://arxiv.org/abs/2607.29533",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "industrial-inspection",
+    "generative"
+   ]
+  },
+  {
+   "title": "Can Synthetic Data Overcome the Generalization Limits of AI-Based Flower and Pod Detection Across Cowpea Breeding Genotypes and Environments?",
+   "url": "https://arxiv.org/abs/2607.28796",
+   "date": "2026-08-04",
+   "report": "reports/2026/08/report_04.md",
+   "tags": [
+    "object-detection",
+    "dataset-benchmark",
+    "industrial-inspection"
+   ]
+  },
   {
    "title": "BladeYOLO: Wind Turbine Blade Defect Detection with Limited Annotations and Weak-Saliency Awareness",
    "url": "https://arxiv.org/abs/2607.28065",
@@ -2268,22 +2408,30 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 32
+   "count": 38
   },
   {
    "tag": "metric-learning",
-   "count": 20
+   "count": 23
   },
   {
    "tag": "image-embedding",
-   "count": 19
+   "count": 22
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 18
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 18
   },
   {
    "tag": "vlm",
    "count": 18
   },
   {
-   "tag": "image-retrieval",
+   "tag": "efficient-inference",
    "count": 17
   },
   {
@@ -2291,48 +2439,44 @@
    "count": 15
   },
   {
-   "tag": "efficient-inference",
+   "tag": "dataset-benchmark",
    "count": 14
   },
   {
-   "tag": "forgery-detection",
+   "tag": "industrial-inspection",
    "count": 14
   },
   {
    "tag": "ssl-backbone",
-   "count": 13
+   "count": 14
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 12
-  },
-  {
-   "tag": "industrial-inspection",
+   "tag": "anomaly-detection",
    "count": 11
+  },
+  {
+   "tag": "defect-detection",
+   "count": 9
   },
   {
    "tag": "re-identification",
    "count": 9
   },
   {
-   "tag": "anomaly-detection",
-   "count": 8
+   "tag": "segmentation",
+   "count": 9
   },
   {
    "tag": "correspondence",
    "count": 7
   },
   {
-   "tag": "defect-detection",
-   "count": 7
-  },
-  {
-   "tag": "segmentation",
+   "tag": "object-detection",
    "count": 7
   },
   {
    "tag": "peft",
-   "count": 6
+   "count": 7
   },
   {
    "tag": "distillation",
@@ -2343,15 +2487,11 @@
    "count": 5
   },
   {
-   "tag": "object-detection",
+   "tag": "generative",
    "count": 5
   },
   {
    "tag": "clip",
-   "count": 4
-  },
-  {
-   "tag": "generative",
    "count": 4
   },
   {
@@ -2368,6 +2508,10 @@
   },
   {
    "tag": "lightweight",
+   "count": 3
+  },
+  {
+   "tag": "open-vocab-detection",
    "count": 3
   },
   {
@@ -2432,10 +2576,6 @@
   },
   {
    "tag": "ocr",
-   "count": 2
-  },
-  {
-   "tag": "open-vocab-detection",
    "count": 2
   },
   {
