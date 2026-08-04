@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_05.md",
+   "date": "2026-08-05",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-05 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_04.md",
    "date": "2026-08-04",
    "title": "arXiv cs.CV Daily Digest — 2026-08-04 (KST)",
@@ -620,6 +626,150 @@
   }
  ],
  "papers": [
+  {
+   "title": "Calibrated Similarity and Graph Clustering for Open-Set Animal Re-Identification",
+   "url": "https://arxiv.org/abs/2608.02469",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "re-identification",
+    "feature-matching",
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Illuminating Visual Identity in Universal Multimodal Embeddings",
+   "url": "https://arxiv.org/abs/2608.01794",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "image-embedding",
+    "re-identification",
+    "metric-learning",
+    "image-retrieval",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Douyin Multimodal Embedding Model Technical Report",
+   "url": "https://arxiv.org/abs/2608.02148",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Foveated Probes Recover Localized Binding Information in Vision Foundation Models",
+   "url": "https://arxiv.org/abs/2608.00726",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "EOVSAM: Efficient Open-Vocabulary Segmentation with SAM 3 in One Pass",
+   "url": "https://arxiv.org/abs/2608.02284",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-detection",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Few-Shot Concept Prompt Learning for Segmentation Foundation Models via Visual Grounding",
+   "url": "https://arxiv.org/abs/2608.01663",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "peft",
+    "few-shot"
+   ]
+  },
+  {
+   "title": "Prompt-Driven Simulation with Feature Perturbation for Cross-Domain Few-Shot Object Detection",
+   "url": "https://arxiv.org/abs/2608.01348",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "object-detection",
+    "open-vocab-detection",
+    "vlm",
+    "few-shot"
+   ]
+  },
+  {
+   "title": "FreqAnchorAD: Language-Free Zero-Shot Anomaly Detection via Frequency-Deviation Anchoring",
+   "url": "https://arxiv.org/abs/2608.00695",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "industrial-inspection",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Open-Set Visual Text Forensics via Sparse-Constraint Rectified Flow",
+   "url": "https://arxiv.org/abs/2608.02258",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "forgery-detection",
+    "anomaly-detection",
+    "ocr-document"
+   ]
+  },
+  {
+   "title": "Grounding Agentic VLMs with Dedicated Segmentation for Fine-Grained Vehicle Damage Assessment",
+   "url": "https://arxiv.org/abs/2608.02470",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "segmentation",
+    "fine-grained",
+    "defect-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Towards Compact Unified Multimodal Tracking: Synergizing Knowledge Distillation with Structural Pruning",
+   "url": "https://arxiv.org/abs/2608.01488",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "distillation",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Interpretability-Guided Soft Pruning of Attention Heads in Vision Transformers",
+   "url": "https://arxiv.org/abs/2608.00264",
+   "date": "2026-08-05",
+   "report": "reports/2026/08/report_05.md",
+   "tags": [
+    "efficient-inference",
+    "ssl-backbone",
+    "foundation-model",
+    "distillation"
+   ]
+  },
   {
    "title": "ReLoop-UME: Recurrent Depth with Learnable Retrieval Registers for Universal Multimodal Embedding",
    "url": "https://arxiv.org/abs/2607.28751",
@@ -2655,35 +2805,35 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 59
+   "count": 64
   },
   {
    "tag": "image-embedding",
-   "count": 34
+   "count": 39
   },
   {
    "tag": "vlm",
-   "count": 30
+   "count": 34
   },
   {
    "tag": "image-retrieval",
-   "count": 29
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 28
+   "count": 32
   },
   {
    "tag": "efficient-inference",
-   "count": 27
+   "count": 30
   },
   {
    "tag": "metric-learning",
-   "count": 27
+   "count": 30
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 29
   },
   {
    "tag": "fine-grained",
-   "count": 24
+   "count": 26
   },
   {
    "tag": "dataset-benchmark",
@@ -2691,26 +2841,38 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 21
+   "count": 22
   },
   {
    "tag": "ssl-backbone",
-   "count": 20
+   "count": 22
   },
   {
    "tag": "segmentation",
-   "count": 18
+   "count": 21
   },
   {
    "tag": "anomaly-detection",
-   "count": 17
+   "count": 19
   },
   {
    "tag": "re-identification",
-   "count": 14
+   "count": 16
   },
   {
    "tag": "defect-detection",
+   "count": 15
+  },
+  {
+   "tag": "distillation",
+   "count": 14
+  },
+  {
+   "tag": "feature-matching",
+   "count": 13
+  },
+  {
+   "tag": "object-detection",
    "count": 13
   },
   {
@@ -2718,28 +2880,16 @@
    "count": 12
   },
   {
-   "tag": "distillation",
-   "count": 12
-  },
-  {
-   "tag": "feature-matching",
-   "count": 12
-  },
-  {
-   "tag": "object-detection",
-   "count": 12
-  },
-  {
    "tag": "peft",
-   "count": 11
+   "count": 12
+  },
+  {
+   "tag": "open-vocab-detection",
+   "count": 8
   },
   {
    "tag": "video",
    "count": 8
-  },
-  {
-   "tag": "open-vocab-detection",
-   "count": 6
   },
   {
    "tag": "generative",
@@ -2751,6 +2901,14 @@
   },
   {
    "tag": "depth",
+   "count": 4
+  },
+  {
+   "tag": "few-shot",
+   "count": 4
+  },
+  {
+   "tag": "ocr-document",
    "count": 4
   },
   {
@@ -2775,10 +2933,6 @@
   },
   {
    "tag": "lightweight",
-   "count": 3
-  },
-  {
-   "tag": "ocr-document",
    "count": 3
   },
   {
@@ -2811,10 +2965,6 @@
   },
   {
    "tag": "document-ai",
-   "count": 2
-  },
-  {
-   "tag": "few-shot",
    "count": 2
   },
   {
