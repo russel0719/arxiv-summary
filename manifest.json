@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_06.md",
+   "date": "2026-08-06",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-06 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_05.md",
    "date": "2026-08-05",
    "title": "arXiv cs.CV Daily Digest — 2026-08-05 (KST)",
@@ -626,6 +632,119 @@
   }
  ],
  "papers": [
+  {
+   "title": "SGFormer: Structure-Guided Transformer for Robust Local Feature Matching",
+   "url": "https://arxiv.org/abs/2608.03423",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "detector-free"
+   ]
+  },
+  {
+   "title": "PixelUp: Zero-Shot Semantic Feature Upsampling for Fine-Grained Vision Tasks",
+   "url": "https://arxiv.org/abs/2608.02792",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "fine-grained",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Standalone DINOv3 for Training-Free Open-Vocabulary Semantic Segmentation in Remote Sensing",
+   "url": "https://arxiv.org/abs/2608.03023",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "open-vocab-segmentation"
+   ]
+  },
+  {
+   "title": "Perceptual Anchoring: Prototype-Guided Text Calibration for Training-free Open-Vocabulary Semantic Segmentation",
+   "url": "https://arxiv.org/abs/2608.03991",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-segmentation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "SeCo-SBIR: Semantically Consistent Prompt Learning for Zero-Shot Sketch-Based Image Retrieval",
+   "url": "https://arxiv.org/abs/2608.03120",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "vlm",
+    "peft"
+   ]
+  },
+  {
+   "title": "Double Down on Defense: Strengthening Deep Perceptual Hashes against Evasion Attacks without Retraining",
+   "url": "https://arxiv.org/abs/2608.03101",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "adversarial-robustness"
+   ]
+  },
+  {
+   "title": "Keep the Needle, Prune the Haystack: Defect-Preserving Token Pruning for Efficient Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.03681",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "efficient-inference",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "FakeI2V-Bench: Benchmarking the Applicability of Image-level Deepfake Detectors for Deepfake Video Detection",
+   "url": "https://arxiv.org/abs/2608.03096",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "video"
+   ]
+  },
+  {
+   "title": "MuRA: Multi-Rank Adaptation for Efficient and Effective Test-Time Vision-Language Generalization",
+   "url": "https://arxiv.org/abs/2608.03885",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "peft",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Low-Dimensional High-Leverage Subspace Optimization: Beyond Full-Parameter Coupled Training for Neural Network Quantization",
+   "url": "https://arxiv.org/abs/2608.03919",
+   "date": "2026-08-06",
+   "report": "reports/2026/08/report_06.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "distillation"
+   ]
+  },
   {
    "title": "Calibrated Similarity and Graph Clustering for Open-Set Animal Re-Identification",
    "url": "https://arxiv.org/abs/2608.02469",
@@ -2805,70 +2924,78 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 64
+   "count": 66
   },
   {
    "tag": "image-embedding",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "vlm",
-   "count": 34
+   "count": 37
   },
   {
    "tag": "image-retrieval",
-   "count": 32
+   "count": 34
   },
   {
    "tag": "efficient-inference",
-   "count": 30
+   "count": 32
   },
   {
    "tag": "metric-learning",
-   "count": 30
+   "count": 31
   },
   {
    "tag": "forgery-detection",
-   "count": 29
+   "count": 30
   },
   {
    "tag": "fine-grained",
-   "count": 26
-  },
-  {
-   "tag": "dataset-benchmark",
-   "count": 22
-  },
-  {
-   "tag": "industrial-inspection",
-   "count": 22
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 22
+   "count": 27
   },
   {
    "tag": "segmentation",
-   "count": 21
+   "count": 24
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 24
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 23
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 23
   },
   {
    "tag": "anomaly-detection",
-   "count": 19
+   "count": 20
+  },
+  {
+   "tag": "defect-detection",
+   "count": 16
   },
   {
    "tag": "re-identification",
    "count": 16
   },
   {
-   "tag": "defect-detection",
+   "tag": "distillation",
    "count": 15
   },
   {
-   "tag": "distillation",
+   "tag": "feature-matching",
    "count": 14
   },
   {
-   "tag": "feature-matching",
+   "tag": "peft",
+   "count": 14
+  },
+  {
+   "tag": "correspondence",
    "count": 13
   },
   {
@@ -2876,23 +3003,19 @@
    "count": 13
   },
   {
-   "tag": "correspondence",
-   "count": 12
-  },
-  {
-   "tag": "peft",
-   "count": 12
+   "tag": "video",
+   "count": 9
   },
   {
    "tag": "open-vocab-detection",
    "count": 8
   },
   {
-   "tag": "video",
-   "count": 8
+   "tag": "generative",
+   "count": 5
   },
   {
-   "tag": "generative",
+   "tag": "quantization",
    "count": 5
   },
   {
@@ -2909,10 +3032,6 @@
   },
   {
    "tag": "ocr-document",
-   "count": 4
-  },
-  {
-   "tag": "quantization",
    "count": 4
   },
   {
@@ -2988,6 +3107,10 @@
    "count": 2
   },
   {
+   "tag": "open-vocab-segmentation",
+   "count": 2
+  },
+  {
    "tag": "open-vocabulary-detection",
    "count": 2
   },
@@ -3021,6 +3144,10 @@
   },
   {
    "tag": "adversarial-attack",
+   "count": 1
+  },
+  {
+   "tag": "adversarial-robustness",
    "count": 1
   },
   {
@@ -3089,6 +3216,10 @@
   },
   {
    "tag": "dense-perception",
+   "count": 1
+  },
+  {
+   "tag": "detector-free",
    "count": 1
   },
   {
