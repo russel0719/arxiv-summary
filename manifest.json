@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_07.md",
+   "date": "2026-08-07",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-07 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_06.md",
    "date": "2026-08-06",
    "title": "arXiv cs.CV Daily Digest — 2026-08-06 (KST)",
@@ -632,6 +638,114 @@
   }
  ],
  "papers": [
+  {
+   "title": "Unleashing the Potential of Vision-Language Models for Generalizable AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2608.04935",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "image-embedding",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CoCo-IR: Contextual Composed Image Retrieval",
+   "url": "https://arxiv.org/abs/2608.05149",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching",
+   "url": "https://arxiv.org/abs/2608.04106",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "foundation-model",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Promptable Animal Pose Tracking Across Species",
+   "url": "https://arxiv.org/abs/2608.04995",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "ssl-backbone",
+    "pose"
+   ]
+  },
+  {
+   "title": "PADFormer: Pose-agnostic Anomaly Detection from Sparse View Images",
+   "url": "https://arxiv.org/abs/2608.04210",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "ssl-backbone",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "Foreseeing the Invisible: Amodal Reconstruction of Leaf Fossil Images",
+   "url": "https://arxiv.org/abs/2608.04423",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "quantization",
+    "distillation"
+   ]
+  },
+  {
+   "title": "StaticSegFormer: An Efficient High-Performance Semantic Segmentation Based on Static Structured Pruning",
+   "url": "https://arxiv.org/abs/2608.04811",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "segmentation",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Free-Lunch Augmentation by Revisiting Diffusion-Based Data Generation for Cross-Domain Few-Shot Object Detection",
+   "url": "https://arxiv.org/abs/2608.04394",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "object-detection",
+    "open-vocab-detection",
+    "generative",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "VQ-VAD: Vector-quantized Motion Representation Learning for Human-centric Video Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.05069",
+   "date": "2026-08-07",
+   "report": "reports/2026/08/report_07.md",
+   "tags": [
+    "anomaly-detection",
+    "pose",
+    "video",
+    "re-identification"
+   ]
+  },
   {
    "title": "SGFormer: Structure-Guided Transformer for Robust Local Feature Matching",
    "url": "https://arxiv.org/abs/2608.03423",
@@ -2924,31 +3038,35 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 66
+   "count": 69
   },
   {
    "tag": "image-embedding",
-   "count": 40
+   "count": 42
   },
   {
    "tag": "vlm",
-   "count": 37
+   "count": 38
   },
   {
    "tag": "image-retrieval",
-   "count": 34
+   "count": 35
   },
   {
    "tag": "efficient-inference",
-   "count": 32
+   "count": 33
   },
   {
    "tag": "metric-learning",
-   "count": 31
+   "count": 33
   },
   {
    "tag": "forgery-detection",
-   "count": 30
+   "count": 31
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 28
   },
   {
    "tag": "fine-grained",
@@ -2956,38 +3074,42 @@
   },
   {
    "tag": "segmentation",
-   "count": 24
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 24
-  },
-  {
-   "tag": "dataset-benchmark",
-   "count": 23
+   "count": 26
   },
   {
    "tag": "industrial-inspection",
-   "count": 23
+   "count": 25
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 24
   },
   {
    "tag": "anomaly-detection",
-   "count": 20
+   "count": 22
   },
   {
    "tag": "defect-detection",
-   "count": 16
+   "count": 17
   },
   {
    "tag": "re-identification",
-   "count": 16
+   "count": 17
   },
   {
    "tag": "distillation",
-   "count": 15
+   "count": 16
   },
   {
    "tag": "feature-matching",
+   "count": 16
+  },
+  {
+   "tag": "correspondence",
+   "count": 15
+  },
+  {
+   "tag": "object-detection",
    "count": 14
   },
   {
@@ -2995,27 +3117,23 @@
    "count": 14
   },
   {
-   "tag": "correspondence",
-   "count": 13
-  },
-  {
-   "tag": "object-detection",
-   "count": 13
-  },
-  {
    "tag": "video",
-   "count": 9
+   "count": 10
   },
   {
    "tag": "open-vocab-detection",
-   "count": 8
+   "count": 9
   },
   {
    "tag": "generative",
-   "count": 5
+   "count": 6
   },
   {
    "tag": "quantization",
+   "count": 6
+  },
+  {
+   "tag": "pose",
    "count": 5
   },
   {
@@ -3052,10 +3170,6 @@
   },
   {
    "tag": "lightweight",
-   "count": 3
-  },
-  {
-   "tag": "pose",
    "count": 3
   },
   {
