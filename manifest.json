@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_08.md",
+   "date": "2026-08-08",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-08 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_07.md",
    "date": "2026-08-07",
    "title": "arXiv cs.CV Daily Digest — 2026-08-07 (KST)",
@@ -638,6 +644,113 @@
   }
  ],
  "papers": [
+  {
+   "title": "ConceptADapt: Concept-guided Adaptive Feature Reconstruction with Dynamic Attention for Few-Shot Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.05743",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "foundation-model",
+    "peft"
+   ]
+  },
+  {
+   "title": "Invisible Shortcuts: Why Vision Encoders Know Your Camera",
+   "url": "https://arxiv.org/abs/2608.05424",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "ssl-backbone",
+    "forgery-detection",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval",
+   "url": "https://arxiv.org/abs/2608.06060",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Context Matters: Support Set Selection and Failure Detection for In-Context Medical Image Segmentation",
+   "url": "https://arxiv.org/abs/2608.05333",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "image-retrieval",
+    "ssl-backbone",
+    "metric-learning",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "SCI-CLIP: Segment-Centric Inference with Reference Memory for Training-Free Open-Vocabulary Segmentation",
+   "url": "https://arxiv.org/abs/2608.05627",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "image-retrieval",
+    "open-vocab-detection"
+   ]
+  },
+  {
+   "title": "A Paragraph is Worth a Thousand Captions: Rethinking Text Supervision for Vision-Language Retrieval",
+   "url": "https://arxiv.org/abs/2608.05260",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Adapting Vision Foundation Models with Cascaded Semantics",
+   "url": "https://arxiv.org/abs/2608.05393",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "APQF: Agentic Profiling-Guided Structured Pruning and Mixed-Precision Quantization with Adaptive Fine-Tuning",
+   "url": "https://arxiv.org/abs/2608.05499",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Universal Concept Disruption for SAM3 Image Segmentation",
+   "url": "https://arxiv.org/abs/2608.05983",
+   "date": "2026-08-08",
+   "report": "reports/2026/08/report_08.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "adversarial-robustness",
+    "open-vocab-detection"
+   ]
+  },
   {
    "title": "Unleashing the Potential of Vision-Language Models for Generalizable AI-Generated Image Detection",
    "url": "https://arxiv.org/abs/2608.04935",
@@ -3038,47 +3151,47 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 69
+   "count": 75
   },
   {
    "tag": "image-embedding",
-   "count": 42
+   "count": 45
   },
   {
    "tag": "vlm",
-   "count": 38
+   "count": 40
   },
   {
    "tag": "image-retrieval",
-   "count": 35
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 33
+   "count": 39
   },
   {
    "tag": "metric-learning",
-   "count": 33
+   "count": 36
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 34
   },
   {
    "tag": "forgery-detection",
-   "count": 31
+   "count": 32
   },
   {
    "tag": "ssl-backbone",
-   "count": 28
+   "count": 31
+  },
+  {
+   "tag": "segmentation",
+   "count": 29
   },
   {
    "tag": "fine-grained",
    "count": 27
   },
   {
-   "tag": "segmentation",
-   "count": 26
-  },
-  {
    "tag": "industrial-inspection",
-   "count": 25
+   "count": 26
   },
   {
    "tag": "dataset-benchmark",
@@ -3086,11 +3199,11 @@
   },
   {
    "tag": "anomaly-detection",
-   "count": 22
+   "count": 23
   },
   {
    "tag": "defect-detection",
-   "count": 17
+   "count": 18
   },
   {
    "tag": "re-identification",
@@ -3105,6 +3218,10 @@
    "count": 16
   },
   {
+   "tag": "peft",
+   "count": 16
+  },
+  {
    "tag": "correspondence",
    "count": 15
   },
@@ -3113,23 +3230,19 @@
    "count": 14
   },
   {
-   "tag": "peft",
-   "count": 14
+   "tag": "open-vocab-detection",
+   "count": 11
   },
   {
    "tag": "video",
    "count": 10
   },
   {
-   "tag": "open-vocab-detection",
-   "count": 9
+   "tag": "quantization",
+   "count": 7
   },
   {
    "tag": "generative",
-   "count": 6
-  },
-  {
-   "tag": "quantization",
    "count": 6
   },
   {
@@ -3179,6 +3292,10 @@
   {
    "tag": "training-free",
    "count": 3
+  },
+  {
+   "tag": "adversarial-robustness",
+   "count": 2
   },
   {
    "tag": "contrastive-learning",
@@ -3258,10 +3375,6 @@
   },
   {
    "tag": "adversarial-attack",
-   "count": 1
-  },
-  {
-   "tag": "adversarial-robustness",
    "count": 1
   },
   {
