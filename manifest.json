@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_11.md",
+   "date": "2026-08-11",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-11 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_08.md",
    "date": "2026-08-08",
    "title": "arXiv cs.CV Daily Digest — 2026-08-08 (KST)",
@@ -644,6 +650,138 @@
   }
  ],
  "papers": [
+  {
+   "title": "UniJEPA: A Unified Joint-Embedding Predictive Architecture for Task-Agnostic Visual World Modeling",
+   "url": "https://arxiv.org/abs/2608.07409",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "representation-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "KnifeHunter: Structured Local Representation Learning for Fine-Grained Knife Image Retrieval in Law Enforcement",
+   "url": "https://arxiv.org/abs/2608.07057",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "image-retrieval",
+    "fine-grained",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "ECAD: Expanding Class-Agnostic Detection Beyond Thing-Centric Objectness",
+   "url": "https://arxiv.org/abs/2608.06841",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "ssl-backbone",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Generative Embedding Benchmark: How Much Information Survives in a Dense Embedding?",
+   "url": "https://arxiv.org/abs/2608.06972",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "image-embedding",
+    "representation-learning",
+    "dataset-benchmark",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "λ-Orthogonality Regularization for Compatible Representation Learning",
+   "url": "https://arxiv.org/abs/2509.16664",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "representation-learning",
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Are Visual Place Recognition Models Recognizing Places or Conditions? Distractor-Augmented Evaluation and Condition Suppression",
+   "url": "https://arxiv.org/abs/2608.06847",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "image-retrieval",
+    "re-identification",
+    "representation-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Dual-Space Modality Consistency Learning for Universal Cross-Modal Re-Identification",
+   "url": "https://arxiv.org/abs/2608.06943",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "representation-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "GeoDistill-Refine: Silhouette-First Geometry Distillation for Annotation-Free Spacecraft Segmentation",
+   "url": "https://arxiv.org/abs/2608.07405",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "segmentation",
+    "distillation",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "YOLO-PEFT: Parameter-Efficient Fine-Tuning on YOLO Family",
+   "url": "https://arxiv.org/abs/2608.07051",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "peft",
+    "object-detection",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models",
+   "url": "https://arxiv.org/abs/2608.06901",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Casting the Net! Revisiting MasterFace Impersonation Attacks",
+   "url": "https://arxiv.org/abs/2608.06952",
+   "date": "2026-08-11",
+   "report": "reports/2026/08/report_11.md",
+   "tags": [
+    "re-identification",
+    "forgery-detection",
+    "representation-learning",
+    "image-embedding"
+   ]
+  },
   {
    "title": "ConceptADapt: Concept-guided Adaptive Feature Reconstruction with Dynamic Attention for Few-Shot Industrial Anomaly Detection",
    "url": "https://arxiv.org/abs/2608.05743",
@@ -3151,43 +3289,43 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 75
+   "count": 80
   },
   {
    "tag": "image-embedding",
-   "count": 45
-  },
-  {
-   "tag": "vlm",
-   "count": 40
+   "count": 51
   },
   {
    "tag": "image-retrieval",
-   "count": 39
+   "count": 43
+  },
+  {
+   "tag": "vlm",
+   "count": 41
   },
   {
    "tag": "metric-learning",
-   "count": 36
+   "count": 39
   },
   {
    "tag": "efficient-inference",
-   "count": 34
+   "count": 37
   },
   {
    "tag": "forgery-detection",
-   "count": 32
+   "count": 33
   },
   {
    "tag": "ssl-backbone",
-   "count": 31
+   "count": 33
   },
   {
    "tag": "segmentation",
-   "count": 29
+   "count": 30
   },
   {
    "tag": "fine-grained",
-   "count": 27
+   "count": 29
   },
   {
    "tag": "industrial-inspection",
@@ -3195,30 +3333,34 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 24
+   "count": 25
   },
   {
    "tag": "anomaly-detection",
    "count": 23
   },
   {
+   "tag": "re-identification",
+   "count": 20
+  },
+  {
    "tag": "defect-detection",
    "count": 18
   },
   {
-   "tag": "re-identification",
+   "tag": "distillation",
    "count": 17
   },
   {
-   "tag": "distillation",
-   "count": 16
+   "tag": "peft",
+   "count": 17
   },
   {
    "tag": "feature-matching",
    "count": 16
   },
   {
-   "tag": "peft",
+   "tag": "object-detection",
    "count": 16
   },
   {
@@ -3226,12 +3368,8 @@
    "count": 15
   },
   {
-   "tag": "object-detection",
-   "count": 14
-  },
-  {
    "tag": "open-vocab-detection",
-   "count": 11
+   "count": 12
   },
   {
    "tag": "video",
@@ -3239,7 +3377,11 @@
   },
   {
    "tag": "quantization",
-   "count": 7
+   "count": 8
+  },
+  {
+   "tag": "representation-learning",
+   "count": 8
   },
   {
    "tag": "generative",
@@ -3343,10 +3485,6 @@
   },
   {
    "tag": "open-vocabulary-detection",
-   "count": 2
-  },
-  {
-   "tag": "representation-learning",
    "count": 2
   },
   {
