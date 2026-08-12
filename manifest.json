@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_13.md",
+   "date": "2026-08-13",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-13 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_12.md",
    "date": "2026-08-12",
    "title": "arXiv cs.CV Daily Digest — 2026-08-12 (KST)",
@@ -656,6 +662,124 @@
   }
  ],
  "papers": [
+  {
+   "title": "Cross-View Feature Matching: Survey, Benchmarking, and Foundation-Model Perspectives",
+   "url": "https://arxiv.org/abs/2608.11093",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "foundation-model",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Rethinking Text-Based Image Retrieval in Specific Domain",
+   "url": "https://arxiv.org/abs/2608.10524",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "DistilVDR: A Compact End-to-End Visual Document Retriever via Dual-Student Distillation",
+   "url": "https://arxiv.org/abs/2608.10636",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "image-retrieval",
+    "distillation",
+    "image-embedding",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "SapiensID 2.0: Aligning Human Recognition Foundation Models with Human Perception",
+   "url": "https://arxiv.org/abs/2608.10497",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "re-identification",
+    "image-embedding",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Beyond Decision Boundaries: Relational Geometry Attacks on Contrastive Embedding Manifolds",
+   "url": "https://arxiv.org/abs/2608.10237",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "re-identification",
+    "adversarial-robustness"
+   ]
+  },
+  {
+   "title": "Frozen Brain-MRI Foundation Models Are Site Fingerprints",
+   "url": "https://arxiv.org/abs/2608.10295",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "domain-shift"
+   ]
+  },
+  {
+   "title": "Rethinking Data Efficiency in Industrial Dense Prediction: Pretraining Coherence, Not Inductive Bias, Determines ViTs Low-Data Advantage",
+   "url": "https://arxiv.org/abs/2608.10590",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "industrial-inspection",
+    "foundation-model",
+    "ssl-backbone",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "Grid-Preserving Knowledge Distillation: Transferring Convolutional Inductive Bias to Vision Transformers under Data Scarcity",
+   "url": "https://arxiv.org/abs/2608.10723",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "distillation",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Putting Registers to Work: Task Registers for Token Pruning in Vision Transformers",
+   "url": "https://arxiv.org/abs/2608.10989",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "efficient-inference",
+    "foundation-model",
+    "object-detection",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Evaluating Semantic and Spatial Guidance for Foundation Model Segmentation of Small-Scale PV in Remote Sensing Imagery",
+   "url": "https://arxiv.org/abs/2608.10801",
+   "date": "2026-08-13",
+   "report": "reports/2026/08/report_13.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-detection",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Three Necessary Principles for Self-Supervised Visual Representation Learning",
    "url": "https://arxiv.org/abs/2608.08309",
@@ -3437,47 +3561,47 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 83
+   "count": 90
   },
   {
    "tag": "image-embedding",
-   "count": 55
+   "count": 60
   },
   {
    "tag": "image-retrieval",
-   "count": 45
-  },
-  {
-   "tag": "vlm",
-   "count": 42
+   "count": 47
   },
   {
    "tag": "metric-learning",
-   "count": 41
+   "count": 44
   },
   {
    "tag": "efficient-inference",
-   "count": 40
+   "count": 43
+  },
+  {
+   "tag": "vlm",
+   "count": 43
   },
   {
    "tag": "ssl-backbone",
-   "count": 38
+   "count": 40
   },
   {
    "tag": "forgery-detection",
    "count": 36
   },
   {
+   "tag": "segmentation",
+   "count": 33
+  },
+  {
    "tag": "fine-grained",
    "count": 31
   },
   {
-   "tag": "segmentation",
-   "count": 31
-  },
-  {
    "tag": "industrial-inspection",
-   "count": 28
+   "count": 29
   },
   {
    "tag": "anomaly-detection",
@@ -3485,14 +3609,18 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 25
+   "count": 26
   },
   {
    "tag": "re-identification",
-   "count": 21
+   "count": 23
   },
   {
    "tag": "correspondence",
+   "count": 21
+  },
+  {
+   "tag": "distillation",
    "count": 20
   },
   {
@@ -3504,20 +3632,16 @@
    "count": 19
   },
   {
-   "tag": "distillation",
-   "count": 18
-  },
-  {
    "tag": "feature-matching",
-   "count": 18
+   "count": 19
   },
   {
    "tag": "object-detection",
-   "count": 16
+   "count": 18
   },
   {
    "tag": "open-vocab-detection",
-   "count": 12
+   "count": 13
   },
   {
    "tag": "video",
@@ -3564,6 +3688,10 @@
    "count": 4
   },
   {
+   "tag": "adversarial-robustness",
+   "count": 3
+  },
+  {
    "tag": "continual-learning",
    "count": 3
   },
@@ -3582,10 +3710,6 @@
   {
    "tag": "training-free",
    "count": 3
-  },
-  {
-   "tag": "adversarial-robustness",
-   "count": 2
   },
   {
    "tag": "contrastive-learning",
@@ -3745,6 +3869,10 @@
   },
   {
    "tag": "domain-generalization",
+   "count": 1
+  },
+  {
+   "tag": "domain-shift",
    "count": 1
   },
   {
