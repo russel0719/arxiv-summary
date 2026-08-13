@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_14.md",
+   "date": "2026-08-14",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-14 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_13.md",
    "date": "2026-08-13",
    "title": "arXiv cs.CV Daily Digest — 2026-08-13 (KST)",
@@ -662,6 +668,109 @@
   }
  ],
  "papers": [
+  {
+   "title": "Can Frontier LLMs Match Natively Multimodal Embeddings? A Comparison on Hard-Negative Text-to-Image Retrieval",
+   "url": "https://arxiv.org/abs/2608.11343",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Understanding Why Foundation Models Work for Diffusion-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2608.12155",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "foundation-model",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Dual Anchors, Do It Better: Hierarchical Group Merging for Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.11933",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "foundation-model",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Robustness of AI-Art Detectors under Generator Shift",
+   "url": "https://arxiv.org/abs/2608.11643",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "generative"
+   ]
+  },
+  {
+   "title": "Learning from Multimodal Pseudo-Labels for Robust Open-Vocabulary Instance and Panoptic Segmentation",
+   "url": "https://arxiv.org/abs/2608.11681",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "open-vocab-detection",
+    "segmentation",
+    "foundation-model",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Zero-OVCD: Bridging Training-Free Foundation Models and Pseudo-Label Learning for Open-Vocabulary Change Detection",
+   "url": "https://arxiv.org/abs/2608.11663",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "open-vocab-detection",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "BoltNet: An Ultra-Lightweight Convolutional Network for On-Device Plant Species Identification",
+   "url": "https://arxiv.org/abs/2608.11844",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "fine-grained",
+    "efficient-inference",
+    "quantization"
+   ]
+  },
+  {
+   "title": "Achieving Near-Zero-Overhead Multi-Model Hierarchical Classification in Real-Time Detection Pipelines",
+   "url": "https://arxiv.org/abs/2608.11770",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "Anti-Shortcut Distillation via Temporal Negative Knowledge Transfer",
+   "url": "https://arxiv.org/abs/2608.11789",
+   "date": "2026-08-14",
+   "report": "reports/2026/08/report_14.md",
+   "tags": [
+    "distillation",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Cross-View Feature Matching: Survey, Benchmarking, and Foundation-Model Perspectives",
    "url": "https://arxiv.org/abs/2608.11093",
@@ -3561,51 +3670,51 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 90
+   "count": 96
   },
   {
    "tag": "image-embedding",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "image-retrieval",
-   "count": 47
-  },
-  {
-   "tag": "metric-learning",
-   "count": 44
+   "count": 48
   },
   {
    "tag": "efficient-inference",
-   "count": 43
+   "count": 46
   },
   {
    "tag": "vlm",
-   "count": 43
+   "count": 46
+  },
+  {
+   "tag": "metric-learning",
+   "count": 45
   },
   {
    "tag": "ssl-backbone",
-   "count": 40
+   "count": 41
   },
   {
    "tag": "forgery-detection",
-   "count": 36
+   "count": 38
   },
   {
    "tag": "segmentation",
-   "count": 33
+   "count": 35
   },
   {
    "tag": "fine-grained",
-   "count": 31
+   "count": 32
   },
   {
    "tag": "industrial-inspection",
-   "count": 29
+   "count": 30
   },
   {
    "tag": "anomaly-detection",
-   "count": 26
+   "count": 28
   },
   {
    "tag": "dataset-benchmark",
@@ -3621,7 +3730,7 @@
   },
   {
    "tag": "distillation",
-   "count": 20
+   "count": 21
   },
   {
    "tag": "peft",
@@ -3637,11 +3746,11 @@
   },
   {
    "tag": "object-detection",
-   "count": 18
+   "count": 19
   },
   {
    "tag": "open-vocab-detection",
-   "count": 13
+   "count": 15
   },
   {
    "tag": "video",
@@ -3649,7 +3758,7 @@
   },
   {
    "tag": "quantization",
-   "count": 8
+   "count": 10
   },
   {
    "tag": "representation-learning",
@@ -3657,7 +3766,7 @@
   },
   {
    "tag": "generative",
-   "count": 6
+   "count": 7
   },
   {
    "tag": "pose",
