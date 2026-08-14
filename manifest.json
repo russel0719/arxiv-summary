@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_15.md",
+   "date": "2026-08-15",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-15 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_14.md",
    "date": "2026-08-14",
    "title": "arXiv cs.CV Daily Digest — 2026-08-14 (KST)",
@@ -668,6 +674,132 @@
   }
  ],
  "papers": [
+  {
+   "title": "A Controlled Study of Self-Supervised Image and Video Pretraining under Limited Resources",
+   "url": "https://arxiv.org/abs/2608.13183",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers",
+   "url": "https://arxiv.org/abs/2608.12773",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "segmentation",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Online Learning of Correspondences between Images",
+   "url": "https://arxiv.org/abs/2608.13104",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Attribute-Conditioned Multimodal Slot Factorization for Controllable Fashion Retrieval",
+   "url": "https://arxiv.org/abs/2608.12570",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "fine-grained",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Heterogeneous Vision-Language Ensemble with Disagreement-Aware Reranking for Text-Based Person Anomaly Retrieval",
+   "url": "https://arxiv.org/abs/2608.12843",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "image-retrieval",
+    "re-identification",
+    "anomaly-detection",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Bias Mitigation in Face Recognition via Demographic-based Supervised Contrastive Learning",
+   "url": "https://arxiv.org/abs/2608.12971",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "metric-learning",
+    "re-identification",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Class Geometry as Supervision for Sample-Efficient Open-World Detection",
+   "url": "https://arxiv.org/abs/2608.12698",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "object-detection",
+    "metric-learning",
+    "fine-grained",
+    "open-vocab-detection"
+   ]
+  },
+  {
+   "title": "Towards Sparsely Annotated Open-World Object Detection",
+   "url": "https://arxiv.org/abs/2608.12714",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "object-detection",
+    "open-vocab-detection"
+   ]
+  },
+  {
+   "title": "A Generative Approach for Improving Multi-Label Defect Classification in Photovoltaic Modules",
+   "url": "https://arxiv.org/abs/2608.12725",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "anomaly-detection",
+    "generative"
+   ]
+  },
+  {
+   "title": "SPARED: Reasoning-Based AI-Generated Image Detection via Adversarially Edited Data",
+   "url": "https://arxiv.org/abs/2608.12876",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "forgery-detection",
+    "anomaly-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "MergeOver: Post-Training Token Merging for Recursive Vision Transformers",
+   "url": "https://arxiv.org/abs/2608.13141",
+   "date": "2026-08-15",
+   "report": "reports/2026/08/report_15.md",
+   "tags": [
+    "efficient-inference",
+    "foundation-model",
+    "token-merging"
+   ]
+  },
   {
    "title": "Can Frontier LLMs Match Natively Multimodal Embeddings? A Comparison on Hard-Negative Text-to-Image Retrieval",
    "url": "https://arxiv.org/abs/2608.11343",
@@ -3670,51 +3802,51 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 96
+   "count": 99
   },
   {
    "tag": "image-embedding",
-   "count": 61
+   "count": 63
   },
   {
    "tag": "image-retrieval",
-   "count": 48
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 46
-  },
-  {
-   "tag": "vlm",
-   "count": 46
+   "count": 50
   },
   {
    "tag": "metric-learning",
-   "count": 45
+   "count": 49
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 48
+  },
+  {
+   "tag": "vlm",
+   "count": 47
   },
   {
    "tag": "ssl-backbone",
-   "count": 41
+   "count": 43
   },
   {
    "tag": "forgery-detection",
-   "count": 38
+   "count": 39
   },
   {
    "tag": "segmentation",
-   "count": 35
+   "count": 37
   },
   {
    "tag": "fine-grained",
-   "count": 32
-  },
-  {
-   "tag": "industrial-inspection",
-   "count": 30
+   "count": 35
   },
   {
    "tag": "anomaly-detection",
-   "count": 28
+   "count": 31
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 31
   },
   {
    "tag": "dataset-benchmark",
@@ -3722,35 +3854,35 @@
   },
   {
    "tag": "re-identification",
-   "count": 23
+   "count": 25
   },
   {
    "tag": "correspondence",
-   "count": 21
+   "count": 22
   },
   {
    "tag": "distillation",
+   "count": 22
+  },
+  {
+   "tag": "object-detection",
    "count": 21
+  },
+  {
+   "tag": "defect-detection",
+   "count": 20
+  },
+  {
+   "tag": "feature-matching",
+   "count": 20
   },
   {
    "tag": "peft",
    "count": 20
   },
   {
-   "tag": "defect-detection",
-   "count": 19
-  },
-  {
-   "tag": "feature-matching",
-   "count": 19
-  },
-  {
-   "tag": "object-detection",
-   "count": 19
-  },
-  {
    "tag": "open-vocab-detection",
-   "count": 15
+   "count": 17
   },
   {
    "tag": "video",
@@ -3761,12 +3893,12 @@
    "count": 10
   },
   {
-   "tag": "representation-learning",
+   "tag": "generative",
    "count": 8
   },
   {
-   "tag": "generative",
-   "count": 7
+   "tag": "representation-learning",
+   "count": 8
   },
   {
    "tag": "pose",
@@ -4334,6 +4466,10 @@
   },
   {
    "tag": "threshold-free",
+   "count": 1
+  },
+  {
+   "tag": "token-merging",
    "count": 1
   },
   {
