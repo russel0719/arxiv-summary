@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_18.md",
+   "date": "2026-08-18",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-18 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_15.md",
    "date": "2026-08-15",
    "title": "arXiv cs.CV Daily Digest — 2026-08-15 (KST)",
@@ -674,6 +680,116 @@
   }
  ],
  "papers": [
+  {
+   "title": "Self-Supervised Visual On-Policy Distillation",
+   "url": "https://arxiv.org/abs/2608.14144",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "ssl-backbone",
+    "distillation",
+    "fine-grained",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Style or Signature? Artist-Disjoint Evaluation of Style Classification in Frozen Vision Embeddings",
+   "url": "https://arxiv.org/abs/2608.14435",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "ssl-backbone",
+    "metric-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "AlignFace: Human-Aligned Face Similarity Metric with Interpretable Concept Relations",
+   "url": "https://arxiv.org/abs/2608.14130",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "metric-learning",
+    "re-identification",
+    "image-embedding",
+    "fine-grained",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Face Re-morphing: Differential Morphing Attack Detection via Feature-Space Similarity Changes",
+   "url": "https://arxiv.org/abs/2608.13858",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "forgery-detection",
+    "re-identification",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "CMCNet: Aligning Ultrasound Image Embeddings with Textual TI-RADS Representations for Fine-Grained Thyroid Classification",
+   "url": "https://arxiv.org/abs/2608.13939",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "fine-grained",
+    "vlm"
+   ]
+  },
+  {
+   "title": "XSA-MAD: Cross-modal Semantic Alignment for Morphing Attack Detection",
+   "url": "https://arxiv.org/abs/2608.13861",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "forgery-detection",
+    "vlm",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Rethinking Auxiliary Modalities in Multimodal Zero-shot Anomaly Detection: From Semantic Fusion to Conditional Modulation",
+   "url": "https://arxiv.org/abs/2608.13973",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "foundation-model",
+    "peft"
+   ]
+  },
+  {
+   "title": "PISA: A Pseudo-Individual Source-Domain Feature Adaptation Framework for Test-Time Open-Vocabulary Object Detection",
+   "url": "https://arxiv.org/abs/2608.14142",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "foundation-model",
+    "domain-adaptation"
+   ]
+  },
+  {
+   "title": "CAST: Closed-form Analytic Semantic Transfer for Zero-Shot Classifier Extension",
+   "url": "https://arxiv.org/abs/2608.13751",
+   "date": "2026-08-18",
+   "report": "reports/2026/08/report_18.md",
+   "tags": [
+    "zero-shot",
+    "foundation-model",
+    "image-embedding",
+    "fine-grained"
+   ]
+  },
   {
    "title": "A Controlled Study of Self-Supervised Image and Video Pretraining under Limited Resources",
    "url": "https://arxiv.org/abs/2608.13183",
@@ -3802,87 +3918,87 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 99
+   "count": 104
   },
   {
    "tag": "image-embedding",
-   "count": 63
-  },
-  {
-   "tag": "image-retrieval",
-   "count": 50
+   "count": 69
   },
   {
    "tag": "metric-learning",
-   "count": 49
+   "count": 53
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 51
+  },
+  {
+   "tag": "vlm",
+   "count": 50
   },
   {
    "tag": "efficient-inference",
    "count": 48
   },
   {
-   "tag": "vlm",
-   "count": 47
-  },
-  {
    "tag": "ssl-backbone",
-   "count": 43
+   "count": 45
   },
   {
    "tag": "forgery-detection",
-   "count": 39
+   "count": 41
+  },
+  {
+   "tag": "fine-grained",
+   "count": 40
   },
   {
    "tag": "segmentation",
    "count": 37
   },
   {
-   "tag": "fine-grained",
-   "count": 35
-  },
-  {
    "tag": "anomaly-detection",
-   "count": 31
+   "count": 32
   },
   {
    "tag": "industrial-inspection",
    "count": 31
   },
   {
+   "tag": "re-identification",
+   "count": 27
+  },
+  {
    "tag": "dataset-benchmark",
    "count": 26
   },
   {
-   "tag": "re-identification",
-   "count": 25
+   "tag": "distillation",
+   "count": 23
   },
   {
    "tag": "correspondence",
    "count": 22
   },
   {
-   "tag": "distillation",
+   "tag": "object-detection",
    "count": 22
   },
   {
-   "tag": "object-detection",
+   "tag": "defect-detection",
    "count": 21
   },
   {
-   "tag": "defect-detection",
-   "count": 20
+   "tag": "peft",
+   "count": 21
   },
   {
    "tag": "feature-matching",
    "count": 20
   },
   {
-   "tag": "peft",
-   "count": 20
-  },
-  {
    "tag": "open-vocab-detection",
-   "count": 17
+   "count": 18
   },
   {
    "tag": "video",
@@ -3905,6 +4021,10 @@
    "count": 5
   },
   {
+   "tag": "zero-shot",
+   "count": 5
+  },
+  {
    "tag": "clip",
    "count": 4
   },
@@ -3922,10 +4042,6 @@
   },
   {
    "tag": "robustness",
-   "count": 4
-  },
-  {
-   "tag": "zero-shot",
    "count": 4
   },
   {
@@ -4106,6 +4222,10 @@
   },
   {
    "tag": "document-tampering",
+   "count": 1
+  },
+  {
+   "tag": "domain-adaptation",
    "count": 1
   },
   {
