@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_19.md",
+   "date": "2026-08-19",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-19 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_18.md",
    "date": "2026-08-18",
    "title": "arXiv cs.CV Daily Digest — 2026-08-18 (KST)",
@@ -680,6 +686,134 @@
   }
  ],
  "papers": [
+  {
+   "title": "Anchor-Regularized Adaptation for Generalizable AI-Generated Image Detection with DINOv3",
+   "url": "https://arxiv.org/abs/2608.15196",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "ssl-backbone",
+    "forgery-detection",
+    "peft",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Robust structure from motion for aerial-ground images via detector-free feature matching and multi-view track refinement",
+   "url": "https://arxiv.org/abs/2608.15251",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "Self-Supervised Topologically Invariant Manifold Learning for Railway Image Quality Assessment",
+   "url": "https://arxiv.org/abs/2608.15217",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "SOS! : A Streamlined Object-Conditional Transformer for Model-free Segmentation",
+   "url": "https://arxiv.org/abs/2608.15295",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "segmentation",
+    "correspondence",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Self-Routed Tensor Adapters for Parameter-Efficient Universal Visual Adaptation",
+   "url": "https://arxiv.org/abs/2608.16384",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Distribution-free false-alarm calibration and chance-corrected spatial evaluation for industrial anomaly detection",
+   "url": "https://arxiv.org/abs/2608.15090",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "Memory-Bounded Continuation of Greedy Sampling for Continual Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.15277",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "anomaly-detection",
+    "image-embedding",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Low Cost Two-Stage Fabric Defect Detection at the Edge",
+   "url": "https://arxiv.org/abs/2608.14727",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "defect-detection",
+    "anomaly-detection",
+    "industrial-inspection",
+    "efficient-inference",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Defake-o3: From Speculative Rationales to Verifiable Evidence for Explainable AIGI Detection",
+   "url": "https://arxiv.org/abs/2608.16259",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "forgery-detection",
+    "vlm",
+    "object-detection",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Towards Zero-Shot Domain Generalization for ID Cards Presentation Attack Detection",
+   "url": "https://arxiv.org/abs/2608.16591",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "forgery-detection",
+    "metric-learning",
+    "fine-grained",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Scalable Black-Box Model Attribution for Images",
+   "url": "https://arxiv.org/abs/2608.15652",
+   "date": "2026-08-19",
+   "report": "reports/2026/08/report_19.md",
+   "tags": [
+    "forgery-detection",
+    "image-retrieval",
+    "image-embedding",
+    "efficient-inference"
+   ]
+  },
   {
    "title": "Self-Supervised Visual On-Policy Distillation",
    "url": "https://arxiv.org/abs/2608.14144",
@@ -3918,51 +4052,51 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 104
+   "count": 107
   },
   {
    "tag": "image-embedding",
-   "count": 69
-  },
-  {
-   "tag": "metric-learning",
-   "count": 53
-  },
-  {
-   "tag": "image-retrieval",
-   "count": 51
-  },
-  {
-   "tag": "vlm",
-   "count": 50
+   "count": 72
   },
   {
    "tag": "efficient-inference",
-   "count": 48
+   "count": 54
+  },
+  {
+   "tag": "metric-learning",
+   "count": 54
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 52
+  },
+  {
+   "tag": "vlm",
+   "count": 51
   },
   {
    "tag": "ssl-backbone",
-   "count": 45
+   "count": 49
   },
   {
    "tag": "forgery-detection",
-   "count": 41
+   "count": 45
   },
   {
    "tag": "fine-grained",
-   "count": 40
+   "count": 42
   },
   {
    "tag": "segmentation",
-   "count": 37
+   "count": 38
   },
   {
    "tag": "anomaly-detection",
-   "count": 32
+   "count": 35
   },
   {
    "tag": "industrial-inspection",
-   "count": 31
+   "count": 34
   },
   {
    "tag": "re-identification",
@@ -3973,28 +4107,28 @@
    "count": 26
   },
   {
-   "tag": "distillation",
-   "count": 23
+   "tag": "correspondence",
+   "count": 24
   },
   {
-   "tag": "correspondence",
-   "count": 22
+   "tag": "distillation",
+   "count": 24
   },
   {
    "tag": "object-detection",
-   "count": 22
-  },
-  {
-   "tag": "defect-detection",
-   "count": 21
+   "count": 23
   },
   {
    "tag": "peft",
-   "count": 21
+   "count": 23
+  },
+  {
+   "tag": "defect-detection",
+   "count": 22
   },
   {
    "tag": "feature-matching",
-   "count": 20
+   "count": 21
   },
   {
    "tag": "open-vocab-detection",
