@@ -62,6 +62,8 @@ claude -p "$PROMPT" \
 
 if [ -f "$OUT" ]; then
   echo "[$(date '+%F %T')] 완료: $OUT" >> "$LOG"
+  # 사내 웹 인덱스 갱신 (새 주간 리포트가 Weekly 탭에 바로 뜨도록)
+  ARXIV_WEB_ROOT="${ARXIV_WEB_ROOT:-$WS/.meta/arxiv-web}" uv run python build_internal_manifest.py >> "$LOG" 2>&1 || true
 else
   echo "[$(date '+%F %T')] 경고: 리포트 미생성. 로그 확인." >> "$LOG"
 fi
