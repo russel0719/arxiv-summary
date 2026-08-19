@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_20.md",
+   "date": "2026-08-20",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-20 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_19.md",
    "date": "2026-08-19",
    "title": "arXiv cs.CV Daily Digest — 2026-08-19 (KST)",
@@ -686,6 +692,114 @@
   }
  ],
  "papers": [
+  {
+   "title": "MoE-ViE: Mixture of Experts Vision Encoder for Efficient Image and Video Understanding",
+   "url": "https://arxiv.org/abs/2608.17402",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "image-embedding",
+    "foundation-model",
+    "efficient-inference",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Continuity-Driven Representation Learning for Industrial Defect Detection",
+   "url": "https://arxiv.org/abs/2608.17362",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "object-detection",
+    "representation-learning"
+   ]
+  },
+  {
+   "title": "Primitive-Driven Compositional Forensic Visual Prompting for Open-World Face Anti-Spoofing",
+   "url": "https://arxiv.org/abs/2608.17351",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "peft",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Environment-Invariant Subspace Learning for Generalizable Deepfake Detection",
+   "url": "https://arxiv.org/abs/2608.17700",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "domain-generalization",
+    "representation-learning"
+   ]
+  },
+  {
+   "title": "When More Foundation Models Means Less: Diagnosing and Addressing Multi-View Fusion Failure",
+   "url": "https://arxiv.org/abs/2608.17490",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "foundation-model",
+    "image-embedding",
+    "image-retrieval",
+    "model-selection"
+   ]
+  },
+  {
+   "title": "DistillPath: An Efficient 22M Distilled Pathology Encoder Approaching Large Foundation Model Performance",
+   "url": "https://arxiv.org/abs/2608.17872",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "distillation",
+    "ssl-backbone",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Denoised Variance-Based Pruning with Optimal Brain Bias Compensation",
+   "url": "https://arxiv.org/abs/2608.17657",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "efficient-inference",
+    "quantization",
+    "foundation-model",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Mask What Matters: Saliency-Guided Video Self-Supervised Learning for Autonomous Driving",
+   "url": "https://arxiv.org/abs/2608.17178",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "ssl-backbone",
+    "video",
+    "representation-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "MS-MFAD: Multimodal large language models for Face Anti-spoofing Detection",
+   "url": "https://arxiv.org/abs/2608.17328",
+   "date": "2026-08-20",
+   "report": "reports/2026/08/report_20.md",
+   "tags": [
+    "forgery-detection",
+    "vlm",
+    "fine-grained",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "Anchor-Regularized Adaptation for Generalizable AI-Generated Image Detection with DINOv3",
    "url": "https://arxiv.org/abs/2608.15196",
@@ -4052,15 +4166,15 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 107
+   "count": 114
   },
   {
    "tag": "image-embedding",
-   "count": 72
+   "count": 74
   },
   {
    "tag": "efficient-inference",
-   "count": 54
+   "count": 57
   },
   {
    "tag": "metric-learning",
@@ -4068,23 +4182,23 @@
   },
   {
    "tag": "image-retrieval",
-   "count": 52
+   "count": 53
   },
   {
    "tag": "vlm",
-   "count": 51
+   "count": 52
   },
   {
    "tag": "ssl-backbone",
-   "count": 49
+   "count": 51
   },
   {
    "tag": "forgery-detection",
-   "count": 45
+   "count": 48
   },
   {
    "tag": "fine-grained",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "segmentation",
@@ -4096,35 +4210,35 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 34
+   "count": 35
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 27
+  },
+  {
+   "tag": "distillation",
+   "count": 27
   },
   {
    "tag": "re-identification",
    "count": 27
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 26
-  },
-  {
    "tag": "correspondence",
    "count": 24
   },
   {
-   "tag": "distillation",
+   "tag": "object-detection",
    "count": 24
   },
   {
-   "tag": "object-detection",
-   "count": 23
-  },
-  {
    "tag": "peft",
-   "count": 23
+   "count": 24
   },
   {
    "tag": "defect-detection",
-   "count": 22
+   "count": 23
   },
   {
    "tag": "feature-matching",
@@ -4136,18 +4250,18 @@
   },
   {
    "tag": "video",
-   "count": 11
+   "count": 12
   },
   {
    "tag": "quantization",
-   "count": 10
-  },
-  {
-   "tag": "generative",
-   "count": 8
+   "count": 11
   },
   {
    "tag": "representation-learning",
+   "count": 11
+  },
+  {
+   "tag": "generative",
    "count": 8
   },
   {
@@ -4220,6 +4334,10 @@
   },
   {
    "tag": "document-ai",
+   "count": 2
+  },
+  {
+   "tag": "domain-generalization",
    "count": 2
   },
   {
@@ -4360,10 +4478,6 @@
   },
   {
    "tag": "domain-adaptation",
-   "count": 1
-  },
-  {
-   "tag": "domain-generalization",
    "count": 1
   },
   {
@@ -4540,6 +4654,10 @@
   },
   {
    "tag": "model-pruning",
+   "count": 1
+  },
+  {
+   "tag": "model-selection",
    "count": 1
   },
   {
