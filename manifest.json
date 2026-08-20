@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_21.md",
+   "date": "2026-08-21",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-21 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_20.md",
    "date": "2026-08-20",
    "title": "arXiv cs.CV Daily Digest — 2026-08-20 (KST)",
@@ -692,6 +698,120 @@
   }
  ],
  "papers": [
+  {
+   "title": "Frozen DINO Localizes Image Edits Without a Localizer",
+   "url": "https://arxiv.org/abs/2608.18968",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "anomaly-detection",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "SPARC: Subspace Position-Aware Robust Few-Shot Calibration for Distribution-Shifted Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.18585",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "CDGP: Contrastive Dual Gaussian Processes for Weakly Supervised Anomaly Segmentation",
+   "url": "https://arxiv.org/abs/2608.18614",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "Prior-Conditioned Gaussian Discriminants for Generalizable AI-generated Image Detection",
+   "url": "https://arxiv.org/abs/2608.18523",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "forgery-detection",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "PATE-Forensics: Perception-as-Tool for Explainable Deepfake Forensics with General-Purpose MLLMs",
+   "url": "https://arxiv.org/abs/2608.18573",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Evaluation of Image Matching Methods for Visual Odometry on UAVs",
+   "url": "https://arxiv.org/abs/2608.18624",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Composed Historical Image Retrieval by Modeling Temporal Representations",
+   "url": "https://arxiv.org/abs/2608.18694",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Visual-Prompt Guided Wildlife Instance-Level Recognition",
+   "url": "https://arxiv.org/abs/2608.18246",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "re-identification",
+    "fine-grained",
+    "object-detection",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "FD-CanKD: Frequency-Decoupled Cross-Attention Distillation as a Refinement Prior for Compact Object Detectors",
+   "url": "https://arxiv.org/abs/2608.18590",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "distillation",
+    "object-detection",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "What Does Attention Transfer Transfer? Attention Structure and Robustness in Vision Transformers",
+   "url": "https://arxiv.org/abs/2608.18399",
+   "date": "2026-08-21",
+   "report": "reports/2026/08/report_21.md",
+   "tags": [
+    "ssl-backbone",
+    "distillation",
+    "foundation-model"
+   ]
+  },
   {
    "title": "MoE-ViE: Mixture of Experts Vision Encoder for Efficient Image and Video Understanding",
    "url": "https://arxiv.org/abs/2608.17402",
@@ -4166,70 +4286,74 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 114
+   "count": 117
   },
   {
    "tag": "image-embedding",
-   "count": 74
+   "count": 77
   },
   {
    "tag": "efficient-inference",
-   "count": 57
+   "count": 59
   },
   {
    "tag": "metric-learning",
-   "count": 54
-  },
-  {
-   "tag": "image-retrieval",
-   "count": 53
-  },
-  {
-   "tag": "vlm",
-   "count": 52
+   "count": 55
   },
   {
    "tag": "ssl-backbone",
-   "count": 51
+   "count": 55
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 54
+  },
+  {
+   "tag": "vlm",
+   "count": 53
   },
   {
    "tag": "forgery-detection",
-   "count": 48
+   "count": 51
   },
   {
    "tag": "fine-grained",
-   "count": 44
+   "count": 46
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 38
   },
   {
    "tag": "segmentation",
    "count": 38
   },
   {
-   "tag": "anomaly-detection",
-   "count": 35
-  },
-  {
    "tag": "industrial-inspection",
-   "count": 35
-  },
-  {
-   "tag": "dataset-benchmark",
-   "count": 27
+   "count": 37
   },
   {
    "tag": "distillation",
-   "count": 27
+   "count": 29
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 28
   },
   {
    "tag": "re-identification",
-   "count": 27
-  },
-  {
-   "tag": "correspondence",
-   "count": 24
+   "count": 28
   },
   {
    "tag": "object-detection",
+   "count": 26
+  },
+  {
+   "tag": "correspondence",
+   "count": 25
+  },
+  {
+   "tag": "defect-detection",
    "count": 24
   },
   {
@@ -4237,12 +4361,8 @@
    "count": 24
   },
   {
-   "tag": "defect-detection",
-   "count": 23
-  },
-  {
    "tag": "feature-matching",
-   "count": 21
+   "count": 22
   },
   {
    "tag": "open-vocab-detection",
