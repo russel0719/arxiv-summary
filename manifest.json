@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_22.md",
+   "date": "2026-08-22",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-22 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_21.md",
    "date": "2026-08-21",
    "title": "arXiv cs.CV Daily Digest — 2026-08-21 (KST)",
@@ -698,6 +704,99 @@
   }
  ],
  "papers": [
+  {
+   "title": "RIPE++: Reinforced Keypoint Learning from Positive Pairs Only",
+   "url": "https://arxiv.org/abs/2608.19693",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "ssl-backbone",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Unified and Efficient Point-Line Local Features",
+   "url": "https://arxiv.org/abs/2608.19894",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Does Marginal Coverage Guarantee Class-Conditional Safety for Zero-Shot VLMs Under Shift?",
+   "url": "https://arxiv.org/abs/2608.19376",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "foundation-model",
+    "image-embedding",
+    "anomaly-detection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Where Grounding Accuracy Lives on the IoU Curve: Label-Free Inference-Time Boundary Refinement",
+   "url": "https://arxiv.org/abs/2608.19553",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "vlm",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Far from the Crowd: Scalable Self-Supervised Learning via Geographic Isolation",
+   "url": "https://arxiv.org/abs/2608.19766",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Clustering and Token Denoising for Faster and More Robust VLMs",
+   "url": "https://arxiv.org/abs/2608.19285",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "vlm",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Projector Is All You Train",
+   "url": "https://arxiv.org/abs/2608.19726",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "vlm",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "ArmorOCR: Grounded Adversarial Visual Perception via Observation-Transferred Self-Distillation",
+   "url": "https://arxiv.org/abs/2608.20122",
+   "date": "2026-08-22",
+   "report": "reports/2026/08/report_22.md",
+   "tags": [
+    "ocr-document",
+    "forgery-detection",
+    "vlm",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "Frozen DINO Localizes Image Edits Without a Localizer",
    "url": "https://arxiv.org/abs/2608.18968",
@@ -4286,43 +4385,43 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 117
+   "count": 121
   },
   {
    "tag": "image-embedding",
-   "count": 77
+   "count": 79
   },
   {
    "tag": "efficient-inference",
-   "count": 59
-  },
-  {
-   "tag": "metric-learning",
-   "count": 55
+   "count": 62
   },
   {
    "tag": "ssl-backbone",
-   "count": 55
+   "count": 57
+  },
+  {
+   "tag": "vlm",
+   "count": 57
+  },
+  {
+   "tag": "metric-learning",
+   "count": 56
   },
   {
    "tag": "image-retrieval",
    "count": 54
   },
   {
-   "tag": "vlm",
-   "count": 53
-  },
-  {
    "tag": "forgery-detection",
-   "count": 51
+   "count": 52
   },
   {
    "tag": "fine-grained",
-   "count": 46
+   "count": 47
   },
   {
    "tag": "anomaly-detection",
-   "count": 38
+   "count": 39
   },
   {
    "tag": "segmentation",
@@ -4333,23 +4432,27 @@
    "count": 37
   },
   {
-   "tag": "distillation",
-   "count": 29
+   "tag": "dataset-benchmark",
+   "count": 30
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 28
+   "tag": "distillation",
+   "count": 29
   },
   {
    "tag": "re-identification",
    "count": 28
   },
   {
-   "tag": "object-detection",
-   "count": 26
+   "tag": "correspondence",
+   "count": 27
   },
   {
-   "tag": "correspondence",
+   "tag": "object-detection",
+   "count": 27
+  },
+  {
+   "tag": "peft",
    "count": 25
   },
   {
@@ -4357,16 +4460,12 @@
    "count": 24
   },
   {
-   "tag": "peft",
+   "tag": "feature-matching",
    "count": 24
   },
   {
-   "tag": "feature-matching",
-   "count": 22
-  },
-  {
    "tag": "open-vocab-detection",
-   "count": 18
+   "count": 19
   },
   {
    "tag": "video",
@@ -4383,6 +4482,10 @@
   {
    "tag": "generative",
    "count": 8
+  },
+  {
+   "tag": "ocr-document",
+   "count": 5
   },
   {
    "tag": "pose",
@@ -4402,10 +4505,6 @@
   },
   {
    "tag": "few-shot",
-   "count": 4
-  },
-  {
-   "tag": "ocr-document",
    "count": 4
   },
   {
