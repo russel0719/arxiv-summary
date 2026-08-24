@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_25.md",
+   "date": "2026-08-25",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-25 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_22.md",
    "date": "2026-08-22",
    "title": "arXiv cs.CV Daily Digest — 2026-08-22 (KST)",
@@ -704,6 +710,133 @@
   }
  ],
  "papers": [
+  {
+   "title": "Human-JEPA: A Human-Centric Vision Model that Perceives and Anticipates",
+   "url": "https://arxiv.org/abs/2608.21160",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "ssl-backbone",
+    "re-identification",
+    "image-embedding",
+    "pose",
+    "video"
+   ]
+  },
+  {
+   "title": "EviRank: Structured Relevance Evidence for Multimodal Image Re-ranking",
+   "url": "https://arxiv.org/abs/2608.20886",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "image-retrieval",
+    "vlm",
+    "distillation",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Semantically Compatible Knowledge Distillation for Cross-Domain Object Detection with Vision Foundation Models",
+   "url": "https://arxiv.org/abs/2608.20916",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "distillation",
+    "object-detection",
+    "foundation-model",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "LoRC: Detecting AI-Generated Images via Low-Rank Collapse in Semantic Residuals",
+   "url": "https://arxiv.org/abs/2608.20882",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "GAP-SAM: A Global Artifact Prior for Generalizable AI-Generated Image Manipulation Localization",
+   "url": "https://arxiv.org/abs/2608.20929",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "forgery-detection",
+    "segmentation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "MotionPhys: Detecting AI-Generated Videos via Physical Consistency of Optical-Flow Trajectories",
+   "url": "https://arxiv.org/abs/2608.20770",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "forgery-detection",
+    "video",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Explainable Deepfake Detection with Feature-robust Augmentation and Evidence-grounded Explanation Optimization",
+   "url": "https://arxiv.org/abs/2608.20913",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "forgery-detection",
+    "vlm",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Breaking High Confidence: Practical Face Impersonation under High-Security Thresholds",
+   "url": "https://arxiv.org/abs/2608.20884",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "re-identification",
+    "forgery-detection",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "A VLM Answer Is Not an Anomaly Score: Rank Compression in Training-Free Video Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.21244",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "anomaly-detection",
+    "vlm",
+    "industrial-inspection",
+    "video"
+   ]
+  },
+  {
+   "title": "Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs",
+   "url": "https://arxiv.org/abs/2608.21134",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "quantization",
+    "vlm",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "ES-VP: Energy-Shaped Dynamic Visual Prompting for Efficient Model Adaptation",
+   "url": "https://arxiv.org/abs/2608.21194",
+   "date": "2026-08-25",
+   "report": "reports/2026/08/report_25.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
   {
    "title": "RIPE++: Reinforced Keypoint Learning from Positive Pairs Only",
    "url": "https://arxiv.org/abs/2608.19693",
@@ -4385,35 +4518,35 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 121
+   "count": 126
   },
   {
    "tag": "image-embedding",
-   "count": 79
+   "count": 81
   },
   {
    "tag": "efficient-inference",
-   "count": 62
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 57
+   "count": 65
   },
   {
    "tag": "vlm",
-   "count": 57
+   "count": 61
   },
   {
    "tag": "metric-learning",
-   "count": 56
+   "count": 59
   },
   {
-   "tag": "image-retrieval",
-   "count": 54
+   "tag": "ssl-backbone",
+   "count": 59
   },
   {
    "tag": "forgery-detection",
-   "count": 52
+   "count": 57
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 55
   },
   {
    "tag": "fine-grained",
@@ -4421,26 +4554,30 @@
   },
   {
    "tag": "anomaly-detection",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "segmentation",
-   "count": 38
+   "count": 39
   },
   {
    "tag": "industrial-inspection",
-   "count": 37
+   "count": 38
+  },
+  {
+   "tag": "distillation",
+   "count": 31
   },
   {
    "tag": "dataset-benchmark",
    "count": 30
   },
   {
-   "tag": "distillation",
-   "count": 29
+   "tag": "re-identification",
+   "count": 30
   },
   {
-   "tag": "re-identification",
+   "tag": "object-detection",
    "count": 28
   },
   {
@@ -4448,12 +4585,8 @@
    "count": 27
   },
   {
-   "tag": "object-detection",
-   "count": 27
-  },
-  {
    "tag": "peft",
-   "count": 25
+   "count": 26
   },
   {
    "tag": "defect-detection",
@@ -4469,11 +4602,11 @@
   },
   {
    "tag": "video",
-   "count": 12
+   "count": 15
   },
   {
    "tag": "quantization",
-   "count": 11
+   "count": 12
   },
   {
    "tag": "representation-learning",
@@ -4484,11 +4617,11 @@
    "count": 8
   },
   {
-   "tag": "ocr-document",
-   "count": 5
+   "tag": "pose",
+   "count": 6
   },
   {
-   "tag": "pose",
+   "tag": "ocr-document",
    "count": 5
   },
   {
