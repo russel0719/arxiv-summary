@@ -8,14 +8,11 @@
 ```
 arxiv-summary/            # git repo (결과를 push해서 보관)
 ├── fetch_arxiv.py        # arXiv API에서 신규 논문 수집 (표준 라이브러리만 사용)
-├── CLAUDE.md             # 일일·주간 공통 규칙 (claude -p가 루트에서 자동 로드)
-├── prompts/              # claude -p 프롬프트 (작업별 규칙 + 태스크 분리 관리)
-│   ├── daily_rules.md    # 일일: 관심사 프로필 + 요약 규칙
-│   ├── daily_digest.md   # 일일: 태스크 프롬프트 ({{PLACEHOLDER}} 치환)
-│   ├── weekly_rules.md   # 주간: 매칭 지침 + 출력 형식
-│   └── weekly_match.md   # 주간: 태스크 프롬프트 ({{PLACEHOLDER}} 치환)
+├── CLAUDE.md             # 공통 규칙 (claude -p가 루트에서 자동 로드)
+├── prompts/              # claude -p 프롬프트 (규칙 + 태스크 분리 관리)
+│   ├── daily_rules.md    # 관심사 프로필 + 요약 규칙
+│   └── daily_digest.md   # 태스크 프롬프트 ({{PLACEHOLDER}} 치환)
 ├── run_digest.sh         # cron이 호출하는 일일 스크립트 (fetch → claude → git push)
-├── weekly_match.sh       # cron이 호출하는 주간 매칭 스크립트 (git push 안 함)
 ├── seen_ids.txt          # 중복 제거용 (자동 생성, gitignore)
 ├── today_papers.json     # 당일 수집 결과 (자동 생성, gitignore)
 ├── reports/              # 최종 산출물: YYYY/MM/report_DD.md (git에 커밋·push)
@@ -81,7 +78,7 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
   세션이 없는 새벽엔 access token 만료 후 refresh가 실패해 실행이 통째로 중단될 수 있다
   (`Failed to authenticate: OAuth session expired and could not be refreshed`).
   `claude setup-token`으로 장수명 토큰을 1회 발급해 `~/.claude/arxiv_digest.token`에
-  저장하면(`chmod 600`), `run_digest.sh`/`weekly_match.sh`가 이를 `CLAUDE_CODE_OAUTH_TOKEN`
+  저장하면(`chmod 600`), `run_digest.sh`가 이를 `CLAUDE_CODE_OAUTH_TOKEN`
   으로 주입해 예방한다. 경로는 `CLAUDE_OAUTH_TOKEN_FILE`로 바꿀 수 있다.
 - **사용량**: Pro 구독 사용량 한도를 공유하므로, 하루 1회 요약 정도는
   일반적으로 문제없지만 낮 업무 시간과 겹치지 않게 스케줄하면 좋다.
