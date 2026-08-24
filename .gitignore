@@ -17,6 +17,14 @@ pdfs/
 today_papers.json
 seen_ids.txt
 
+# 내부 프롬프트·스크립트 (주간 매칭 / 프로파일 갱신 — 로컬 전용, repo 미반영)
+prompts/weekly_rules.md
+prompts/weekly_match.md
+prompts/refresh_rules.md
+prompts/refresh_task.md
+weekly_match.sh
+weekly_refresh.sh
+
 # Credentials
 .env
 
