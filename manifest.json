@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_26.md",
+   "date": "2026-08-26",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-26 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_25.md",
    "date": "2026-08-25",
    "title": "arXiv cs.CV Daily Digest — 2026-08-25 (KST)",
@@ -710,6 +716,158 @@
   }
  ],
  "papers": [
+  {
+   "title": "Misanthrope: A Privacy-Preserving Keypoint Detector",
+   "url": "https://arxiv.org/abs/2608.23012",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "keypoint-detection",
+    "privacy",
+    "re-identification"
+   ]
+  },
+  {
+   "title": "Hyperbolic Hierarchical Clustering for Visual Representation Learning",
+   "url": "https://arxiv.org/abs/2608.22665",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "segmentation",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "When More References Hurt: Contamination-Aware DINOv2 Memory Banks for Few-Shot Steel Defect Detection",
+   "url": "https://arxiv.org/abs/2608.22082",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "industrial-inspection",
+    "ssl-backbone",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "What Remains Normal? Clean Images Miss Useful Near-Defect Normal Patches for Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.23299",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "industrial-inspection",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Learning Sample-wise Rank-aware Interpolation Weights for Composed Visual Data Retrieval",
+   "url": "https://arxiv.org/abs/2608.22500",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "efficient-inference",
+    "video"
+   ]
+  },
+  {
+   "title": "Training-Free Pseudo-Fusion for Composed Image Retrieval with Diffusion Models and Multimodal Large Language Models",
+   "url": "https://arxiv.org/abs/2608.23102",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "vlm",
+    "generative",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "DECO: Depth-Guided Co-Visibility Reasoning for Low-Altitude UAV Visual Localization",
+   "url": "https://arxiv.org/abs/2608.22289",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "keypoint-detection",
+    "depth",
+    "pose"
+   ]
+  },
+  {
+   "title": "Contextrast++: Robust Multi-Scale Contextual Contrastive Learning for Semantic Segmentation",
+   "url": "https://arxiv.org/abs/2608.22679",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "metric-learning",
+    "segmentation",
+    "image-embedding",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "A Comparative Study of Label-free Representation Quality Metrics in Deep Learning",
+   "url": "https://arxiv.org/abs/2608.23182",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Tomatoes, Potatoes, and Onions: Questioning the Need for Faces in Face Presentation Attack Detection",
+   "url": "https://arxiv.org/abs/2608.21455",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "forgery-detection",
+    "anti-spoofing",
+    "foundation-model",
+    "image-embedding",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "DiD It in 87 Minutes: A Label-Free Softmax-to-Linear Adaptation of Vision Transformers for Object Detection",
+   "url": "https://arxiv.org/abs/2608.22368",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "distillation",
+    "efficient-inference",
+    "object-detection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Action-Aligned Retrieval with Pairwise Multimodal Reranking for Text-Based Person Anomaly Search",
+   "url": "https://arxiv.org/abs/2608.23503",
+   "date": "2026-08-26",
+   "report": "reports/2026/08/report_26.md",
+   "tags": [
+    "image-retrieval",
+    "re-identification",
+    "metric-learning",
+    "vlm",
+    "video"
+   ]
+  },
   {
    "title": "Human-JEPA: A Human-Centric Vision Model that Perceives and Anticipates",
    "url": "https://arxiv.org/abs/2608.21160",
@@ -4518,83 +4676,83 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 126
+   "count": 130
   },
   {
    "tag": "image-embedding",
-   "count": 81
+   "count": 89
   },
   {
    "tag": "efficient-inference",
-   "count": 65
+   "count": 67
   },
   {
    "tag": "vlm",
-   "count": 61
+   "count": 63
   },
   {
    "tag": "metric-learning",
-   "count": 59
+   "count": 62
   },
   {
    "tag": "ssl-backbone",
-   "count": 59
+   "count": 62
   },
   {
    "tag": "forgery-detection",
-   "count": 57
+   "count": 58
   },
   {
    "tag": "image-retrieval",
-   "count": 55
+   "count": 58
   },
   {
    "tag": "fine-grained",
-   "count": 47
+   "count": 49
   },
   {
    "tag": "anomaly-detection",
-   "count": 40
+   "count": 42
   },
   {
    "tag": "segmentation",
-   "count": 39
+   "count": 41
   },
   {
    "tag": "industrial-inspection",
-   "count": 38
-  },
-  {
-   "tag": "distillation",
-   "count": 31
+   "count": 40
   },
   {
    "tag": "dataset-benchmark",
-   "count": 30
+   "count": 32
+  },
+  {
+   "tag": "distillation",
+   "count": 32
   },
   {
    "tag": "re-identification",
-   "count": 30
+   "count": 32
   },
   {
    "tag": "object-detection",
-   "count": 28
+   "count": 30
   },
   {
    "tag": "correspondence",
-   "count": 27
+   "count": 29
+  },
+  {
+   "tag": "defect-detection",
+   "count": 26
+  },
+  {
+   "tag": "feature-matching",
+   "count": 26
   },
   {
    "tag": "peft",
    "count": 26
-  },
-  {
-   "tag": "defect-detection",
-   "count": 24
-  },
-  {
-   "tag": "feature-matching",
-   "count": 24
   },
   {
    "tag": "open-vocab-detection",
@@ -4602,7 +4760,7 @@
   },
   {
    "tag": "video",
-   "count": 15
+   "count": 17
   },
   {
    "tag": "quantization",
@@ -4614,11 +4772,15 @@
   },
   {
    "tag": "generative",
-   "count": 8
+   "count": 9
   },
   {
    "tag": "pose",
-   "count": 6
+   "count": 7
+  },
+  {
+   "tag": "depth",
+   "count": 5
   },
   {
    "tag": "ocr-document",
@@ -4630,10 +4792,6 @@
   },
   {
    "tag": "clip",
-   "count": 4
-  },
-  {
-   "tag": "depth",
    "count": 4
   },
   {
@@ -4701,6 +4859,10 @@
    "count": 2
   },
   {
+   "tag": "keypoint-detection",
+   "count": 2
+  },
+  {
    "tag": "knowledge-distillation",
    "count": 2
   },
@@ -4750,6 +4912,10 @@
   },
   {
    "tag": "annotation-free",
+   "count": 1
+  },
+  {
+   "tag": "anti-spoofing",
    "count": 1
   },
   {
@@ -5066,6 +5232,10 @@
   },
   {
    "tag": "point-cloud",
+   "count": 1
+  },
+  {
+   "tag": "privacy",
    "count": 1
   },
   {
