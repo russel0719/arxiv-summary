@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_27.md",
+   "date": "2026-08-27",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-27 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_26.md",
    "date": "2026-08-26",
    "title": "arXiv cs.CV Daily Digest — 2026-08-26 (KST)",
@@ -716,6 +722,125 @@
   }
  ],
  "papers": [
+  {
+   "title": "DDMS: Discriminative Distillation of Multi-view Foundational Features into Single-view Models",
+   "url": "https://arxiv.org/abs/2608.23850",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "feature-matching",
+    "distillation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+   "url": "https://arxiv.org/abs/2608.24053",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "foundation-model",
+    "vlm",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Absorbing Gradient Conflicts: Modeling Semantic Variance via Kent Distributions for Cross-Modal Hashing",
+   "url": "https://arxiv.org/abs/2608.24010",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "KLTNet: Learning Sparse Feature Tracking for Robust and Accurate Monocular Visual-Inertial Odometry",
+   "url": "https://arxiv.org/abs/2608.24544",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "pose",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "DriftAD: Visually-Guided Text Drift for Few-Shot Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.23723",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Source-Face Authenticity Detection for 3D Gaussian Heads Reconstructed from a Single Portrait: A Benchmark and Dedicated Detector",
+   "url": "https://arxiv.org/abs/2608.23984",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "dataset-benchmark",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "IDeaL: Data-Free Multi-Teacher Distillation via Improved Dead Leaves",
+   "url": "https://arxiv.org/abs/2608.24759",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "distillation",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Too much of a good thing — when knowledge distillation promotes overfitting, and how to avoid it",
+   "url": "https://arxiv.org/abs/2608.23752",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "distillation",
+    "fine-grained",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "The Blending Ratio Is Not Where the Performance Is: Diagnosing Prototype Blending for Few-Shot Adaptation of Vision-Language Models",
+   "url": "https://arxiv.org/abs/2608.23634",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "vlm",
+    "foundation-model",
+    "peft",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Low-Rank Ternary Adaptation for Fine-Tuning Transformers",
+   "url": "https://arxiv.org/abs/2608.24469",
+   "date": "2026-08-27",
+   "report": "reports/2026/08/report_27.md",
+   "tags": [
+    "quantization",
+    "peft",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Misanthrope: A Privacy-Preserving Keypoint Detector",
    "url": "https://arxiv.org/abs/2608.23012",
@@ -4676,83 +4801,83 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 130
+   "count": 135
   },
   {
    "tag": "image-embedding",
-   "count": 89
+   "count": 93
   },
   {
    "tag": "efficient-inference",
-   "count": 67
+   "count": 71
   },
   {
    "tag": "vlm",
-   "count": 63
+   "count": 66
   },
   {
    "tag": "metric-learning",
-   "count": 62
+   "count": 64
   },
   {
    "tag": "ssl-backbone",
-   "count": 62
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 58
+   "count": 64
   },
   {
    "tag": "image-retrieval",
-   "count": 58
+   "count": 60
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 59
   },
   {
    "tag": "fine-grained",
-   "count": 49
+   "count": 50
   },
   {
    "tag": "anomaly-detection",
-   "count": 42
+   "count": 43
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 41
   },
   {
    "tag": "segmentation",
    "count": 41
   },
   {
-   "tag": "industrial-inspection",
-   "count": 40
+   "tag": "distillation",
+   "count": 35
   },
   {
    "tag": "dataset-benchmark",
-   "count": 32
-  },
-  {
-   "tag": "distillation",
-   "count": 32
+   "count": 33
   },
   {
    "tag": "re-identification",
    "count": 32
   },
   {
+   "tag": "correspondence",
+   "count": 31
+  },
+  {
    "tag": "object-detection",
    "count": 30
   },
   {
-   "tag": "correspondence",
-   "count": 29
-  },
-  {
-   "tag": "defect-detection",
-   "count": 26
-  },
-  {
    "tag": "feature-matching",
-   "count": 26
+   "count": 28
   },
   {
    "tag": "peft",
-   "count": 26
+   "count": 28
+  },
+  {
+   "tag": "defect-detection",
+   "count": 27
   },
   {
    "tag": "open-vocab-detection",
@@ -4764,7 +4889,7 @@
   },
   {
    "tag": "quantization",
-   "count": 12
+   "count": 13
   },
   {
    "tag": "representation-learning",
@@ -4776,7 +4901,7 @@
   },
   {
    "tag": "pose",
-   "count": 7
+   "count": 8
   },
   {
    "tag": "depth",
