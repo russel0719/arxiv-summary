@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_28.md",
+   "date": "2026-08-28",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-28 (KST)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_27.md",
    "date": "2026-08-27",
    "title": "arXiv cs.CV Daily Digest — 2026-08-27 (KST)",
@@ -722,6 +728,128 @@
   }
  ],
  "papers": [
+  {
+   "title": "CloSeR: Unified Relational Distillation from Closed-Set Teachers for Category Discovery",
+   "url": "https://arxiv.org/abs/2608.25692",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "distillation",
+    "peft",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "MLLMCLIP: Feature-Level Distillation of MLLM for Robust Vision-Language Representations",
+   "url": "https://arxiv.org/abs/2608.25575",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "image-embedding",
+    "distillation",
+    "vlm",
+    "image-retrieval",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "AdaptiveEmbed: Sample-Adaptive Multi-Vector Representation for Multimodal Retrieval",
+   "url": "https://arxiv.org/abs/2608.25412",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "MulVec: Fine-Grained Role-Aware Matching for Training-Free Zero-Shot Composed Image Retrieval",
+   "url": "https://arxiv.org/abs/2608.25305",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "correspondence",
+    "vlm"
+   ]
+  },
+  {
+   "title": "OpenVeinNet: Robust Open-Set Finger Vein Verification with Dynamic Snake Convolution and Graph Learning",
+   "url": "https://arxiv.org/abs/2608.25515",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "image-embedding",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "On the Separation of Human and AI-Generated Images in CLIP Embedding Space",
+   "url": "https://arxiv.org/abs/2608.25609",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "image-embedding",
+    "forgery-detection",
+    "foundation-model",
+    "vlm"
+   ]
+  },
+  {
+   "title": "OpenCVL: An Open, Diverse, and Large-Scale Dataset for Fine-Grained Cross-View Localization",
+   "url": "https://arxiv.org/abs/2608.25274",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "dataset-benchmark",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "See More, Detect Less? Taming Information Leakage in Multi-View Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.25168",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "foundation-model",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "Automatic weld seam segmentation for industrial quality control: a comparison of RGB and polarimetric imaging with CNN and transformer architectures",
+   "url": "https://arxiv.org/abs/2608.25465",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "segmentation",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "DEFUSE: Generalizable Backdoor Defense for Self-Supervised Encoders with Generative Priors",
+   "url": "https://arxiv.org/abs/2608.25851",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_28.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "image-embedding",
+    "anomaly-detection"
+   ]
+  },
   {
    "title": "DDMS: Discriminative Distillation of Multi-view Foundational Features into Single-view Models",
    "url": "https://arxiv.org/abs/2608.23850",
@@ -4801,11 +4929,11 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 135
+   "count": 141
   },
   {
    "tag": "image-embedding",
-   "count": 93
+   "count": 99
   },
   {
    "tag": "efficient-inference",
@@ -4813,71 +4941,71 @@
   },
   {
    "tag": "vlm",
-   "count": 66
+   "count": 69
   },
   {
    "tag": "metric-learning",
-   "count": 64
+   "count": 66
   },
   {
    "tag": "ssl-backbone",
-   "count": 64
+   "count": 66
   },
   {
    "tag": "image-retrieval",
-   "count": 60
+   "count": 64
   },
   {
    "tag": "forgery-detection",
-   "count": 59
+   "count": 60
   },
   {
    "tag": "fine-grained",
-   "count": 50
+   "count": 52
   },
   {
    "tag": "anomaly-detection",
-   "count": 43
+   "count": 45
   },
   {
    "tag": "industrial-inspection",
-   "count": 41
+   "count": 43
   },
   {
    "tag": "segmentation",
-   "count": 41
+   "count": 42
   },
   {
    "tag": "distillation",
-   "count": 35
+   "count": 37
   },
   {
    "tag": "dataset-benchmark",
+   "count": 34
+  },
+  {
+   "tag": "correspondence",
    "count": 33
   },
   {
    "tag": "re-identification",
-   "count": 32
-  },
-  {
-   "tag": "correspondence",
-   "count": 31
+   "count": 33
   },
   {
    "tag": "object-detection",
-   "count": 30
-  },
-  {
-   "tag": "feature-matching",
-   "count": 28
-  },
-  {
-   "tag": "peft",
-   "count": 28
+   "count": 31
   },
   {
    "tag": "defect-detection",
-   "count": 27
+   "count": 29
+  },
+  {
+   "tag": "feature-matching",
+   "count": 29
+  },
+  {
+   "tag": "peft",
+   "count": 29
   },
   {
    "tag": "open-vocab-detection",
