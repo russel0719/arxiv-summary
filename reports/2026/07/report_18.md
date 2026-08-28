@@ -1,4 +1,4 @@
-# arXiv cs.CV Daily Digest — 2026-07-18 (KST)
+# arXiv cs.CV Daily Digest — 2026-07-17 (arXiv 공개일)
 
 - **전체 신규 논문 수**: 114편 (new 92 + cross-list 22)
 - **선별 수**: 11편

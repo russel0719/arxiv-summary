@@ -33,12 +33,24 @@ if ! uv run python fetch_arxiv.py >> "$LOG" 2>&1; then
   exit 0
 fi
 
+# 리포트 본문·웹에 표시할 날짜는 실행일이 아니라 arXiv 공개일이다
+# (01:00 KST 실행 = 전날 정오 ET → 공개일은 실행일 -1). RSS pubDate에서 직접 읽고,
+# 실패하면 -1일로 대체한다.
+PAPER_DATE="$(uv run python -c "
+import json, datetime
+p = json.load(open('today_papers.json'))[0]['published']
+print(datetime.datetime.strptime(p, '%a, %d %b %Y %H:%M:%S %z').date())
+" 2>/dev/null)" || true
+[ -n "$PAPER_DATE" ] || PAPER_DATE="$(date -d yesterday +%F)"
+echo "[$(date '+%F %T')] arXiv 공개일: $PAPER_DATE" >> "$LOG"
+
 echo "[$(date '+%F %T')] running claude..." >> "$LOG"
 
 # 프롬프트는 prompts/ 에서 관리 (규칙 daily_rules.md + 태스크 daily_digest.md).
 # 규칙 뒤에 태스크를 이어붙이고 {{PLACEHOLDER}} 를 런타임 값으로 치환.
 PROMPT="$(cat "$DIR/prompts/daily_rules.md" "$DIR/prompts/daily_digest.md")"
 PROMPT="${PROMPT//'{{REPORT}}'/$REPORT}"
+PROMPT="${PROMPT//'{{PAPER_DATE}}'/$PAPER_DATE}"
 
 claude -p "$PROMPT" \
   --allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)" \

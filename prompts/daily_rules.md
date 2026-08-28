@@ -58,8 +58,9 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
 1. `today_papers.json`을 읽는다. (title, abstract, authors, url 포함)
 2. 위 프로필 기준으로 **가치 있는 논문 5~12편**을 선별한다.
    해당하는 논문이 적으면 적게 뽑아도 된다. 억지로 채우지 말 것.
-3. `reports/YYYY/MM/report_DD.md` 형식으로 저장한다. (오늘 날짜, KST 기준.
-   예: 2026-07-14 → `reports/2026/07/report_14.md`)
+3. 저장 경로는 태스크 프롬프트가 지정한 `{{REPORT}}` 그대로 쓴다 (파일명은 실행일 기준).
+   **문서 안의 날짜는 실행일이 아니라 arXiv 공개일 `{{PAPER_DATE}}`를 쓴다** —
+   직접 계산하지 말고 주어진 값을 그대로 넣는다.
 4. 각 논문 항목 형식:
    - `### [제목](arxiv url)`
    - **한 줄 요약** (한국어)
@@ -79,7 +80,7 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
 5. 파일은 **아래 고정 형식**을 그대로 따른다 (매일 산출물이 동일 포맷이어야 함):
 
    ```
-   # arXiv cs.CV Daily Digest — YYYY-MM-DD (KST)
+   # arXiv cs.CV Daily Digest — {{PAPER_DATE}} (arXiv 공개일)
 
    - **전체 신규 논문 수**: N편 (new N1 + cross-list N2)
    - **선별 수**: M편

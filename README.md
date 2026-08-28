@@ -60,7 +60,7 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
     0 1 * * 2-6 /home/jmkang/workspace/utils/arxiv-summary/run_digest.sh
     ```
     `run_digest.sh`가 내부에서 `TZ=Asia/Seoul`을 고정하므로 서버 타임존과
-    무관하게 digest 날짜는 항상 KST 기준으로 저장된다. 단, cron 스케줄 자체는
+    무관하게 파일명은 항상 KST 실행일 기준으로 저장된다. 단, cron 스케줄 자체는
     서버 로컬 시각으로 해석되므로 서버가 UTC라면 `0 16 * * 1-5`를 사용한다
     (01:00 KST = 16:00 UTC, 화~토 새벽 1시 KST = 월~금 16:00 UTC).
 
@@ -70,6 +70,11 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
   KST 오전 10시면 당일 발표분이 안정적으로 잡힌다. `fetch_arxiv.py`는
   36시간 lookback + `seen_ids.txt` 중복 제거로 빠짐/중복을 방지하고,
   월요일에는 lookback을 84시간으로 늘려 주말 공백을 커버한다.
+- **날짜 규약**: 파일명(`report_DD.md`)은 **실행일**(KST, 화~토), 리포트 본문 H1과
+  웹에 표시되는 날짜는 **arXiv 공개일**(월~금, 실행일 -1)이다. 공개일은 RSS의
+  `pubDate`에서 읽어 `{{PAPER_DATE}}`로 프롬프트에 주입되고, `build_manifest.py`는
+  신형 리포트의 날짜를 H1에서 읽는다. 월 경계에서는 표시 날짜가 전월로 넘어갈 수 있다
+  (예: `2026/08/report_01.md` → 2026-07-31).
 - **관심사 조정**: `prompts/daily_rules.md`의 프로필만 수정하면 선별 기준이 바뀐다.
 - **카테고리 추가**: `fetch_arxiv.py`의 `CATEGORIES`에 `cs.LG`, `cs.AI` 등 추가.
 - **권한**: `--allowedTools "Read,Write,WebFetch,WebSearch,Bash(date *)"`로

@@ -29,12 +29,21 @@ TAG_RE = re.compile(r"^\s*-?\s*\*\*(?:태그|키워드)\*\*\s*[:：]\s*(.+?)\s*$
 
 def date_of(md: Path) -> str:
     name = md.stem
+    if name.startswith("report_"):
+        # 신형 리포트는 파일명이 실행일이고 H1이 arXiv 공개일이다 → H1을 우선한다.
+        for line in md.read_text(encoding="utf-8", errors="ignore").splitlines():
+            if line.startswith("# "):
+                m = DATE_RE.search(line)
+                if m:
+                    return m.group(0)
+                break
+        parts = md.relative_to(REPORTS_DIR).parts
+        if len(parts) >= 3:
+            return f"{parts[0]}-{parts[1]}-{name.split('_')[-1]}"
+        return ""
     m = DATE_RE.search(name)
     if m:
         return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
-    parts = md.relative_to(REPORTS_DIR).parts
-    if len(parts) >= 3 and name.startswith("report_"):
-        return f"{parts[0]}-{parts[1]}-{name.split('_')[-1]}"
     return ""
 
 
