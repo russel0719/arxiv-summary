@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/08/report_29.md",
+   "date": "2026-08-28",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-28 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_28.md",
    "date": "2026-08-27",
    "title": "arXiv cs.CV Daily Digest — 2026-08-27 (arXiv 공개일)",
@@ -728,6 +734,138 @@
   }
  ],
  "papers": [
+  {
+   "title": "LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics",
+   "url": "https://arxiv.org/abs/2608.27395",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "ssl-backbone",
+    "video",
+    "image-embedding",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "SSMB: Self-Supervised Local Feature Detection under Motion Blur",
+   "url": "https://arxiv.org/abs/2608.27181",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "feature-matching",
+    "ssl-backbone",
+    "correspondence",
+    "pose"
+   ]
+  },
+  {
+   "title": "PailitaoGR: Latent Think-with-Images for Generative Image Retrieval",
+   "url": "https://arxiv.org/abs/2608.26658",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "vlm",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Omni-Interactive Universal Embedder",
+   "url": "https://arxiv.org/abs/2608.27044",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Text-to-seed generation: Training-free open-vocabulary seeded semantic segmentation via re-purposing diffusion as text-guided seed generator",
+   "url": "https://arxiv.org/abs/2608.26624",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-detection",
+    "foundation-model",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "CODE: Cross-Modal Calibration and Dynamic Suppression for Open World Object Detection",
+   "url": "https://arxiv.org/abs/2608.27214",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "GeoMAD: Geometry-Aware Multi-View Anomaly Detection via Deformable Fusion and Distributional Alignment",
+   "url": "https://arxiv.org/abs/2608.26724",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "Data-efficient crack quantification in lithium-ion cathodes using foundation model transfer",
+   "url": "https://arxiv.org/abs/2608.27162",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "ssl-backbone",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Cross-Architecture Knowledge Distillation from a Vision Foundation Model to a Lightweight Visual State Space Model for Tea Leaf Disease Classification",
+   "url": "https://arxiv.org/abs/2608.26771",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "distillation",
+    "ssl-backbone",
+    "fine-grained",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference",
+   "url": "https://arxiv.org/abs/2608.27206",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "efficient-inference",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "G2D: Generative-to-Discriminative Collaborative Inference for Zero-Shot Image Classification",
+   "url": "https://arxiv.org/abs/2608.26744",
+   "date": "2026-08-28",
+   "report": "reports/2026/08/report_29.md",
+   "tags": [
+    "fine-grained",
+    "vlm",
+    "image-retrieval",
+    "foundation-model"
+   ]
+  },
   {
    "title": "CloSeR: Unified Relational Distillation from Closed-Set Teachers for Category Discovery",
    "url": "https://arxiv.org/abs/2608.25692",
@@ -4929,31 +5067,31 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 141
+   "count": 147
   },
   {
    "tag": "image-embedding",
-   "count": 99
+   "count": 102
   },
   {
    "tag": "efficient-inference",
-   "count": 71
+   "count": 74
   },
   {
    "tag": "vlm",
-   "count": 69
-  },
-  {
-   "tag": "metric-learning",
-   "count": 66
+   "count": 73
   },
   {
    "tag": "ssl-backbone",
-   "count": 66
+   "count": 70
   },
   {
    "tag": "image-retrieval",
-   "count": 64
+   "count": 67
+  },
+  {
+   "tag": "metric-learning",
+   "count": 67
   },
   {
    "tag": "forgery-detection",
@@ -4961,31 +5099,31 @@
   },
   {
    "tag": "fine-grained",
-   "count": 52
+   "count": 54
   },
   {
    "tag": "anomaly-detection",
-   "count": 45
+   "count": 46
   },
   {
    "tag": "industrial-inspection",
-   "count": 43
+   "count": 45
   },
   {
    "tag": "segmentation",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "distillation",
-   "count": 37
+   "count": 39
+  },
+  {
+   "tag": "correspondence",
+   "count": 36
   },
   {
    "tag": "dataset-benchmark",
    "count": 34
-  },
-  {
-   "tag": "correspondence",
-   "count": 33
   },
   {
    "tag": "re-identification",
@@ -4993,15 +5131,15 @@
   },
   {
    "tag": "object-detection",
-   "count": 31
+   "count": 32
   },
   {
    "tag": "defect-detection",
-   "count": 29
+   "count": 31
   },
   {
    "tag": "feature-matching",
-   "count": 29
+   "count": 30
   },
   {
    "tag": "peft",
@@ -5009,11 +5147,11 @@
   },
   {
    "tag": "open-vocab-detection",
-   "count": 19
+   "count": 21
   },
   {
    "tag": "video",
-   "count": 17
+   "count": 18
   },
   {
    "tag": "quantization",
@@ -5029,7 +5167,7 @@
   },
   {
    "tag": "pose",
-   "count": 8
+   "count": 9
   },
   {
    "tag": "depth",
