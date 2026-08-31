@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_01.md",
+   "date": "2026-08-31",
+   "title": "arXiv cs.CV Daily Digest — 2026-08-31 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/08/report_29.md",
    "date": "2026-08-28",
    "title": "arXiv cs.CV Daily Digest — 2026-08-28 (arXiv 공개일)",
@@ -734,6 +740,138 @@
   }
  ],
  "papers": [
+  {
+   "title": "Cut-ViT: Task-Specific Model Pruning via Gram Anchoring Subspace Consistency",
+   "url": "https://arxiv.org/abs/2608.28205",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "model-pruning",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "WALDO: One-Shot Exemplar-Conditioned Object Detection in Cluttered Scenes",
+   "url": "https://arxiv.org/abs/2608.28216",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "object-detection",
+    "open-vocab-detection",
+    "foundation-model",
+    "one-shot-detection"
+   ]
+  },
+  {
+   "title": "Cross-Spectral Dense Correspondence for Multimodal Spectral Medical Imaging",
+   "url": "https://arxiv.org/abs/2608.28341",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "cross-spectral",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Semantic Head Specialization Guides Hybrid ViT Attention for Multimodal LLMs",
+   "url": "https://arxiv.org/abs/2608.28383",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "foundation-model",
+    "efficient-inference",
+    "vlm",
+    "attention-analysis"
+   ]
+  },
+  {
+   "title": "Relational Knowledge Distillation Brings DNN Representations Close Enough to Humans to Be Aligned Without Supervision",
+   "url": "https://arxiv.org/abs/2608.27877",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "distillation",
+    "image-embedding",
+    "representation-analysis",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Image Augmentation as Test Generation for Deep Learning-Based Image Retrieval Systems",
+   "url": "https://arxiv.org/abs/2608.27502",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "dataset-benchmark",
+    "robustness"
+   ]
+  },
+  {
+   "title": "ShiftSplit-AD: Separating Domain Shift from Defects in Foundation-Feature Visual Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.27610",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "ssl-backbone",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CF-YOLO: Context-Aware Feature Refinement for Camouflaged Industrial Micro-Defect Detection",
+   "url": "https://arxiv.org/abs/2608.28070",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "object-detection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "FUSED: Forensic-Semantic Mixture-of-Experts for AI Inpainting Detection and Localization",
+   "url": "https://arxiv.org/abs/2608.28302",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "forgery-detection",
+    "segmentation",
+    "mixture-of-experts",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "From Perspective to Fisheye Depth Estimation and Open-Vocabulary Segmentation",
+   "url": "https://arxiv.org/abs/2608.27860",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "foundation-model",
+    "peft",
+    "segmentation",
+    "depth"
+   ]
+  },
+  {
+   "title": "A Deeper Analysis of Block-Sparse Featurizers",
+   "url": "https://arxiv.org/abs/2608.27515",
+   "date": "2026-08-31",
+   "report": "reports/2026/09/report_01.md",
+   "tags": [
+    "image-embedding",
+    "representation-analysis",
+    "sparse-autoencoder",
+    "foundation-model"
+   ]
+  },
   {
    "title": "LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics",
    "url": "https://arxiv.org/abs/2608.27395",
@@ -5067,27 +5205,27 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 147
+   "count": 154
   },
   {
    "tag": "image-embedding",
-   "count": 102
+   "count": 105
   },
   {
    "tag": "efficient-inference",
-   "count": 74
+   "count": 76
   },
   {
    "tag": "vlm",
-   "count": 73
+   "count": 74
   },
   {
    "tag": "ssl-backbone",
-   "count": 70
+   "count": 72
   },
   {
    "tag": "image-retrieval",
-   "count": 67
+   "count": 68
   },
   {
    "tag": "metric-learning",
@@ -5095,34 +5233,38 @@
   },
   {
    "tag": "forgery-detection",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "fine-grained",
-   "count": 54
+   "count": 55
   },
   {
    "tag": "anomaly-detection",
-   "count": 46
+   "count": 47
   },
   {
    "tag": "industrial-inspection",
-   "count": 45
+   "count": 47
   },
   {
    "tag": "segmentation",
-   "count": 44
+   "count": 46
   },
   {
    "tag": "distillation",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "correspondence",
-   "count": 36
+   "count": 37
   },
   {
    "tag": "dataset-benchmark",
+   "count": 37
+  },
+  {
+   "tag": "object-detection",
    "count": 34
   },
   {
@@ -5130,24 +5272,20 @@
    "count": 33
   },
   {
-   "tag": "object-detection",
+   "tag": "defect-detection",
    "count": 32
   },
   {
-   "tag": "defect-detection",
+   "tag": "feature-matching",
    "count": 31
   },
   {
-   "tag": "feature-matching",
+   "tag": "peft",
    "count": 30
   },
   {
-   "tag": "peft",
-   "count": 29
-  },
-  {
    "tag": "open-vocab-detection",
-   "count": 21
+   "count": 22
   },
   {
    "tag": "video",
@@ -5171,10 +5309,14 @@
   },
   {
    "tag": "depth",
-   "count": 5
+   "count": 6
   },
   {
    "tag": "ocr-document",
+   "count": 5
+  },
+  {
+   "tag": "robustness",
    "count": 5
   },
   {
@@ -5187,10 +5329,6 @@
   },
   {
    "tag": "few-shot",
-   "count": 4
-  },
-  {
-   "tag": "robustness",
    "count": 4
   },
   {
@@ -5258,6 +5396,10 @@
    "count": 2
   },
   {
+   "tag": "model-pruning",
+   "count": 2
+  },
+  {
    "tag": "multimodal-fusion",
    "count": 2
   },
@@ -5271,6 +5413,10 @@
   },
   {
    "tag": "open-vocabulary-detection",
+   "count": 2
+  },
+  {
+   "tag": "representation-analysis",
    "count": 2
   },
   {
@@ -5318,6 +5464,10 @@
    "count": 1
   },
   {
+   "tag": "attention-analysis",
+   "count": 1
+  },
+  {
    "tag": "attribute-matching",
    "count": 1
   },
@@ -5355,6 +5505,10 @@
   },
   {
    "tag": "cross-domain-retrieval",
+   "count": 1
+  },
+  {
+   "tag": "cross-spectral",
    "count": 1
   },
   {
@@ -5554,15 +5708,15 @@
    "count": 1
   },
   {
+   "tag": "mixture-of-experts",
+   "count": 1
+  },
+  {
    "tag": "mllm",
    "count": 1
   },
   {
    "tag": "model-efficiency",
-   "count": 1
-  },
-  {
-   "tag": "model-pruning",
    "count": 1
   },
   {
@@ -5595,6 +5749,10 @@
   },
   {
    "tag": "one-shot",
+   "count": 1
+  },
+  {
+   "tag": "one-shot-detection",
    "count": 1
   },
   {
@@ -5711,6 +5869,10 @@
   },
   {
    "tag": "siglip",
+   "count": 1
+  },
+  {
+   "tag": "sparse-autoencoder",
    "count": 1
   },
   {
