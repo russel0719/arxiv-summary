@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_02.md",
+   "date": "2026-09-01",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-01 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_01.md",
    "date": "2026-08-31",
    "title": "arXiv cs.CV Daily Digest — 2026-08-31 (arXiv 공개일)",
@@ -740,6 +746,157 @@
   }
  ],
  "papers": [
+  {
+   "title": "GramLoop: Training-Free Gram-Gated Replay for Robust Dense Prediction",
+   "url": "https://arxiv.org/abs/2608.29113",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "segmentation",
+    "object-detection",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Evaluating 2D and 3D-Aware Vision Foundation Models for Vehicle Attribute Recognition",
+   "url": "https://arxiv.org/abs/2608.29929",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "fine-grained",
+    "image-embedding",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "FoundYou: A Unified Model for Personalized Segmentation and Retrieval",
+   "url": "https://arxiv.org/abs/2608.29917",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "image-retrieval",
+    "segmentation",
+    "correspondence",
+    "foundation-model",
+    "re-identification"
+   ]
+  },
+  {
+   "title": "XDG: Accelerated Visual Disambiguation",
+   "url": "https://arxiv.org/abs/2608.29733",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "foundation-model",
+    "peft",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "DiffSAC: Diffusion-guided Sampling for Consensus-based Robust Estimation",
+   "url": "https://arxiv.org/abs/2608.30603",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "robust-estimation",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "RePair: Turning Retrieval Failures into Counterfactual Hard Pairs",
+   "url": "https://arxiv.org/abs/2608.29604",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Hyper3-CLIP: Hierarchy-Conditioned Hyperbolic Vision-Language Training",
+   "url": "https://arxiv.org/abs/2608.29313",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Open-Set Cattle Muzzle Identification: A Leakage-Controlled Benchmark and Evaluation Protocol",
+   "url": "https://arxiv.org/abs/2608.28663",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "metric-learning",
+    "re-identification",
+    "image-embedding",
+    "image-retrieval",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "OPUS: A Simple yet Effective Unified Framework for Open-Vocabulary Detection",
+   "url": "https://arxiv.org/abs/2608.30247",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "ssl-backbone",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "InspectorGPT: A Comparative Reasoning Enhanced VLM for Comprehensive Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2608.29783",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "vlm",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "NFAD: Nuisance-Filtered Anomaly Detection Under Distribution Shift",
+   "url": "https://arxiv.org/abs/2608.29112",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Foundation and Multimodal Large Language Models for Face Presentation and Morph Attack Detection",
+   "url": "https://arxiv.org/abs/2608.29802",
+   "date": "2026-09-01",
+   "report": "reports/2026/09/report_02.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "peft",
+    "vlm",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "Cut-ViT: Task-Specific Model Pruning via Gram Anchoring Subspace Consistency",
    "url": "https://arxiv.org/abs/2608.28205",
@@ -5205,87 +5362,87 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 154
+   "count": 161
   },
   {
    "tag": "image-embedding",
-   "count": 105
+   "count": 110
   },
   {
    "tag": "efficient-inference",
-   "count": 76
+   "count": 79
   },
   {
    "tag": "vlm",
-   "count": 74
+   "count": 78
   },
   {
    "tag": "ssl-backbone",
-   "count": 72
+   "count": 75
   },
   {
    "tag": "image-retrieval",
-   "count": 68
+   "count": 72
   },
   {
    "tag": "metric-learning",
-   "count": 67
+   "count": 70
   },
   {
    "tag": "forgery-detection",
-   "count": 61
+   "count": 62
   },
   {
    "tag": "fine-grained",
-   "count": 55
+   "count": 56
   },
   {
    "tag": "anomaly-detection",
-   "count": 47
+   "count": 49
   },
   {
    "tag": "industrial-inspection",
-   "count": 47
+   "count": 49
   },
   {
    "tag": "segmentation",
-   "count": 46
+   "count": 49
+  },
+  {
+   "tag": "correspondence",
+   "count": 40
   },
   {
    "tag": "distillation",
    "count": 40
   },
   {
-   "tag": "correspondence",
-   "count": 37
-  },
-  {
    "tag": "dataset-benchmark",
-   "count": 37
+   "count": 39
   },
   {
    "tag": "object-detection",
-   "count": 34
+   "count": 36
   },
   {
    "tag": "re-identification",
-   "count": 33
+   "count": 35
   },
   {
    "tag": "defect-detection",
-   "count": 32
+   "count": 34
   },
   {
    "tag": "feature-matching",
-   "count": 31
+   "count": 33
   },
   {
    "tag": "peft",
-   "count": 30
+   "count": 32
   },
   {
    "tag": "open-vocab-detection",
-   "count": 22
+   "count": 23
   },
   {
    "tag": "video",
@@ -5829,6 +5986,10 @@
   },
   {
    "tag": "retrieval",
+   "count": 1
+  },
+  {
+   "tag": "robust-estimation",
    "count": 1
   },
   {
