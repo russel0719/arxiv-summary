@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_03.md",
+   "date": "2026-09-02",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-02 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_02.md",
    "date": "2026-09-01",
    "title": "arXiv cs.CV Daily Digest — 2026-09-01 (arXiv 공개일)",
@@ -746,6 +752,138 @@
   }
  ],
  "papers": [
+  {
+   "title": "ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives",
+   "url": "https://arxiv.org/abs/2609.01041",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Revisiting Cross-View Completion: Self-Supervised Pre-Training via Reconstruction Error Comparison",
+   "url": "https://arxiv.org/abs/2609.01530",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "feature-matching",
+    "pose",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CrossFeat: Bridging Imaging Modalities in Feature Descriptor Space",
+   "url": "https://arxiv.org/abs/2609.00272",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Unmasking Face Embeddings: Reading, Rendering and Naming with Foundation Models",
+   "url": "https://arxiv.org/abs/2609.00411",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "re-identification",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "When Modality Gap Reduction Fails: Prediction-Level Hubness in CLIP",
+   "url": "https://arxiv.org/abs/2609.01103",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "image-embedding",
+    "vlm",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "From Saliency to Discriminability: Rank-Preserving Visual Token Pruning for VLM Rerankers",
+   "url": "https://arxiv.org/abs/2609.00667",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "image-retrieval",
+    "vlm",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Low-Quality Face Recognition using Center Aligned Representations and Local Margin Constraints",
+   "url": "https://arxiv.org/abs/2609.01014",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "peft",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Revisiting Face Recognition for Monozygotic Twins: The Celeb Twins Test Set",
+   "url": "https://arxiv.org/abs/2609.01141",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "fine-grained",
+    "re-identification",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Benchmarking Spatial, Spectral, and Self-Supervised Cues for Face Forgery Detection under Realistic Degradation",
+   "url": "https://arxiv.org/abs/2609.01511",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "foundation-model",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "SAM3-LoRA: Parameter-Efficient Adaptation of a Concept-Promptable Foundation Model for Multi-Class Structural Defect Segmentation",
+   "url": "https://arxiv.org/abs/2609.00469",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "segmentation",
+    "peft",
+    "defect-detection",
+    "industrial-inspection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Vision-Language-Guided Pseudo-Labels for Unsupervised Domain Adaptation in Semantic Segmentation for Waste Sorting",
+   "url": "https://arxiv.org/abs/2609.00898",
+   "date": "2026-09-02",
+   "report": "reports/2026/09/report_03.md",
+   "tags": [
+    "segmentation",
+    "industrial-inspection",
+    "foundation-model",
+    "vlm"
+   ]
+  },
   {
    "title": "GramLoop: Training-Free Gram-Gated Replay for Robust Dense Prediction",
    "url": "https://arxiv.org/abs/2608.29113",
@@ -5362,83 +5500,83 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 161
+   "count": 168
   },
   {
    "tag": "image-embedding",
-   "count": 110
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 79
+   "count": 115
   },
   {
    "tag": "vlm",
-   "count": 78
+   "count": 81
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 80
   },
   {
    "tag": "ssl-backbone",
-   "count": 75
+   "count": 78
   },
   {
    "tag": "image-retrieval",
-   "count": 72
+   "count": 75
   },
   {
    "tag": "metric-learning",
-   "count": 70
+   "count": 73
   },
   {
    "tag": "forgery-detection",
-   "count": 62
+   "count": 63
   },
   {
    "tag": "fine-grained",
-   "count": 56
+   "count": 57
+  },
+  {
+   "tag": "industrial-inspection",
+   "count": 51
+  },
+  {
+   "tag": "segmentation",
+   "count": 51
   },
   {
    "tag": "anomaly-detection",
    "count": 49
   },
   {
-   "tag": "industrial-inspection",
-   "count": 49
-  },
-  {
-   "tag": "segmentation",
-   "count": 49
-  },
-  {
    "tag": "correspondence",
-   "count": 40
+   "count": 42
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 41
   },
   {
    "tag": "distillation",
    "count": 40
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 39
+   "tag": "re-identification",
+   "count": 38
   },
   {
    "tag": "object-detection",
    "count": 36
   },
   {
-   "tag": "re-identification",
+   "tag": "defect-detection",
    "count": 35
   },
   {
-   "tag": "defect-detection",
-   "count": 34
-  },
-  {
    "tag": "feature-matching",
-   "count": 33
+   "count": 35
   },
   {
    "tag": "peft",
-   "count": 32
+   "count": 34
   },
   {
    "tag": "open-vocab-detection",
@@ -5457,11 +5595,11 @@
    "count": 11
   },
   {
-   "tag": "generative",
-   "count": 9
+   "tag": "pose",
+   "count": 10
   },
   {
-   "tag": "pose",
+   "tag": "generative",
    "count": 9
   },
   {
