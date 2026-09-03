@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_04.md",
+   "date": "2026-09-03",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-03 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_03.md",
    "date": "2026-09-02",
    "title": "arXiv cs.CV Daily Digest — 2026-09-02 (arXiv 공개일)",
@@ -752,6 +758,148 @@
   }
  ],
  "papers": [
+  {
+   "title": "CoViT: Instance-Correspondence Contrastive Learning for Vision Transformer",
+   "url": "https://arxiv.org/abs/2609.01787",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "image-embedding",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "NeoMME: A Single-Tower Multimodal-Native Multilingual Foundation Encoder for Efficient Fine-Tuning and Inference",
+   "url": "https://arxiv.org/abs/2609.01657",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "foundation-model",
+    "image-embedding",
+    "image-retrieval",
+    "quantization",
+    "vlm"
+   ]
+  },
+  {
+   "title": "GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching",
+   "url": "https://arxiv.org/abs/2609.02012",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "feature-matching",
+    "image-retrieval",
+    "fine-grained",
+    "correspondence",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Aggregating Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval",
+   "url": "https://arxiv.org/abs/2609.01963",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Learning to Attract and Repel: Dual Quality Margin Learning for Face Recognition (DQM-Face)",
+   "url": "https://arxiv.org/abs/2609.02644",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "re-identification",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "DPA: Decoupling Product-Agnostic Anomaly Representations for Zero-shot Anomaly Generation",
+   "url": "https://arxiv.org/abs/2609.02075",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "generative"
+   ]
+  },
+  {
+   "title": "MAOL: Morphology-Aware Ordinal Learning for Fine-Grained Industrial Defect Severity Grading",
+   "url": "https://arxiv.org/abs/2609.02266",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "fine-grained",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "FuDU: A Fuzzy Dual-dimensional Uncertainty Framework for Streaming Active Learning in Industrial Defect Detection",
+   "url": "https://arxiv.org/abs/2609.02212",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "object-detection",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "From Detection to Localization: A Unified Forensics Framework for Fully Synthetic and Tampered Images",
+   "url": "https://arxiv.org/abs/2609.02640",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "segmentation",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Multi-Tool Image Editing Attribution in Facial Forgery",
+   "url": "https://arxiv.org/abs/2609.02751",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "SCULPT: Training Edge Vision Models for Post-Training Quantization Readiness",
+   "url": "https://arxiv.org/abs/2609.01743",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "GaLe: memory-efficient Global Approximate and Local Exact features",
+   "url": "https://arxiv.org/abs/2609.02689",
+   "date": "2026-09-03",
+   "report": "reports/2026/09/report_04.md",
+   "tags": [
+    "efficient-inference",
+    "image-embedding",
+    "object-detection"
+   ]
+  },
   {
    "title": "ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives",
    "url": "https://arxiv.org/abs/2609.01041",
@@ -5500,59 +5648,59 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 168
+   "count": 171
   },
   {
    "tag": "image-embedding",
-   "count": 115
-  },
-  {
-   "tag": "vlm",
-   "count": 81
+   "count": 121
   },
   {
    "tag": "efficient-inference",
-   "count": 80
+   "count": 82
+  },
+  {
+   "tag": "vlm",
+   "count": 82
   },
   {
    "tag": "ssl-backbone",
-   "count": 78
+   "count": 79
   },
   {
    "tag": "image-retrieval",
-   "count": 75
+   "count": 78
   },
   {
    "tag": "metric-learning",
-   "count": 73
+   "count": 76
   },
   {
    "tag": "forgery-detection",
-   "count": 63
+   "count": 65
   },
   {
    "tag": "fine-grained",
-   "count": 57
+   "count": 61
   },
   {
    "tag": "industrial-inspection",
-   "count": 51
-  },
-  {
-   "tag": "segmentation",
-   "count": 51
+   "count": 54
   },
   {
    "tag": "anomaly-detection",
-   "count": 49
+   "count": 52
+  },
+  {
+   "tag": "segmentation",
+   "count": 52
   },
   {
    "tag": "correspondence",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "dataset-benchmark",
-   "count": 41
+   "count": 43
   },
   {
    "tag": "distillation",
@@ -5560,19 +5708,19 @@
   },
   {
    "tag": "re-identification",
+   "count": 39
+  },
+  {
+   "tag": "defect-detection",
    "count": 38
   },
   {
    "tag": "object-detection",
-   "count": 36
-  },
-  {
-   "tag": "defect-detection",
-   "count": 35
+   "count": 38
   },
   {
    "tag": "feature-matching",
-   "count": 35
+   "count": 36
   },
   {
    "tag": "peft",
@@ -5588,19 +5736,19 @@
   },
   {
    "tag": "quantization",
-   "count": 13
+   "count": 15
   },
   {
    "tag": "representation-learning",
    "count": 11
   },
   {
-   "tag": "pose",
+   "tag": "generative",
    "count": 10
   },
   {
-   "tag": "generative",
-   "count": 9
+   "tag": "pose",
+   "count": 10
   },
   {
    "tag": "depth",
