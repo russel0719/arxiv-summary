@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_05.md",
+   "date": "2026-09-04",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-04 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_04.md",
    "date": "2026-09-03",
    "title": "arXiv cs.CV Daily Digest — 2026-09-03 (arXiv 공개일)",
@@ -758,6 +764,134 @@
   }
  ],
  "papers": [
+  {
+   "title": "PL-SCEA: Reconfiguring Pretrained Attention for Few-Shot Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.03655",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "foundation-model",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "Neural-Collapse-guided Task-Free Continual Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.03406",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "continual-learning"
+   ]
+  },
+  {
+   "title": "Catalogue Photography as a Cold Start: Toward Deployable Carbide Burr Recognition",
+   "url": "https://arxiv.org/abs/2609.03995",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "metric-learning",
+    "image-retrieval",
+    "fine-grained",
+    "industrial-inspection"
+   ]
+  },
+  {
+   "title": "CORE: Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation",
+   "url": "https://arxiv.org/abs/2609.04083",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "distillation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "WIDE: Wildcard Inference with Dynamic Expansion for Cross-Modal Generative Retrieval",
+   "url": "https://arxiv.org/abs/2609.03554",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "FoRIS: Progressive Foreground Refinement for Training-Free In-Context Segmentation",
+   "url": "https://arxiv.org/abs/2609.03384",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "segmentation",
+    "correspondence",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "ENEAS: Embedding-guided Neural Ensemble for Adaptive Segmentation",
+   "url": "https://arxiv.org/abs/2609.03756",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "segmentation",
+    "image-embedding",
+    "vlm",
+    "video"
+   ]
+  },
+  {
+   "title": "ProgResViT: Progressive Resolution and Width for Adaptive Vision Transformers",
+   "url": "https://arxiv.org/abs/2609.03216",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "efficient-inference",
+    "ssl-backbone",
+    "distillation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Who Speaks for the Pruned? Visual Token Pruning as Coverage Optimization",
+   "url": "https://arxiv.org/abs/2609.03158",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "efficient-inference",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "The impact of phase information for few-shot fine-grained image classification",
+   "url": "https://arxiv.org/abs/2609.03829",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "fine-grained",
+    "image-embedding",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Preserving Knowledge across Space and Time for Continual Video Deepfake Detection",
+   "url": "https://arxiv.org/abs/2609.03446",
+   "date": "2026-09-04",
+   "report": "reports/2026/09/report_05.md",
+   "tags": [
+    "forgery-detection",
+    "video",
+    "continual-learning"
+   ]
+  },
   {
    "title": "CoViT: Instance-Correspondence Contrastive Learning for Vision Transformer",
    "url": "https://arxiv.org/abs/2609.01787",
@@ -5648,55 +5782,55 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 171
+   "count": 175
   },
   {
    "tag": "image-embedding",
-   "count": 121
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 82
+   "count": 125
   },
   {
    "tag": "vlm",
-   "count": 82
+   "count": 86
   },
   {
-   "tag": "ssl-backbone",
-   "count": 79
+   "tag": "efficient-inference",
+   "count": 84
   },
   {
    "tag": "image-retrieval",
-   "count": 78
+   "count": 81
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 80
   },
   {
    "tag": "metric-learning",
-   "count": 76
+   "count": 79
   },
   {
    "tag": "forgery-detection",
-   "count": 65
+   "count": 66
   },
   {
    "tag": "fine-grained",
-   "count": 61
+   "count": 63
   },
   {
    "tag": "industrial-inspection",
-   "count": 54
+   "count": 57
   },
   {
    "tag": "anomaly-detection",
-   "count": 52
+   "count": 54
   },
   {
    "tag": "segmentation",
-   "count": 52
+   "count": 54
   },
   {
    "tag": "correspondence",
-   "count": 44
+   "count": 45
   },
   {
    "tag": "dataset-benchmark",
@@ -5704,15 +5838,15 @@
   },
   {
    "tag": "distillation",
+   "count": 42
+  },
+  {
+   "tag": "defect-detection",
    "count": 40
   },
   {
    "tag": "re-identification",
    "count": 39
-  },
-  {
-   "tag": "defect-detection",
-   "count": 38
   },
   {
    "tag": "object-detection",
@@ -5732,7 +5866,7 @@
   },
   {
    "tag": "video",
-   "count": 18
+   "count": 20
   },
   {
    "tag": "quantization",
@@ -5753,6 +5887,10 @@
   {
    "tag": "depth",
    "count": 6
+  },
+  {
+   "tag": "continual-learning",
+   "count": 5
   },
   {
    "tag": "ocr-document",
@@ -5776,10 +5914,6 @@
   },
   {
    "tag": "adversarial-robustness",
-   "count": 3
-  },
-  {
-   "tag": "continual-learning",
    "count": 3
   },
   {
