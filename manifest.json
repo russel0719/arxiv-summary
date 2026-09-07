@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_08.md",
+   "date": "2026-09-07",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-07 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_05.md",
    "date": "2026-09-04",
    "title": "arXiv cs.CV Daily Digest — 2026-09-04 (arXiv 공개일)",
@@ -764,6 +770,123 @@
   }
  ],
  "papers": [
+  {
+   "title": "Object Concepts Emerge from Motion",
+   "url": "https://arxiv.org/abs/2609.04348",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "AdaptVPR: Route-Aware Hard Positive Generation for Robust Visual Place Recognition",
+   "url": "https://arxiv.org/abs/2609.04369",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "dataset-benchmark",
+    "generative"
+   ]
+  },
+  {
+   "title": "Where Appearance Fails, Geometry Recognizes: A CAD-Free 3D Shape Prior That Complements Vision Foundation Models",
+   "url": "https://arxiv.org/abs/2609.04381",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "fine-grained",
+    "industrial-inspection",
+    "foundation-model",
+    "3d"
+   ]
+  },
+  {
+   "title": "Training-Free Logical and Structural Anomaly Detection via Calibrated Fusion",
+   "url": "https://arxiv.org/abs/2609.05091",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "LUMIN: Lightweight Universal Manufacturing Inspection Network for Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.04775",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "efficient-inference",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "CLON: Cue-Calibrated Linguistic Object Onboarding for Zero-Shot 6D Pose Front-Ends",
+   "url": "https://arxiv.org/abs/2609.04784",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "open-vocab-detection",
+    "segmentation",
+    "pose",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "FAVE: Foveated Adaptive Visual Encoding for Efficient Fine-Grained Visual Understanding",
+   "url": "https://arxiv.org/abs/2609.04392",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "fine-grained",
+    "efficient-inference",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "LookThere! Sparse Vision by Reinforced Selection",
+   "url": "https://arxiv.org/abs/2609.04698",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "efficient-inference",
+    "foundation-model",
+    "object-detection",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Adaptive Gated Deepfake Detection for Low-Resolution and Resource-Constrained Environments",
+   "url": "https://arxiv.org/abs/2609.05320",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "forgery-detection",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "VICAL: Vicinal Consistency Alignment for Long-Tailed Visual Recognition",
+   "url": "https://arxiv.org/abs/2609.04948",
+   "date": "2026-09-07",
+   "report": "reports/2026/09/report_08.md",
+   "tags": [
+    "fine-grained",
+    "distillation",
+    "long-tailed-recognition"
+   ]
+  },
   {
    "title": "PL-SCEA: Reconfiguring Pretrained Attention for Few-Shot Industrial Anomaly Detection",
    "url": "https://arxiv.org/abs/2609.03655",
@@ -5782,51 +5905,51 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 175
+   "count": 181
   },
   {
    "tag": "image-embedding",
-   "count": 125
-  },
-  {
-   "tag": "vlm",
-   "count": 86
+   "count": 127
   },
   {
    "tag": "efficient-inference",
-   "count": 84
+   "count": 88
+  },
+  {
+   "tag": "vlm",
+   "count": 87
   },
   {
    "tag": "image-retrieval",
-   "count": 81
+   "count": 82
   },
   {
    "tag": "ssl-backbone",
-   "count": 80
+   "count": 81
   },
   {
    "tag": "metric-learning",
-   "count": 79
+   "count": 80
   },
   {
    "tag": "forgery-detection",
-   "count": 66
+   "count": 67
   },
   {
    "tag": "fine-grained",
-   "count": 63
+   "count": 66
   },
   {
    "tag": "industrial-inspection",
-   "count": 57
+   "count": 60
   },
   {
    "tag": "anomaly-detection",
-   "count": 54
+   "count": 56
   },
   {
    "tag": "segmentation",
-   "count": 54
+   "count": 56
   },
   {
    "tag": "correspondence",
@@ -5834,23 +5957,23 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 43
+   "count": 44
   },
   {
    "tag": "distillation",
-   "count": 42
+   "count": 43
   },
   {
    "tag": "defect-detection",
-   "count": 40
+   "count": 42
+  },
+  {
+   "tag": "object-detection",
+   "count": 39
   },
   {
    "tag": "re-identification",
    "count": 39
-  },
-  {
-   "tag": "object-detection",
-   "count": 38
   },
   {
    "tag": "feature-matching",
@@ -5862,7 +5985,7 @@
   },
   {
    "tag": "open-vocab-detection",
-   "count": 23
+   "count": 24
   },
   {
    "tag": "video",
@@ -5873,16 +5996,16 @@
    "count": 15
   },
   {
-   "tag": "representation-learning",
+   "tag": "generative",
    "count": 11
   },
   {
-   "tag": "generative",
-   "count": 10
+   "tag": "pose",
+   "count": 11
   },
   {
-   "tag": "pose",
-   "count": 10
+   "tag": "representation-learning",
+   "count": 11
   },
   {
    "tag": "depth",
@@ -5931,6 +6054,10 @@
   {
    "tag": "training-free",
    "count": 3
+  },
+  {
+   "tag": "3d",
+   "count": 2
   },
   {
    "tag": "contrastive-learning",
@@ -6006,10 +6133,6 @@
   },
   {
    "tag": "1n-matching",
-   "count": 1
-  },
-  {
-   "tag": "3d",
    "count": 1
   },
   {
@@ -6266,6 +6389,10 @@
   },
   {
    "tag": "llm-reranking",
+   "count": 1
+  },
+  {
+   "tag": "long-tailed-recognition",
    "count": 1
   },
   {
