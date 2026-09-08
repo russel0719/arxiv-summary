@@ -27,13 +27,20 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
 
 ### 우선순위 높음
 - Open-vocabulary detection (GroundingDINO 계열), segmentation (SAM 계열) — 2D 이미지 입력 기준.
-- 산업 응용: 제조/품질검사, 결함·anomaly detection, 위조·딥페이크 판별.
+- 산업 응용: 제조/품질검사, 결함·anomaly detection, 위조·딥페이크 판별,
+  인쇄물 포렌식(망점·주파수 도메인 인쇄기 지문, 잉크 색도·에지 전이 프로파일).
+- 판정 캘리브레이션·분포 무관 FPR 보증: conformal/tolerance-limit 임계, 다중검정 결합(min-p·HC),
+  기권(abstain) 설계, open-set 평가 프로토콜·누출 통제.
+- 증분·지속학습(continual learning): replay 구성, 파국적 망각 완화, 재학습 회귀 판정·배포 게이트.
+- 로컬 텍스트 검출(scene text detection) — 인식(recognition)이 아닌 검출.
+- 합성 데이터 학습의 sim2real 전이 — 촬영(ISP)·인쇄 물리 시뮬레이션, 합성→실전 도메인 갭 정합.
 - Foundation model 실무 적용 기법 (부차적 관심): 증류/경량화, PEFT/LoRA/adapter,
   양자화·pruning 등 배포 최적화.
 
 ### 우선순위 낮음 (특별히 뛰어날 때만)
-- OCR, document AI.
-- 3D·멀티모달(VLM): 2D 이미지 입력만으로 추론 가능한 경우에 한해 검토.
+- OCR 인식(recognition), document AI.
+- 3D·멀티모달(VLM): 2D 이미지 입력만으로 추론 가능하고 **최우선·높음 항목에 직접 닿을 때만**.
+  VLM 벤치마크·추론·안전성 일반론은 뽑지 않는다. (하루 2편 이하)
 
 ### 제외 (우선순위 낮음)
 - 2D 이미지 입력만으로 사용할 수 없는 모델 (point cloud·multi-view·특수센서 전용 입력).
@@ -49,15 +56,15 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
   선별 이유·선별 과정 언급 (`~를 골랐다`, `관심사에 걸리는 흐름`),
   적용 권유·실무 판단 (`바로 시험해 볼 만하다`, `실무에서 참고할 만하다`, `우리 스택`, `사내`),
   1인칭 (`내 관심사`, `우리`).
-- **허용**: 논문이 스스로 주장하는 문제의식·방법·결과·한계, 그리고 논문에 명시된 코드/가중치 공개 여부.
+- **허용**: 논문이 스스로 주장하는 문제의식·방법·결과·한계, 그리고 논문에 명시된 코드/가중치 공개 여부와 라이선스.
 - 판단이 서는 문장이라도 **논문의 속성**으로 쓴다.
   예: `실무에서 바로 써볼 만하다` → `코드와 가중치가 공개돼 있다`.
 
 ## 요약 작업 규칙
 
 1. `today_papers.json`을 읽는다. (title, abstract, authors, url 포함)
-2. 위 프로필 기준으로 **가치 있는 논문 5~12편**을 선별한다.
-   해당하는 논문이 적으면 적게 뽑아도 된다. 억지로 채우지 말 것.
+2. 위 프로필 기준으로 **가치 있는 논문 0~12편**을 선별한다. **상한을 채우는 것이 목표가 아니다** —
+   최우선·높음 항목에 직접 닿는 논문이 없는 날은 0~3편이 정상이다. 낮음 항목만으로 편수를 채우지 않는다.
 3. 저장 경로는 태스크 프롬프트가 지정한 `{{REPORT}}` 그대로 쓴다 (파일명은 실행일 기준).
    **문서 안의 날짜는 실행일이 아니라 arXiv 공개일 `{{PAPER_DATE}}`를 쓴다** —
    직접 계산하지 말고 주어진 값을 그대로 넣는다.
@@ -66,6 +73,8 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
    - **한 줄 요약** (한국어)
    - **핵심 기여**: 2~4문장 (한국어). **문제의식 → 방법 → 결과(가능하면 정량 수치)**
      순으로 쓰고, 논문이 밝힌 한계가 있으면 덧붙인다. 마무리 문장에 평가·권유를 붙이지 않는다.
+   - **코드**: 필수 한 줄. `공개([repo](url) · 라이선스)` / `공개 예정` / `미공개` / `불명` 중 하나.
+     초록·본문에 명시된 것만 쓰고 추정하지 않는다. 라이선스는 확인된 경우에만 적는다.
    - **태그**: 3~5개, 영문 **kebab-case** (검색·모아보기용). 아래 '표준 태그'에서
      우선 고르고, 마땅한 게 없으면 새로 만들되 kebab-case를 유지한다.
      예: `**태그**: ssl-backbone, feature-matching, image-retrieval`
@@ -75,6 +84,7 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
    `metric-learning`, `image-embedding`, `fine-grained`, `re-identification`,
    `open-vocab-detection`, `object-detection`, `segmentation`,
    `industrial-inspection`, `anomaly-detection`, `defect-detection`, `forgery-detection`,
+   `calibration`, `continual-learning`, `sim2real`, `training-free`, `text-detection`, `print-forensics`,
    `foundation-model`, `distillation`, `peft`, `quantization`, `efficient-inference`,
    `vlm`, `ocr-document`, `3d`, `video`, `depth`, `pose`, `generative`, `dataset-benchmark`
 5. 파일은 **아래 고정 형식**을 그대로 따른다 (매일 산출물이 동일 포맷이어야 함):
@@ -87,13 +97,14 @@ point cloud·multi-view·특수센서 등 2D 이미지만으로는 못 쓰는 �
 
    ## 오늘의 트렌드
 
-   <전반적 트렌드 한 단락 — 그날 목록의 주제 분포와 방법론 흐름만.
-    선별 과정·개인 관점 서술 금지. 선별한 논문 밖의 흐름도 포함해도 된다.>
+   <한 단락, **300자 이내**. 그날 목록에서 두께가 큰 군집 3~5개와 방법론 흐름만.
+    논문을 나열하지 않는다. 선별 과정·개인 관점 서술 금지.>
 
    ---
 
    ### [제목](arxiv url)
-   (이하 4번의 논문 항목 형식을 각 논문마다 반복, 항목 사이 `---` 구분)
+   (이하 4번의 논문 항목 형식 — 한 줄 요약 / 핵심 기여 / 코드 / 태그 — 을 각 논문마다 반복,
+    항목 사이 `---` 구분)
    ```
 6. abstract만으로 판단이 어려운 최상위 1~2편은 웹에서 본문/프로젝트
    페이지를 추가로 확인해도 좋다 (선택 사항, 시간 제한 고려).
