@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_11.md",
+   "date": "2026-09-10",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-10 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_10.md",
    "date": "2026-09-09",
    "title": "arXiv cs.CV Daily Digest — 2026-09-09 (arXiv 공개일)",
@@ -776,6 +782,114 @@
   }
  ],
  "papers": [
+  {
+   "title": "RoMa-Ω: What Feed-Forward 3D Models Know About Image Matching",
+   "url": "https://arxiv.org/abs/2609.09507",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "ssl-backbone",
+    "foundation-model",
+    "3d"
+   ]
+  },
+  {
+   "title": "Cross-Species Animal Re-Identification with Semantic Consistency Learning",
+   "url": "https://arxiv.org/abs/2609.09705",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "image-embedding",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Isotropic Embedding Perturbations for Robust Vision Language Encoders",
+   "url": "https://arxiv.org/abs/2609.10292",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "image-embedding",
+    "foundation-model",
+    "data-augmentation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "What Makes Adversarial Examples Transfer Across Deepfake Detectors?",
+   "url": "https://arxiv.org/abs/2609.10002",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "forgery-detection",
+    "adversarial-robustness",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Hyperbolic Geometry for Open-World Object Detection in Remote Sensing Imagery",
+   "url": "https://arxiv.org/abs/2609.09626",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "object-detection",
+    "continual-learning",
+    "metric-learning",
+    "open-set-recognition"
+   ]
+  },
+  {
+   "title": "Distilling Image Prototypes for Guided Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2609.09737",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "continual-learning",
+    "test-time-adaptation",
+    "calibration",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Low-Rank Prompt Learning for Vision-Language Models with Fixed-Token Bases",
+   "url": "https://arxiv.org/abs/2609.09462",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "vlm",
+    "few-shot"
+   ]
+  },
+  {
+   "title": "Layerwise Tunable Lifting Scheme for the Convolutional Neural Network",
+   "url": "https://arxiv.org/abs/2609.09827",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "frequency-domain"
+   ]
+  },
+  {
+   "title": "UOT-Gap: A Variational Principle for the Modality Gap in Vision-Language Models via Unbalanced Optimal Transport",
+   "url": "https://arxiv.org/abs/2609.10224",
+   "date": "2026-09-10",
+   "report": "reports/2026/09/report_11.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "training-free",
+    "vlm"
+   ]
+  },
   {
    "title": "Back to the Feature: Zero-Shot 6DoF Pose Estimation via Dense Local Features",
    "url": "https://arxiv.org/abs/2609.06726",
@@ -6055,47 +6169,47 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 187
+   "count": 190
   },
   {
    "tag": "image-embedding",
-   "count": 132
+   "count": 135
+  },
+  {
+   "tag": "vlm",
+   "count": 90
   },
   {
    "tag": "efficient-inference",
    "count": 88
   },
   {
-   "tag": "vlm",
-   "count": 87
-  },
-  {
    "tag": "image-retrieval",
-   "count": 85
+   "count": 86
   },
   {
    "tag": "metric-learning",
-   "count": 84
+   "count": 86
   },
   {
    "tag": "ssl-backbone",
-   "count": 84
+   "count": 85
   },
   {
    "tag": "fine-grained",
-   "count": 68
+   "count": 69
   },
   {
    "tag": "forgery-detection",
-   "count": 68
+   "count": 69
   },
   {
    "tag": "industrial-inspection",
-   "count": 63
+   "count": 64
   },
   {
    "tag": "anomaly-detection",
-   "count": 58
+   "count": 59
   },
   {
    "tag": "segmentation",
@@ -6103,35 +6217,35 @@
   },
   {
    "tag": "correspondence",
-   "count": 48
+   "count": 49
   },
   {
    "tag": "defect-detection",
-   "count": 45
+   "count": 46
   },
   {
    "tag": "dataset-benchmark",
-   "count": 44
+   "count": 45
   },
   {
    "tag": "distillation",
-   "count": 44
+   "count": 45
   },
   {
    "tag": "object-detection",
-   "count": 40
+   "count": 41
   },
   {
    "tag": "re-identification",
-   "count": 40
+   "count": 41
   },
   {
    "tag": "feature-matching",
-   "count": 38
+   "count": 39
   },
   {
    "tag": "peft",
-   "count": 35
+   "count": 36
   },
   {
    "tag": "open-vocab-detection",
@@ -6158,11 +6272,19 @@
    "count": 11
   },
   {
+   "tag": "continual-learning",
+   "count": 7
+  },
+  {
    "tag": "depth",
    "count": 6
   },
   {
-   "tag": "continual-learning",
+   "tag": "training-free",
+   "count": 6
+  },
+  {
+   "tag": "few-shot",
    "count": 5
   },
   {
@@ -6174,23 +6296,23 @@
    "count": 5
   },
   {
-   "tag": "training-free",
+   "tag": "zero-shot",
    "count": 5
   },
   {
-   "tag": "zero-shot",
-   "count": 5
+   "tag": "adversarial-robustness",
+   "count": 4
   },
   {
    "tag": "clip",
    "count": 4
   },
   {
-   "tag": "few-shot",
-   "count": 4
+   "tag": "3d",
+   "count": 3
   },
   {
-   "tag": "adversarial-robustness",
+   "tag": "calibration",
    "count": 3
   },
   {
@@ -6206,19 +6328,15 @@
    "count": 3
   },
   {
-   "tag": "3d",
-   "count": 2
-  },
-  {
-   "tag": "calibration",
-   "count": 2
-  },
-  {
    "tag": "contrastive-learning",
    "count": 2
   },
   {
    "tag": "cross-modal",
+   "count": 2
+  },
+  {
+   "tag": "data-augmentation",
    "count": 2
   },
   {
@@ -6279,6 +6397,10 @@
   },
   {
    "tag": "sam3",
+   "count": 2
+  },
+  {
+   "tag": "test-time-adaptation",
    "count": 2
   },
   {
@@ -6359,10 +6481,6 @@
   },
   {
    "tag": "cross-spectral",
-   "count": 1
-  },
-  {
-   "tag": "data-augmentation",
    "count": 1
   },
   {
@@ -6459,6 +6577,10 @@
   },
   {
    "tag": "frequency-analysis",
+   "count": 1
+  },
+  {
+   "tag": "frequency-domain",
    "count": 1
   },
   {
@@ -6607,6 +6729,10 @@
   },
   {
    "tag": "one-shot-detection",
+   "count": 1
+  },
+  {
+   "tag": "open-set-recognition",
    "count": 1
   },
   {
@@ -6763,10 +6889,6 @@
   },
   {
    "tag": "synthetic-image-detection",
-   "count": 1
-  },
-  {
-   "tag": "test-time-adaptation",
    "count": 1
   },
   {
