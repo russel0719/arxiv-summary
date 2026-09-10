@@ -63,19 +63,41 @@ def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
 
+# RSS 호스트 — 2026-09-09 부터 legacy(export.arxiv.org)가 공개일 pubDate 만 있는 빈 채널을 돌려준다.
+# 새 호스트(rss.arxiv.org)를 먼저 읽고, 항목이 0이면 legacy 로 한 번 더 시도한다.
+FEED_HOSTS = ["https://rss.arxiv.org/rss/{cat}", "http://export.arxiv.org/rss/{cat}"]
+
+
 def fetch_category(cat: str) -> list:
-    url = f"http://export.arxiv.org/rss/{cat}"
+    last_err: Exception | None = None
+    for tmpl in FEED_HOSTS:
+        try:
+            entries, n_items = _fetch_feed(tmpl.format(cat=cat))
+        except Exception as e:  # 네트워크·파싱 실패 → 다음 호스트
+            last_err = e
+            continue
+        if n_items > 0:
+            return entries
+        print(f"{cat}: {tmpl.format(cat=cat)} 항목 0 → 다음 호스트")
+    if last_err is not None:
+        raise last_err
+    return []
+
+
+def _fetch_feed(url: str) -> tuple[list, int]:
+    """피드 하나를 읽어 (new/cross 항목, 전체 item 수)를 돌려준다."""
     req = urllib.request.Request(url, headers={"User-Agent": "arxiv-digest/1.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         data = resp.read()
     root = ET.fromstring(data)
     channel = root.find("channel")
     if channel is None:
-        return []
+        return [], 0
     pub = channel.findtext("pubDate", "")  # 공개(announcement) 일자
+    items = channel.findall("item")
 
     entries = []
-    for it in channel.findall("item"):
+    for it in items:
         if it.findtext(f"{ARX}announce_type", "") not in WANT_TYPES:
             continue
         arxiv_id = it.findtext("link", "").rsplit("/", 1)[-1]
@@ -96,7 +118,7 @@ def fetch_category(cat: str) -> list:
                 "url": f"https://arxiv.org/abs/{arxiv_id}",
             }
         )
-    return entries
+    return entries, len(items)
 
 
 def main() -> int:
