@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_10.md",
+   "date": "2026-09-09",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-09 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_08.md",
    "date": "2026-09-07",
    "title": "arXiv cs.CV Daily Digest — 2026-09-07 (arXiv 공개일)",
@@ -770,6 +776,150 @@
   }
  ],
  "papers": [
+  {
+   "title": "Back to the Feature: Zero-Shot 6DoF Pose Estimation via Dense Local Features",
+   "url": "https://arxiv.org/abs/2609.06726",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "ssl-backbone",
+    "training-free",
+    "pose"
+   ]
+  },
+  {
+   "title": "Radiation, Rotation and Scale Invariant Feature Descriptor for Multimodal Image Matching",
+   "url": "https://arxiv.org/abs/2609.06343",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "What Does Animal Re-Identification Learn? Linear Biological Concepts and Their Origins in Visual Representations",
+   "url": "https://arxiv.org/abs/2609.06020",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "re-identification",
+    "ssl-backbone",
+    "metric-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "TRAIL: Trajectory-Aware Visual Place Recognition against Unordered Databases",
+   "url": "https://arxiv.org/abs/2609.07373",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "TeMo: Temperature Modulation for Multimodal Contrastive Learning",
+   "url": "https://arxiv.org/abs/2609.07540",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Bigger Text Encoders Can Hurt CLIP Zero-Shot Performance",
+   "url": "https://arxiv.org/abs/2609.05730",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "image-embedding",
+    "metric-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Compensating for Scarce Historical Images in Cross-Domain Cultural Heritage Retrieval Using Synthetic Aging",
+   "url": "https://arxiv.org/abs/2609.08766",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "image-retrieval",
+    "sim2real",
+    "metric-learning",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Contrastive Knowledge Distillation for Anomaly Detection in Multi-Illumination/Focus Display Images",
+   "url": "https://arxiv.org/abs/2609.05520",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Proximity-CLIP: Text-Guided Semantic Proximity Learning for Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.07229",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CoRe-SAM3: Conditional Semantic--Visual Reconciliation for SAM3 Crack Segmentation",
+   "url": "https://arxiv.org/abs/2609.05816",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "segmentation",
+    "industrial-inspection",
+    "defect-detection",
+    "peft",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Harnessing CLIP and DINO: An Uncertainty-Aware Cascaded Fusion Network for Generalizable Deepfake Image Detection",
+   "url": "https://arxiv.org/abs/2609.07670",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "SAM3-O2D2: Zero-Shot Object Out-of-Distribution Detection by Object Class Prompting of the SAM3-Image Model",
+   "url": "https://arxiv.org/abs/2609.08281",
+   "date": "2026-09-09",
+   "report": "reports/2026/09/report_10.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "calibration",
+    "foundation-model",
+    "training-free"
+   ]
+  },
   {
    "title": "Object Concepts Emerge from Motion",
    "url": "https://arxiv.org/abs/2609.04348",
@@ -5905,11 +6055,11 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 181
+   "count": 187
   },
   {
    "tag": "image-embedding",
-   "count": 127
+   "count": 132
   },
   {
    "tag": "efficient-inference",
@@ -5921,38 +6071,42 @@
   },
   {
    "tag": "image-retrieval",
-   "count": 82
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 81
+   "count": 85
   },
   {
    "tag": "metric-learning",
-   "count": 80
+   "count": 84
   },
   {
-   "tag": "forgery-detection",
-   "count": 67
+   "tag": "ssl-backbone",
+   "count": 84
   },
   {
    "tag": "fine-grained",
-   "count": 66
+   "count": 68
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 68
   },
   {
    "tag": "industrial-inspection",
-   "count": 60
+   "count": 63
   },
   {
    "tag": "anomaly-detection",
-   "count": 56
+   "count": 58
   },
   {
    "tag": "segmentation",
-   "count": 56
+   "count": 57
   },
   {
    "tag": "correspondence",
+   "count": 48
+  },
+  {
+   "tag": "defect-detection",
    "count": 45
   },
   {
@@ -5961,31 +6115,27 @@
   },
   {
    "tag": "distillation",
-   "count": 43
-  },
-  {
-   "tag": "defect-detection",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "object-detection",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "re-identification",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "feature-matching",
-   "count": 36
+   "count": 38
   },
   {
    "tag": "peft",
-   "count": 34
+   "count": 35
   },
   {
    "tag": "open-vocab-detection",
-   "count": 24
+   "count": 25
   },
   {
    "tag": "video",
@@ -5996,11 +6146,11 @@
    "count": 15
   },
   {
-   "tag": "generative",
-   "count": 11
+   "tag": "pose",
+   "count": 12
   },
   {
-   "tag": "pose",
+   "tag": "generative",
    "count": 11
   },
   {
@@ -6021,6 +6171,10 @@
   },
   {
    "tag": "robustness",
+   "count": 5
+  },
+  {
+   "tag": "training-free",
    "count": 5
   },
   {
@@ -6052,11 +6206,11 @@
    "count": 3
   },
   {
-   "tag": "training-free",
-   "count": 3
+   "tag": "3d",
+   "count": 2
   },
   {
-   "tag": "3d",
+   "tag": "calibration",
    "count": 2
   },
   {
@@ -6173,10 +6327,6 @@
   },
   {
    "tag": "cad-floor-plan",
-   "count": 1
-  },
-  {
-   "tag": "calibration",
    "count": 1
   },
   {
@@ -6577,6 +6727,10 @@
   },
   {
    "tag": "siglip",
+   "count": 1
+  },
+  {
+   "tag": "sim2real",
    "count": 1
   },
   {
