@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_12.md",
+   "date": "2026-09-11",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-11 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_11.md",
    "date": "2026-09-10",
    "title": "arXiv cs.CV Daily Digest — 2026-09-10 (arXiv 공개일)",
@@ -782,6 +788,128 @@
   }
  ],
  "papers": [
+  {
+   "title": "TailProp: content-adaptive light- and heavy-tailed propagation for vision",
+   "url": "https://arxiv.org/abs/2609.11081",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "object-detection",
+    "segmentation",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "FreeFlow: A Bias-free Hierarchical Transformer for Optical Flow Estimation",
+   "url": "https://arxiv.org/abs/2609.11486",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "optical-flow",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Prototype Matters: Modality-unified Prototype Self-distillation for Unsupervised Visible-infrared Person Re-identification",
+   "url": "https://arxiv.org/abs/2609.11514",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "image-embedding",
+    "distillation"
+   ]
+  },
+  {
+   "title": "HiPerViT: A Hierarchical Perceiver-Vision Transformer Architecture for Multi-Scale Texture Recognition",
+   "url": "https://arxiv.org/abs/2609.10917",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "fine-grained",
+    "image-embedding",
+    "texture-recognition",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Your Model Already Knows Don't Teach It, Learn to Ask It: Soft Prompting for Few-Shot Adaptation of Vision-Language Models",
+   "url": "https://arxiv.org/abs/2609.11310",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "peft",
+    "open-vocab-detection",
+    "vlm",
+    "foundation-model",
+    "continual-learning"
+   ]
+  },
+  {
+   "title": "LAION-Mobile: Evaluating Deepfake Detectors On One Million Smartphone Photos",
+   "url": "https://arxiv.org/abs/2609.11134",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "dataset-benchmark",
+    "sim2real"
+   ]
+  },
+  {
+   "title": "A Multi-View and Confusion-Guided Ensemble Framework for Robust Synthetic Image Attribution",
+   "url": "https://arxiv.org/abs/2609.11188",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Vision Transformer-Based Multi-Level Feature Fusion for Multi-Label Sewer Defect Classification",
+   "url": "https://arxiv.org/abs/2609.11375",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "efficient-inference",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Are We Really Doing Few-Shot Learning? A Critical Examination of Pre-Training Assumptions",
+   "url": "https://arxiv.org/abs/2609.10851",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "dataset-benchmark",
+    "calibration"
+   ]
+  },
+  {
+   "title": "When is Test-Time Adaptation Identifiable From Unlabeled Evidence?",
+   "url": "https://arxiv.org/abs/2609.11235",
+   "date": "2026-09-11",
+   "report": "reports/2026/09/report_12.md",
+   "tags": [
+    "calibration",
+    "continual-learning",
+    "dataset-benchmark",
+    "foundation-model"
+   ]
+  },
   {
    "title": "RoMa-Ω: What Feed-Forward 3D Models Know About Image Matching",
    "url": "https://arxiv.org/abs/2609.09507",
@@ -6169,43 +6297,43 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 190
+   "count": 196
   },
   {
    "tag": "image-embedding",
-   "count": 135
+   "count": 139
   },
   {
    "tag": "vlm",
-   "count": 90
+   "count": 91
   },
   {
    "tag": "efficient-inference",
-   "count": 88
+   "count": 90
+  },
+  {
+   "tag": "metric-learning",
+   "count": 87
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 87
   },
   {
    "tag": "image-retrieval",
    "count": 86
   },
   {
-   "tag": "metric-learning",
-   "count": 86
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 85
-  },
-  {
    "tag": "fine-grained",
-   "count": 69
+   "count": 71
   },
   {
    "tag": "forgery-detection",
-   "count": 69
+   "count": 71
   },
   {
    "tag": "industrial-inspection",
-   "count": 64
+   "count": 65
   },
   {
    "tag": "anomaly-detection",
@@ -6213,43 +6341,43 @@
   },
   {
    "tag": "segmentation",
-   "count": 57
+   "count": 58
   },
   {
    "tag": "correspondence",
-   "count": 49
-  },
-  {
-   "tag": "defect-detection",
-   "count": 46
+   "count": 50
   },
   {
    "tag": "dataset-benchmark",
-   "count": 45
+   "count": 48
+  },
+  {
+   "tag": "defect-detection",
+   "count": 47
   },
   {
    "tag": "distillation",
-   "count": 45
+   "count": 46
   },
   {
    "tag": "object-detection",
-   "count": 41
+   "count": 42
   },
   {
    "tag": "re-identification",
-   "count": 41
+   "count": 42
   },
   {
    "tag": "feature-matching",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "peft",
-   "count": 36
+   "count": 37
   },
   {
    "tag": "open-vocab-detection",
-   "count": 25
+   "count": 26
   },
   {
    "tag": "video",
@@ -6273,6 +6401,10 @@
   },
   {
    "tag": "continual-learning",
+   "count": 9
+  },
+  {
+   "tag": "calibration",
    "count": 7
   },
   {
@@ -6309,10 +6441,6 @@
   },
   {
    "tag": "3d",
-   "count": 3
-  },
-  {
-   "tag": "calibration",
    "count": 3
   },
   {
@@ -6397,6 +6525,10 @@
   },
   {
    "tag": "sam3",
+   "count": 2
+  },
+  {
+   "tag": "sim2real",
    "count": 2
   },
   {
@@ -6744,6 +6876,10 @@
    "count": 1
   },
   {
+   "tag": "optical-flow",
+   "count": 1
+  },
+  {
    "tag": "outlier-leakage",
    "count": 1
   },
@@ -6856,10 +6992,6 @@
    "count": 1
   },
   {
-   "tag": "sim2real",
-   "count": 1
-  },
-  {
    "tag": "sparse-autoencoder",
    "count": 1
   },
@@ -6889,6 +7021,10 @@
   },
   {
    "tag": "synthetic-image-detection",
+   "count": 1
+  },
+  {
+   "tag": "texture-recognition",
    "count": 1
   },
   {
