@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_15.md",
+   "date": "2026-09-14",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-14 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_12.md",
    "date": "2026-09-11",
    "title": "arXiv cs.CV Daily Digest — 2026-09-11 (arXiv 공개일)",
@@ -788,6 +794,106 @@
   }
  ],
  "papers": [
+  {
+   "title": "Multimodal Floorplan Encoding: Learning Dense Modality-Invariant Representations",
+   "url": "https://arxiv.org/abs/2609.12723",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "correspondence",
+    "image-retrieval",
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "SCORE: SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid Lifelong Person Re-Identification",
+   "url": "https://arxiv.org/abs/2609.12577",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "re-identification",
+    "continual-learning",
+    "metric-learning",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "RelateAnything: Real-Time Open-Vocabulary Relation Prediction From Any Inputs",
+   "url": "https://arxiv.org/abs/2609.12552",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "open-vocab-detection",
+    "scene-graph",
+    "dataset-benchmark",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Feature Recovery for Object Understanding After Irreversible Fire Damage",
+   "url": "https://arxiv.org/abs/2609.12078",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "foundation-model",
+    "object-detection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "An End-to-End Automated Pipeline for Controllable Crack Data Synthesis",
+   "url": "https://arxiv.org/abs/2609.12431",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "sim2real",
+    "generative",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "DERA: Detached Edge-Residual Adaptation for Prohibited item Detection",
+   "url": "https://arxiv.org/abs/2609.12411",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "object-detection",
+    "peft",
+    "industrial-inspection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Generative Retrieval for Unsupervised Text-Based Person Search",
+   "url": "https://arxiv.org/abs/2609.12965",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "image-retrieval",
+    "re-identification",
+    "vlm",
+    "dataset-benchmark",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Same Encoder, Different Winner: A Paired-View Framework for Cell Painting Encoder Evaluation",
+   "url": "https://arxiv.org/abs/2609.12761",
+   "date": "2026-09-14",
+   "report": "reports/2026/09/report_15.md",
+   "tags": [
+    "image-embedding",
+    "dataset-benchmark",
+    "ssl-backbone",
+    "fine-grained"
+   ]
+  },
   {
    "title": "TailProp: content-adaptive light- and heavy-tailed propagation for vision",
    "url": "https://arxiv.org/abs/2609.11081",
@@ -6297,35 +6403,35 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 196
+   "count": 199
   },
   {
    "tag": "image-embedding",
-   "count": 139
+   "count": 142
   },
   {
    "tag": "vlm",
-   "count": 91
+   "count": 92
   },
   {
    "tag": "efficient-inference",
+   "count": 91
+  },
+  {
+   "tag": "image-retrieval",
    "count": 90
   },
   {
    "tag": "metric-learning",
-   "count": 87
+   "count": 89
   },
   {
    "tag": "ssl-backbone",
-   "count": 87
-  },
-  {
-   "tag": "image-retrieval",
-   "count": 86
+   "count": 89
   },
   {
    "tag": "fine-grained",
-   "count": 71
+   "count": 72
   },
   {
    "tag": "forgery-detection",
@@ -6333,7 +6439,7 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 65
+   "count": 67
   },
   {
    "tag": "anomaly-detection",
@@ -6341,19 +6447,19 @@
   },
   {
    "tag": "segmentation",
-   "count": 58
-  },
-  {
-   "tag": "correspondence",
-   "count": 50
+   "count": 59
   },
   {
    "tag": "dataset-benchmark",
-   "count": 48
+   "count": 52
+  },
+  {
+   "tag": "correspondence",
+   "count": 51
   },
   {
    "tag": "defect-detection",
-   "count": 47
+   "count": 48
   },
   {
    "tag": "distillation",
@@ -6361,11 +6467,11 @@
   },
   {
    "tag": "object-detection",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "re-identification",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "feature-matching",
@@ -6373,11 +6479,11 @@
   },
   {
    "tag": "peft",
-   "count": 37
+   "count": 38
   },
   {
    "tag": "open-vocab-detection",
-   "count": 26
+   "count": 27
   },
   {
    "tag": "video",
@@ -6388,12 +6494,12 @@
    "count": 15
   },
   {
-   "tag": "pose",
+   "tag": "generative",
    "count": 12
   },
   {
-   "tag": "generative",
-   "count": 11
+   "tag": "pose",
+   "count": 12
   },
   {
    "tag": "representation-learning",
@@ -6401,7 +6507,7 @@
   },
   {
    "tag": "continual-learning",
-   "count": 9
+   "count": 10
   },
   {
    "tag": "calibration",
@@ -6453,6 +6559,10 @@
   },
   {
    "tag": "self-supervised",
+   "count": 3
+  },
+  {
+   "tag": "sim2real",
    "count": 3
   },
   {
@@ -6525,10 +6635,6 @@
   },
   {
    "tag": "sam3",
-   "count": 2
-  },
-  {
-   "tag": "sim2real",
    "count": 2
   },
   {
@@ -6965,6 +7071,10 @@
   },
   {
    "tag": "scale-bias",
+   "count": 1
+  },
+  {
+   "tag": "scene-graph",
    "count": 1
   },
   {
