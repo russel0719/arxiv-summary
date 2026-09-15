@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_16.md",
+   "date": "2026-09-15",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-15 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_15.md",
    "date": "2026-09-14",
    "title": "arXiv cs.CV Daily Digest — 2026-09-14 (arXiv 공개일)",
@@ -794,6 +800,132 @@
   }
  ],
  "papers": [
+  {
+   "title": "Diffusion Trajectory Modeling for Semantic Correspondence",
+   "url": "https://arxiv.org/abs/2609.15357",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "generative",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "PACE: Progressive Angular-to-Norm Contrastive Embedding",
+   "url": "https://arxiv.org/abs/2609.15152",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "image-embedding",
+    "metric-learning",
+    "image-retrieval",
+    "vlm",
+    "peft"
+   ]
+  },
+  {
+   "title": "Learning Continuous Source Responses For Generalizable AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2609.14316",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Lightweight Generalized DeepFake Face Detection with WAVIE: Wavelet Augmented Vision Intermediate Embeddings",
+   "url": "https://arxiv.org/abs/2609.14437",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Beyond Natural Images: Rethinking AI-Generated Image Detection in Documents",
+   "url": "https://arxiv.org/abs/2609.14352",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "forgery-detection",
+    "ocr-document",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "GaugeDefect: Detecting Surface Anomalies by Curvature of Feature Transport",
+   "url": "https://arxiv.org/abs/2609.13282",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "ViCo-SAM3: Vision-Conditioned Alignment for Open-Vocabulary Camouflaged Object Segmentation",
+   "url": "https://arxiv.org/abs/2609.15418",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-detection",
+    "foundation-model",
+    "peft"
+   ]
+  },
+  {
+   "title": "Restore What Matters: Lessons from Joint Restoration and Recognition",
+   "url": "https://arxiv.org/abs/2609.13791",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "re-identification",
+    "sim2real",
+    "image-restoration",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "What Input Resolution Is Required for Bird Species Identification, and What Is Its Latency Cost on an Edge Device?",
+   "url": "https://arxiv.org/abs/2609.14247",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "fine-grained",
+    "efficient-inference",
+    "quantization",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Pre-PEFT Probing: Weight Statistics and Perturbation Robustness for Layer Selection in VLM Vision Encoders",
+   "url": "https://arxiv.org/abs/2609.15229",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Discovering and Preserving Category Correlation Knowledge via Adaptive Reciprocal Knowledge Distillation",
+   "url": "https://arxiv.org/abs/2609.13199",
+   "date": "2026-09-15",
+   "report": "reports/2026/09/report_16.md",
+   "tags": [
+    "distillation",
+    "efficient-inference"
+   ]
+  },
   {
    "title": "Multimodal Floorplan Encoding: Learning Dense Modality-Invariant Representations",
    "url": "https://arxiv.org/abs/2609.12723",
@@ -6403,87 +6535,87 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 199
+   "count": 204
   },
   {
    "tag": "image-embedding",
-   "count": 142
-  },
-  {
-   "tag": "vlm",
-   "count": 92
+   "count": 145
   },
   {
    "tag": "efficient-inference",
-   "count": 91
+   "count": 95
+  },
+  {
+   "tag": "vlm",
+   "count": 94
   },
   {
    "tag": "image-retrieval",
-   "count": 90
+   "count": 91
   },
   {
    "tag": "metric-learning",
-   "count": 89
+   "count": 90
   },
   {
    "tag": "ssl-backbone",
    "count": 89
   },
   {
-   "tag": "fine-grained",
-   "count": 72
+   "tag": "forgery-detection",
+   "count": 74
   },
   {
-   "tag": "forgery-detection",
-   "count": 71
+   "tag": "fine-grained",
+   "count": 73
   },
   {
    "tag": "industrial-inspection",
-   "count": 67
+   "count": 68
   },
   {
    "tag": "anomaly-detection",
-   "count": 59
+   "count": 60
   },
   {
    "tag": "segmentation",
-   "count": 59
+   "count": 60
   },
   {
    "tag": "dataset-benchmark",
-   "count": 52
+   "count": 53
   },
   {
    "tag": "correspondence",
-   "count": 51
+   "count": 52
   },
   {
    "tag": "defect-detection",
-   "count": 48
+   "count": 49
   },
   {
    "tag": "distillation",
-   "count": 46
+   "count": 47
+  },
+  {
+   "tag": "re-identification",
+   "count": 45
   },
   {
    "tag": "object-detection",
    "count": 44
   },
   {
-   "tag": "re-identification",
-   "count": 44
-  },
-  {
    "tag": "feature-matching",
-   "count": 40
+   "count": 41
   },
   {
    "tag": "peft",
-   "count": 38
+   "count": 41
   },
   {
    "tag": "open-vocab-detection",
-   "count": 27
+   "count": 28
   },
   {
    "tag": "video",
@@ -6491,11 +6623,11 @@
   },
   {
    "tag": "quantization",
-   "count": 15
+   "count": 16
   },
   {
    "tag": "generative",
-   "count": 12
+   "count": 13
   },
   {
    "tag": "pose",
@@ -6518,15 +6650,15 @@
    "count": 6
   },
   {
+   "tag": "ocr-document",
+   "count": 6
+  },
+  {
    "tag": "training-free",
    "count": 6
   },
   {
    "tag": "few-shot",
-   "count": 5
-  },
-  {
-   "tag": "ocr-document",
    "count": 5
   },
   {
@@ -6546,6 +6678,10 @@
    "count": 4
   },
   {
+   "tag": "sim2real",
+   "count": 4
+  },
+  {
    "tag": "3d",
    "count": 3
   },
@@ -6559,10 +6695,6 @@
   },
   {
    "tag": "self-supervised",
-   "count": 3
-  },
-  {
-   "tag": "sim2real",
    "count": 3
   },
   {
@@ -6595,6 +6727,10 @@
   },
   {
    "tag": "hard-negative-mining",
+   "count": 2
+  },
+  {
+   "tag": "image-restoration",
    "count": 2
   },
   {
@@ -6851,10 +6987,6 @@
   },
   {
    "tag": "image-registration",
-   "count": 1
-  },
-  {
-   "tag": "image-restoration",
    "count": 1
   },
   {
