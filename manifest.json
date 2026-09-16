@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_17.md",
+   "date": "2026-09-16",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-16 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_16.md",
    "date": "2026-09-15",
    "title": "arXiv cs.CV Daily Digest — 2026-09-15 (arXiv 공개일)",
@@ -800,6 +806,138 @@
   }
  ],
  "papers": [
+  {
+   "title": "Multi-modal Knowledge Preserving Adapter for Embedding Backward Compatibility",
+   "url": "https://arxiv.org/abs/2609.16875",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "peft",
+    "continual-learning",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Hub-Spectral Activation of Latent Multimodal Knowledge",
+   "url": "https://arxiv.org/abs/2609.17094",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "FLAT: Resampling Image and Text into 1D Flexible-Length Aligned Transmodal Tokens for Retrieval and Generation",
+   "url": "https://arxiv.org/abs/2609.16591",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning",
+    "generative"
+   ]
+  },
+  {
+   "title": "RegRet: Enhancing Region-Level Retrieval in Large Multimodal Models",
+   "url": "https://arxiv.org/abs/2609.16847",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "fine-grained",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "DenseFace: Bias Mitigation in Face Recognition via Density-Aware Probabilistic Matching",
+   "url": "https://arxiv.org/abs/2609.16149",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "re-identification",
+    "image-embedding",
+    "metric-learning",
+    "calibration"
+   ]
+  },
+  {
+   "title": "InfoTaxa: Information-Calibrated Label-Free Clustering for Fine-Grained Visual Taxonomy",
+   "url": "https://arxiv.org/abs/2609.17218",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "fine-grained",
+    "image-embedding",
+    "calibration",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "Unifying Semantic Priors and High-Frequency Traces: Enhancing V-JEPA with Mixture-of-Experts for Robust Synthetic Image Forensics",
+   "url": "https://arxiv.org/abs/2609.16778",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "foundation-model",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "PSMP-CLIP: Patch-Prompt SAM and Multi-Semantic Prompting for CLIP-Based Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.16785",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "segmentation",
+    "training-free"
+   ]
+  },
+  {
+   "title": "CLARE: Scalable Class-Incremental Continual Learning via a Sparsity-Based Framework",
+   "url": "https://arxiv.org/abs/2609.17026",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "continual-learning",
+    "peft",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Symmetry-Aware Likelihood-Orbit Aggregation for Selective Left-Right Claim Verification",
+   "url": "https://arxiv.org/abs/2609.17004",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "calibration",
+    "vlm",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Channel-Wise and Token-Aware Post-Training Quantization for Visual State Space Duality",
+   "url": "https://arxiv.org/abs/2609.16656",
+   "date": "2026-09-16",
+   "report": "reports/2026/09/report_17.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "foundation-model",
+    "object-detection"
+   ]
+  },
   {
    "title": "Diffusion Trajectory Modeling for Semantic Correspondence",
    "url": "https://arxiv.org/abs/2609.15357",
@@ -6535,51 +6673,51 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 204
+   "count": 209
   },
   {
    "tag": "image-embedding",
-   "count": 145
+   "count": 151
   },
   {
    "tag": "efficient-inference",
-   "count": 95
-  },
-  {
-   "tag": "vlm",
-   "count": 94
+   "count": 96
   },
   {
    "tag": "image-retrieval",
-   "count": 91
+   "count": 96
+  },
+  {
+   "tag": "vlm",
+   "count": 96
   },
   {
    "tag": "metric-learning",
-   "count": 90
+   "count": 93
   },
   {
    "tag": "ssl-backbone",
-   "count": 89
-  },
-  {
-   "tag": "forgery-detection",
-   "count": 74
+   "count": 90
   },
   {
    "tag": "fine-grained",
-   "count": 73
+   "count": 75
+  },
+  {
+   "tag": "forgery-detection",
+   "count": 75
   },
   {
    "tag": "industrial-inspection",
-   "count": 68
+   "count": 69
   },
   {
    "tag": "anomaly-detection",
-   "count": 60
+   "count": 62
   },
   {
    "tag": "segmentation",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "dataset-benchmark",
@@ -6599,18 +6737,18 @@
   },
   {
    "tag": "re-identification",
-   "count": 45
+   "count": 46
   },
   {
    "tag": "object-detection",
-   "count": 44
-  },
-  {
-   "tag": "feature-matching",
-   "count": 41
+   "count": 45
   },
   {
    "tag": "peft",
+   "count": 43
+  },
+  {
+   "tag": "feature-matching",
    "count": 41
   },
   {
@@ -6623,11 +6761,15 @@
   },
   {
    "tag": "quantization",
-   "count": 16
+   "count": 17
   },
   {
    "tag": "generative",
-   "count": 13
+   "count": 14
+  },
+  {
+   "tag": "continual-learning",
+   "count": 12
   },
   {
    "tag": "pose",
@@ -6638,12 +6780,12 @@
    "count": 11
   },
   {
-   "tag": "continual-learning",
+   "tag": "calibration",
    "count": 10
   },
   {
-   "tag": "calibration",
-   "count": 7
+   "tag": "training-free",
+   "count": 9
   },
   {
    "tag": "depth",
@@ -6651,10 +6793,6 @@
   },
   {
    "tag": "ocr-document",
-   "count": 6
-  },
-  {
-   "tag": "training-free",
    "count": 6
   },
   {
