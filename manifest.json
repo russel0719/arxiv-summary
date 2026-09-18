@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_19.md",
+   "date": "2026-09-18",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-18 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_17.md",
    "date": "2026-09-16",
    "title": "arXiv cs.CV Daily Digest — 2026-09-16 (arXiv 공개일)",
@@ -806,6 +812,138 @@
   }
  ],
  "papers": [
+  {
+   "title": "Automated Goldsmith's Mark Retrieval in Silverware",
+   "url": "https://arxiv.org/abs/2609.20509",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "ssl-backbone",
+    "image-retrieval",
+    "metric-learning",
+    "fine-grained",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "SCOUT: Sim-to-Real Text-Based Person Retrieval by Embedding-Space Prediction over Frozen Video Features",
+   "url": "https://arxiv.org/abs/2609.19483",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "sim2real",
+    "peft",
+    "re-identification"
+   ]
+  },
+  {
+   "title": "Queries Knew More Than We Thought: Uncovering Latent Knowledge in Segmentation Models",
+   "url": "https://arxiv.org/abs/2609.20283",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "segmentation",
+    "calibration",
+    "foundation-model",
+    "open-vocab-detection"
+   ]
+  },
+  {
+   "title": "Not All Layers Are Equal: Dynamic Layer Routing for Reliable CLIP OOD Detection",
+   "url": "https://arxiv.org/abs/2609.20299",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "calibration",
+    "anomaly-detection",
+    "foundation-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Should This Case Be Adapted? Prediction Fragmentation Controls Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2609.20700",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "calibration",
+    "segmentation",
+    "test-time-adaptation"
+   ]
+  },
+  {
+   "title": "AI or Real: Detecting Partially Altered Videos Under Resource-Constrained Environments",
+   "url": "https://arxiv.org/abs/2609.20263",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "forgery-detection",
+    "distillation",
+    "ssl-backbone",
+    "efficient-inference",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Compact Vision Models for Iris Presentation Attack Detection under Presentation Attack Instrument Shift and Environmental Degradation",
+   "url": "https://arxiv.org/abs/2609.20386",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "efficient-inference",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Earth Surface Immune System for Rapid Monitoring of Unknown Anomalies",
+   "url": "https://arxiv.org/abs/2609.20662",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "anomaly-detection",
+    "open-vocab-detection",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Enhanced Knowledge Distillation for Detection Transformer via Teacher Prediction Refinement",
+   "url": "https://arxiv.org/abs/2609.19964",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "distillation",
+    "object-detection",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "A Smaller Transformer in Your Transformer",
+   "url": "https://arxiv.org/abs/2609.20100",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "efficient-inference",
+    "foundation-model",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Distance to Class Prototypes: Active Learning for Object Detection",
+   "url": "https://arxiv.org/abs/2609.20248",
+   "date": "2026-09-18",
+   "report": "reports/2026/09/report_19.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "object-detection",
+    "calibration"
+   ]
+  },
   {
    "title": "Multi-modal Knowledge Preserving Adapter for Embedding Backward Compatibility",
    "url": "https://arxiv.org/abs/2609.16875",
@@ -6673,19 +6811,19 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 209
+   "count": 213
   },
   {
    "tag": "image-embedding",
-   "count": 151
+   "count": 153
   },
   {
    "tag": "efficient-inference",
-   "count": 96
+   "count": 101
   },
   {
    "tag": "image-retrieval",
-   "count": 96
+   "count": 98
   },
   {
    "tag": "vlm",
@@ -6693,19 +6831,19 @@
   },
   {
    "tag": "metric-learning",
-   "count": 93
+   "count": 95
   },
   {
    "tag": "ssl-backbone",
-   "count": 90
-  },
-  {
-   "tag": "fine-grained",
-   "count": 75
+   "count": 92
   },
   {
    "tag": "forgery-detection",
-   "count": 75
+   "count": 77
+  },
+  {
+   "tag": "fine-grained",
+   "count": 76
   },
   {
    "tag": "industrial-inspection",
@@ -6713,39 +6851,39 @@
   },
   {
    "tag": "anomaly-detection",
-   "count": 62
+   "count": 64
   },
   {
    "tag": "segmentation",
-   "count": 61
+   "count": 64
   },
   {
    "tag": "dataset-benchmark",
-   "count": 53
+   "count": 54
   },
   {
    "tag": "correspondence",
    "count": 52
   },
   {
+   "tag": "distillation",
+   "count": 50
+  },
+  {
    "tag": "defect-detection",
    "count": 49
   },
   {
-   "tag": "distillation",
-   "count": 47
+   "tag": "object-detection",
+   "count": 48
   },
   {
    "tag": "re-identification",
-   "count": 46
-  },
-  {
-   "tag": "object-detection",
-   "count": 45
+   "count": 47
   },
   {
    "tag": "peft",
-   "count": 43
+   "count": 44
   },
   {
    "tag": "feature-matching",
@@ -6753,7 +6891,7 @@
   },
   {
    "tag": "open-vocab-detection",
-   "count": 28
+   "count": 30
   },
   {
    "tag": "video",
@@ -6762,6 +6900,10 @@
   {
    "tag": "quantization",
    "count": 17
+  },
+  {
+   "tag": "calibration",
+   "count": 16
   },
   {
    "tag": "generative",
@@ -6778,10 +6920,6 @@
   {
    "tag": "representation-learning",
    "count": 11
-  },
-  {
-   "tag": "calibration",
-   "count": 10
   },
   {
    "tag": "training-free",
@@ -6804,6 +6942,10 @@
    "count": 5
   },
   {
+   "tag": "sim2real",
+   "count": 5
+  },
+  {
    "tag": "zero-shot",
    "count": 5
   },
@@ -6813,10 +6955,6 @@
   },
   {
    "tag": "clip",
-   "count": 4
-  },
-  {
-   "tag": "sim2real",
    "count": 4
   },
   {
@@ -6833,6 +6971,10 @@
   },
   {
    "tag": "self-supervised",
+   "count": 3
+  },
+  {
+   "tag": "test-time-adaptation",
    "count": 3
   },
   {
@@ -6909,10 +7051,6 @@
   },
   {
    "tag": "sam3",
-   "count": 2
-  },
-  {
-   "tag": "test-time-adaptation",
    "count": 2
   },
   {
