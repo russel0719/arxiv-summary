@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_22.md",
+   "date": "2026-09-21",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-21 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_19.md",
    "date": "2026-09-18",
    "title": "arXiv cs.CV Daily Digest — 2026-09-18 (arXiv 공개일)",
@@ -812,6 +818,111 @@
   }
  ],
  "papers": [
+  {
+   "title": "MAGIC: Marginal-Guided Compression with Optimal Transport for Efficient Visual Document Retrieval",
+   "url": "https://arxiv.org/abs/2609.21018",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "training-free",
+    "efficient-inference",
+    "ocr-document"
+   ]
+  },
+  {
+   "title": "Extending Decoupled Attention to Dense Prediction and Masked Training for Multi-Channel Images",
+   "url": "https://arxiv.org/abs/2609.21629",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "segmentation",
+    "multi-channel-imaging"
+   ]
+  },
+  {
+   "title": "P$^3$-SAM: SAM with Perceptual Parallel Prompt for Few-Shot Strip Steel Surface Defect Segmentation",
+   "url": "https://arxiv.org/abs/2609.21424",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "segmentation",
+    "defect-detection",
+    "industrial-inspection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Balanced Prompt Adaptation against Entropy-Induced Collapse for Test-Time Binary Segmentation",
+   "url": "https://arxiv.org/abs/2609.21743",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "segmentation",
+    "peft",
+    "test-time-adaptation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "A Principled Approach to Unsupervised Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.21800",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection"
+   ]
+  },
+  {
+   "title": "Hand-Aware Transition Modeling for Bimanual Procedural Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.21207",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "video",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Morphology-Aware Ambiguity Learning for Wafer Defect Decision Support",
+   "url": "https://arxiv.org/abs/2609.21866",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Beyond Exact Match: Task-Aware GRPO for Cross-Domain PCBA Visual Question Answering",
+   "url": "https://arxiv.org/abs/2609.21276",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "vlm",
+    "industrial-inspection",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty",
+   "url": "https://arxiv.org/abs/2609.21822",
+   "date": "2026-09-21",
+   "report": "reports/2026/09/report_22.md",
+   "tags": [
+    "object-detection",
+    "dataset-benchmark",
+    "calibration"
+   ]
+  },
   {
    "title": "Automated Goldsmith's Mark Retrieval in Silverware",
    "url": "https://arxiv.org/abs/2609.20509",
@@ -6811,23 +6922,23 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 213
+   "count": 214
   },
   {
    "tag": "image-embedding",
-   "count": 153
+   "count": 154
   },
   {
    "tag": "efficient-inference",
-   "count": 101
+   "count": 102
   },
   {
    "tag": "image-retrieval",
-   "count": 98
+   "count": 99
   },
   {
    "tag": "vlm",
-   "count": 96
+   "count": 98
   },
   {
    "tag": "metric-learning",
@@ -6835,34 +6946,38 @@
   },
   {
    "tag": "ssl-backbone",
-   "count": 92
+   "count": 93
+  },
+  {
+   "tag": "fine-grained",
+   "count": 77
   },
   {
    "tag": "forgery-detection",
    "count": 77
   },
   {
-   "tag": "fine-grained",
-   "count": 76
-  },
-  {
    "tag": "industrial-inspection",
-   "count": 69
-  },
-  {
-   "tag": "anomaly-detection",
-   "count": 64
+   "count": 74
   },
   {
    "tag": "segmentation",
-   "count": 64
+   "count": 67
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 66
   },
   {
    "tag": "dataset-benchmark",
-   "count": 54
+   "count": 55
   },
   {
    "tag": "correspondence",
+   "count": 53
+  },
+  {
+   "tag": "defect-detection",
    "count": 52
   },
   {
@@ -6870,12 +6985,8 @@
    "count": 50
   },
   {
-   "tag": "defect-detection",
-   "count": 49
-  },
-  {
    "tag": "object-detection",
-   "count": 48
+   "count": 49
   },
   {
    "tag": "re-identification",
@@ -6883,7 +6994,7 @@
   },
   {
    "tag": "peft",
-   "count": 44
+   "count": 45
   },
   {
    "tag": "feature-matching",
@@ -6895,15 +7006,15 @@
   },
   {
    "tag": "video",
-   "count": 20
+   "count": 21
+  },
+  {
+   "tag": "calibration",
+   "count": 19
   },
   {
    "tag": "quantization",
    "count": 17
-  },
-  {
-   "tag": "calibration",
-   "count": 16
   },
   {
    "tag": "generative",
@@ -6923,14 +7034,14 @@
   },
   {
    "tag": "training-free",
-   "count": 9
-  },
-  {
-   "tag": "depth",
-   "count": 6
+   "count": 10
   },
   {
    "tag": "ocr-document",
+   "count": 7
+  },
+  {
+   "tag": "depth",
    "count": 6
   },
   {
@@ -6958,6 +7069,10 @@
    "count": 4
   },
   {
+   "tag": "test-time-adaptation",
+   "count": 4
+  },
+  {
    "tag": "3d",
    "count": 3
   },
@@ -6971,10 +7086,6 @@
   },
   {
    "tag": "self-supervised",
-   "count": 3
-  },
-  {
-   "tag": "test-time-adaptation",
    "count": 3
   },
   {
@@ -7343,6 +7454,10 @@
   },
   {
    "tag": "model-selection",
+   "count": 1
+  },
+  {
+   "tag": "multi-channel-imaging",
    "count": 1
   },
   {
