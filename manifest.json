@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_23.md",
+   "date": "2026-09-22",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-22 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_22.md",
    "date": "2026-09-21",
    "title": "arXiv cs.CV Daily Digest — 2026-09-21 (arXiv 공개일)",
@@ -818,6 +824,147 @@
   }
  ],
  "papers": [
+  {
+   "title": "Positive Pair Geometry Matters: Optimal Transport for Contrastive Learning of Visual Representations",
+   "url": "https://arxiv.org/abs/2609.24125",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "MotionJEPA: Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space",
+   "url": "https://arxiv.org/abs/2609.23881",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "video"
+   ]
+  },
+  {
+   "title": "Retrieval Geometry Shapes Cache-Based Clip Adaptation",
+   "url": "https://arxiv.org/abs/2609.23409",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "ssl-backbone",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Graded-Relevance Composed Multimodal Retrieval for E-commerce Visual Search at Scale",
+   "url": "https://arxiv.org/abs/2609.24152",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "AdaMerge: Tuning-Free Patch Compression for Multi-Vector Visual Document Retrieval",
+   "url": "https://arxiv.org/abs/2609.22562",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "training-free",
+    "efficient-inference",
+    "ocr-document"
+   ]
+  },
+  {
+   "title": "Vision Transformers versus convolutional neural networks for fine-grained orchid genus identification in a species-rich, data-poor flora: a controlled benchmark on the Orchidaceae of New Guinea",
+   "url": "https://arxiv.org/abs/2609.24064",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "fine-grained",
+    "image-retrieval",
+    "ssl-backbone",
+    "calibration",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "InterHier: Learning Interconnected Hierarchical Semantics for Open-Vocabulary Object Detection",
+   "url": "https://arxiv.org/abs/2609.24026",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "HyperCLIP++: Fine-tuning CLIP for Open-vocabulary Semantic Segmentation in Hyperbolic Space",
+   "url": "https://arxiv.org/abs/2609.24564",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "segmentation",
+    "peft",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "SRPR-Net: Semantic and Relational Prompt Refinement for Automated SAM-based Instance Segmentation",
+   "url": "https://arxiv.org/abs/2609.24226",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "SAFe: Segment-guided Aggregation of Feature Densities for Anomaly-aware Segmentation",
+   "url": "https://arxiv.org/abs/2609.24204",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "anomaly-detection",
+    "segmentation",
+    "ssl-backbone",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Dissecting Agentic Forensics: The Role of Triage, Prompting, and Evidence Arbitration in Open-World Fake Image Detection",
+   "url": "https://arxiv.org/abs/2609.24359",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "vlm"
+   ]
+  },
+  {
+   "title": "MECAIL: Communication-Aware Incremental Learning for Object Detection with 14.6 KB Spatiotemporal Experts",
+   "url": "https://arxiv.org/abs/2609.24455",
+   "date": "2026-09-22",
+   "report": "reports/2026/09/report_23.md",
+   "tags": [
+    "continual-learning",
+    "object-detection",
+    "peft",
+    "efficient-inference"
+   ]
+  },
   {
    "title": "MAGIC: Marginal-Guided Compression with Optimal Transport for Efficient Visual Document Retrieval",
    "url": "https://arxiv.org/abs/2609.21018",
@@ -6922,39 +7069,39 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 214
+   "count": 217
   },
   {
    "tag": "image-embedding",
-   "count": 154
+   "count": 159
   },
   {
    "tag": "efficient-inference",
-   "count": 102
+   "count": 104
   },
   {
    "tag": "image-retrieval",
-   "count": 99
+   "count": 103
   },
   {
    "tag": "vlm",
+   "count": 102
+  },
+  {
+   "tag": "ssl-backbone",
    "count": 98
   },
   {
    "tag": "metric-learning",
-   "count": 95
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 93
+   "count": 97
   },
   {
    "tag": "fine-grained",
-   "count": 77
+   "count": 78
   },
   {
    "tag": "forgery-detection",
-   "count": 77
+   "count": 78
   },
   {
    "tag": "industrial-inspection",
@@ -6962,15 +7109,15 @@
   },
   {
    "tag": "segmentation",
-   "count": 67
+   "count": 70
   },
   {
    "tag": "anomaly-detection",
-   "count": 66
+   "count": 67
   },
   {
    "tag": "dataset-benchmark",
-   "count": 55
+   "count": 56
   },
   {
    "tag": "correspondence",
@@ -6981,20 +7128,20 @@
    "count": 52
   },
   {
+   "tag": "object-detection",
+   "count": 52
+  },
+  {
    "tag": "distillation",
    "count": 50
   },
   {
-   "tag": "object-detection",
-   "count": 49
+   "tag": "peft",
+   "count": 47
   },
   {
    "tag": "re-identification",
    "count": 47
-  },
-  {
-   "tag": "peft",
-   "count": 45
   },
   {
    "tag": "feature-matching",
@@ -7002,15 +7149,15 @@
   },
   {
    "tag": "open-vocab-detection",
-   "count": 30
+   "count": 31
   },
   {
    "tag": "video",
-   "count": 21
+   "count": 22
   },
   {
    "tag": "calibration",
-   "count": 19
+   "count": 21
   },
   {
    "tag": "quantization",
@@ -7022,10 +7169,14 @@
   },
   {
    "tag": "continual-learning",
-   "count": 12
+   "count": 13
   },
   {
    "tag": "pose",
+   "count": 12
+  },
+  {
+   "tag": "training-free",
    "count": 12
   },
   {
@@ -7033,12 +7184,8 @@
    "count": 11
   },
   {
-   "tag": "training-free",
-   "count": 10
-  },
-  {
    "tag": "ocr-document",
-   "count": 7
+   "count": 8
   },
   {
    "tag": "depth",
