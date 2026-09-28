@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_29.md",
+   "date": "2026-09-28",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-28 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_26.md",
    "date": "2026-09-25",
    "title": "arXiv cs.CV Daily Digest — 2026-09-25 (arXiv 공개일)",
@@ -842,6 +848,120 @@
   }
  ],
  "papers": [
+  {
+   "title": "Conditional Predictive Sufficient Statistics for Visual Representation Learning",
+   "url": "https://arxiv.org/abs/2609.30647",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "predictive-coding"
+   ]
+  },
+  {
+   "title": "Structure-Guided Masked Autoencoders for Ultra-High Resolution Scientific Image Understanding",
+   "url": "https://arxiv.org/abs/2609.30682",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Forensic Twins: Self-Supervised Residual Learning for AI-Generated Image Forensics",
+   "url": "https://arxiv.org/abs/2609.31514",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "ssl-backbone",
+    "forgery-detection",
+    "image-embedding",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+   "url": "https://arxiv.org/abs/2609.31620",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "image-embedding",
+    "foundation-model",
+    "generative"
+   ]
+  },
+  {
+   "title": "Preserve-and-Compose Training for Composed Image Retrieval",
+   "url": "https://arxiv.org/abs/2609.31202",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Query-Conditioned Prototype Adaptation for Cross-Domain Few-Shot Learning: Single-Query Inference, Controlled Comparisons, and Failure Modes",
+   "url": "https://arxiv.org/abs/2609.30769",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "few-shot",
+    "training-free"
+   ]
+  },
+  {
+   "title": "FARE: Forensic Acceptance Region Estimation for Catching Bait-and-Switch Image Generators",
+   "url": "https://arxiv.org/abs/2609.30982",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Can Pixels Alone Reveal Image Origin? Minimax Limits and Learnable Interfaces for Passive Provenance",
+   "url": "https://arxiv.org/abs/2609.30997",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "adversarial-robustness"
+   ]
+  },
+  {
+   "title": "Geometric Inconsistency Localization in Multi-View Image Sets",
+   "url": "https://arxiv.org/abs/2609.31247",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "forgery-detection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "CSCWD: Cross-Scale Channel-wise Knowledge Distillation for Lightweight Tiny Object Detection on Edge Devices",
+   "url": "https://arxiv.org/abs/2609.30395",
+   "date": "2026-09-28",
+   "report": "reports/2026/09/report_29.md",
+   "tags": [
+    "distillation",
+    "object-detection",
+    "efficient-inference"
+   ]
+  },
   {
    "title": "ImCorr: Sub-pixel Semantic Correspondence via Implicit Feature Decoding",
    "url": "https://arxiv.org/abs/2609.29193",
@@ -7375,31 +7495,31 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 228
+   "count": 229
   },
   {
    "tag": "image-embedding",
-   "count": 174
+   "count": 179
   },
   {
    "tag": "efficient-inference",
-   "count": 107
+   "count": 109
   },
   {
    "tag": "image-retrieval",
-   "count": 106
+   "count": 107
   },
   {
    "tag": "vlm",
-   "count": 106
+   "count": 107
   },
   {
    "tag": "metric-learning",
-   "count": 104
+   "count": 106
   },
   {
    "tag": "ssl-backbone",
-   "count": 103
+   "count": 106
   },
   {
    "tag": "fine-grained",
@@ -7407,7 +7527,7 @@
   },
   {
    "tag": "forgery-detection",
-   "count": 79
+   "count": 83
   },
   {
    "tag": "industrial-inspection",
@@ -7415,23 +7535,23 @@
   },
   {
    "tag": "segmentation",
-   "count": 73
+   "count": 74
   },
   {
    "tag": "anomaly-detection",
-   "count": 68
+   "count": 70
   },
   {
    "tag": "dataset-benchmark",
-   "count": 58
+   "count": 59
   },
   {
    "tag": "correspondence",
-   "count": 56
+   "count": 57
   },
   {
    "tag": "object-detection",
-   "count": 56
+   "count": 57
   },
   {
    "tag": "defect-detection",
@@ -7439,7 +7559,7 @@
   },
   {
    "tag": "distillation",
-   "count": 53
+   "count": 54
   },
   {
    "tag": "peft",
@@ -7451,7 +7571,7 @@
   },
   {
    "tag": "feature-matching",
-   "count": 43
+   "count": 44
   },
   {
    "tag": "open-vocab-detection",
@@ -7459,7 +7579,7 @@
   },
   {
    "tag": "calibration",
-   "count": 24
+   "count": 26
   },
   {
    "tag": "video",
@@ -7471,14 +7591,14 @@
   },
   {
    "tag": "training-free",
-   "count": 16
-  },
-  {
-   "tag": "continual-learning",
-   "count": 14
+   "count": 17
   },
   {
    "tag": "generative",
+   "count": 15
+  },
+  {
+   "tag": "continual-learning",
    "count": 14
   },
   {
@@ -7499,6 +7619,10 @@
   },
   {
    "tag": "few-shot",
+   "count": 6
+  },
+  {
+   "tag": "adversarial-robustness",
    "count": 5
   },
   {
@@ -7512,10 +7636,6 @@
   {
    "tag": "zero-shot",
    "count": 5
-  },
-  {
-   "tag": "adversarial-robustness",
-   "count": 4
   },
   {
    "tag": "clip",
@@ -7987,6 +8107,10 @@
   },
   {
    "tag": "point-cloud",
+   "count": 1
+  },
+  {
+   "tag": "predictive-coding",
    "count": 1
   },
   {
