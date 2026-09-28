@@ -1,6 +1,18 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_26.md",
+   "date": "2026-09-25",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-25 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
+   "path": "reports/2026/09/report_25.md",
+   "date": "2026-09-24",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-24 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_24.md",
    "date": "2026-09-23",
    "title": "arXiv cs.CV Daily Digest — 2026-09-23 (arXiv 공개일)",
@@ -830,6 +842,294 @@
   }
  ],
  "papers": [
+  {
+   "title": "ImCorr: Sub-pixel Semantic Correspondence via Implicit Feature Decoding",
+   "url": "https://arxiv.org/abs/2609.29193",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "fine-grained",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "IronViT: Toward Efficient Generalist Visual Representation Learning",
+   "url": "https://arxiv.org/abs/2609.29252",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "distillation",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Learning a Flow to Self-Supervised Representations",
+   "url": "https://arxiv.org/abs/2609.29350",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Can Frozen Hyperspherical Features Guide the Selection of Pseudo Masks?",
+   "url": "https://arxiv.org/abs/2609.30080",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "image-embedding",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Industrial Anomaly Detection via Defect-Grounded Reasoning in Visual Latent Space",
+   "url": "https://arxiv.org/abs/2609.29457",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "EIB-Net: Entropy-Guided Information Bottleneck for Generalizable AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2609.29064",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "forgery-detection",
+    "image-embedding",
+    "print-forensics"
+   ]
+  },
+  {
+   "title": "Domain Recentering and Confidence-Weighted Prior Calibration for Vision-Language Models",
+   "url": "https://arxiv.org/abs/2609.29358",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "calibration",
+    "training-free",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "ReCalMatch: Reliability-Calibrated Semantic Guidance for Semi-Supervised Fine-Grained Recognition",
+   "url": "https://arxiv.org/abs/2609.29678",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "fine-grained",
+    "calibration",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "AgriCountDINO: Parameter-Efficient Exemplar-Guided Counting and Localization in Agriculture",
+   "url": "https://arxiv.org/abs/2609.29460",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "peft",
+    "object-detection",
+    "foundation-model",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "MEVL-STP: Multi-Encoder and Vision Language Model for Arbitrarily Shaped Scene Text Spotting",
+   "url": "https://arxiv.org/abs/2609.28857",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "text-detection",
+    "foundation-model",
+    "peft",
+    "segmentation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Hyperbolic Multimodal Continual Learning: A Closest-Admissible Solution",
+   "url": "https://arxiv.org/abs/2609.29329",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "continual-learning",
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Not All Confusion Is Equal: A Source-Aware Uncertainty Diagnosis for Fine-Grained Aircraft Detection",
+   "url": "https://arxiv.org/abs/2609.29959",
+   "date": "2026-09-25",
+   "report": "reports/2026/09/report_26.md",
+   "tags": [
+    "fine-grained",
+    "calibration",
+    "object-detection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Two Global Crops Suffice: Locating Semantic Emergence in DINO-Style Self-Supervised Learning",
+   "url": "https://arxiv.org/abs/2609.28187",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "MINER: Multi-crop INference-time Enhancement for Rare-Object Retrieval with Frozen Dual Encoders",
+   "url": "https://arxiv.org/abs/2609.27142",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Geometry-Conditioned Visual Place Recognition in Natural Environments",
+   "url": "https://arxiv.org/abs/2609.27370",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "distillation",
+    "foundation-model",
+    "depth"
+   ]
+  },
+  {
+   "title": "Depth-Guided Contrastive Learning for 2D Representations with 3D Spatial Awareness",
+   "url": "https://arxiv.org/abs/2609.28159",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "metric-learning",
+    "depth"
+   ]
+  },
+  {
+   "title": "Task-Induced Riemannian Metrics for Vision Transformer Feature Spaces",
+   "url": "https://arxiv.org/abs/2609.27988",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "foundation-model",
+    "efficient-inference",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Know-Your-Scene (KYS)-SLAM: Hierarchical Semantic-Motion Priors for Feature Matching in Stereo Visual SLAM",
+   "url": "https://arxiv.org/abs/2609.27509",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "segmentation",
+    "training-free"
+   ]
+  },
+  {
+   "title": "What Converges in the Platonic Representation Hypothesis? Structure over Geometry",
+   "url": "https://arxiv.org/abs/2609.27252",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "image-embedding",
+    "foundation-model",
+    "vlm",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Diverse by Design: Architectural Constraints for Prototype-Based Interpretability",
+   "url": "https://arxiv.org/abs/2609.27194",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "fine-grained",
+    "image-embedding",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "Damnatio Memoriae: Adversarially and Selectively Forgetting Identities in the Embedding Space of Face Recognition Models",
+   "url": "https://arxiv.org/abs/2609.27115",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "re-identification",
+    "image-embedding",
+    "metric-learning",
+    "machine-unlearning"
+   ]
+  },
+  {
+   "title": "Pro-Bench: Prompt-Robust Open-Vocabulary Visual Grounding Across Real-World Heterogeneous Environments",
+   "url": "https://arxiv.org/abs/2609.27076",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "open-vocab-detection",
+    "dataset-benchmark",
+    "vlm",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "TEEP-RCNN: Texture-Enhanced Edge-aware Perception for Steel Surface Defect Detection via Improved Convolutional Block Attention in Faster R-CNN",
+   "url": "https://arxiv.org/abs/2609.28077",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models",
+   "url": "https://arxiv.org/abs/2609.28262",
+   "date": "2026-09-24",
+   "report": "reports/2026/09/report_25.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "edge-deployment"
+   ]
+  },
   {
    "title": "Positive Pair Geometry Matters: Optimal Transport for Contrastive Learning of Visual Representations",
    "url": "https://arxiv.org/abs/2609.24125",
@@ -7075,114 +7375,114 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 217
+   "count": 228
   },
   {
    "tag": "image-embedding",
-   "count": 159
+   "count": 174
   },
   {
    "tag": "efficient-inference",
-   "count": 104
+   "count": 107
   },
   {
    "tag": "image-retrieval",
-   "count": 103
+   "count": 106
   },
   {
    "tag": "vlm",
-   "count": 102
-  },
-  {
-   "tag": "ssl-backbone",
-   "count": 98
+   "count": 106
   },
   {
    "tag": "metric-learning",
-   "count": 97
+   "count": 104
+  },
+  {
+   "tag": "ssl-backbone",
+   "count": 103
   },
   {
    "tag": "fine-grained",
-   "count": 78
+   "count": 83
   },
   {
    "tag": "forgery-detection",
-   "count": 78
+   "count": 79
   },
   {
    "tag": "industrial-inspection",
-   "count": 74
+   "count": 76
   },
   {
    "tag": "segmentation",
-   "count": 70
+   "count": 73
   },
   {
    "tag": "anomaly-detection",
-   "count": 67
+   "count": 68
   },
   {
    "tag": "dataset-benchmark",
-   "count": 56
+   "count": 58
   },
   {
    "tag": "correspondence",
-   "count": 53
-  },
-  {
-   "tag": "defect-detection",
-   "count": 52
+   "count": 56
   },
   {
    "tag": "object-detection",
-   "count": 52
+   "count": 56
+  },
+  {
+   "tag": "defect-detection",
+   "count": 54
   },
   {
    "tag": "distillation",
-   "count": 50
+   "count": 53
   },
   {
    "tag": "peft",
-   "count": 47
+   "count": 49
   },
   {
    "tag": "re-identification",
-   "count": 47
+   "count": 48
   },
   {
    "tag": "feature-matching",
-   "count": 41
+   "count": 43
   },
   {
    "tag": "open-vocab-detection",
-   "count": 31
+   "count": 32
+  },
+  {
+   "tag": "calibration",
+   "count": 24
   },
   {
    "tag": "video",
    "count": 22
   },
   {
-   "tag": "calibration",
-   "count": 21
+   "tag": "quantization",
+   "count": 18
   },
   {
-   "tag": "quantization",
-   "count": 17
+   "tag": "training-free",
+   "count": 16
+  },
+  {
+   "tag": "continual-learning",
+   "count": 14
   },
   {
    "tag": "generative",
    "count": 14
   },
   {
-   "tag": "continual-learning",
-   "count": 13
-  },
-  {
    "tag": "pose",
-   "count": 12
-  },
-  {
-   "tag": "training-free",
    "count": 12
   },
   {
@@ -7190,12 +7490,12 @@
    "count": 11
   },
   {
-   "tag": "ocr-document",
+   "tag": "depth",
    "count": 8
   },
   {
-   "tag": "depth",
-   "count": 6
+   "tag": "ocr-document",
+   "count": 8
   },
   {
    "tag": "few-shot",
@@ -7267,6 +7567,10 @@
   },
   {
    "tag": "domain-generalization",
+   "count": 2
+  },
+  {
+   "tag": "edge-deployment",
    "count": 2
   },
   {
@@ -7430,10 +7734,6 @@
    "count": 1
   },
   {
-   "tag": "edge-deployment",
-   "count": 1
-  },
-  {
    "tag": "edge-inference",
    "count": 1
   },
@@ -7554,6 +7854,10 @@
    "count": 1
   },
   {
+   "tag": "interpretability",
+   "count": 1
+  },
+  {
    "tag": "jepa",
    "count": 1
   },
@@ -7579,6 +7883,10 @@
   },
   {
    "tag": "lora",
+   "count": 1
+  },
+  {
+   "tag": "machine-unlearning",
    "count": 1
   },
   {
@@ -7679,6 +7987,10 @@
   },
   {
    "tag": "point-cloud",
+   "count": 1
+  },
+  {
+   "tag": "print-forensics",
    "count": 1
   },
   {
@@ -7807,6 +8119,10 @@
   },
   {
    "tag": "synthetic-image-detection",
+   "count": 1
+  },
+  {
+   "tag": "text-detection",
    "count": 1
   },
   {
