@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/09/report_30.md",
+   "date": "2026-09-29",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-29 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_29.md",
    "date": "2026-09-28",
    "title": "arXiv cs.CV Daily Digest — 2026-09-28 (arXiv 공개일)",
@@ -848,6 +854,151 @@
   }
  ],
  "papers": [
+  {
+   "title": "$\\lambda$-JEPA Spectral Anti-Collapse Regularization for Self-Supervised Learning",
+   "url": "https://arxiv.org/abs/2609.35288",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "video"
+   ]
+  },
+  {
+   "title": "JEPA Learns What the Mask Leaves Unrecoverable",
+   "url": "https://arxiv.org/abs/2609.32481",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "video"
+   ]
+  },
+  {
+   "title": "W2Rep: Learning Visual Representations by Watching the World Change",
+   "url": "https://arxiv.org/abs/2609.35464",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "video",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Copy the Same, Distill the Difference: Initializing Linear Vision Transformers",
+   "url": "https://arxiv.org/abs/2609.35745",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "ssl-backbone",
+    "distillation",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "The Devil is in the Spectrum Bias: Spectrum-Balanced Feature Matching for Robust Representation Distillation",
+   "url": "https://arxiv.org/abs/2609.34106",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "distillation",
+    "foundation-model",
+    "image-embedding",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+   "url": "https://arxiv.org/abs/2609.33325",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "object-detection",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "When Does Geometric View Synthesis Help Wine Label Retrieval? A Public One-Shot Benchmark Across Self-Supervised and Vision-Language Backbones",
+   "url": "https://arxiv.org/abs/2609.33359",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "image-retrieval",
+    "fine-grained",
+    "ssl-backbone",
+    "peft",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Concepts Complement Dense Semantics: Learning Compact Sparse Spaces for Text-Image Retrieval",
+   "url": "https://arxiv.org/abs/2609.32671",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Re:Cognize -- Open-Set Comic Character Re-Identification",
+   "url": "https://arxiv.org/abs/2609.34032",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "calibration",
+    "fine-grained",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Mixed-Prior Decision Risk for Open-Set Recognition",
+   "url": "https://arxiv.org/abs/2609.35043",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "calibration",
+    "re-identification",
+    "image-retrieval",
+    "open-set-recognition"
+   ]
+  },
+  {
+   "title": "Focus and Supplement: Dual-Enhanced Vision Transformer for Multi-Class Anomaly Classification",
+   "url": "https://arxiv.org/abs/2609.33353",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "DBCF: Dual-Branch Complementary Fusion of Foundation Models for Generalized Deepfake Detection",
+   "url": "https://arxiv.org/abs/2609.34720",
+   "date": "2026-09-29",
+   "report": "reports/2026/09/report_30.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "ssl-backbone",
+    "peft"
+   ]
+  },
   {
    "title": "Conditional Predictive Sufficient Statistics for Visual Representation Learning",
    "url": "https://arxiv.org/abs/2609.30647",
@@ -7495,79 +7646,79 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 229
+   "count": 235
   },
   {
    "tag": "image-embedding",
-   "count": 179
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 109
-  },
-  {
-   "tag": "image-retrieval",
-   "count": 107
-  },
-  {
-   "tag": "vlm",
-   "count": 107
-  },
-  {
-   "tag": "metric-learning",
-   "count": 106
+   "count": 184
   },
   {
    "tag": "ssl-backbone",
-   "count": 106
+   "count": 113
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 111
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 110
+  },
+  {
+   "tag": "vlm",
+   "count": 108
+  },
+  {
+   "tag": "metric-learning",
+   "count": 107
   },
   {
    "tag": "fine-grained",
-   "count": 83
+   "count": 86
   },
   {
    "tag": "forgery-detection",
-   "count": 83
+   "count": 84
   },
   {
    "tag": "industrial-inspection",
-   "count": 76
+   "count": 77
   },
   {
    "tag": "segmentation",
-   "count": 74
+   "count": 75
   },
   {
    "tag": "anomaly-detection",
-   "count": 70
+   "count": 72
   },
   {
    "tag": "dataset-benchmark",
-   "count": 59
+   "count": 61
+  },
+  {
+   "tag": "object-detection",
+   "count": 58
   },
   {
    "tag": "correspondence",
    "count": 57
   },
   {
-   "tag": "object-detection",
-   "count": 57
+   "tag": "distillation",
+   "count": 56
   },
   {
    "tag": "defect-detection",
-   "count": 54
-  },
-  {
-   "tag": "distillation",
-   "count": 54
+   "count": 55
   },
   {
    "tag": "peft",
-   "count": 49
+   "count": 51
   },
   {
    "tag": "re-identification",
-   "count": 48
+   "count": 50
   },
   {
    "tag": "feature-matching",
@@ -7579,11 +7730,11 @@
   },
   {
    "tag": "calibration",
-   "count": 26
+   "count": 28
   },
   {
    "tag": "video",
-   "count": 22
+   "count": 25
   },
   {
    "tag": "quantization",
@@ -7723,6 +7874,10 @@
   },
   {
    "tag": "ocr",
+   "count": 2
+  },
+  {
+   "tag": "open-set-recognition",
    "count": 2
   },
   {
@@ -8071,10 +8226,6 @@
   },
   {
    "tag": "one-shot-detection",
-   "count": 1
-  },
-  {
-   "tag": "open-set-recognition",
    "count": 1
   },
   {
