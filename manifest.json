@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_01.md",
+   "date": "2026-09-30",
+   "title": "arXiv cs.CV Daily Digest — 2026-09-30 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/09/report_30.md",
    "date": "2026-09-29",
    "title": "arXiv cs.CV Daily Digest — 2026-09-29 (arXiv 공개일)",
@@ -854,6 +860,145 @@
   }
  ],
  "papers": [
+  {
+   "title": "UltraMatch: Transport Path Routing for Ultra-Fast and Memory-Efficient Image Matching",
+   "url": "https://arxiv.org/abs/2609.36980",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "SCCM: Spherically Consistent Coarse Matching for ERP Dense Feature Correspondence",
+   "url": "https://arxiv.org/abs/2609.36545",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "panoramic-erp"
+   ]
+  },
+  {
+   "title": "FM-ReID: Selective Competitive Token Routing for Object Re-Identification",
+   "url": "https://arxiv.org/abs/2609.36560",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "fine-grained",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "ResComEmb: Effective and Efficient Multimodal Embedding via Residual Homogeneity Compression",
+   "url": "https://arxiv.org/abs/2609.37225",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "vlm",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Procedural Core: A Compact Recurrent Initialization for Vision Transformers",
+   "url": "https://arxiv.org/abs/2609.37631",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Losing the name before the box: measuring and repairing what narrow fine-tuning costs a detector outside its deployment vocabulary",
+   "url": "https://arxiv.org/abs/2609.36426",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "continual-learning",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time",
+   "url": "https://arxiv.org/abs/2609.36442",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "continual-learning",
+    "metric-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "FLASH: A \"Generate Once, Synthesize Many\" Framework for Synthetic Anomaly Generation in Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2609.37314",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "industrial-inspection",
+    "anomaly-detection",
+    "defect-detection",
+    "sim2real"
+   ]
+  },
+  {
+   "title": "Visual Anomaly Synthesis for Model Selection in Data Scarcity",
+   "url": "https://arxiv.org/abs/2609.37360",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "industrial-inspection",
+    "anomaly-detection",
+    "defect-detection",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Scaling Full Conformal Image Classifiers",
+   "url": "https://arxiv.org/abs/2609.37298",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "calibration",
+    "vlm",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "RED: Reconstruction Evolution Dynamics for Generalizable AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2609.36822",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "forgery-detection",
+    "generative",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "From Sharp Eyes to Expert Mind: Internalizing Expert Knowledge in MLLMs for Tampered Text Detection",
+   "url": "https://arxiv.org/abs/2609.36145",
+   "date": "2026-09-30",
+   "report": "reports/2026/10/report_01.md",
+   "tags": [
+    "forgery-detection",
+    "print-forensics",
+    "ocr-document",
+    "vlm"
+   ]
+  },
   {
    "title": "$\\lambda$-JEPA Spectral Anti-Collapse Regularization for Self-Supervised Learning",
    "url": "https://arxiv.org/abs/2609.35288",
@@ -7646,62 +7791,66 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 235
+   "count": 238
   },
   {
    "tag": "image-embedding",
-   "count": 184
+   "count": 187
   },
   {
    "tag": "ssl-backbone",
+   "count": 114
+  },
+  {
+   "tag": "efficient-inference",
    "count": 113
   },
   {
    "tag": "image-retrieval",
-   "count": 111
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 110
+   "count": 113
   },
   {
    "tag": "vlm",
-   "count": 108
+   "count": 111
   },
   {
    "tag": "metric-learning",
-   "count": 107
+   "count": 108
   },
   {
    "tag": "fine-grained",
-   "count": 86
+   "count": 87
   },
   {
    "tag": "forgery-detection",
-   "count": 84
+   "count": 86
   },
   {
    "tag": "industrial-inspection",
-   "count": 77
+   "count": 79
   },
   {
    "tag": "segmentation",
-   "count": 75
+   "count": 76
   },
   {
    "tag": "anomaly-detection",
-   "count": 72
+   "count": 74
   },
   {
    "tag": "dataset-benchmark",
    "count": 61
   },
   {
-   "tag": "object-detection",
-   "count": 58
+   "tag": "correspondence",
+   "count": 59
   },
   {
-   "tag": "correspondence",
+   "tag": "object-detection",
+   "count": 59
+  },
+  {
+   "tag": "defect-detection",
    "count": 57
   },
   {
@@ -7709,28 +7858,24 @@
    "count": 56
   },
   {
-   "tag": "defect-detection",
-   "count": 55
-  },
-  {
    "tag": "peft",
    "count": 51
   },
   {
    "tag": "re-identification",
-   "count": 50
+   "count": 51
   },
   {
    "tag": "feature-matching",
-   "count": 44
+   "count": 46
   },
   {
    "tag": "open-vocab-detection",
-   "count": 32
+   "count": 33
   },
   {
    "tag": "calibration",
-   "count": 28
+   "count": 31
   },
   {
    "tag": "video",
@@ -7745,12 +7890,12 @@
    "count": 17
   },
   {
-   "tag": "generative",
-   "count": 15
+   "tag": "continual-learning",
+   "count": 16
   },
   {
-   "tag": "continual-learning",
-   "count": 14
+   "tag": "generative",
+   "count": 16
   },
   {
    "tag": "pose",
@@ -7761,15 +7906,19 @@
    "count": 11
   },
   {
+   "tag": "ocr-document",
+   "count": 9
+  },
+  {
    "tag": "depth",
    "count": 8
   },
   {
-   "tag": "ocr-document",
-   "count": 8
+   "tag": "few-shot",
+   "count": 6
   },
   {
-   "tag": "few-shot",
+   "tag": "sim2real",
    "count": 6
   },
   {
@@ -7778,10 +7927,6 @@
   },
   {
    "tag": "robustness",
-   "count": 5
-  },
-  {
-   "tag": "sim2real",
    "count": 5
   },
   {
@@ -7886,6 +8031,10 @@
   },
   {
    "tag": "open-vocabulary-detection",
+   "count": 2
+  },
+  {
+   "tag": "print-forensics",
    "count": 2
   },
   {
@@ -8249,6 +8398,10 @@
    "count": 1
   },
   {
+   "tag": "panoramic-erp",
+   "count": 1
+  },
+  {
    "tag": "parameter-efficient-fine-tuning",
    "count": 1
   },
@@ -8262,10 +8415,6 @@
   },
   {
    "tag": "predictive-coding",
-   "count": 1
-  },
-  {
-   "tag": "print-forensics",
    "count": 1
   },
   {
