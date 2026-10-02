@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_03.md",
+   "date": "2026-10-02",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-02 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_02.md",
    "date": "2026-10-01",
    "title": "arXiv cs.CV Daily Digest — 2026-10-01 (arXiv 공개일)",
@@ -866,6 +872,139 @@
   }
  ],
  "papers": [
+  {
+   "title": "Emergent Object Binding Has a Finite Spatial Horizon",
+   "url": "https://arxiv.org/abs/2610.00006",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "correspondence",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "SmoothOperator: Enhancing Representations for Fine-grained Open-set Recognition via Modulated Label Smoothing",
+   "url": "https://arxiv.org/abs/2610.00851",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "fine-grained",
+    "metric-learning",
+    "image-embedding",
+    "open-set-recognition"
+   ]
+  },
+  {
+   "title": "Revisiting Cross-Reconstruction for Generalizable Deepfake Detection",
+   "url": "https://arxiv.org/abs/2610.01544",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "forgery-detection",
+    "frequency-domain",
+    "domain-generalization"
+   ]
+  },
+  {
+   "title": "GIFTBench: Diagnosing Generalization in Image Forgery Localization and Informing Model Design",
+   "url": "https://arxiv.org/abs/2610.01778",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "segmentation",
+    "domain-generalization"
+   ]
+  },
+  {
+   "title": "Robust Online Aero-Engine Blade Defect Detection via Dual-Alignment Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2610.00067",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "object-detection",
+    "test-time-adaptation",
+    "peft"
+   ]
+  },
+  {
+   "title": "Dataset Identity, Not Novelty: The Source of an Inflated OOD Detection Gain",
+   "url": "https://arxiv.org/abs/2610.01096",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "calibration",
+    "open-set-recognition",
+    "evaluation-protocol",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Localisation-Aware Uncertainty for Pretrained Object Detection",
+   "url": "https://arxiv.org/abs/2610.01409",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "calibration",
+    "object-detection",
+    "uncertainty-estimation",
+    "robustness"
+   ]
+  },
+  {
+   "title": "Towards Automatic Video Annotation with ASH: Zero-Shot Open-Vocabulary Multi-Object Tracking and Segmentation",
+   "url": "https://arxiv.org/abs/2610.01022",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-detection",
+    "video",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation",
+   "url": "https://arxiv.org/abs/2610.02148",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "distillation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Two Routes to the Middle: Placement Search and Brain Readouts Converge on Where Continual Learners Should Specialize",
+   "url": "https://arxiv.org/abs/2610.01590",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "continual-learning",
+    "peft",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Domain generalization and synthetic data in object detection: the enabler, the probe, and the gap",
+   "url": "https://arxiv.org/abs/2610.00030",
+   "date": "2026-10-02",
+   "report": "reports/2026/10/report_03.md",
+   "tags": [
+    "sim2real",
+    "object-detection",
+    "domain-generalization",
+    "survey"
+   ]
+  },
   {
    "title": "Masked Swingers: Harnessing Data Augmentation to Advance Autoencoders for Self-Supervised Learning",
    "url": "https://arxiv.org/abs/2609.38278",
@@ -7942,47 +8081,47 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 243
+   "count": 245
   },
   {
    "tag": "image-embedding",
-   "count": 190
+   "count": 193
   },
   {
    "tag": "ssl-backbone",
-   "count": 118
+   "count": 119
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 116
   },
   {
    "tag": "efficient-inference",
    "count": 115
   },
   {
-   "tag": "image-retrieval",
-   "count": 115
-  },
-  {
    "tag": "vlm",
-   "count": 113
+   "count": 114
   },
   {
    "tag": "metric-learning",
-   "count": 109
+   "count": 111
   },
   {
    "tag": "fine-grained",
-   "count": 88
+   "count": 89
   },
   {
    "tag": "forgery-detection",
-   "count": 87
+   "count": 89
   },
   {
    "tag": "industrial-inspection",
-   "count": 81
+   "count": 82
   },
   {
    "tag": "segmentation",
-   "count": 78
+   "count": 81
   },
   {
    "tag": "anomaly-detection",
@@ -7990,27 +8129,27 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 62
-  },
-  {
-   "tag": "correspondence",
-   "count": 61
+   "count": 64
   },
   {
    "tag": "object-detection",
-   "count": 61
+   "count": 64
+  },
+  {
+   "tag": "correspondence",
+   "count": 62
   },
   {
    "tag": "defect-detection",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "distillation",
-   "count": 56
+   "count": 57
   },
   {
    "tag": "peft",
-   "count": 52
+   "count": 54
   },
   {
    "tag": "re-identification",
@@ -8022,27 +8161,27 @@
   },
   {
    "tag": "open-vocab-detection",
-   "count": 36
+   "count": 37
   },
   {
    "tag": "calibration",
-   "count": 32
+   "count": 34
   },
   {
    "tag": "video",
-   "count": 27
+   "count": 28
+  },
+  {
+   "tag": "training-free",
+   "count": 19
+  },
+  {
+   "tag": "continual-learning",
+   "count": 18
   },
   {
    "tag": "quantization",
    "count": 18
-  },
-  {
-   "tag": "training-free",
-   "count": 18
-  },
-  {
-   "tag": "continual-learning",
-   "count": 17
   },
   {
    "tag": "generative",
@@ -8066,10 +8205,14 @@
   },
   {
    "tag": "sim2real",
-   "count": 7
+   "count": 8
   },
   {
    "tag": "few-shot",
+   "count": 6
+  },
+  {
+   "tag": "robustness",
    "count": 6
   },
   {
@@ -8077,7 +8220,11 @@
    "count": 5
   },
   {
-   "tag": "robustness",
+   "tag": "domain-generalization",
+   "count": 5
+  },
+  {
+   "tag": "test-time-adaptation",
    "count": 5
   },
   {
@@ -8089,7 +8236,7 @@
    "count": 4
   },
   {
-   "tag": "test-time-adaptation",
+   "tag": "open-set-recognition",
    "count": 4
   },
   {
@@ -8133,11 +8280,11 @@
    "count": 2
   },
   {
-   "tag": "domain-generalization",
+   "tag": "edge-deployment",
    "count": 2
   },
   {
-   "tag": "edge-deployment",
+   "tag": "frequency-domain",
    "count": 2
   },
   {
@@ -8173,10 +8320,6 @@
    "count": 2
   },
   {
-   "tag": "open-set-recognition",
-   "count": 2
-  },
-  {
    "tag": "open-vocab-segmentation",
    "count": 2
   },
@@ -8198,6 +8341,10 @@
   },
   {
    "tag": "threshold-calibration",
+   "count": 2
+  },
+  {
+   "tag": "uncertainty-estimation",
    "count": 2
   },
   {
@@ -8325,6 +8472,10 @@
    "count": 1
   },
   {
+   "tag": "evaluation-protocol",
+   "count": 1
+  },
+  {
    "tag": "event-camera",
    "count": 1
   },
@@ -8366,10 +8517,6 @@
   },
   {
    "tag": "frequency-analysis",
-   "count": 1
-  },
-  {
-   "tag": "frequency-domain",
    "count": 1
   },
   {
@@ -8673,6 +8820,10 @@
    "count": 1
   },
   {
+   "tag": "survey",
+   "count": 1
+  },
+  {
    "tag": "swin-transformer",
    "count": 1
   },
@@ -8730,10 +8881,6 @@
   },
   {
    "tag": "training-free-segmentation",
-   "count": 1
-  },
-  {
-   "tag": "uncertainty-estimation",
    "count": 1
   },
   {
