@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_06.md",
+   "date": "2026-10-05",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-05 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_03.md",
    "date": "2026-10-02",
    "title": "arXiv cs.CV Daily Digest — 2026-10-02 (arXiv 공개일)",
@@ -872,6 +878,143 @@
   }
  ],
  "papers": [
+  {
+   "title": "GRAFT: Growing Agglomerative Foundation Models via Continual Teacher Distillation",
+   "url": "https://arxiv.org/abs/2610.02597",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "distillation",
+    "continual-learning",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "ViTok: Improving Dense Semantics in AM-RADIO-Style Multi-Teacher Distillation with PHI-S and Masked Image Modelling",
+   "url": "https://arxiv.org/abs/2610.02903",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "ssl-backbone",
+    "distillation",
+    "foundation-model",
+    "image-embedding",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+   "url": "https://arxiv.org/abs/2610.03717",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "image-embedding",
+    "3d",
+    "depth"
+   ]
+  },
+  {
+   "title": "Decoding the Functional Roles of Register and High-Norm Patch Tokens in Vision Transformers",
+   "url": "https://arxiv.org/abs/2610.03698",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "Geometry-Aligned Semantic Matching for Cross-Modal Planar Image Registration",
+   "url": "https://arxiv.org/abs/2610.03167",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "ssl-backbone",
+    "cross-modal"
+   ]
+  },
+  {
+   "title": "Revisiting Visual Representation Enhancement of VLMs via Kernel Canonical Correlation Analysis",
+   "url": "https://arxiv.org/abs/2610.02718",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "image-embedding",
+    "fine-grained",
+    "foundation-model",
+    "vlm",
+    "distillation"
+   ]
+  },
+  {
+   "title": "LAS-CLIP: A Lightweight Adapter Steering Approach for CLIP's Visual Encoder",
+   "url": "https://arxiv.org/abs/2610.03370",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "peft",
+    "foundation-model",
+    "image-embedding",
+    "segmentation",
+    "vlm"
+   ]
+  },
+  {
+   "title": "VisionMX: Unlocking Microscaling Post-Training Quantization for Vision Models",
+   "url": "https://arxiv.org/abs/2610.03218",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "object-detection",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "FUSEye: Training-Light Fisheye Detection with Overlapping Views and Zero-Initialized Adapters",
+   "url": "https://arxiv.org/abs/2610.02799",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "object-detection",
+    "peft",
+    "domain-adaptation",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Interpretable Deepfake Detection in Videos via Explicit Forensic Features and Temporal Modeling",
+   "url": "https://arxiv.org/abs/2610.03380",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "forgery-detection",
+    "video",
+    "interpretability",
+    "hand-crafted-features"
+   ]
+  },
+  {
+   "title": "When Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
+   "url": "https://arxiv.org/abs/2610.02946",
+   "date": "2026-10-05",
+   "report": "reports/2026/10/report_06.md",
+   "tags": [
+    "segmentation",
+    "video",
+    "dataset-benchmark",
+    "evaluation-protocol",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Emergent Object Binding Has a Finite Spatial Horizon",
    "url": "https://arxiv.org/abs/2610.00006",
@@ -8081,27 +8224,27 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 245
+   "count": 250
   },
   {
    "tag": "image-embedding",
-   "count": 193
+   "count": 199
   },
   {
    "tag": "ssl-backbone",
-   "count": 119
+   "count": 124
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 117
   },
   {
    "tag": "image-retrieval",
    "count": 116
   },
   {
-   "tag": "efficient-inference",
-   "count": 115
-  },
-  {
    "tag": "vlm",
-   "count": 114
+   "count": 116
   },
   {
    "tag": "metric-learning",
@@ -8109,35 +8252,35 @@
   },
   {
    "tag": "fine-grained",
-   "count": 89
+   "count": 90
   },
   {
    "tag": "forgery-detection",
-   "count": 89
+   "count": 90
+  },
+  {
+   "tag": "segmentation",
+   "count": 85
   },
   {
    "tag": "industrial-inspection",
    "count": 82
   },
   {
-   "tag": "segmentation",
-   "count": 81
-  },
-  {
    "tag": "anomaly-detection",
    "count": 76
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 64
+   "tag": "object-detection",
+   "count": 66
   },
   {
-   "tag": "object-detection",
-   "count": 64
+   "tag": "dataset-benchmark",
+   "count": 65
   },
   {
    "tag": "correspondence",
-   "count": 62
+   "count": 64
   },
   {
    "tag": "defect-detection",
@@ -8145,11 +8288,11 @@
   },
   {
    "tag": "distillation",
-   "count": 57
+   "count": 60
   },
   {
    "tag": "peft",
-   "count": 54
+   "count": 56
   },
   {
    "tag": "re-identification",
@@ -8157,7 +8300,7 @@
   },
   {
    "tag": "feature-matching",
-   "count": 48
+   "count": 49
   },
   {
    "tag": "open-vocab-detection",
@@ -8169,19 +8312,19 @@
   },
   {
    "tag": "video",
-   "count": 28
+   "count": 30
+  },
+  {
+   "tag": "continual-learning",
+   "count": 19
+  },
+  {
+   "tag": "quantization",
+   "count": 19
   },
   {
    "tag": "training-free",
    "count": 19
-  },
-  {
-   "tag": "continual-learning",
-   "count": 18
-  },
-  {
-   "tag": "quantization",
-   "count": 18
   },
   {
    "tag": "generative",
@@ -8196,12 +8339,12 @@
    "count": 11
   },
   {
-   "tag": "ocr-document",
+   "tag": "depth",
    "count": 9
   },
   {
-   "tag": "depth",
-   "count": 8
+   "tag": "ocr-document",
+   "count": 9
   },
   {
    "tag": "sim2real",
@@ -8232,6 +8375,10 @@
    "count": 5
   },
   {
+   "tag": "3d",
+   "count": 4
+  },
+  {
    "tag": "clip",
    "count": 4
   },
@@ -8240,11 +8387,15 @@
    "count": 4
   },
   {
-   "tag": "3d",
+   "tag": "cross-modal",
    "count": 3
   },
   {
    "tag": "dinov3",
+   "count": 3
+  },
+  {
+   "tag": "interpretability",
    "count": 3
   },
   {
@@ -8257,10 +8408,6 @@
   },
   {
    "tag": "contrastive-learning",
-   "count": 2
-  },
-  {
-   "tag": "cross-modal",
    "count": 2
   },
   {
@@ -8280,7 +8427,15 @@
    "count": 2
   },
   {
+   "tag": "domain-adaptation",
+   "count": 2
+  },
+  {
    "tag": "edge-deployment",
+   "count": 2
+  },
+  {
+   "tag": "evaluation-protocol",
    "count": 2
   },
   {
@@ -8448,10 +8603,6 @@
    "count": 1
   },
   {
-   "tag": "domain-adaptation",
-   "count": 1
-  },
-  {
    "tag": "domain-shift",
    "count": 1
   },
@@ -8469,10 +8620,6 @@
   },
   {
    "tag": "energy-efficiency",
-   "count": 1
-  },
-  {
-   "tag": "evaluation-protocol",
    "count": 1
   },
   {
@@ -8536,6 +8683,10 @@
    "count": 1
   },
   {
+   "tag": "hand-crafted-features",
+   "count": 1
+  },
+  {
    "tag": "hypergraph",
    "count": 1
   },
@@ -8573,10 +8724,6 @@
   },
   {
    "tag": "infrastructure-inspection",
-   "count": 1
-  },
-  {
-   "tag": "interpretability",
    "count": 1
   },
   {
