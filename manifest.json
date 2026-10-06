@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_07.md",
+   "date": "2026-10-06",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-06 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_06.md",
    "date": "2026-10-05",
    "title": "arXiv cs.CV Daily Digest — 2026-10-05 (arXiv 공개일)",
@@ -878,6 +884,135 @@
   }
  ],
  "papers": [
+  {
+   "title": "From Pixels, Without Pre-training: Joint Generative and Self-Supervised Representation Learning in One Model",
+   "url": "https://arxiv.org/abs/2610.05711",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "generative"
+   ]
+  },
+  {
+   "title": "FLASHSWIN: Unlocking Large Windows and Dense Tokens in Swin Vision Transformers with Memory Efficient Attention",
+   "url": "https://arxiv.org/abs/2610.04664",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "vision-backbone",
+    "efficient-inference",
+    "segmentation",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "A Strong Baseline for Evaluating Vision Encoders in Multimodal Large Language Models",
+   "url": "https://arxiv.org/abs/2610.05413",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "foundation-model",
+    "vlm"
+   ]
+  },
+  {
+   "title": "From Transformation to Target State: Rethinking Query Representation for Zero-Shot Composed Image Retrieval",
+   "url": "https://arxiv.org/abs/2610.05993",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "image-retrieval",
+    "training-free",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "TRIM-ReID: Duplication-Aware Token Reduction and Modality-Aligned Interaction for Multi-Modal Object Re-Identification",
+   "url": "https://arxiv.org/abs/2610.04361",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "re-identification",
+    "fine-grained",
+    "image-embedding",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "JLD: Perceptual Distance Through A Jacobian Lens",
+   "url": "https://arxiv.org/abs/2610.05967",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "image-embedding",
+    "metric-learning",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Watermarks and Fingerprints as Soft Bindings for Content Provenance: An Open-Licence Benchmark for Images, Audio and Video",
+   "url": "https://arxiv.org/abs/2610.04151",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "forgery-detection",
+    "image-retrieval",
+    "calibration",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Certification of Real Images through Calibrated Content Authentication",
+   "url": "https://arxiv.org/abs/2610.05870",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "generative"
+   ]
+  },
+  {
+   "title": "Detecting Defects that Matter: An Application-Driven Benchmark for Anomaly Detection in Manufacturing and Retail Logistics (VAND 4.0 Challenge)",
+   "url": "https://arxiv.org/abs/2610.04392",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "anomaly-detection",
+    "defect-detection",
+    "industrial-inspection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Selective Backpropagation for Efficient Few-Shot Class-Incremental Learning",
+   "url": "https://arxiv.org/abs/2610.04003",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "continual-learning",
+    "peft",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "A General Pipeline for Dense Illuminant Estimation via Physically Based Synthetic Data",
+   "url": "https://arxiv.org/abs/2610.06508",
+   "date": "2026-10-06",
+   "report": "reports/2026/10/report_07.md",
+   "tags": [
+    "sim2real",
+    "synthetic-data",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "GRAFT: Growing Agglomerative Foundation Models via Continual Teacher Distillation",
    "url": "https://arxiv.org/abs/2610.02597",
@@ -8224,59 +8359,59 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 250
+   "count": 253
   },
   {
    "tag": "image-embedding",
-   "count": 199
+   "count": 204
   },
   {
    "tag": "ssl-backbone",
-   "count": 124
+   "count": 125
   },
   {
    "tag": "efficient-inference",
-   "count": 117
+   "count": 120
   },
   {
    "tag": "image-retrieval",
-   "count": 116
+   "count": 119
   },
   {
    "tag": "vlm",
-   "count": 116
+   "count": 118
   },
   {
    "tag": "metric-learning",
-   "count": 111
-  },
-  {
-   "tag": "fine-grained",
-   "count": 90
+   "count": 112
   },
   {
    "tag": "forgery-detection",
-   "count": 90
+   "count": 92
+  },
+  {
+   "tag": "fine-grained",
+   "count": 91
   },
   {
    "tag": "segmentation",
-   "count": 85
+   "count": 86
   },
   {
    "tag": "industrial-inspection",
-   "count": 82
+   "count": 83
   },
   {
    "tag": "anomaly-detection",
-   "count": 76
-  },
-  {
-   "tag": "object-detection",
-   "count": 66
+   "count": 77
   },
   {
    "tag": "dataset-benchmark",
-   "count": 65
+   "count": 68
+  },
+  {
+   "tag": "object-detection",
+   "count": 67
   },
   {
    "tag": "correspondence",
@@ -8284,7 +8419,7 @@
   },
   {
    "tag": "defect-detection",
-   "count": 61
+   "count": 62
   },
   {
    "tag": "distillation",
@@ -8292,11 +8427,11 @@
   },
   {
    "tag": "peft",
-   "count": 56
+   "count": 57
   },
   {
    "tag": "re-identification",
-   "count": 52
+   "count": 53
   },
   {
    "tag": "feature-matching",
@@ -8308,27 +8443,27 @@
   },
   {
    "tag": "calibration",
-   "count": 34
+   "count": 36
   },
   {
    "tag": "video",
    "count": 30
   },
   {
+   "tag": "training-free",
+   "count": 21
+  },
+  {
    "tag": "continual-learning",
-   "count": 19
+   "count": 20
   },
   {
    "tag": "quantization",
    "count": 19
   },
   {
-   "tag": "training-free",
-   "count": 19
-  },
-  {
    "tag": "generative",
-   "count": 16
+   "count": 18
   },
   {
    "tag": "pose",
@@ -8348,7 +8483,7 @@
   },
   {
    "tag": "sim2real",
-   "count": 8
+   "count": 9
   },
   {
    "tag": "few-shot",
@@ -8495,11 +8630,19 @@
    "count": 2
   },
   {
+   "tag": "synthetic-data",
+   "count": 2
+  },
+  {
    "tag": "threshold-calibration",
    "count": 2
   },
   {
    "tag": "uncertainty-estimation",
+   "count": 2
+  },
+  {
+   "tag": "vision-backbone",
    "count": 2
   },
   {
@@ -8983,10 +9126,6 @@
    "count": 1
   },
   {
-   "tag": "synthetic-data",
-   "count": 1
-  },
-  {
    "tag": "synthetic-image-attribution",
    "count": 1
   },
@@ -9044,10 +9183,6 @@
   },
   {
    "tag": "video-understanding",
-   "count": 1
-  },
-  {
-   "tag": "vision-backbone",
    "count": 1
   },
   {
