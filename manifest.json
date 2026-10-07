@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_08.md",
+   "date": "2026-10-07",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-07 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_07.md",
    "date": "2026-10-06",
    "title": "arXiv cs.CV Daily Digest — 2026-10-06 (arXiv 공개일)",
@@ -884,6 +890,139 @@
   }
  ],
  "papers": [
+  {
+   "title": "Unlocking Fine-Grained Perception in CLIP via Structurally-Aware Latent Masked Modeling",
+   "url": "https://arxiv.org/abs/2610.07689",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "fine-grained",
+    "distillation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "REViT-v2: Hierarchical Windowed Roto-reflection Equivariant ViT for Equivariant Feature Extraction",
+   "url": "https://arxiv.org/abs/2610.07585",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "vision-backbone",
+    "equivariance",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Anchor Divergence for Semantic Geometry in Contrastive Learning",
+   "url": "https://arxiv.org/abs/2610.06919",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "image-retrieval",
+    "contrastive-learning"
+   ]
+  },
+  {
+   "title": "WildMatch: Weakly Supervised Image Matcher Adaptation for Wildlife Re-Identification",
+   "url": "https://arxiv.org/abs/2610.07384",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "re-identification",
+    "image-retrieval",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Identity-Conditioned Score Fusion for Open-Set Person Re-Identification",
+   "url": "https://arxiv.org/abs/2610.07366",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "re-identification",
+    "calibration",
+    "metric-learning",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Localize Any Object in X-Ray Security Scans without Human Annotation",
+   "url": "https://arxiv.org/abs/2610.07326",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "segmentation",
+    "object-detection",
+    "sim2real",
+    "industrial-inspection",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Anchor and Adapt: Asymmetric Prompt Adaptation for Few-Shot Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.07016",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "peft",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Forensic Reserve: Eliciting Latent Knowledge for Image Forgery Detection",
+   "url": "https://arxiv.org/abs/2610.08639",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "forgery-detection",
+    "peft",
+    "foundation-model",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "Can We Model the Artifacts Explicitly? Disentangle Artifacts via Pairwise Edit Relations for Image Manipulation Localization",
+   "url": "https://arxiv.org/abs/2610.07916",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "forgery-detection",
+    "segmentation",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Learning to Curate What You Generate for Generalizable Few-Shot Class-Incremental Learning",
+   "url": "https://arxiv.org/abs/2610.07008",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "continual-learning",
+    "generative",
+    "calibration"
+   ]
+  },
+  {
+   "title": "Catastrophic Forgetting in Sequential Thermal Anti-UAV Detection: The Role of Scale-Conditioned Gradient Imbalance",
+   "url": "https://arxiv.org/abs/2610.08315",
+   "date": "2026-10-07",
+   "report": "reports/2026/10/report_08.md",
+   "tags": [
+    "continual-learning",
+    "object-detection",
+    "distillation"
+   ]
+  },
   {
    "title": "From Pixels, Without Pre-training: Joint Generative and Self-Supervised Representation Learning in One Model",
    "url": "https://arxiv.org/abs/2610.05711",
@@ -8359,111 +8498,111 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 253
+   "count": 257
   },
   {
    "tag": "image-embedding",
-   "count": 204
+   "count": 207
   },
   {
    "tag": "ssl-backbone",
-   "count": 125
+   "count": 127
+  },
+  {
+   "tag": "image-retrieval",
+   "count": 121
   },
   {
    "tag": "efficient-inference",
    "count": 120
   },
   {
-   "tag": "image-retrieval",
+   "tag": "vlm",
    "count": 119
   },
   {
-   "tag": "vlm",
-   "count": 118
-  },
-  {
    "tag": "metric-learning",
-   "count": 112
+   "count": 114
   },
   {
    "tag": "forgery-detection",
-   "count": 92
+   "count": 94
   },
   {
    "tag": "fine-grained",
-   "count": 91
+   "count": 93
   },
   {
    "tag": "segmentation",
-   "count": 86
+   "count": 88
   },
   {
    "tag": "industrial-inspection",
-   "count": 83
+   "count": 85
   },
   {
    "tag": "anomaly-detection",
-   "count": 77
+   "count": 78
   },
   {
    "tag": "dataset-benchmark",
-   "count": 68
+   "count": 69
   },
   {
    "tag": "object-detection",
-   "count": 67
+   "count": 69
   },
   {
    "tag": "correspondence",
-   "count": 64
+   "count": 65
   },
   {
    "tag": "defect-detection",
-   "count": 62
+   "count": 63
   },
   {
    "tag": "distillation",
-   "count": 60
+   "count": 62
   },
   {
    "tag": "peft",
-   "count": 57
+   "count": 59
   },
   {
    "tag": "re-identification",
-   "count": 53
+   "count": 55
   },
   {
    "tag": "feature-matching",
-   "count": 49
+   "count": 50
+  },
+  {
+   "tag": "calibration",
+   "count": 38
   },
   {
    "tag": "open-vocab-detection",
    "count": 37
   },
   {
-   "tag": "calibration",
-   "count": 36
-  },
-  {
    "tag": "video",
    "count": 30
   },
   {
-   "tag": "training-free",
-   "count": 21
+   "tag": "continual-learning",
+   "count": 22
   },
   {
-   "tag": "continual-learning",
-   "count": 20
+   "tag": "training-free",
+   "count": 22
+  },
+  {
+   "tag": "generative",
+   "count": 19
   },
   {
    "tag": "quantization",
    "count": 19
-  },
-  {
-   "tag": "generative",
-   "count": 18
   },
   {
    "tag": "pose",
@@ -8474,15 +8613,15 @@
    "count": 11
   },
   {
+   "tag": "sim2real",
+   "count": 10
+  },
+  {
    "tag": "depth",
    "count": 9
   },
   {
    "tag": "ocr-document",
-   "count": 9
-  },
-  {
-   "tag": "sim2real",
    "count": 9
   },
   {
@@ -8522,6 +8661,10 @@
    "count": 4
   },
   {
+   "tag": "contrastive-learning",
+   "count": 3
+  },
+  {
    "tag": "cross-modal",
    "count": 3
   },
@@ -8542,8 +8685,8 @@
    "count": 3
   },
   {
-   "tag": "contrastive-learning",
-   "count": 2
+   "tag": "vision-backbone",
+   "count": 3
   },
   {
    "tag": "data-augmentation",
@@ -8639,10 +8782,6 @@
   },
   {
    "tag": "uncertainty-estimation",
-   "count": 2
-  },
-  {
-   "tag": "vision-backbone",
    "count": 2
   },
   {
@@ -8763,6 +8902,10 @@
   },
   {
    "tag": "energy-efficiency",
+   "count": 1
+  },
+  {
+   "tag": "equivariance",
    "count": 1
   },
   {
