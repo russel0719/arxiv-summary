@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_09.md",
+   "date": "2026-10-08",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-08 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_08.md",
    "date": "2026-10-07",
    "title": "arXiv cs.CV Daily Digest — 2026-10-07 (arXiv 공개일)",
@@ -890,6 +896,158 @@
   }
  ],
  "papers": [
+  {
+   "title": "Scalable Patch-Level Self-Supervised Learning",
+   "url": "https://arxiv.org/abs/2610.10013",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Global Average Precision for Representation Learning",
+   "url": "https://arxiv.org/abs/2610.09863",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding",
+    "calibration",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "DisParQ: Self-Supervised Part Concepts for Interpretable Vision Foundation Models",
+   "url": "https://arxiv.org/abs/2610.09802",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "ssl-backbone",
+    "fine-grained",
+    "image-retrieval",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "What Makes Synthetic Hard Negatives Work in Vision-Language Pretraining?",
+   "url": "https://arxiv.org/abs/2610.09700",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding",
+    "vlm",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "Shared Geometry As A Rosetta Stone: Cross-Modal Alignment Without Paired Data",
+   "url": "https://arxiv.org/abs/2610.09411",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "image-embedding",
+    "metric-learning",
+    "correspondence",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "BagDINO: Multi-View Baggage Re-Identification with DINOv3",
+   "url": "https://arxiv.org/abs/2610.10160",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "peft",
+    "foundation-model",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "An Invariant Tangent-Angle Descriptor and a Band U-Net for 2D Fragment Adjacency Prediction",
+   "url": "https://arxiv.org/abs/2610.09459",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "image-retrieval",
+    "sim2real",
+    "training-free"
+   ]
+  },
+  {
+   "title": "One-Shot Adaptive Segmentation For Scientific Images",
+   "url": "https://arxiv.org/abs/2610.10306",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "segmentation",
+    "training-free",
+    "ssl-backbone",
+    "foundation-model",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "RT-DETR-World: Transferring Rich LLM Semantics to Real-Time Open-Vocabulary Detection",
+   "url": "https://arxiv.org/abs/2610.09502",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "distillation",
+    "efficient-inference",
+    "vlm"
+   ]
+  },
+  {
+   "title": "MOTIF: Person-of-Interest Deepfake Detection Beyond 3DMM Coefficients",
+   "url": "https://arxiv.org/abs/2610.09830",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "forgery-detection",
+    "re-identification",
+    "video",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "MSU Team at the Explainable Deepfake Detection Challenge 2026: Grounded Artifact Evidence for Deepfake Detection",
+   "url": "https://arxiv.org/abs/2610.09952",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "open-vocab-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Inverting Multi-Vector Visual Document Indices",
+   "url": "https://arxiv.org/abs/2610.09920",
+   "date": "2026-10-08",
+   "report": "reports/2026/10/report_09.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "ocr-document",
+    "vlm",
+    "forgery-detection"
+   ]
+  },
   {
    "title": "Unlocking Fine-Grained Perception in CLIP via Structurally-Aware Latent Masked Modeling",
    "url": "https://arxiv.org/abs/2610.07689",
@@ -8498,43 +8656,43 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 257
+   "count": 261
   },
   {
    "tag": "image-embedding",
-   "count": 207
+   "count": 213
   },
   {
    "tag": "ssl-backbone",
-   "count": 127
+   "count": 134
   },
   {
    "tag": "image-retrieval",
-   "count": 121
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 120
+   "count": 128
   },
   {
    "tag": "vlm",
-   "count": 119
+   "count": 123
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 121
   },
   {
    "tag": "metric-learning",
-   "count": 114
+   "count": 118
   },
   {
    "tag": "forgery-detection",
-   "count": 94
+   "count": 97
   },
   {
    "tag": "fine-grained",
-   "count": 93
+   "count": 94
   },
   {
    "tag": "segmentation",
-   "count": 88
+   "count": 90
   },
   {
    "tag": "industrial-inspection",
@@ -8545,16 +8703,16 @@
    "count": 78
   },
   {
+   "tag": "object-detection",
+   "count": 70
+  },
+  {
    "tag": "dataset-benchmark",
    "count": 69
   },
   {
-   "tag": "object-detection",
-   "count": 69
-  },
-  {
    "tag": "correspondence",
-   "count": 65
+   "count": 68
   },
   {
    "tag": "defect-detection",
@@ -8562,38 +8720,38 @@
   },
   {
    "tag": "distillation",
-   "count": 62
+   "count": 63
   },
   {
    "tag": "peft",
-   "count": 59
+   "count": 60
   },
   {
    "tag": "re-identification",
-   "count": 55
+   "count": 57
   },
   {
    "tag": "feature-matching",
-   "count": 50
+   "count": 51
   },
   {
    "tag": "calibration",
-   "count": 38
+   "count": 39
   },
   {
    "tag": "open-vocab-detection",
-   "count": 37
+   "count": 39
   },
   {
    "tag": "video",
-   "count": 30
-  },
-  {
-   "tag": "continual-learning",
-   "count": 22
+   "count": 31
   },
   {
    "tag": "training-free",
+   "count": 24
+  },
+  {
+   "tag": "continual-learning",
    "count": 22
   },
   {
@@ -8614,14 +8772,14 @@
   },
   {
    "tag": "sim2real",
+   "count": 11
+  },
+  {
+   "tag": "ocr-document",
    "count": 10
   },
   {
    "tag": "depth",
-   "count": 9
-  },
-  {
-   "tag": "ocr-document",
    "count": 9
   },
   {
