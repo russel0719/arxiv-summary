@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_10.md",
+   "date": "2026-10-09",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-09 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_09.md",
    "date": "2026-10-08",
    "title": "arXiv cs.CV Daily Digest — 2026-10-08 (arXiv 공개일)",
@@ -896,6 +902,145 @@
   }
  ],
  "papers": [
+  {
+   "title": "Region-Aware CLS Token Augmentation for Fine-Grained Image Retrieval",
+   "url": "https://arxiv.org/abs/2610.10991",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "image-retrieval",
+    "fine-grained",
+    "ssl-backbone",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Beyond Resolution: Object-to-Image Ratio Mismatch in Instance Retrieval",
+   "url": "https://arxiv.org/abs/2610.11489",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "peft"
+   ]
+  },
+  {
+   "title": "Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching",
+   "url": "https://arxiv.org/abs/2610.12421",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Rethinking Contrastive Loss in CLIP Post-training: A Complementary Framework with Frozen Text Encoder",
+   "url": "https://arxiv.org/abs/2610.11374",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "distillation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+   "url": "https://arxiv.org/abs/2610.12448",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "ssl-backbone",
+    "distillation",
+    "efficient-inference",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CARE: Constrained Attention Refinement for Fine-Grained Visual Classification via Teacher-Student Distillation",
+   "url": "https://arxiv.org/abs/2610.11153",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "fine-grained",
+    "distillation",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "S$^3$Geo: Structure-Semantic Synergistic Learning for Cross-View Geo-Localization",
+   "url": "https://arxiv.org/abs/2610.11608",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "feature-matching",
+    "image-retrieval",
+    "metric-learning",
+    "distillation"
+   ]
+  },
+  {
+   "title": "EvoKnow: Continual Knowledge Evolution for AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2610.11381",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "forgery-detection",
+    "continual-learning",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Relative Patch Response Learning for Generalizable AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2610.11876",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "forgery-detection",
+    "anomaly-detection",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Stop My Dancing! Understanding, Detecting and Attributing Motion-Aware Deepfake Videos",
+   "url": "https://arxiv.org/abs/2610.11496",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "forgery-detection",
+    "video",
+    "dataset-benchmark",
+    "print-forensics"
+   ]
+  },
+  {
+   "title": "Is In-Domain Training Enough for Fine-Grained Industrial Anomaly Understanding?",
+   "url": "https://arxiv.org/abs/2610.12310",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "industrial-inspection",
+    "anomaly-detection",
+    "defect-detection",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Do Not Train Away Uncertainty: Early Uncertainty Anchored Calibration",
+   "url": "https://arxiv.org/abs/2610.12048",
+   "date": "2026-10-09",
+   "report": "reports/2026/10/report_10.md",
+   "tags": [
+    "calibration",
+    "training-free",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Scalable Patch-Level Self-Supervised Learning",
    "url": "https://arxiv.org/abs/2610.10013",
@@ -8656,39 +8801,39 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 261
+   "count": 265
   },
   {
    "tag": "image-embedding",
-   "count": 213
+   "count": 217
   },
   {
    "tag": "ssl-backbone",
-   "count": 134
+   "count": 138
   },
   {
    "tag": "image-retrieval",
-   "count": 128
+   "count": 131
   },
   {
    "tag": "vlm",
-   "count": 123
+   "count": 124
   },
   {
    "tag": "efficient-inference",
-   "count": 121
+   "count": 122
   },
   {
    "tag": "metric-learning",
-   "count": 118
+   "count": 120
   },
   {
    "tag": "forgery-detection",
-   "count": 97
+   "count": 100
   },
   {
    "tag": "fine-grained",
-   "count": 94
+   "count": 96
   },
   {
    "tag": "segmentation",
@@ -8696,35 +8841,35 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 85
+   "count": 86
   },
   {
    "tag": "anomaly-detection",
-   "count": 78
+   "count": 81
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 70
   },
   {
    "tag": "object-detection",
    "count": 70
   },
   {
-   "tag": "dataset-benchmark",
+   "tag": "correspondence",
    "count": 69
   },
   {
-   "tag": "correspondence",
-   "count": 68
+   "tag": "distillation",
+   "count": 67
   },
   {
    "tag": "defect-detection",
-   "count": 63
-  },
-  {
-   "tag": "distillation",
-   "count": 63
+   "count": 64
   },
   {
    "tag": "peft",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "re-identification",
@@ -8732,11 +8877,11 @@
   },
   {
    "tag": "feature-matching",
-   "count": 51
+   "count": 53
   },
   {
    "tag": "calibration",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "open-vocab-detection",
@@ -8744,15 +8889,15 @@
   },
   {
    "tag": "video",
-   "count": 31
+   "count": 32
   },
   {
    "tag": "training-free",
-   "count": 24
+   "count": 25
   },
   {
    "tag": "continual-learning",
-   "count": 22
+   "count": 23
   },
   {
    "tag": "generative",
@@ -8839,6 +8984,10 @@
    "count": 3
   },
   {
+   "tag": "print-forensics",
+   "count": 3
+  },
+  {
    "tag": "self-supervised",
    "count": 3
   },
@@ -8916,10 +9065,6 @@
   },
   {
    "tag": "open-vocabulary-detection",
-   "count": 2
-  },
-  {
-   "tag": "print-forensics",
    "count": 2
   },
   {
