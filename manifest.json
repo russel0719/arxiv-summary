@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_13.md",
+   "date": "2026-10-12",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-12 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_10.md",
    "date": "2026-10-09",
    "title": "arXiv cs.CV Daily Digest — 2026-10-09 (arXiv 공개일)",
@@ -902,6 +908,118 @@
   }
  ],
  "papers": [
+  {
+   "title": "Vision Transformers Learn Word Meaning from Images Alone",
+   "url": "https://arxiv.org/abs/2610.13252",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Decoding Register Tokens Preserves Global Scene Details",
+   "url": "https://arxiv.org/abs/2610.13299",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Fix the Match, Not the Solver: STITCH -- a Self-Supervised Compatibility Measure for Eroded Visual Puzzles",
+   "url": "https://arxiv.org/abs/2610.13176",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "ssl-backbone",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Structure-Aware Matching for Robust UAV Thermal-to-Satellite Geo-Localization",
+   "url": "https://arxiv.org/abs/2610.12835",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Learning Holistic Scene Layout against View Shifts in Cross-View Geo-Localization",
+   "url": "https://arxiv.org/abs/2610.13553",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "image-retrieval",
+    "correspondence",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Beyond a Single Crop: Contextualized Embeddings for Player Re-Identification",
+   "url": "https://arxiv.org/abs/2610.13259",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "re-identification",
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "CUBE: Class-conditioned Unknown Boundary Evidence for Open-Set Insect Species Recognition",
+   "url": "https://arxiv.org/abs/2610.13610",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "fine-grained",
+    "open-set-recognition",
+    "calibration"
+   ]
+  },
+  {
+   "title": "WoodBR-Cross: A public wood-image dataset and individual-tree-disjoint benchmark for species identification",
+   "url": "https://arxiv.org/abs/2610.12676",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "fine-grained",
+    "dataset-benchmark",
+    "ssl-backbone"
+   ]
+  },
+  {
+   "title": "From Glance to Focus: Mitigating Recognition Laziness in MLLMs for Fine-Grained Recognition",
+   "url": "https://arxiv.org/abs/2610.13154",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "fine-grained",
+    "vlm",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment",
+   "url": "https://arxiv.org/abs/2610.13766",
+   "date": "2026-10-12",
+   "report": "reports/2026/10/report_13.md",
+   "tags": [
+    "foundation-model",
+    "image-embedding",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "Region-Aware CLS Token Augmentation for Fine-Grained Image Retrieval",
    "url": "https://arxiv.org/abs/2610.10991",
@@ -8801,23 +8919,23 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 265
+   "count": 268
   },
   {
    "tag": "image-embedding",
-   "count": 217
+   "count": 222
   },
   {
    "tag": "ssl-backbone",
-   "count": 138
+   "count": 142
   },
   {
    "tag": "image-retrieval",
-   "count": 131
+   "count": 133
   },
   {
    "tag": "vlm",
-   "count": 124
+   "count": 125
   },
   {
    "tag": "efficient-inference",
@@ -8825,7 +8943,7 @@
   },
   {
    "tag": "metric-learning",
-   "count": 120
+   "count": 122
   },
   {
    "tag": "forgery-detection",
@@ -8833,7 +8951,7 @@
   },
   {
    "tag": "fine-grained",
-   "count": 96
+   "count": 99
   },
   {
    "tag": "segmentation",
@@ -8849,15 +8967,15 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 70
+   "count": 73
+  },
+  {
+   "tag": "correspondence",
+   "count": 72
   },
   {
    "tag": "object-detection",
    "count": 70
-  },
-  {
-   "tag": "correspondence",
-   "count": 69
   },
   {
    "tag": "distillation",
@@ -8873,15 +8991,15 @@
   },
   {
    "tag": "re-identification",
-   "count": 57
+   "count": 58
   },
   {
    "tag": "feature-matching",
-   "count": 53
+   "count": 55
   },
   {
    "tag": "calibration",
-   "count": 40
+   "count": 41
   },
   {
    "tag": "open-vocab-detection",
@@ -8893,7 +9011,7 @@
   },
   {
    "tag": "training-free",
-   "count": 25
+   "count": 26
   },
   {
    "tag": "continual-learning",
@@ -8944,6 +9062,10 @@
    "count": 5
   },
   {
+   "tag": "open-set-recognition",
+   "count": 5
+  },
+  {
    "tag": "test-time-adaptation",
    "count": 5
   },
@@ -8957,10 +9079,6 @@
   },
   {
    "tag": "clip",
-   "count": 4
-  },
-  {
-   "tag": "open-set-recognition",
    "count": 4
   },
   {
