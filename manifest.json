@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_15.md",
+   "date": "2026-10-14",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-14 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_13.md",
    "date": "2026-10-12",
    "title": "arXiv cs.CV Daily Digest — 2026-10-12 (arXiv 공개일)",
@@ -908,6 +914,146 @@
   }
  ],
  "papers": [
+  {
+   "title": "Growing to See: Efficient Pretraining of Self-Supervised Vision Transformers",
+   "url": "https://arxiv.org/abs/2610.16817",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Self-Supervised Learning of Semantically Consistent Visual Features via a Simple 3D Prior",
+   "url": "https://arxiv.org/abs/2610.16988",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "image-embedding",
+    "3d"
+   ]
+  },
+  {
+   "title": "Towards Complementary Keypoint Detection via Mixture of Detectors",
+   "url": "https://arxiv.org/abs/2610.16762",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "distillation"
+   ]
+  },
+  {
+   "title": "TartanMatch: Towards Universal Dense Correspondence Across Modalities",
+   "url": "https://arxiv.org/abs/2610.14513",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "What Really Works for Universal Multimodal Embeddings? A Controlled Study of Contrastive Training Strategies",
+   "url": "https://arxiv.org/abs/2610.15035",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "metric-learning",
+    "image-embedding",
+    "image-retrieval",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Web Scale on a Budget: Tail-Aware Retrieval Evaluation",
+   "url": "https://arxiv.org/abs/2610.17986",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "image-retrieval",
+    "dataset-benchmark",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "DIME: Scaling Facial Representation Learning via Differential Masked Autoencoding",
+   "url": "https://arxiv.org/abs/2610.17015",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "ssl-backbone",
+    "fine-grained",
+    "image-embedding",
+    "face-analysis"
+   ]
+  },
+  {
+   "title": "3D-VITAL: Visibility-aware Identity Training from Artificial Liftings of 3D Reconstruction model for Cross-View Object Re-Identification",
+   "url": "https://arxiv.org/abs/2610.16692",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "sim2real",
+    "3d"
+   ]
+  },
+  {
+   "title": "TAG: Calibrating SAM3 for Universal Image Segmentation without Dense Supervision",
+   "url": "https://arxiv.org/abs/2610.14651",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-detection",
+    "foundation-model",
+    "calibration",
+    "peft"
+   ]
+  },
+  {
+   "title": "Robust Logical Anomaly Detection under Capture Shifts via Synthetic Anomalies",
+   "url": "https://arxiv.org/abs/2610.18295",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "sim2real"
+   ]
+  },
+  {
+   "title": "COMPASS: Contextual Moment Prior Alignment for Generalizable AIGI Detection",
+   "url": "https://arxiv.org/abs/2610.18034",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "peft"
+   ]
+  },
+  {
+   "title": "Carve VFM: Carving Specialists out of Generalists, Automatic Task-Specific Compression of Vision Foundation Models",
+   "url": "https://arxiv.org/abs/2610.16813",
+   "date": "2026-10-14",
+   "report": "reports/2026/10/report_15.md",
+   "tags": [
+    "foundation-model",
+    "efficient-inference",
+    "pruning",
+    "ssl-backbone"
+   ]
+  },
   {
    "title": "Vision Transformers Learn Word Meaning from Images Alone",
    "url": "https://arxiv.org/abs/2610.13252",
@@ -8919,59 +9065,59 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 268
+   "count": 273
   },
   {
    "tag": "image-embedding",
-   "count": 222
+   "count": 227
   },
   {
    "tag": "ssl-backbone",
-   "count": 142
+   "count": 146
   },
   {
    "tag": "image-retrieval",
-   "count": 133
+   "count": 136
   },
   {
    "tag": "vlm",
-   "count": 125
+   "count": 126
   },
   {
    "tag": "efficient-inference",
-   "count": 122
+   "count": 123
   },
   {
    "tag": "metric-learning",
-   "count": 122
+   "count": 123
   },
   {
    "tag": "forgery-detection",
-   "count": 100
+   "count": 101
   },
   {
    "tag": "fine-grained",
-   "count": 99
+   "count": 100
   },
   {
    "tag": "segmentation",
-   "count": 90
+   "count": 91
   },
   {
    "tag": "industrial-inspection",
-   "count": 86
+   "count": 87
   },
   {
    "tag": "anomaly-detection",
-   "count": 81
-  },
-  {
-   "tag": "dataset-benchmark",
-   "count": 73
+   "count": 82
   },
   {
    "tag": "correspondence",
-   "count": 72
+   "count": 75
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 74
   },
   {
    "tag": "object-detection",
@@ -8979,31 +9125,31 @@
   },
   {
    "tag": "distillation",
-   "count": 67
+   "count": 68
   },
   {
    "tag": "defect-detection",
-   "count": 64
+   "count": 65
   },
   {
    "tag": "peft",
-   "count": 61
+   "count": 63
   },
   {
    "tag": "re-identification",
-   "count": 58
+   "count": 59
   },
   {
    "tag": "feature-matching",
-   "count": 55
+   "count": 57
   },
   {
    "tag": "calibration",
-   "count": 41
+   "count": 42
   },
   {
    "tag": "open-vocab-detection",
-   "count": 39
+   "count": 40
   },
   {
    "tag": "video",
@@ -9030,11 +9176,11 @@
    "count": 13
   },
   {
-   "tag": "representation-learning",
-   "count": 11
+   "tag": "sim2real",
+   "count": 13
   },
   {
-   "tag": "sim2real",
+   "tag": "representation-learning",
    "count": 11
   },
   {
@@ -9044,6 +9190,10 @@
   {
    "tag": "depth",
    "count": 9
+  },
+  {
+   "tag": "3d",
+   "count": 6
   },
   {
    "tag": "few-shot",
@@ -9072,10 +9222,6 @@
   {
    "tag": "zero-shot",
    "count": 5
-  },
-  {
-   "tag": "3d",
-   "count": 4
   },
   {
    "tag": "clip",
@@ -9338,6 +9484,10 @@
    "count": 1
   },
   {
+   "tag": "face-analysis",
+   "count": 1
+  },
+  {
    "tag": "face-anti-spoofing",
    "count": 1
   },
@@ -9587,6 +9737,10 @@
   },
   {
    "tag": "prototype-learning",
+   "count": 1
+  },
+  {
+   "tag": "pruning",
    "count": 1
   },
   {
