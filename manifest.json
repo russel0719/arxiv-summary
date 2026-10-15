@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_16.md",
+   "date": "2026-10-15",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-15 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_15.md",
    "date": "2026-10-14",
    "title": "arXiv cs.CV Daily Digest — 2026-10-14 (arXiv 공개일)",
@@ -914,6 +920,112 @@
   }
  ],
  "papers": [
+  {
+   "title": "Dataset-Level Regularization for Joint-Embedding Self-Supervised Learning",
+   "url": "https://arxiv.org/abs/2610.20158",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "image-retrieval",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "Generative Representation Learning for Scalable Latent Tokenization",
+   "url": "https://arxiv.org/abs/2610.20533",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "generative"
+   ]
+  },
+  {
+   "title": "Train to Stitch: Topology-Preserving Regularization for Interoperable Representations",
+   "url": "https://arxiv.org/abs/2610.19401",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "image-embedding",
+    "model-stitching",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Discriminative Score Function: Turning Pretrained Models into Functional Generative Priors",
+   "url": "https://arxiv.org/abs/2610.19743",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "training-free",
+    "quantization",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Cross-Scenario Industrial Defect Detection via Domain-Robust Training and Metric-Aligned Selection",
+   "url": "https://arxiv.org/abs/2610.19540",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "calibration",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "CORE: Contrast-and-Reflect for Self-Supervised Prompt Optimization in Anomaly Synthesis",
+   "url": "https://arxiv.org/abs/2610.19610",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "training-free",
+    "vlm"
+   ]
+  },
+  {
+   "title": "TextVerifier: Seeing Beyond Recognition to Verify Chinese Text Rendering",
+   "url": "https://arxiv.org/abs/2610.19551",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "text-detection",
+    "fine-grained",
+    "ocr-document",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "A Valid Watermark Is Not a Valid Identity: Spatial-Spectral Adversarial Face Evasion with Watermark Preservation",
+   "url": "https://arxiv.org/abs/2610.20278",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "forgery-detection",
+    "face-verification",
+    "adversarial-attack",
+    "watermarking"
+   ]
+  },
+  {
+   "title": "Quantifying Annotation Agreement in Object Detection with Optimal Transport",
+   "url": "https://arxiv.org/abs/2610.19912",
+   "date": "2026-10-15",
+   "report": "reports/2026/10/report_16.md",
+   "tags": [
+    "object-detection",
+    "calibration",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "Growing to See: Efficient Pretraining of Self-Supervised Vision Transformers",
    "url": "https://arxiv.org/abs/2610.16817",
@@ -9065,39 +9177,39 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 273
+   "count": 276
   },
   {
    "tag": "image-embedding",
-   "count": 227
+   "count": 231
   },
   {
    "tag": "ssl-backbone",
-   "count": 146
+   "count": 148
   },
   {
    "tag": "image-retrieval",
-   "count": 136
+   "count": 137
   },
   {
    "tag": "vlm",
-   "count": 126
+   "count": 127
+  },
+  {
+   "tag": "metric-learning",
+   "count": 124
   },
   {
    "tag": "efficient-inference",
    "count": 123
   },
   {
-   "tag": "metric-learning",
-   "count": 123
-  },
-  {
    "tag": "forgery-detection",
-   "count": 101
+   "count": 102
   },
   {
    "tag": "fine-grained",
-   "count": 100
+   "count": 101
   },
   {
    "tag": "segmentation",
@@ -9105,23 +9217,23 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 87
+   "count": 89
   },
   {
    "tag": "anomaly-detection",
-   "count": 82
+   "count": 83
+  },
+  {
+   "tag": "dataset-benchmark",
+   "count": 76
   },
   {
    "tag": "correspondence",
    "count": 75
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 74
-  },
-  {
    "tag": "object-detection",
-   "count": 70
+   "count": 72
   },
   {
    "tag": "distillation",
@@ -9129,7 +9241,7 @@
   },
   {
    "tag": "defect-detection",
-   "count": 65
+   "count": 66
   },
   {
    "tag": "peft",
@@ -9145,7 +9257,7 @@
   },
   {
    "tag": "calibration",
-   "count": 42
+   "count": 44
   },
   {
    "tag": "open-vocab-detection",
@@ -9157,7 +9269,7 @@
   },
   {
    "tag": "training-free",
-   "count": 26
+   "count": 28
   },
   {
    "tag": "continual-learning",
@@ -9165,11 +9277,11 @@
   },
   {
    "tag": "generative",
-   "count": 19
+   "count": 20
   },
   {
    "tag": "quantization",
-   "count": 19
+   "count": 20
   },
   {
    "tag": "pose",
@@ -9180,12 +9292,12 @@
    "count": 13
   },
   {
-   "tag": "representation-learning",
+   "tag": "ocr-document",
    "count": 11
   },
   {
-   "tag": "ocr-document",
-   "count": 10
+   "tag": "representation-learning",
+   "count": 11
   },
   {
    "tag": "depth",
@@ -9258,6 +9370,10 @@
   {
    "tag": "vision-backbone",
    "count": 3
+  },
+  {
+   "tag": "adversarial-attack",
+   "count": 2
   },
   {
    "tag": "data-augmentation",
@@ -9344,6 +9460,10 @@
    "count": 2
   },
   {
+   "tag": "text-detection",
+   "count": 2
+  },
+  {
    "tag": "threshold-calibration",
    "count": 2
   },
@@ -9361,10 +9481,6 @@
   },
   {
    "tag": "active-learning",
-   "count": 1
-  },
-  {
-   "tag": "adversarial-attack",
    "count": 1
   },
   {
@@ -9493,6 +9609,10 @@
   },
   {
    "tag": "face-identification",
+   "count": 1
+  },
+  {
+   "tag": "face-verification",
    "count": 1
   },
   {
@@ -9641,6 +9761,10 @@
   },
   {
    "tag": "model-selection",
+   "count": 1
+  },
+  {
+   "tag": "model-stitching",
    "count": 1
   },
   {
@@ -9852,10 +9976,6 @@
    "count": 1
   },
   {
-   "tag": "text-detection",
-   "count": 1
-  },
-  {
    "tag": "texture-recognition",
    "count": 1
   },
@@ -9925,6 +10045,10 @@
   },
   {
    "tag": "vlm-distillation",
+   "count": 1
+  },
+  {
+   "tag": "watermarking",
    "count": 1
   },
   {
