@@ -12,8 +12,8 @@ REPORT="reports/$YEAR/$MONTH/report_$DAY.md"
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DIR"
 
-mkdir -p "reports/$YEAR/$MONTH" logs
-LOG="logs/$DATE.log"
+mkdir -p "reports/$YEAR/$MONTH" notes/logs
+LOG="notes/logs/$DATE.log"
 
 # claude가 PATH에 없을 수 있으므로 cron 환경 대비 (npm global 경로 등 환경에 맞게 수정)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"

@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # Output files
-logs/
+/notes/
 pdfs/
 
 # arXiv digest working files (결과물 digests/ 는 커밋 대상)

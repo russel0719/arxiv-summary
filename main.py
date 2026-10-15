@@ -32,7 +32,7 @@ CATEGORIES = ["cs.CV"]
 OUTPUT_DIR = "daily_reports"
 PDF_DIR = "pdfs"
 
-os.makedirs("logs", exist_ok=True)
+os.makedirs("notes/logs", exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(PDF_DIR, exist_ok=True)
 
@@ -212,7 +212,7 @@ def call_llm(prompt, model_name, interval, max_tokens=10000, _retry=0, _fallback
 # Checkpoint
 # ====================================================
 def _checkpoint_path(target_str):
-    return os.path.join("logs", f"checkpoint_{target_str}.json")
+    return os.path.join("notes", "logs", f"checkpoint_{target_str}.json")
 
 
 def save_checkpoint(target_str, stage, scored, summarized=None):
