@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_17.md",
+   "date": "2026-10-16",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-16 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_16.md",
    "date": "2026-10-15",
    "title": "arXiv cs.CV Daily Digest — 2026-10-15 (arXiv 공개일)",
@@ -920,6 +926,132 @@
   }
  ],
  "papers": [
+  {
+   "title": "CLAD: Keypoint Matching Using Global Line Correspondences",
+   "url": "https://arxiv.org/abs/2610.21409",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "keypoint-descriptor"
+   ]
+  },
+  {
+   "title": "DLOSAC: Joint Spatial-Geometric Image Estimation via Delaunay-Guided Local Optimization RANSAC",
+   "url": "https://arxiv.org/abs/2610.21215",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "robust-estimation"
+   ]
+  },
+  {
+   "title": "Dense4D: Pixel-Level 4D Human Correspondence",
+   "url": "https://arxiv.org/abs/2610.22325",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "correspondence",
+    "pose",
+    "3d",
+    "video"
+   ]
+  },
+  {
+   "title": "Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach",
+   "url": "https://arxiv.org/abs/2610.21802",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "peft",
+    "3d"
+   ]
+  },
+  {
+   "title": "CertEx: Exact Visual Retrieval at Scale by Certified Exclusion",
+   "url": "https://arxiv.org/abs/2610.21325",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Flow-CLIP: Image-Conditioned Residual Scoring for Compositional Image-Text Matching",
+   "url": "https://arxiv.org/abs/2610.21937",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "image-retrieval",
+    "metric-learning",
+    "image-embedding",
+    "vlm"
+   ]
+  },
+  {
+   "title": "DINO-FIL: Multi-Layer Transformer Fusion for Generative Inpainting Forgery Localization",
+   "url": "https://arxiv.org/abs/2610.21780",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "foundation-model",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "RLDF: A Region-Level Deepfake Dataset and Benchmark for Partial-Face Manipulation Detection",
+   "url": "https://arxiv.org/abs/2610.21438",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "face-swap"
+   ]
+  },
+  {
+   "title": "When Should a Low-Light Pipeline Generate? Auditable Risk Control for Selective Generative Enhancement",
+   "url": "https://arxiv.org/abs/2610.21335",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "calibration",
+    "abstain",
+    "risk-control"
+   ]
+  },
+  {
+   "title": "Pixels to Tokens: Token Space Efficient Active Learning for Low-Budget Semantic Segmentation",
+   "url": "https://arxiv.org/abs/2610.20881",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "segmentation",
+    "ssl-backbone",
+    "active-learning"
+   ]
+  },
+  {
+   "title": "LAMP: Layerwise Adaptive Mixing of Predictors for Training-Free Few-Shot Vision-Language Adaptation",
+   "url": "https://arxiv.org/abs/2610.22182",
+   "date": "2026-10-16",
+   "report": "reports/2026/10/report_17.md",
+   "tags": [
+    "training-free",
+    "foundation-model",
+    "image-embedding",
+    "few-shot"
+   ]
+  },
   {
    "title": "Dataset-Level Regularization for Joint-Embedding Self-Supervised Learning",
    "url": "https://arxiv.org/abs/2610.20158",
@@ -9177,35 +9309,35 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 276
+   "count": 278
   },
   {
    "tag": "image-embedding",
-   "count": 231
+   "count": 234
   },
   {
    "tag": "ssl-backbone",
-   "count": 148
+   "count": 151
   },
   {
    "tag": "image-retrieval",
-   "count": 137
+   "count": 139
   },
   {
    "tag": "vlm",
-   "count": 127
+   "count": 128
   },
   {
    "tag": "metric-learning",
-   "count": 124
+   "count": 125
   },
   {
    "tag": "efficient-inference",
-   "count": 123
+   "count": 124
   },
   {
    "tag": "forgery-detection",
-   "count": 102
+   "count": 104
   },
   {
    "tag": "fine-grained",
@@ -9213,7 +9345,7 @@
   },
   {
    "tag": "segmentation",
-   "count": 91
+   "count": 93
   },
   {
    "tag": "industrial-inspection",
@@ -9224,12 +9356,12 @@
    "count": 83
   },
   {
-   "tag": "dataset-benchmark",
-   "count": 76
+   "tag": "correspondence",
+   "count": 79
   },
   {
-   "tag": "correspondence",
-   "count": 75
+   "tag": "dataset-benchmark",
+   "count": 77
   },
   {
    "tag": "object-detection",
@@ -9245,19 +9377,19 @@
   },
   {
    "tag": "peft",
-   "count": 63
+   "count": 64
+  },
+  {
+   "tag": "feature-matching",
+   "count": 59
   },
   {
    "tag": "re-identification",
    "count": 59
   },
   {
-   "tag": "feature-matching",
-   "count": 57
-  },
-  {
    "tag": "calibration",
-   "count": 44
+   "count": 45
   },
   {
    "tag": "open-vocab-detection",
@@ -9265,11 +9397,11 @@
   },
   {
    "tag": "video",
-   "count": 32
+   "count": 33
   },
   {
    "tag": "training-free",
-   "count": 28
+   "count": 29
   },
   {
    "tag": "continual-learning",
@@ -9285,7 +9417,7 @@
   },
   {
    "tag": "pose",
-   "count": 13
+   "count": 14
   },
   {
    "tag": "sim2real",
@@ -9305,11 +9437,11 @@
   },
   {
    "tag": "3d",
-   "count": 6
+   "count": 8
   },
   {
    "tag": "few-shot",
-   "count": 6
+   "count": 7
   },
   {
    "tag": "robustness",
@@ -9370,6 +9502,10 @@
   {
    "tag": "vision-backbone",
    "count": 3
+  },
+  {
+   "tag": "active-learning",
+   "count": 2
   },
   {
    "tag": "adversarial-attack",
@@ -9452,6 +9588,10 @@
    "count": 2
   },
   {
+   "tag": "robust-estimation",
+   "count": 2
+  },
+  {
    "tag": "sam3",
    "count": 2
   },
@@ -9480,7 +9620,7 @@
    "count": 1
   },
   {
-   "tag": "active-learning",
+   "tag": "abstain",
    "count": 1
   },
   {
@@ -9612,6 +9752,10 @@
    "count": 1
   },
   {
+   "tag": "face-swap",
+   "count": 1
+  },
+  {
    "tag": "face-verification",
    "count": 1
   },
@@ -9705,6 +9849,10 @@
   },
   {
    "tag": "jepa",
+   "count": 1
+  },
+  {
+   "tag": "keypoint-descriptor",
    "count": 1
   },
   {
@@ -9896,7 +10044,7 @@
    "count": 1
   },
   {
-   "tag": "robust-estimation",
+   "tag": "risk-control",
    "count": 1
   },
   {
