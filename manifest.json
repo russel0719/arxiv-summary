@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_20.md",
+   "date": "2026-10-19",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-19 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_17.md",
    "date": "2026-10-16",
    "title": "arXiv cs.CV Daily Digest — 2026-10-16 (arXiv 공개일)",
@@ -926,6 +932,113 @@
   }
  ],
  "papers": [
+  {
+   "title": "A100: A Hybrid Vision Foundation Model for Agricultural Plant Image Analysis",
+   "url": "https://arxiv.org/abs/2610.22991",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "image-embedding",
+    "fine-grained"
+   ]
+  },
+  {
+   "title": "Stuck on Shuffle: On Attribute-Object Binding in Vision-Language Models",
+   "url": "https://arxiv.org/abs/2610.22602",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "vlm",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Micro-Localization: High-Precision Mobile Robot Localization Using Microscopic Ground Texture",
+   "url": "https://arxiv.org/abs/2610.22563",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "visual-localization",
+    "pose"
+   ]
+  },
+  {
+   "title": "Knowledge-Guided Distributional Prompt Learning with Visual Hierarchy for Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.23172",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "peft"
+   ]
+  },
+  {
+   "title": "COMET: Decoupled Distillation, Routing, and Capacity Control for Task-Agnostic Continual Vision--Language Learning",
+   "url": "https://arxiv.org/abs/2610.22907",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "continual-learning",
+    "distillation",
+    "vlm",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Query-adaptive Recurrent Tokenization",
+   "url": "https://arxiv.org/abs/2610.22957",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "image-embedding",
+    "efficient-inference",
+    "image-retrieval",
+    "vlm"
+   ]
+  },
+  {
+   "title": "MaskMerge: Structure-aware Token Merging for Efficient Instance Segmentation",
+   "url": "https://arxiv.org/abs/2610.22921",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "segmentation",
+    "efficient-inference",
+    "token-merging"
+   ]
+  },
+  {
+   "title": "Replay Pruning and Few-Bit Integer Inference for Hardware-Efficient Speed-Sign Recognition",
+   "url": "https://arxiv.org/abs/2610.22811",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "distillation",
+    "pruning",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "Diversity Without Labels: Task-Agnostic Coreset Selection Across Perception and Action",
+   "url": "https://arxiv.org/abs/2610.23642",
+   "date": "2026-10-19",
+   "report": "reports/2026/10/report_20.md",
+   "tags": [
+    "foundation-model",
+    "data-selection",
+    "image-embedding"
+   ]
+  },
   {
    "title": "CLAD: Keypoint Matching Using Global Line Correspondences",
    "url": "https://arxiv.org/abs/2610.21409",
@@ -9309,31 +9422,31 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 278
+   "count": 281
   },
   {
    "tag": "image-embedding",
-   "count": 234
+   "count": 238
   },
   {
    "tag": "ssl-backbone",
-   "count": 151
+   "count": 152
   },
   {
    "tag": "image-retrieval",
-   "count": 139
+   "count": 141
   },
   {
    "tag": "vlm",
-   "count": 128
+   "count": 131
+  },
+  {
+   "tag": "efficient-inference",
+   "count": 127
   },
   {
    "tag": "metric-learning",
    "count": 125
-  },
-  {
-   "tag": "efficient-inference",
-   "count": 124
   },
   {
    "tag": "forgery-detection",
@@ -9341,47 +9454,47 @@
   },
   {
    "tag": "fine-grained",
-   "count": 101
+   "count": 102
   },
   {
    "tag": "segmentation",
-   "count": 93
+   "count": 94
   },
   {
    "tag": "industrial-inspection",
-   "count": 89
+   "count": 90
   },
   {
    "tag": "anomaly-detection",
-   "count": 83
+   "count": 84
   },
   {
    "tag": "correspondence",
-   "count": 79
+   "count": 80
   },
   {
    "tag": "dataset-benchmark",
-   "count": 77
+   "count": 78
   },
   {
    "tag": "object-detection",
-   "count": 72
+   "count": 73
   },
   {
    "tag": "distillation",
-   "count": 68
+   "count": 70
   },
   {
    "tag": "defect-detection",
-   "count": 66
+   "count": 67
   },
   {
    "tag": "peft",
-   "count": 64
+   "count": 65
   },
   {
    "tag": "feature-matching",
-   "count": 59
+   "count": 60
   },
   {
    "tag": "re-identification",
@@ -9405,19 +9518,19 @@
   },
   {
    "tag": "continual-learning",
-   "count": 23
+   "count": 24
+  },
+  {
+   "tag": "quantization",
+   "count": 21
   },
   {
    "tag": "generative",
    "count": 20
   },
   {
-   "tag": "quantization",
-   "count": 20
-  },
-  {
    "tag": "pose",
-   "count": 14
+   "count": 15
   },
   {
    "tag": "sim2real",
@@ -9584,6 +9697,10 @@
    "count": 2
   },
   {
+   "tag": "pruning",
+   "count": 2
+  },
+  {
    "tag": "representation-analysis",
    "count": 2
   },
@@ -9605,6 +9722,10 @@
   },
   {
    "tag": "threshold-calibration",
+   "count": 2
+  },
+  {
+   "tag": "token-merging",
    "count": 2
   },
   {
@@ -9681,6 +9802,10 @@
   },
   {
    "tag": "cross-spectral",
+   "count": 1
+  },
+  {
+   "tag": "data-selection",
    "count": 1
   },
   {
@@ -10012,10 +10137,6 @@
    "count": 1
   },
   {
-   "tag": "pruning",
-   "count": 1
-  },
-  {
    "tag": "pseudo-anomaly",
    "count": 1
   },
@@ -10136,10 +10257,6 @@
    "count": 1
   },
   {
-   "tag": "token-merging",
-   "count": 1
-  },
-  {
    "tag": "token-pruning",
    "count": 1
   },
@@ -10181,6 +10298,10 @@
   },
   {
    "tag": "vision-transformer",
+   "count": 1
+  },
+  {
+   "tag": "visual-localization",
    "count": 1
   },
   {
