@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_21.md",
+   "date": "2026-10-20",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-20 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_20.md",
    "date": "2026-10-19",
    "title": "arXiv cs.CV Daily Digest — 2026-10-19 (arXiv 공개일)",
@@ -932,6 +938,132 @@
   }
  ],
  "papers": [
+  {
+   "title": "Your Self-Supervised Projection Head Captures Object Co-Occurrence Statistics",
+   "url": "https://arxiv.org/abs/2610.23915",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "representation-analysis"
+   ]
+  },
+  {
+   "title": "LateMatch: Breaking the Interaction Bottleneck via Cacheable Matching for Efficient Visual Localization",
+   "url": "https://arxiv.org/abs/2610.25358",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "efficient-inference",
+    "visual-localization"
+   ]
+  },
+  {
+   "title": "STLQ: Spatio-Topological Linkage Quantization for Approximate Nearest Neighbor Search",
+   "url": "https://arxiv.org/abs/2610.23931",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "vector-search",
+    "vector-quantization",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "SL-Ground: Sentence-Level Grounding for Fine-Grained Open-Vocabulary Object Detection",
+   "url": "https://arxiv.org/abs/2610.24814",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "open-vocab-detection",
+    "fine-grained",
+    "object-detection"
+   ]
+  },
+  {
+   "title": "CorrCLIPv2: Harnessing Unlabeled Images for Open-Vocabulary Semantic Segmentation",
+   "url": "https://arxiv.org/abs/2610.24757",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "segmentation",
+    "open-vocab-segmentation",
+    "training-free",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "RiSE: Residual Subspace Expert for Generalizable Text-Centric Image Forgery Localization",
+   "url": "https://arxiv.org/abs/2610.24480",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "forgery-detection",
+    "peft",
+    "segmentation",
+    "ocr-document"
+   ]
+  },
+  {
+   "title": "A New Hope for PRNU on Modern Smartphones? Evidence That Device-Specific Fingerprints Survive Computational Photography",
+   "url": "https://arxiv.org/abs/2610.25438",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "camera-forensics",
+    "source-attribution",
+    "score-normalization"
+   ]
+  },
+  {
+   "title": "Predicted Class Correction: Conformal Thresholds for Classes with No Calibration Data",
+   "url": "https://arxiv.org/abs/2610.25349",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "calibration",
+    "conformal-prediction",
+    "long-tail"
+   ]
+  },
+  {
+   "title": "SAGE-CP: When Marginal Coverage Hides Route-Conditional Failures in Adaptive VLM Ensembles",
+   "url": "https://arxiv.org/abs/2610.23864",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "calibration",
+    "conformal-prediction",
+    "vlm",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "TriScore: Post-Hoc Out-of-Distribution Detection with Energy, Boundary Probes, and Transform Consistency",
+   "url": "https://arxiv.org/abs/2610.26323",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "ood-detection",
+    "open-set",
+    "calibration",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Confidence-Guided Pseudo-Label Refinement for Unsupervised Cross-Domain Person Re-Identification",
+   "url": "https://arxiv.org/abs/2610.25633",
+   "date": "2026-10-20",
+   "report": "reports/2026/10/report_21.md",
+   "tags": [
+    "re-identification",
+    "domain-adaptation",
+    "metric-learning"
+   ]
+  },
   {
    "title": "A100: A Hybrid Vision Foundation Model for Agricultural Plant Image Analysis",
    "url": "https://arxiv.org/abs/2610.22991",
@@ -9426,39 +9558,39 @@
   },
   {
    "tag": "image-embedding",
-   "count": 238
+   "count": 239
   },
   {
    "tag": "ssl-backbone",
-   "count": 152
+   "count": 153
   },
   {
    "tag": "image-retrieval",
-   "count": 141
+   "count": 143
   },
   {
    "tag": "vlm",
-   "count": 131
+   "count": 132
   },
   {
    "tag": "efficient-inference",
-   "count": 127
+   "count": 129
   },
   {
    "tag": "metric-learning",
-   "count": 125
+   "count": 126
   },
   {
    "tag": "forgery-detection",
-   "count": 104
+   "count": 105
   },
   {
    "tag": "fine-grained",
-   "count": 102
+   "count": 103
   },
   {
    "tag": "segmentation",
-   "count": 94
+   "count": 96
   },
   {
    "tag": "industrial-inspection",
@@ -9470,7 +9602,7 @@
   },
   {
    "tag": "correspondence",
-   "count": 80
+   "count": 81
   },
   {
    "tag": "dataset-benchmark",
@@ -9478,7 +9610,7 @@
   },
   {
    "tag": "object-detection",
-   "count": 73
+   "count": 74
   },
   {
    "tag": "distillation",
@@ -9490,23 +9622,23 @@
   },
   {
    "tag": "peft",
-   "count": 65
+   "count": 66
   },
   {
    "tag": "feature-matching",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "re-identification",
-   "count": 59
+   "count": 60
   },
   {
    "tag": "calibration",
-   "count": 45
+   "count": 48
   },
   {
    "tag": "open-vocab-detection",
-   "count": 40
+   "count": 41
   },
   {
    "tag": "video",
@@ -9514,7 +9646,7 @@
   },
   {
    "tag": "training-free",
-   "count": 29
+   "count": 31
   },
   {
    "tag": "continual-learning",
@@ -9538,7 +9670,7 @@
   },
   {
    "tag": "ocr-document",
-   "count": 11
+   "count": 12
   },
   {
    "tag": "representation-learning",
@@ -9597,6 +9729,10 @@
    "count": 3
   },
   {
+   "tag": "domain-adaptation",
+   "count": 3
+  },
+  {
    "tag": "interpretability",
    "count": 3
   },
@@ -9605,7 +9741,15 @@
    "count": 3
   },
   {
+   "tag": "open-vocab-segmentation",
+   "count": 3
+  },
+  {
    "tag": "print-forensics",
+   "count": 3
+  },
+  {
+   "tag": "representation-analysis",
    "count": 3
   },
   {
@@ -9625,6 +9769,10 @@
    "count": 2
   },
   {
+   "tag": "conformal-prediction",
+   "count": 2
+  },
+  {
    "tag": "data-augmentation",
    "count": 2
   },
@@ -9638,10 +9786,6 @@
   },
   {
    "tag": "document-ai",
-   "count": 2
-  },
-  {
-   "tag": "domain-adaptation",
    "count": 2
   },
   {
@@ -9689,19 +9833,11 @@
    "count": 2
   },
   {
-   "tag": "open-vocab-segmentation",
-   "count": 2
-  },
-  {
    "tag": "open-vocabulary-detection",
    "count": 2
   },
   {
    "tag": "pruning",
-   "count": 2
-  },
-  {
-   "tag": "representation-analysis",
    "count": 2
   },
   {
@@ -9730,6 +9866,10 @@
   },
   {
    "tag": "uncertainty-estimation",
+   "count": 2
+  },
+  {
+   "tag": "visual-localization",
    "count": 2
   },
   {
@@ -9770,6 +9910,10 @@
   },
   {
    "tag": "cad-floor-plan",
+   "count": 1
+  },
+  {
+   "tag": "camera-forensics",
    "count": 1
   },
   {
@@ -9997,6 +10141,10 @@
    "count": 1
   },
   {
+   "tag": "long-tail",
+   "count": 1
+  },
+  {
    "tag": "long-tailed-recognition",
    "count": 1
   },
@@ -10074,6 +10222,14 @@
   },
   {
    "tag": "one-shot-detection",
+   "count": 1
+  },
+  {
+   "tag": "ood-detection",
+   "count": 1
+  },
+  {
+   "tag": "open-set",
    "count": 1
   },
   {
@@ -10189,6 +10345,10 @@
    "count": 1
   },
   {
+   "tag": "score-normalization",
+   "count": 1
+  },
+  {
    "tag": "scratch-segmentation",
    "count": 1
   },
@@ -10210,6 +10370,10 @@
   },
   {
    "tag": "siglip",
+   "count": 1
+  },
+  {
+   "tag": "source-attribution",
    "count": 1
   },
   {
@@ -10281,6 +10445,14 @@
    "count": 1
   },
   {
+   "tag": "vector-quantization",
+   "count": 1
+  },
+  {
+   "tag": "vector-search",
+   "count": 1
+  },
+  {
    "tag": "video-diffusion",
    "count": 1
   },
@@ -10298,10 +10470,6 @@
   },
   {
    "tag": "vision-transformer",
-   "count": 1
-  },
-  {
-   "tag": "visual-localization",
    "count": 1
   },
   {
