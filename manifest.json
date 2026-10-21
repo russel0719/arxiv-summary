@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_22.md",
+   "date": "2026-10-21",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-21 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_21.md",
    "date": "2026-10-20",
    "title": "arXiv cs.CV Daily Digest — 2026-10-20 (arXiv 공개일)",
@@ -938,6 +944,98 @@
   }
  ],
  "papers": [
+  {
+   "title": "LocaLeJEPA: Maximum Entropy Representations under Geometric Priors",
+   "url": "https://arxiv.org/abs/2610.28458",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "jepa",
+    "hyperbolic-embedding"
+   ]
+  },
+  {
+   "title": "In PRAISE of Attributes: Grounding Retrieval Geometry with Query-Conditioned Subspaces for Person Re-Identification",
+   "url": "https://arxiv.org/abs/2610.27944",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "vlm",
+    "test-time-adaptation"
+   ]
+  },
+  {
+   "title": "FocusOVD: Geometric and Contextual Feature Refinement for Open-Vocabulary Small-Object Detection",
+   "url": "https://arxiv.org/abs/2610.27479",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "small-object-detection"
+   ]
+  },
+  {
+   "title": "Efficient SAM3 Adaptation for Multi-Class Semantic Segmentation via Dense Competitive Representations",
+   "url": "https://arxiv.org/abs/2610.27960",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "efficient-inference",
+    "sam"
+   ]
+  },
+  {
+   "title": "WildAIGC-Bench: Can AI Image Detectors Handle the Wild? A Benchmark of Generated and Edited Images in Online Circulation",
+   "url": "https://arxiv.org/abs/2610.28087",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "ai-generated-image-detection"
+   ]
+  },
+  {
+   "title": "Using Set Learning to Improve Set-Valued Classifiers on Long-tailed Data",
+   "url": "https://arxiv.org/abs/2610.27443",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "calibration",
+    "conformal-prediction",
+    "long-tail",
+    "set-valued-classification"
+   ]
+  },
+  {
+   "title": "From Generic to Dedicated: A Novel Optimizer for Online Continual Learning",
+   "url": "https://arxiv.org/abs/2610.27835",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "continual-learning",
+    "optimizer",
+    "catastrophic-forgetting"
+   ]
+  },
+  {
+   "title": "Reusing Assurance Evidence in AI Pipelines: Validity Conditions, a Fail-Closed Release Gate, and a Replay of 714 Public Data Version Control Pipelines",
+   "url": "https://arxiv.org/abs/2610.27672",
+   "date": "2026-10-21",
+   "report": "reports/2026/10/report_22.md",
+   "tags": [
+    "deployment-gate",
+    "mlops",
+    "evidence-reuse"
+   ]
+  },
   {
    "title": "Your Self-Supervised Projection Head Captures Object Co-Occurrence Statistics",
    "url": "https://arxiv.org/abs/2610.23915",
@@ -9554,27 +9652,27 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 281
+   "count": 282
   },
   {
    "tag": "image-embedding",
-   "count": 239
+   "count": 240
   },
   {
    "tag": "ssl-backbone",
-   "count": 153
+   "count": 154
   },
   {
    "tag": "image-retrieval",
-   "count": 143
+   "count": 144
   },
   {
    "tag": "vlm",
-   "count": 132
+   "count": 133
   },
   {
    "tag": "efficient-inference",
-   "count": 129
+   "count": 130
   },
   {
    "tag": "metric-learning",
@@ -9582,7 +9680,7 @@
   },
   {
    "tag": "forgery-detection",
-   "count": 105
+   "count": 106
   },
   {
    "tag": "fine-grained",
@@ -9590,7 +9688,7 @@
   },
   {
    "tag": "segmentation",
-   "count": 96
+   "count": 97
   },
   {
    "tag": "industrial-inspection",
@@ -9606,11 +9704,11 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 78
+   "count": 79
   },
   {
    "tag": "object-detection",
-   "count": 74
+   "count": 75
   },
   {
    "tag": "distillation",
@@ -9630,15 +9728,15 @@
   },
   {
    "tag": "re-identification",
-   "count": 60
+   "count": 61
   },
   {
    "tag": "calibration",
-   "count": 48
+   "count": 49
   },
   {
    "tag": "open-vocab-detection",
-   "count": 41
+   "count": 42
   },
   {
    "tag": "video",
@@ -9650,7 +9748,7 @@
   },
   {
    "tag": "continual-learning",
-   "count": 24
+   "count": 25
   },
   {
    "tag": "quantization",
@@ -9693,6 +9791,10 @@
    "count": 6
   },
   {
+   "tag": "test-time-adaptation",
+   "count": 6
+  },
+  {
    "tag": "adversarial-robustness",
    "count": 5
   },
@@ -9705,16 +9807,16 @@
    "count": 5
   },
   {
-   "tag": "test-time-adaptation",
-   "count": 5
-  },
-  {
    "tag": "zero-shot",
    "count": 5
   },
   {
    "tag": "clip",
    "count": 4
+  },
+  {
+   "tag": "conformal-prediction",
+   "count": 3
   },
   {
    "tag": "contrastive-learning",
@@ -9769,10 +9871,6 @@
    "count": 2
   },
   {
-   "tag": "conformal-prediction",
-   "count": 2
-  },
-  {
    "tag": "data-augmentation",
    "count": 2
   },
@@ -9813,11 +9911,19 @@
    "count": 2
   },
   {
+   "tag": "jepa",
+   "count": 2
+  },
+  {
    "tag": "keypoint-detection",
    "count": 2
   },
   {
    "tag": "knowledge-distillation",
+   "count": 2
+  },
+  {
+   "tag": "long-tail",
    "count": 2
   },
   {
@@ -9842,6 +9948,10 @@
   },
   {
    "tag": "robust-estimation",
+   "count": 2
+  },
+  {
+   "tag": "sam",
    "count": 2
   },
   {
@@ -9885,6 +9995,10 @@
    "count": 1
   },
   {
+   "tag": "ai-generated-image-detection",
+   "count": 1
+  },
+  {
    "tag": "annotation-free",
    "count": 1
   },
@@ -9914,6 +10028,10 @@
   },
   {
    "tag": "camera-forensics",
+   "count": 1
+  },
+  {
+   "tag": "catastrophic-forgetting",
    "count": 1
   },
   {
@@ -9965,6 +10083,10 @@
    "count": 1
   },
   {
+   "tag": "deployment-gate",
+   "count": 1
+  },
+  {
    "tag": "detector-free",
    "count": 1
   },
@@ -10002,6 +10124,10 @@
   },
   {
    "tag": "event-camera",
+   "count": 1
+  },
+  {
+   "tag": "evidence-reuse",
    "count": 1
   },
   {
@@ -10077,6 +10203,10 @@
    "count": 1
   },
   {
+   "tag": "hyperbolic-embedding",
+   "count": 1
+  },
+  {
    "tag": "hypergraph",
    "count": 1
   },
@@ -10117,10 +10247,6 @@
    "count": 1
   },
   {
-   "tag": "jepa",
-   "count": 1
-  },
-  {
    "tag": "keypoint-descriptor",
    "count": 1
   },
@@ -10138,10 +10264,6 @@
   },
   {
    "tag": "llm-reranking",
-   "count": 1
-  },
-  {
-   "tag": "long-tail",
    "count": 1
   },
   {
@@ -10174,6 +10296,10 @@
   },
   {
    "tag": "mllm",
+   "count": 1
+  },
+  {
+   "tag": "mlops",
    "count": 1
   },
   {
@@ -10242,6 +10368,10 @@
   },
   {
    "tag": "optical-flow",
+   "count": 1
+  },
+  {
+   "tag": "optimizer",
    "count": 1
   },
   {
@@ -10325,10 +10455,6 @@
    "count": 1
   },
   {
-   "tag": "sam",
-   "count": 1
-  },
-  {
    "tag": "sam-3",
    "count": 1
   },
@@ -10369,7 +10495,15 @@
    "count": 1
   },
   {
+   "tag": "set-valued-classification",
+   "count": 1
+  },
+  {
    "tag": "siglip",
+   "count": 1
+  },
+  {
+   "tag": "small-object-detection",
    "count": 1
   },
   {
