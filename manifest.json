@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_23.md",
+   "date": "2026-10-22",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-22 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_22.md",
    "date": "2026-10-21",
    "title": "arXiv cs.CV Daily Digest — 2026-10-21 (arXiv 공개일)",
@@ -944,6 +950,114 @@
   }
  ],
  "papers": [
+  {
+   "title": "ALPS: Visual State Encoders for World Models",
+   "url": "https://arxiv.org/abs/2610.30120",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "foundation-model",
+    "world-model"
+   ]
+  },
+  {
+   "title": "Hyperspherical Simplex Representations for Backward-Compatible Retrieval",
+   "url": "https://arxiv.org/abs/2610.29550",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "backward-compatible-retrieval",
+    "metric-learning"
+   ]
+  },
+  {
+   "title": "LocalAgent: Collaborative Agentic Verification for Fine-Grained Instance-Level Consistency",
+   "url": "https://arxiv.org/abs/2610.29174",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "vlm",
+    "instance-verification"
+   ]
+  },
+  {
+   "title": "Policy-Mask: Budget-Aware Adaptation of Diffusion Features to Discriminative Tasks",
+   "url": "https://arxiv.org/abs/2610.28889",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "correspondence",
+    "segmentation",
+    "distillation",
+    "diffusion-features"
+   ]
+  },
+  {
+   "title": "Latent space configuration for neural network finetuning, fast ranking, and embedding dimensionality reduction",
+   "url": "https://arxiv.org/abs/2610.29295",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "efficient-inference",
+    "face-recognition"
+   ]
+  },
+  {
+   "title": "MINER: Modeling Inter- and Intra-Person Variance for Reidentification",
+   "url": "https://arxiv.org/abs/2610.28941",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "image-retrieval",
+    "clothes-changing-reid"
+   ]
+  },
+  {
+   "title": "Beyond Shortcut Learning: Hierarchical Spatial Prototype Regularization for Face Forgery Detection",
+   "url": "https://arxiv.org/abs/2610.29442",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "forgery-detection",
+    "deepfake-detection",
+    "foundation-model",
+    "domain-generalization"
+   ]
+  },
+  {
+   "title": "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion",
+   "url": "https://arxiv.org/abs/2610.29398",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "segmentation",
+    "decision-fusion"
+   ]
+  },
+  {
+   "title": "Open-Vocabulary Models and Label Propagation for Uncertainty-aware Pseudo-Labeling of Object Detection Datasets",
+   "url": "https://arxiv.org/abs/2610.29788",
+   "date": "2026-10-22",
+   "report": "reports/2026/10/report_23.md",
+   "tags": [
+    "open-vocab-detection",
+    "object-detection",
+    "pseudo-labeling",
+    "label-propagation"
+   ]
+  },
   {
    "title": "LocaLeJEPA: Maximum Entropy Representations under Geometric Priors",
    "url": "https://arxiv.org/abs/2610.28458",
@@ -9652,35 +9766,35 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 282
+   "count": 284
   },
   {
    "tag": "image-embedding",
-   "count": 240
+   "count": 243
   },
   {
    "tag": "ssl-backbone",
-   "count": 154
+   "count": 155
   },
   {
    "tag": "image-retrieval",
-   "count": 144
+   "count": 147
   },
   {
    "tag": "vlm",
-   "count": 133
+   "count": 134
   },
   {
    "tag": "efficient-inference",
-   "count": 130
+   "count": 131
   },
   {
    "tag": "metric-learning",
-   "count": 126
+   "count": 128
   },
   {
    "tag": "forgery-detection",
-   "count": 106
+   "count": 107
   },
   {
    "tag": "fine-grained",
@@ -9688,11 +9802,11 @@
   },
   {
    "tag": "segmentation",
-   "count": 97
+   "count": 99
   },
   {
    "tag": "industrial-inspection",
-   "count": 90
+   "count": 91
   },
   {
    "tag": "anomaly-detection",
@@ -9700,7 +9814,7 @@
   },
   {
    "tag": "correspondence",
-   "count": 81
+   "count": 83
   },
   {
    "tag": "dataset-benchmark",
@@ -9708,15 +9822,15 @@
   },
   {
    "tag": "object-detection",
-   "count": 75
+   "count": 76
   },
   {
    "tag": "distillation",
-   "count": 70
+   "count": 71
   },
   {
    "tag": "defect-detection",
-   "count": 67
+   "count": 68
   },
   {
    "tag": "peft",
@@ -9724,11 +9838,11 @@
   },
   {
    "tag": "feature-matching",
-   "count": 61
+   "count": 62
   },
   {
    "tag": "re-identification",
-   "count": 61
+   "count": 62
   },
   {
    "tag": "calibration",
@@ -9736,7 +9850,7 @@
   },
   {
    "tag": "open-vocab-detection",
-   "count": 42
+   "count": 43
   },
   {
    "tag": "video",
@@ -9787,6 +9901,10 @@
    "count": 7
   },
   {
+   "tag": "domain-generalization",
+   "count": 6
+  },
+  {
    "tag": "robustness",
    "count": 6
   },
@@ -9796,10 +9914,6 @@
   },
   {
    "tag": "adversarial-robustness",
-   "count": 5
-  },
-  {
-   "tag": "domain-generalization",
    "count": 5
   },
   {
@@ -10023,6 +10137,10 @@
    "count": 1
   },
   {
+   "tag": "backward-compatible-retrieval",
+   "count": 1
+  },
+  {
    "tag": "cad-floor-plan",
    "count": 1
   },
@@ -10040,6 +10158,10 @@
   },
   {
    "tag": "class-imbalance",
+   "count": 1
+  },
+  {
+   "tag": "clothes-changing-reid",
    "count": 1
   },
   {
@@ -10079,6 +10201,14 @@
    "count": 1
   },
   {
+   "tag": "decision-fusion",
+   "count": 1
+  },
+  {
+   "tag": "deepfake-detection",
+   "count": 1
+  },
+  {
    "tag": "dense-perception",
    "count": 1
   },
@@ -10088,6 +10218,10 @@
   },
   {
    "tag": "detector-free",
+   "count": 1
+  },
+  {
+   "tag": "diffusion-features",
    "count": 1
   },
   {
@@ -10144,6 +10278,10 @@
   },
   {
    "tag": "face-identification",
+   "count": 1
+  },
+  {
+   "tag": "face-recognition",
    "count": 1
   },
   {
@@ -10247,11 +10385,19 @@
    "count": 1
   },
   {
+   "tag": "instance-verification",
+   "count": 1
+  },
+  {
    "tag": "keypoint-descriptor",
    "count": 1
   },
   {
    "tag": "label-free",
+   "count": 1
+  },
+  {
+   "tag": "label-propagation",
    "count": 1
   },
   {
@@ -10424,6 +10570,10 @@
   },
   {
    "tag": "pseudo-anomaly",
+   "count": 1
+  },
+  {
+   "tag": "pseudo-labeling",
    "count": 1
   },
   {
@@ -10620,6 +10770,10 @@
   },
   {
    "tag": "watermarking",
+   "count": 1
+  },
+  {
+   "tag": "world-model",
    "count": 1
   },
   {
