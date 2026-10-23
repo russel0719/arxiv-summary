@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_24.md",
+   "date": "2026-10-23",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-23 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_23.md",
    "date": "2026-10-22",
    "title": "arXiv cs.CV Daily Digest — 2026-10-22 (arXiv 공개일)",
@@ -950,6 +956,123 @@
   }
  ],
  "papers": [
+  {
+   "title": "CODI: Improving Self-Supervised Vision Transformers with Cross Distillation",
+   "url": "https://arxiv.org/abs/2610.30639",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "dense-prediction",
+    "segmentation"
+   ]
+  },
+  {
+   "title": "Learning from Next-Frame Prediction: Towards Unified and Scalable Visual Representation Learning",
+   "url": "https://arxiv.org/abs/2610.30724",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "ssl-backbone",
+    "video",
+    "foundation-model",
+    "world-model"
+   ]
+  },
+  {
+   "title": "WovenAnchor Matcher: Specialized Intra- and Inter-Image Context Modeling for Feature Matching",
+   "url": "https://arxiv.org/abs/2610.30799",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "state-space-model",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "MVLoMa: Multi-View Local Feature Matching with Any Geometry Foundation Model",
+   "url": "https://arxiv.org/abs/2610.31321",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "multi-view-matching",
+    "3d"
+   ]
+  },
+  {
+   "title": "LACToS: Local Anomaly Detection via Conditional Typicality of Superpixels",
+   "url": "https://arxiv.org/abs/2610.31538",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "anomaly-detection",
+    "ood-detection",
+    "industrial-inspection",
+    "superpixel"
+   ]
+  },
+  {
+   "title": "WildFakeToolBench: Benchmarking AI-Generated Image Detectors with Web-Sourced Image Processing",
+   "url": "https://arxiv.org/abs/2610.31152",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "forgery-detection",
+    "dataset-benchmark",
+    "adversarial-robustness"
+   ]
+  },
+  {
+   "title": "Residual Calibration via Local Feature-Space Refinement",
+   "url": "https://arxiv.org/abs/2610.30652",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "calibration",
+    "post-hoc-calibration",
+    "knn"
+   ]
+  },
+  {
+   "title": "LoRA Superposition across Pretrained Models",
+   "url": "https://arxiv.org/abs/2610.30691",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "peft",
+    "model-merging",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+   "url": "https://arxiv.org/abs/2610.31329",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "vlm",
+    "open-vocab-detection",
+    "segmentation",
+    "image-matting"
+   ]
+  },
+  {
+   "title": "ReCoG: Relational Concept Graph for Training-Free Personalization",
+   "url": "https://arxiv.org/abs/2610.31282",
+   "date": "2026-10-23",
+   "report": "reports/2026/10/report_24.md",
+   "tags": [
+    "vlm",
+    "fine-grained",
+    "training-free",
+    "personalization"
+   ]
+  },
   {
    "title": "ALPS: Visual State Encoders for World Models",
    "url": "https://arxiv.org/abs/2610.30120",
@@ -9766,15 +9889,15 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 284
+   "count": 286
   },
   {
    "tag": "image-embedding",
-   "count": 243
+   "count": 244
   },
   {
    "tag": "ssl-backbone",
-   "count": 155
+   "count": 157
   },
   {
    "tag": "image-retrieval",
@@ -9782,11 +9905,11 @@
   },
   {
    "tag": "vlm",
-   "count": 134
+   "count": 136
   },
   {
    "tag": "efficient-inference",
-   "count": 131
+   "count": 132
   },
   {
    "tag": "metric-learning",
@@ -9794,31 +9917,31 @@
   },
   {
    "tag": "forgery-detection",
-   "count": 107
+   "count": 108
   },
   {
    "tag": "fine-grained",
-   "count": 103
+   "count": 104
   },
   {
    "tag": "segmentation",
-   "count": 99
+   "count": 101
   },
   {
    "tag": "industrial-inspection",
-   "count": 91
+   "count": 92
   },
   {
    "tag": "anomaly-detection",
-   "count": 84
+   "count": 85
   },
   {
    "tag": "correspondence",
-   "count": 83
+   "count": 85
   },
   {
    "tag": "dataset-benchmark",
-   "count": 79
+   "count": 80
   },
   {
    "tag": "object-detection",
@@ -9834,11 +9957,11 @@
   },
   {
    "tag": "peft",
-   "count": 66
+   "count": 67
   },
   {
    "tag": "feature-matching",
-   "count": 62
+   "count": 64
   },
   {
    "tag": "re-identification",
@@ -9846,19 +9969,19 @@
   },
   {
    "tag": "calibration",
-   "count": 49
+   "count": 50
   },
   {
    "tag": "open-vocab-detection",
-   "count": 43
+   "count": 44
   },
   {
    "tag": "video",
-   "count": 33
+   "count": 34
   },
   {
    "tag": "training-free",
-   "count": 31
+   "count": 32
   },
   {
    "tag": "continual-learning",
@@ -9889,16 +10012,20 @@
    "count": 11
   },
   {
+   "tag": "3d",
+   "count": 9
+  },
+  {
    "tag": "depth",
    "count": 9
   },
   {
-   "tag": "3d",
-   "count": 8
-  },
-  {
    "tag": "few-shot",
    "count": 7
+  },
+  {
+   "tag": "adversarial-robustness",
+   "count": 6
   },
   {
    "tag": "domain-generalization",
@@ -9911,10 +10038,6 @@
   {
    "tag": "test-time-adaptation",
    "count": 6
-  },
-  {
-   "tag": "adversarial-robustness",
-   "count": 5
   },
   {
    "tag": "open-set-recognition",
@@ -10053,6 +10176,10 @@
    "count": 2
   },
   {
+   "tag": "ood-detection",
+   "count": 2
+  },
+  {
    "tag": "open-vocabulary-detection",
    "count": 2
   },
@@ -10070,6 +10197,10 @@
   },
   {
    "tag": "sam3",
+   "count": 2
+  },
+  {
+   "tag": "state-space-model",
    "count": 2
   },
   {
@@ -10094,6 +10225,10 @@
   },
   {
    "tag": "visual-localization",
+   "count": 2
+  },
+  {
+   "tag": "world-model",
    "count": 2
   },
   {
@@ -10210,6 +10345,10 @@
   },
   {
    "tag": "dense-perception",
+   "count": 1
+  },
+  {
+   "tag": "dense-prediction",
    "count": 1
   },
   {
@@ -10353,6 +10492,10 @@
    "count": 1
   },
   {
+   "tag": "image-matting",
+   "count": 1
+  },
+  {
    "tag": "image-quality",
    "count": 1
   },
@@ -10390,6 +10533,10 @@
   },
   {
    "tag": "keypoint-descriptor",
+   "count": 1
+  },
+  {
+   "tag": "knn",
    "count": 1
   },
   {
@@ -10453,6 +10600,10 @@
    "count": 1
   },
   {
+   "tag": "model-merging",
+   "count": 1
+  },
+  {
    "tag": "model-selection",
    "count": 1
   },
@@ -10466,6 +10617,10 @@
   },
   {
    "tag": "multi-dimensional",
+   "count": 1
+  },
+  {
+   "tag": "multi-view-matching",
    "count": 1
   },
   {
@@ -10494,10 +10649,6 @@
   },
   {
    "tag": "one-shot-detection",
-   "count": 1
-  },
-  {
-   "tag": "ood-detection",
    "count": 1
   },
   {
@@ -10541,7 +10692,15 @@
    "count": 1
   },
   {
+   "tag": "personalization",
+   "count": 1
+  },
+  {
    "tag": "point-cloud",
+   "count": 1
+  },
+  {
+   "tag": "post-hoc-calibration",
    "count": 1
   },
   {
@@ -10665,7 +10824,7 @@
    "count": 1
   },
   {
-   "tag": "state-space-model",
+   "tag": "superpixel",
    "count": 1
   },
   {
@@ -10770,10 +10929,6 @@
   },
   {
    "tag": "watermarking",
-   "count": 1
-  },
-  {
-   "tag": "world-model",
    "count": 1
   },
   {
