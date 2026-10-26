@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_27.md",
+   "date": "2026-10-26",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-26 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_24.md",
    "date": "2026-10-23",
    "title": "arXiv cs.CV Daily Digest — 2026-10-23 (arXiv 공개일)",
@@ -956,6 +962,103 @@
   }
  ],
  "papers": [
+  {
+   "title": "FlexGlue: Sparse-to-Dense Feature Matching and Visual Disambiguation",
+   "url": "https://arxiv.org/abs/2610.32976",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "visual-disambiguation",
+    "structure-from-motion"
+   ]
+  },
+  {
+   "title": "SemGeo-Gen: Unsupervised Generation of Approximate Cross-Instance Semantic-Geometric Correspondences",
+   "url": "https://arxiv.org/abs/2610.32663",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "correspondence",
+    "semantic-correspondence",
+    "sim2real",
+    "synthetic-data"
+   ]
+  },
+  {
+   "title": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.32964",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "few-shot",
+    "flow-matching"
+   ]
+  },
+  {
+   "title": "Spectra: Multi-Scale Implicit Decomposition for Deepfake Detection",
+   "url": "https://arxiv.org/abs/2610.31979",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "forgery-detection",
+    "deepfake",
+    "implicit-neural-representation",
+    "face-anti-spoofing"
+   ]
+  },
+  {
+   "title": "Learning Fine-Grained Visual Classification with Text as Privileged Information via Multimodal Distillation",
+   "url": "https://arxiv.org/abs/2610.32442",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "fine-grained",
+    "distillation",
+    "calibration",
+    "privileged-information"
+   ]
+  },
+  {
+   "title": "Rethinking Representation Geometry in Supervised Contrastive Learning under Long-Tailed Data",
+   "url": "https://arxiv.org/abs/2610.32039",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "metric-learning",
+    "contrastive-learning",
+    "long-tailed",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Complementing DINO Features with Image Structure for Part Discovery",
+   "url": "https://arxiv.org/abs/2610.32293",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "ssl-backbone",
+    "segmentation",
+    "training-free",
+    "part-discovery"
+   ]
+  },
+  {
+   "title": "Consommé: Conditioned Token Merging for Split Inference",
+   "url": "https://arxiv.org/abs/2610.32794",
+   "date": "2026-10-26",
+   "report": "reports/2026/10/report_27.md",
+   "tags": [
+    "efficient-inference",
+    "token-merging",
+    "split-inference",
+    "peft"
+   ]
+  },
   {
    "title": "CODI: Improving Self-Supervised Vision Transformers with Cross Distillation",
    "url": "https://arxiv.org/abs/2610.30639",
@@ -9893,11 +9996,11 @@
   },
   {
    "tag": "image-embedding",
-   "count": 244
+   "count": 245
   },
   {
    "tag": "ssl-backbone",
-   "count": 157
+   "count": 158
   },
   {
    "tag": "image-retrieval",
@@ -9909,35 +10012,35 @@
   },
   {
    "tag": "efficient-inference",
-   "count": 132
+   "count": 133
   },
   {
    "tag": "metric-learning",
-   "count": 128
+   "count": 129
   },
   {
    "tag": "forgery-detection",
-   "count": 108
+   "count": 109
   },
   {
    "tag": "fine-grained",
-   "count": 104
+   "count": 105
   },
   {
    "tag": "segmentation",
-   "count": 101
+   "count": 102
   },
   {
    "tag": "industrial-inspection",
-   "count": 92
-  },
-  {
-   "tag": "anomaly-detection",
-   "count": 85
+   "count": 93
   },
   {
    "tag": "correspondence",
-   "count": 85
+   "count": 87
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 86
   },
   {
    "tag": "dataset-benchmark",
@@ -9949,19 +10052,19 @@
   },
   {
    "tag": "distillation",
-   "count": 71
+   "count": 72
   },
   {
    "tag": "defect-detection",
-   "count": 68
+   "count": 69
   },
   {
    "tag": "peft",
-   "count": 67
+   "count": 68
   },
   {
    "tag": "feature-matching",
-   "count": 64
+   "count": 65
   },
   {
    "tag": "re-identification",
@@ -9969,7 +10072,7 @@
   },
   {
    "tag": "calibration",
-   "count": 50
+   "count": 51
   },
   {
    "tag": "open-vocab-detection",
@@ -9981,7 +10084,7 @@
   },
   {
    "tag": "training-free",
-   "count": 32
+   "count": 33
   },
   {
    "tag": "continual-learning",
@@ -10001,7 +10104,7 @@
   },
   {
    "tag": "sim2real",
-   "count": 13
+   "count": 14
   },
   {
    "tag": "ocr-document",
@@ -10021,7 +10124,7 @@
   },
   {
    "tag": "few-shot",
-   "count": 7
+   "count": 8
   },
   {
    "tag": "adversarial-robustness",
@@ -10052,11 +10155,11 @@
    "count": 4
   },
   {
-   "tag": "conformal-prediction",
-   "count": 3
+   "tag": "contrastive-learning",
+   "count": 4
   },
   {
-   "tag": "contrastive-learning",
+   "tag": "conformal-prediction",
    "count": 3
   },
   {
@@ -10096,6 +10199,14 @@
    "count": 3
   },
   {
+   "tag": "synthetic-data",
+   "count": 3
+  },
+  {
+   "tag": "token-merging",
+   "count": 3
+  },
+  {
    "tag": "vision-backbone",
    "count": 3
   },
@@ -10129,6 +10240,10 @@
   },
   {
    "tag": "evaluation-protocol",
+   "count": 2
+  },
+  {
+   "tag": "face-anti-spoofing",
    "count": 2
   },
   {
@@ -10204,19 +10319,11 @@
    "count": 2
   },
   {
-   "tag": "synthetic-data",
-   "count": 2
-  },
-  {
    "tag": "text-detection",
    "count": 2
   },
   {
    "tag": "threshold-calibration",
-   "count": 2
-  },
-  {
-   "tag": "token-merging",
    "count": 2
   },
   {
@@ -10340,6 +10447,10 @@
    "count": 1
   },
   {
+   "tag": "deepfake",
+   "count": 1
+  },
+  {
    "tag": "deepfake-detection",
    "count": 1
   },
@@ -10412,10 +10523,6 @@
    "count": 1
   },
   {
-   "tag": "face-anti-spoofing",
-   "count": 1
-  },
-  {
    "tag": "face-identification",
    "count": 1
   },
@@ -10449,6 +10556,10 @@
   },
   {
    "tag": "fine-grained-recognition",
+   "count": 1
+  },
+  {
+   "tag": "flow-matching",
    "count": 1
   },
   {
@@ -10501,6 +10612,10 @@
   },
   {
    "tag": "image-registration",
+   "count": 1
+  },
+  {
+   "tag": "implicit-neural-representation",
    "count": 1
   },
   {
@@ -10557,6 +10672,10 @@
   },
   {
    "tag": "llm-reranking",
+   "count": 1
+  },
+  {
+   "tag": "long-tailed",
    "count": 1
   },
   {
@@ -10688,6 +10807,10 @@
    "count": 1
   },
   {
+   "tag": "part-discovery",
+   "count": 1
+  },
+  {
    "tag": "path-signature",
    "count": 1
   },
@@ -10709,6 +10832,10 @@
   },
   {
    "tag": "privacy",
+   "count": 1
+  },
+  {
+   "tag": "privileged-information",
    "count": 1
   },
   {
@@ -10796,6 +10923,10 @@
    "count": 1
   },
   {
+   "tag": "semantic-correspondence",
+   "count": 1
+  },
+  {
    "tag": "semi-supervised",
    "count": 1
   },
@@ -10821,6 +10952,14 @@
   },
   {
    "tag": "sparse-autoencoder",
+   "count": 1
+  },
+  {
+   "tag": "split-inference",
+   "count": 1
+  },
+  {
+   "tag": "structure-from-motion",
    "count": 1
   },
   {
@@ -10913,6 +11052,10 @@
   },
   {
    "tag": "vision-transformer",
+   "count": 1
+  },
+  {
+   "tag": "visual-disambiguation",
    "count": 1
   },
   {
