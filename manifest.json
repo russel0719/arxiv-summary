@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_28.md",
+   "date": "2026-10-27",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-27 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_27.md",
    "date": "2026-10-26",
    "title": "arXiv cs.CV Daily Digest — 2026-10-26 (arXiv 공개일)",
@@ -962,6 +968,124 @@
   }
  ],
  "papers": [
+  {
+   "title": "The Locality Trade-off in Masked Patch Self-Distillation",
+   "url": "https://arxiv.org/abs/2610.33223",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "representation-analysis",
+    "dense-prediction"
+   ]
+  },
+  {
+   "title": "Improving Signals, Declining Encoder: A Known-Answer Test of Label-Free Monitoring in Self-Supervised Learning",
+   "url": "https://arxiv.org/abs/2610.35766",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "ssl-backbone",
+    "training-monitoring",
+    "representation-analysis"
+   ]
+  },
+  {
+   "title": "Learning Discriminative Prototypes via Boundary Repulsion MixUp for Object Re-Identification",
+   "url": "https://arxiv.org/abs/2610.34305",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "re-identification",
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Whispers from the Neighbors: Rethinking Caption Consensus as Inference-Time Evidence for Vision-Language Retrieval",
+   "url": "https://arxiv.org/abs/2610.33798",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "image-retrieval",
+    "cross-modal-retrieval",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Does VGGT Know What It Does Not Know?",
+   "url": "https://arxiv.org/abs/2610.35806",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "3d",
+    "correspondence",
+    "failure-prediction",
+    "abstention"
+   ]
+  },
+  {
+   "title": "Printed and Scanned: Exposing the Fragility of Single-Image Morphing Attack Detectors under Print-Scan Degradation",
+   "url": "https://arxiv.org/abs/2610.35682",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "forgery-detection",
+    "print-forensics",
+    "dataset-benchmark",
+    "face-morphing"
+   ]
+  },
+  {
+   "title": "SGDB: Semantic-Geometric Decoupling and Evidence Binding for Logical Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.34897",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "logical-anomaly",
+    "explainability"
+   ]
+  },
+  {
+   "title": "Do Words Matter? What Text Contributes to Few and Full-Shot Vision-Language Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.34610",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "vlm",
+    "representation-analysis"
+   ]
+  },
+  {
+   "title": "A Canary in the Neural Mine: Catching an Image Classifier's Silent, Confident Failures",
+   "url": "https://arxiv.org/abs/2610.33063",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "calibration",
+    "failure-prediction",
+    "training-free",
+    "ood-detection"
+   ]
+  },
+  {
+   "title": "Semantic Concept Steering Breaks the Explanation Drift Loop in Continual Learning",
+   "url": "https://arxiv.org/abs/2610.33877",
+   "date": "2026-10-27",
+   "report": "reports/2026/10/report_28.md",
+   "tags": [
+    "continual-learning",
+    "explainability",
+    "spurious-correlation",
+    "replay"
+   ]
+  },
   {
    "title": "FlexGlue: Sparse-to-Dense Feature Matching and Visual Disambiguation",
    "url": "https://arxiv.org/abs/2610.32976",
@@ -9996,19 +10120,19 @@
   },
   {
    "tag": "image-embedding",
-   "count": 245
+   "count": 246
   },
   {
    "tag": "ssl-backbone",
-   "count": 158
+   "count": 160
   },
   {
    "tag": "image-retrieval",
-   "count": 147
+   "count": 149
   },
   {
    "tag": "vlm",
-   "count": 136
+   "count": 137
   },
   {
    "tag": "efficient-inference",
@@ -10016,11 +10140,11 @@
   },
   {
    "tag": "metric-learning",
-   "count": 129
+   "count": 130
   },
   {
    "tag": "forgery-detection",
-   "count": 109
+   "count": 110
   },
   {
    "tag": "fine-grained",
@@ -10032,19 +10156,19 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 93
+   "count": 95
   },
   {
    "tag": "correspondence",
-   "count": 87
+   "count": 89
   },
   {
    "tag": "anomaly-detection",
-   "count": 86
+   "count": 88
   },
   {
    "tag": "dataset-benchmark",
-   "count": 80
+   "count": 81
   },
   {
    "tag": "object-detection",
@@ -10068,27 +10192,27 @@
   },
   {
    "tag": "re-identification",
-   "count": 62
+   "count": 63
   },
   {
    "tag": "calibration",
-   "count": 51
+   "count": 52
   },
   {
    "tag": "open-vocab-detection",
    "count": 44
   },
   {
+   "tag": "training-free",
+   "count": 35
+  },
+  {
    "tag": "video",
    "count": 34
   },
   {
-   "tag": "training-free",
-   "count": 33
-  },
-  {
    "tag": "continual-learning",
-   "count": 25
+   "count": 26
   },
   {
    "tag": "quantization",
@@ -10116,7 +10240,7 @@
   },
   {
    "tag": "3d",
-   "count": 9
+   "count": 10
   },
   {
    "tag": "depth",
@@ -10132,6 +10256,10 @@
   },
   {
    "tag": "domain-generalization",
+   "count": 6
+  },
+  {
+   "tag": "representation-analysis",
    "count": 6
   },
   {
@@ -10159,6 +10287,10 @@
    "count": 4
   },
   {
+   "tag": "print-forensics",
+   "count": 4
+  },
+  {
    "tag": "conformal-prediction",
    "count": 3
   },
@@ -10175,6 +10307,10 @@
    "count": 3
   },
   {
+   "tag": "explainability",
+   "count": 3
+  },
+  {
    "tag": "interpretability",
    "count": 3
   },
@@ -10183,15 +10319,11 @@
    "count": 3
   },
   {
+   "tag": "ood-detection",
+   "count": 3
+  },
+  {
    "tag": "open-vocab-segmentation",
-   "count": 3
-  },
-  {
-   "tag": "print-forensics",
-   "count": 3
-  },
-  {
-   "tag": "representation-analysis",
    "count": 3
   },
   {
@@ -10223,6 +10355,10 @@
    "count": 2
   },
   {
+   "tag": "dense-prediction",
+   "count": 2
+  },
+  {
    "tag": "deployment",
    "count": 2
   },
@@ -10244,6 +10380,10 @@
   },
   {
    "tag": "face-anti-spoofing",
+   "count": 2
+  },
+  {
+   "tag": "failure-prediction",
    "count": 2
   },
   {
@@ -10288,10 +10428,6 @@
   },
   {
    "tag": "ocr",
-   "count": 2
-  },
-  {
-   "tag": "ood-detection",
    "count": 2
   },
   {
@@ -10348,6 +10484,10 @@
   },
   {
    "tag": "abstain",
+   "count": 1
+  },
+  {
+   "tag": "abstention",
    "count": 1
   },
   {
@@ -10427,6 +10567,10 @@
    "count": 1
   },
   {
+   "tag": "cross-modal-retrieval",
+   "count": 1
+  },
+  {
    "tag": "cross-spectral",
    "count": 1
   },
@@ -10456,10 +10600,6 @@
   },
   {
    "tag": "dense-perception",
-   "count": 1
-  },
-  {
-   "tag": "dense-prediction",
    "count": 1
   },
   {
@@ -10515,15 +10655,15 @@
    "count": 1
   },
   {
-   "tag": "explainability",
-   "count": 1
-  },
-  {
    "tag": "face-analysis",
    "count": 1
   },
   {
    "tag": "face-identification",
+   "count": 1
+  },
+  {
+   "tag": "face-morphing",
    "count": 1
   },
   {
@@ -10672,6 +10812,10 @@
   },
   {
    "tag": "llm-reranking",
+   "count": 1
+  },
+  {
+   "tag": "logical-anomaly",
    "count": 1
   },
   {
@@ -10883,6 +11027,10 @@
    "count": 1
   },
   {
+   "tag": "replay",
+   "count": 1
+  },
+  {
    "tag": "retrieval",
    "count": 1
   },
@@ -10959,6 +11107,10 @@
    "count": 1
   },
   {
+   "tag": "spurious-correlation",
+   "count": 1
+  },
+  {
    "tag": "structure-from-motion",
    "count": 1
   },
@@ -11016,6 +11168,10 @@
   },
   {
    "tag": "training-free-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "training-monitoring",
    "count": 1
   },
   {
