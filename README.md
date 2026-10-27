@@ -34,8 +34,8 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
 2. repo를 clone하고 스크립트에 실행 권한 부여:
 
     ```bash
-    git clone <this-repo> ~/workspace/utils/arxiv-summary
-    cd ~/workspace/utils/arxiv-summary
+    git clone <this-repo> ~/workspace/platform/arxiv-summary
+    cd ~/workspace/platform/arxiv-summary
     chmod +x run_digest.sh
     ```
 
@@ -57,7 +57,7 @@ arxiv-summary/            # git repo (결과를 push해서 보관)
 
 4. cron 등록 (`crontab -e`) — 한국시간 기준 화~토 새벽 1시에 실행되도록 예시:
     ```
-    0 1 * * 2-6 /home/jmkang/workspace/utils/arxiv-summary/run_digest.sh
+    0 1 * * 2-6 /home/jmkang/workspace/platform/arxiv-summary/run_digest.sh
     ```
     `run_digest.sh`가 내부에서 `TZ=Asia/Seoul`을 고정하므로 서버 타임존과
     무관하게 파일명은 항상 KST 실행일 기준으로 저장된다. 단, cron 스케줄 자체는

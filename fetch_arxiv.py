@@ -7,7 +7,7 @@
 - 결과를 today_papers.json으로 저장한다 (Claude Code가 읽을 입력 파일).
 - 같은 내용을 raw/YYYY/MM/DD.json 에 일별로 보존한다 (주간 스크리닝·백로그 재심사 입력, gitignore).
 - EXTRA_CATEGORIES(cs.LG 등)는 **raw 아카이브에만** 저장한다 — 일일 다이제스트 입력(today_papers.json)은
-  cs.CV 그대로 두고, 프로젝트 병목 기준의 주간 스크리닝(utils/arxiv-internal)만 넓힌다.
+  cs.CV 그대로 두고, 프로젝트 병목 기준의 주간 스크리닝(platform/arxiv-internal)만 넓힌다.
   cs.CV 로 cross-list 된 논문은 cs.CV 피드에 이미 있으므로 제외한다.
 
 외부 의존성 없음 (표준 라이브러리만 사용).
