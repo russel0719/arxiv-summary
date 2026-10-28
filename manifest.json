@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_29.md",
+   "date": "2026-10-28",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-28 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_28.md",
    "date": "2026-10-27",
    "title": "arXiv cs.CV Daily Digest — 2026-10-27 (arXiv 공개일)",
@@ -968,6 +974,103 @@
   }
  ],
  "papers": [
+  {
+   "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations",
+   "url": "https://arxiv.org/abs/2610.37364",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "image-embedding",
+    "image-retrieval",
+    "foundation-model",
+    "quantization",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Forget the Data, Keep the Capability: Switchable Unlearning for Retrieval",
+   "url": "https://arxiv.org/abs/2610.36858",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "machine-unlearning",
+    "peft"
+   ]
+  },
+  {
+   "title": "ARISE: Authentic Reference-Informed Stability Enhancement for Continual Multimodal Forgery Detection",
+   "url": "https://arxiv.org/abs/2610.36509",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "forgery-detection",
+    "continual-learning",
+    "vlm",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "SAGE: Saliency-Annealed Gated Encoder for Universal Vision Recognition",
+   "url": "https://arxiv.org/abs/2610.36719",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "ssl-backbone",
+    "object-detection",
+    "segmentation",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Repurposing Video Diffusion Transformers for Cross-View Temporal Object Correspondence",
+   "url": "https://arxiv.org/abs/2610.37633",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "correspondence",
+    "video",
+    "segmentation",
+    "object-tracking"
+   ]
+  },
+  {
+   "title": "Tail Cues, Principal Corrections: Plug-and-Play Rectification for Open-Set Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2610.36870",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "test-time-adaptation",
+    "open-set",
+    "ood-detection",
+    "training-free"
+   ]
+  },
+  {
+   "title": "MixSIS: Mixed-supervised instance segmentation",
+   "url": "https://arxiv.org/abs/2610.37138",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "segmentation",
+    "weakly-supervised",
+    "label-efficiency",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "AxisQ: Depth-Adaptive Channel--Frequency Quantization for Camouflaged Object Detection",
+   "url": "https://arxiv.org/abs/2610.36844",
+   "date": "2026-10-28",
+   "report": "reports/2026/10/report_29.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "segmentation",
+    "camouflaged-object-detection"
+   ]
+  },
   {
    "title": "The Locality Trade-off in Masked Patch Self-Distillation",
    "url": "https://arxiv.org/abs/2610.33223",
@@ -10116,27 +10219,27 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 286
+   "count": 289
   },
   {
    "tag": "image-embedding",
-   "count": 246
+   "count": 247
   },
   {
    "tag": "ssl-backbone",
-   "count": 160
+   "count": 161
   },
   {
    "tag": "image-retrieval",
-   "count": 149
+   "count": 151
   },
   {
    "tag": "vlm",
-   "count": 137
+   "count": 138
   },
   {
    "tag": "efficient-inference",
-   "count": 133
+   "count": 135
   },
   {
    "tag": "metric-learning",
@@ -10144,15 +10247,15 @@
   },
   {
    "tag": "forgery-detection",
-   "count": 110
+   "count": 111
+  },
+  {
+   "tag": "segmentation",
+   "count": 106
   },
   {
    "tag": "fine-grained",
    "count": 105
-  },
-  {
-   "tag": "segmentation",
-   "count": 102
   },
   {
    "tag": "industrial-inspection",
@@ -10160,7 +10263,7 @@
   },
   {
    "tag": "correspondence",
-   "count": 89
+   "count": 90
   },
   {
    "tag": "anomaly-detection",
@@ -10168,11 +10271,11 @@
   },
   {
    "tag": "dataset-benchmark",
-   "count": 81
+   "count": 82
   },
   {
    "tag": "object-detection",
-   "count": 76
+   "count": 77
   },
   {
    "tag": "distillation",
@@ -10184,7 +10287,7 @@
   },
   {
    "tag": "peft",
-   "count": 68
+   "count": 69
   },
   {
    "tag": "feature-matching",
@@ -10192,7 +10295,7 @@
   },
   {
    "tag": "re-identification",
-   "count": 63
+   "count": 64
   },
   {
    "tag": "calibration",
@@ -10204,19 +10307,19 @@
   },
   {
    "tag": "training-free",
-   "count": 35
+   "count": 36
   },
   {
    "tag": "video",
-   "count": 34
+   "count": 35
   },
   {
    "tag": "continual-learning",
-   "count": 26
+   "count": 27
   },
   {
    "tag": "quantization",
-   "count": 21
+   "count": 23
   },
   {
    "tag": "generative",
@@ -10251,6 +10354,10 @@
    "count": 8
   },
   {
+   "tag": "test-time-adaptation",
+   "count": 7
+  },
+  {
    "tag": "adversarial-robustness",
    "count": 6
   },
@@ -10267,10 +10374,6 @@
    "count": 6
   },
   {
-   "tag": "test-time-adaptation",
-   "count": 6
-  },
-  {
    "tag": "open-set-recognition",
    "count": 5
   },
@@ -10284,6 +10387,10 @@
   },
   {
    "tag": "contrastive-learning",
+   "count": 4
+  },
+  {
+   "tag": "ood-detection",
    "count": 4
   },
   {
@@ -10316,10 +10423,6 @@
   },
   {
    "tag": "lightweight",
-   "count": 3
-  },
-  {
-   "tag": "ood-detection",
    "count": 3
   },
   {
@@ -10419,6 +10522,10 @@
    "count": 2
   },
   {
+   "tag": "machine-unlearning",
+   "count": 2
+  },
+  {
    "tag": "model-pruning",
    "count": 2
   },
@@ -10428,6 +10535,10 @@
   },
   {
    "tag": "ocr",
+   "count": 2
+  },
+  {
+   "tag": "open-set",
    "count": 2
   },
   {
@@ -10528,6 +10639,10 @@
   },
   {
    "tag": "camera-forensics",
+   "count": 1
+  },
+  {
+   "tag": "camouflaged-object-detection",
    "count": 1
   },
   {
@@ -10795,6 +10910,10 @@
    "count": 1
   },
   {
+   "tag": "label-efficiency",
+   "count": 1
+  },
+  {
    "tag": "label-free",
    "count": 1
   },
@@ -10828,10 +10947,6 @@
   },
   {
    "tag": "lora",
-   "count": 1
-  },
-  {
-   "tag": "machine-unlearning",
    "count": 1
   },
   {
@@ -10903,6 +11018,10 @@
    "count": 1
   },
   {
+   "tag": "object-tracking",
+   "count": 1
+  },
+  {
    "tag": "on-device",
    "count": 1
   },
@@ -10912,10 +11031,6 @@
   },
   {
    "tag": "one-shot-detection",
-   "count": 1
-  },
-  {
-   "tag": "open-set",
    "count": 1
   },
   {
@@ -11228,6 +11343,10 @@
   },
   {
    "tag": "watermarking",
+   "count": 1
+  },
+  {
+   "tag": "weakly-supervised",
    "count": 1
   },
   {
