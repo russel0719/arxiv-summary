@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/10/report_31.md",
+   "date": "2026-10-30",
+   "title": "arXiv cs.CV Daily Digest — 2026-10-30 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_29.md",
    "date": "2026-10-28",
    "title": "arXiv cs.CV Daily Digest — 2026-10-28 (arXiv 공개일)",
@@ -974,6 +980,136 @@
   }
  ],
  "papers": [
+  {
+   "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
+   "url": "https://arxiv.org/abs/2610.39423",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "metric-learning",
+    "image-retrieval",
+    "image-embedding",
+    "synthetic-pretraining"
+   ]
+  },
+  {
+   "title": "Luggage re-identification: A study of strategies towards a real-world application",
+   "url": "https://arxiv.org/abs/2610.40643",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "object-detection",
+    "video"
+   ]
+  },
+  {
+   "title": "Cross-Encoder Anchor Refinement for Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.39727",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "zero-shot"
+   ]
+  },
+  {
+   "title": "RADIOlogy: A Single-Pass Approach to Training-Free Zero-Shot Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.40580",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Uncertainty-aware Feedback Loop Diagnosis: integrating reinforcement learning and conformal prediction for reliable wafer defect classification",
+   "url": "https://arxiv.org/abs/2610.40421",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "industrial-inspection",
+    "defect-detection",
+    "calibration",
+    "conformal-prediction",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "FYC: FPR-Disparity Weight Perturbation and Youden Calibration for Fair Deepfake Detection",
+   "url": "https://arxiv.org/abs/2610.37882",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "forgery-detection",
+    "calibration",
+    "fairness",
+    "post-hoc"
+   ]
+  },
+  {
+   "title": "PairCLIP-SWA: Similarity-Guided Balancing and Stochastic Weight Averaging for Generalized Deepfake Image Detection with OpenCLIP",
+   "url": "https://arxiv.org/abs/2610.37874",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "model-selection"
+   ]
+  },
+  {
+   "title": "Venus-DefakerOne2: A Vision-Forensics Foundation Model with Broader Coverage",
+   "url": "https://arxiv.org/abs/2610.37918",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "vlm",
+    "face-anti-spoofing"
+   ]
+  },
+  {
+   "title": "CASE: Concept-Aware Segmentation from Positive and Negative Visual Exemplars",
+   "url": "https://arxiv.org/abs/2610.39396",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "segmentation",
+    "foundation-model",
+    "peft",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Parametric Gaussian Noise Mixer (PGNM): Unified Synthesis of Camera Noise and Film Grain",
+   "url": "https://arxiv.org/abs/2610.39868",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "sim2real",
+    "noise-synthesis",
+    "camera-isp"
+   ]
+  },
+  {
+   "title": "You Don't Need Aligned Representations: Knowledge Distillation via Random Prototype Spaces",
+   "url": "https://arxiv.org/abs/2610.37937",
+   "date": "2026-10-30",
+   "report": "reports/2026/10/report_31.md",
+   "tags": [
+    "distillation",
+    "efficient-inference",
+    "heterogeneous-architecture"
+   ]
+  },
   {
    "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations",
    "url": "https://arxiv.org/abs/2610.37364",
@@ -10219,11 +10355,11 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 289
+   "count": 293
   },
   {
    "tag": "image-embedding",
-   "count": 247
+   "count": 248
   },
   {
    "tag": "ssl-backbone",
@@ -10231,27 +10367,27 @@
   },
   {
    "tag": "image-retrieval",
-   "count": 151
+   "count": 153
   },
   {
    "tag": "vlm",
-   "count": 138
+   "count": 139
   },
   {
    "tag": "efficient-inference",
-   "count": 135
+   "count": 137
   },
   {
    "tag": "metric-learning",
-   "count": 130
+   "count": 131
   },
   {
    "tag": "forgery-detection",
-   "count": 111
+   "count": 114
   },
   {
    "tag": "segmentation",
-   "count": 106
+   "count": 107
   },
   {
    "tag": "fine-grained",
@@ -10259,35 +10395,35 @@
   },
   {
    "tag": "industrial-inspection",
-   "count": 95
+   "count": 98
+  },
+  {
+   "tag": "anomaly-detection",
+   "count": 90
   },
   {
    "tag": "correspondence",
    "count": 90
   },
   {
-   "tag": "anomaly-detection",
-   "count": 88
-  },
-  {
    "tag": "dataset-benchmark",
-   "count": 82
+   "count": 83
   },
   {
    "tag": "object-detection",
-   "count": 77
+   "count": 78
   },
   {
    "tag": "distillation",
-   "count": 72
+   "count": 73
   },
   {
    "tag": "defect-detection",
-   "count": 69
+   "count": 71
   },
   {
    "tag": "peft",
-   "count": 69
+   "count": 70
   },
   {
    "tag": "feature-matching",
@@ -10295,11 +10431,11 @@
   },
   {
    "tag": "re-identification",
-   "count": 64
+   "count": 65
   },
   {
    "tag": "calibration",
-   "count": 52
+   "count": 54
   },
   {
    "tag": "open-vocab-detection",
@@ -10307,11 +10443,11 @@
   },
   {
    "tag": "training-free",
-   "count": 36
+   "count": 37
   },
   {
    "tag": "video",
-   "count": 35
+   "count": 36
   },
   {
    "tag": "continual-learning",
@@ -10331,7 +10467,7 @@
   },
   {
    "tag": "sim2real",
-   "count": 14
+   "count": 15
   },
   {
    "tag": "ocr-document",
@@ -10374,15 +10510,19 @@
    "count": 6
   },
   {
+   "tag": "zero-shot",
+   "count": 6
+  },
+  {
    "tag": "open-set-recognition",
    "count": 5
   },
   {
-   "tag": "zero-shot",
-   "count": 5
+   "tag": "clip",
+   "count": 4
   },
   {
-   "tag": "clip",
+   "tag": "conformal-prediction",
    "count": 4
   },
   {
@@ -10398,10 +10538,6 @@
    "count": 4
   },
   {
-   "tag": "conformal-prediction",
-   "count": 3
-  },
-  {
    "tag": "cross-modal",
    "count": 3
   },
@@ -10415,6 +10551,10 @@
   },
   {
    "tag": "explainability",
+   "count": 3
+  },
+  {
+   "tag": "face-anti-spoofing",
    "count": 3
   },
   {
@@ -10482,10 +10622,6 @@
    "count": 2
   },
   {
-   "tag": "face-anti-spoofing",
-   "count": 2
-  },
-  {
    "tag": "failure-prediction",
    "count": 2
   },
@@ -10527,6 +10663,10 @@
   },
   {
    "tag": "model-pruning",
+   "count": 2
+  },
+  {
+   "tag": "model-selection",
    "count": 2
   },
   {
@@ -10639,6 +10779,10 @@
   },
   {
    "tag": "camera-forensics",
+   "count": 1
+  },
+  {
+   "tag": "camera-isp",
    "count": 1
   },
   {
@@ -10794,6 +10938,10 @@
    "count": 1
   },
   {
+   "tag": "fairness",
+   "count": 1
+  },
+  {
    "tag": "fall-detection",
    "count": 1
   },
@@ -10843,6 +10991,10 @@
   },
   {
    "tag": "hand-crafted-features",
+   "count": 1
+  },
+  {
+   "tag": "heterogeneous-architecture",
    "count": 1
   },
   {
@@ -10982,10 +11134,6 @@
    "count": 1
   },
   {
-   "tag": "model-selection",
-   "count": 1
-  },
-  {
    "tag": "model-stitching",
    "count": 1
   },
@@ -11015,6 +11163,10 @@
   },
   {
    "tag": "noise-residual",
+   "count": 1
+  },
+  {
+   "tag": "noise-synthesis",
    "count": 1
   },
   {
@@ -11079,6 +11231,10 @@
   },
   {
    "tag": "point-cloud",
+   "count": 1
+  },
+  {
+   "tag": "post-hoc",
    "count": 1
   },
   {
@@ -11255,6 +11411,10 @@
   },
   {
    "tag": "synthetic-image-detection",
+   "count": 1
+  },
+  {
+   "tag": "synthetic-pretraining",
    "count": 1
   },
   {
