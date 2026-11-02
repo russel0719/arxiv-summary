@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/11/report_03.md",
+   "date": "2026-11-02",
+   "title": "arXiv cs.CV Daily Digest — 2026-11-02 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/10/report_31.md",
    "date": "2026-10-30",
    "title": "arXiv cs.CV Daily Digest — 2026-10-30 (arXiv 공개일)",
@@ -980,6 +986,89 @@
   }
  ],
  "papers": [
+  {
+   "title": "A Patch is More Than a Token",
+   "url": "https://arxiv.org/abs/2610.41814",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "ssl-backbone",
+    "correspondence",
+    "feature-matching",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Hard Sample-Conditioned Decorrelated Attention for Robust Face Recognition",
+   "url": "https://arxiv.org/abs/2610.41789",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "metric-learning",
+    "re-identification",
+    "image-embedding",
+    "face-recognition"
+   ]
+  },
+  {
+   "title": "FieldGuideRAG: Image-Grounded GraphRAG for Fine-Grained Recognition with Vision-Language Models",
+   "url": "https://arxiv.org/abs/2610.40971",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "fine-grained",
+    "vlm",
+    "training-free",
+    "image-retrieval"
+   ]
+  },
+  {
+   "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
+   "url": "https://arxiv.org/abs/2610.41199",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "defect-detection",
+    "industrial-inspection",
+    "calibration",
+    "training-free",
+    "few-shot"
+   ]
+  },
+  {
+   "title": "ReuScope: Auditing Data Reuse and Evaluation Sensitivity in Capsule Vision 2024",
+   "url": "https://arxiv.org/abs/2610.41835",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "data-leakage",
+    "evaluation-protocol",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "One Verdict Is Not Enough: Regression Testing Learned World Models and Their Test Harnesses",
+   "url": "https://arxiv.org/abs/2610.41130",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "regression-testing",
+    "evaluation-protocol",
+    "video"
+   ]
+  },
+  {
+   "title": "AquaProbe: Efficient Adaptation of Frozen Vision Models for Underwater Images",
+   "url": "https://arxiv.org/abs/2610.40900",
+   "date": "2026-11-02",
+   "report": "reports/2026/11/report_03.md",
+   "tags": [
+    "peft",
+    "sim2real",
+    "segmentation",
+    "foundation-model"
+   ]
+  },
   {
    "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
    "url": "https://arxiv.org/abs/2610.39423",
@@ -10355,23 +10444,23 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 293
+   "count": 294
   },
   {
    "tag": "image-embedding",
-   "count": 248
+   "count": 249
   },
   {
    "tag": "ssl-backbone",
-   "count": 161
+   "count": 162
   },
   {
    "tag": "image-retrieval",
-   "count": 153
+   "count": 154
   },
   {
    "tag": "vlm",
-   "count": 139
+   "count": 140
   },
   {
    "tag": "efficient-inference",
@@ -10379,7 +10468,7 @@
   },
   {
    "tag": "metric-learning",
-   "count": 131
+   "count": 132
   },
   {
    "tag": "forgery-detection",
@@ -10387,27 +10476,27 @@
   },
   {
    "tag": "segmentation",
-   "count": 107
+   "count": 108
   },
   {
    "tag": "fine-grained",
-   "count": 105
+   "count": 106
   },
   {
    "tag": "industrial-inspection",
-   "count": 98
+   "count": 99
+  },
+  {
+   "tag": "correspondence",
+   "count": 91
   },
   {
    "tag": "anomaly-detection",
    "count": 90
   },
   {
-   "tag": "correspondence",
-   "count": 90
-  },
-  {
    "tag": "dataset-benchmark",
-   "count": 83
+   "count": 84
   },
   {
    "tag": "object-detection",
@@ -10419,23 +10508,23 @@
   },
   {
    "tag": "defect-detection",
-   "count": 71
+   "count": 72
   },
   {
    "tag": "peft",
-   "count": 70
+   "count": 71
   },
   {
    "tag": "feature-matching",
-   "count": 65
+   "count": 66
   },
   {
    "tag": "re-identification",
-   "count": 65
+   "count": 66
   },
   {
    "tag": "calibration",
-   "count": 54
+   "count": 55
   },
   {
    "tag": "open-vocab-detection",
@@ -10443,11 +10532,11 @@
   },
   {
    "tag": "training-free",
-   "count": 37
+   "count": 40
   },
   {
    "tag": "video",
-   "count": 36
+   "count": 37
   },
   {
    "tag": "continual-learning",
@@ -10462,11 +10551,11 @@
    "count": 20
   },
   {
-   "tag": "pose",
-   "count": 15
+   "tag": "sim2real",
+   "count": 16
   },
   {
-   "tag": "sim2real",
+   "tag": "pose",
    "count": 15
   },
   {
@@ -10487,7 +10576,7 @@
   },
   {
    "tag": "few-shot",
-   "count": 8
+   "count": 9
   },
   {
    "tag": "test-time-adaptation",
@@ -10527,6 +10616,10 @@
   },
   {
    "tag": "contrastive-learning",
+   "count": 4
+  },
+  {
+   "tag": "evaluation-protocol",
    "count": 4
   },
   {
@@ -10618,7 +10711,7 @@
    "count": 2
   },
   {
-   "tag": "evaluation-protocol",
+   "tag": "face-recognition",
    "count": 2
   },
   {
@@ -10834,6 +10927,10 @@
    "count": 1
   },
   {
+   "tag": "data-leakage",
+   "count": 1
+  },
+  {
    "tag": "data-selection",
    "count": 1
   },
@@ -10923,10 +11020,6 @@
   },
   {
    "tag": "face-morphing",
-   "count": 1
-  },
-  {
-   "tag": "face-recognition",
    "count": 1
   },
   {
@@ -11291,6 +11384,10 @@
   },
   {
    "tag": "referring-segmentation",
+   "count": 1
+  },
+  {
+   "tag": "regression-testing",
    "count": 1
   },
   {
