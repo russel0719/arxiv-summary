@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/11/report_04.md",
+   "date": "2026-11-03",
+   "title": "arXiv cs.CV Daily Digest — 2026-11-03 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/11/report_03.md",
    "date": "2026-11-02",
    "title": "arXiv cs.CV Daily Digest — 2026-11-02 (arXiv 공개일)",
@@ -986,6 +992,141 @@
   }
  ],
  "papers": [
+  {
+   "title": "Déjà Vu: Cycle-Consistent Re-ranking for Semantic Correspondence",
+   "url": "https://arxiv.org/abs/2611.00328",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Pair-Relative Partial Equivariance for Rotation-Robust Keypoint Descriptor Matching",
+   "url": "https://arxiv.org/abs/2611.02751",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Object-Only Is Not Context-Free: A Counterfactual Diagnostic for Context Removal in Object Retrieval",
+   "url": "https://arxiv.org/abs/2611.01962",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Balancing Representations by Identifying and Generating Under-represented Data",
+   "url": "https://arxiv.org/abs/2611.02952",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "ssl-backbone",
+    "image-embedding",
+    "generative"
+   ]
+  },
+  {
+   "title": "Accurate automated photo-identification of Near Eastern and European fire salamanders",
+   "url": "https://arxiv.org/abs/2611.01601",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "feature-matching",
+    "re-identification",
+    "fine-grained",
+    "training-free"
+   ]
+  },
+  {
+   "title": "VLM-as-a-Judge for Person Re-Identification",
+   "url": "https://arxiv.org/abs/2611.03027",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "re-identification",
+    "image-retrieval",
+    "vlm",
+    "training-free"
+   ]
+  },
+  {
+   "title": "PRISM-Net: Dynamic Routing Network with VLM-Guided Disentangled Attribute Distillation for Explainable Fine-Grained Product Retrieval",
+   "url": "https://arxiv.org/abs/2611.00458",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "fine-grained",
+    "image-retrieval",
+    "metric-learning",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Beyond the Last Layer: Global Inter-Layer Aggregation for AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2611.00017",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "foundation-model",
+    "image-embedding"
+   ]
+  },
+  {
+   "title": "Out-of-distribution AI-generated image detection with zero-phase deconvolution for residual whitening",
+   "url": "https://arxiv.org/abs/2611.00043",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "forgery-detection",
+    "print-forensics"
+   ]
+  },
+  {
+   "title": "VerdictAD: Few-Shot Anomaly Detection via Decision-Guided Refinement",
+   "url": "https://arxiv.org/abs/2611.02654",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "defect-detection",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Reproducing INP-Former: Reconstructing Intrinsic Normal Prototypes for Industrial Anomaly Detection",
+   "url": "https://arxiv.org/abs/2611.01230",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "Circumventing Magnitude Collapse via Modular Two-Stage Open-Set Recognition",
+   "url": "https://arxiv.org/abs/2611.03421",
+   "date": "2026-11-03",
+   "report": "reports/2026/11/report_04.md",
+   "tags": [
+    "calibration",
+    "open-set-recognition",
+    "dataset-benchmark"
+   ]
+  },
   {
    "title": "A Patch is More Than a Token",
    "url": "https://arxiv.org/abs/2610.41814",
@@ -10444,23 +10585,23 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 294
+   "count": 295
   },
   {
    "tag": "image-embedding",
-   "count": 249
+   "count": 252
   },
   {
    "tag": "ssl-backbone",
-   "count": 162
+   "count": 163
   },
   {
    "tag": "image-retrieval",
-   "count": 154
+   "count": 157
   },
   {
    "tag": "vlm",
-   "count": 140
+   "count": 141
   },
   {
    "tag": "efficient-inference",
@@ -10468,35 +10609,35 @@
   },
   {
    "tag": "metric-learning",
-   "count": 132
+   "count": 133
   },
   {
    "tag": "forgery-detection",
-   "count": 114
+   "count": 116
+  },
+  {
+   "tag": "fine-grained",
+   "count": 108
   },
   {
    "tag": "segmentation",
    "count": 108
   },
   {
-   "tag": "fine-grained",
-   "count": 106
-  },
-  {
    "tag": "industrial-inspection",
-   "count": 99
+   "count": 101
   },
   {
    "tag": "correspondence",
-   "count": 91
+   "count": 93
   },
   {
    "tag": "anomaly-detection",
-   "count": 90
+   "count": 92
   },
   {
    "tag": "dataset-benchmark",
-   "count": 84
+   "count": 87
   },
   {
    "tag": "object-detection",
@@ -10504,11 +10645,11 @@
   },
   {
    "tag": "distillation",
-   "count": 73
+   "count": 74
   },
   {
    "tag": "defect-detection",
-   "count": 72
+   "count": 73
   },
   {
    "tag": "peft",
@@ -10516,23 +10657,23 @@
   },
   {
    "tag": "feature-matching",
-   "count": 66
+   "count": 69
   },
   {
    "tag": "re-identification",
-   "count": 66
+   "count": 68
   },
   {
    "tag": "calibration",
-   "count": 55
+   "count": 56
+  },
+  {
+   "tag": "training-free",
+   "count": 45
   },
   {
    "tag": "open-vocab-detection",
    "count": 44
-  },
-  {
-   "tag": "training-free",
-   "count": 40
   },
   {
    "tag": "video",
@@ -10548,7 +10689,7 @@
   },
   {
    "tag": "generative",
-   "count": 20
+   "count": 21
   },
   {
    "tag": "sim2real",
@@ -10591,6 +10732,10 @@
    "count": 6
   },
   {
+   "tag": "open-set-recognition",
+   "count": 6
+  },
+  {
    "tag": "representation-analysis",
    "count": 6
   },
@@ -10603,7 +10748,7 @@
    "count": 6
   },
   {
-   "tag": "open-set-recognition",
+   "tag": "print-forensics",
    "count": 5
   },
   {
@@ -10624,10 +10769,6 @@
   },
   {
    "tag": "ood-detection",
-   "count": 4
-  },
-  {
-   "tag": "print-forensics",
    "count": 4
   },
   {
