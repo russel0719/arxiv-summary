@@ -1,6 +1,12 @@
 {
  "reports": [
   {
+   "path": "reports/2026/11/report_05.md",
+   "date": "2026-11-04",
+   "title": "arXiv cs.CV Daily Digest — 2026-11-04 (arXiv 공개일)",
+   "cat": "CV"
+  },
+  {
    "path": "reports/2026/11/report_04.md",
    "date": "2026-11-03",
    "title": "arXiv cs.CV Daily Digest — 2026-11-03 (arXiv 공개일)",
@@ -992,6 +998,129 @@
   }
  ],
  "papers": [
+  {
+   "title": "Manifold Embedding of Deep Image Features for Image Matching via Neural Adjoint Maps",
+   "url": "https://arxiv.org/abs/2611.05083",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "correspondence",
+    "feature-matching",
+    "training-free",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "CoReMatch: Recurrent Continuous Coordinate Refinement for Real-Time Robotic Feature Matching",
+   "url": "https://arxiv.org/abs/2611.03932",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "feature-matching",
+    "correspondence",
+    "efficient-inference"
+   ]
+  },
+  {
+   "title": "Radial distortion homography estimation from affine-covariant or orientation-covariant features",
+   "url": "https://arxiv.org/abs/2611.04822",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "feature-matching",
+    "correspondence"
+   ]
+  },
+  {
+   "title": "Generalizable AI-Generated Image Detection with Embedding-Space Explanations",
+   "url": "https://arxiv.org/abs/2611.04111",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "forgery-detection",
+    "ssl-backbone",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Learning to Falsify: Hierarchical Multiple Instance Learning for High Resolution AI-Generated Image Detection",
+   "url": "https://arxiv.org/abs/2611.04529",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "forgery-detection",
+    "training-free"
+   ]
+  },
+  {
+   "title": "Bounded AUKS: A Novel Evaluation Metric for Anomaly Detection via Bounded Area Under the Kolmogorov--Smirnov Curve",
+   "url": "https://arxiv.org/abs/2611.04754",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "anomaly-detection",
+    "industrial-inspection",
+    "calibration",
+    "dataset-benchmark"
+   ]
+  },
+  {
+   "title": "From Visual Matching to Textual Conditioning: Cross-Domain Few-Shot Segmentation via Reference Inversion",
+   "url": "https://arxiv.org/abs/2611.04084",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "segmentation",
+    "peft",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
+   "url": "https://arxiv.org/abs/2611.05193",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "metric-learning",
+    "vlm"
+   ]
+  },
+  {
+   "title": "Anchored Rank-Adversarial Fine-Tuning Pretrained Visual Place Recognition Models",
+   "url": "https://arxiv.org/abs/2611.05286",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "image-retrieval",
+    "image-embedding",
+    "foundation-model"
+   ]
+  },
+  {
+   "title": "Bridging CLIP with DINO: Cross-Modal Information Maximization for Online Test-Time Adaptation",
+   "url": "https://arxiv.org/abs/2611.04489",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "ssl-backbone",
+    "foundation-model",
+    "continual-learning"
+   ]
+  },
+  {
+   "title": "SPA-Q: Structure-Preserving Adaptive Post-Training Quantization for Monocular Depth Estimation",
+   "url": "https://arxiv.org/abs/2611.04491",
+   "date": "2026-11-04",
+   "report": "reports/2026/11/report_05.md",
+   "tags": [
+    "quantization",
+    "efficient-inference",
+    "depth",
+    "foundation-model"
+   ]
+  },
   {
    "title": "Déjà Vu: Cycle-Consistent Re-ranking for Semantic Correspondence",
    "url": "https://arxiv.org/abs/2611.00328",
@@ -10585,59 +10714,59 @@
  "tags": [
   {
    "tag": "foundation-model",
-   "count": 295
+   "count": 300
   },
   {
    "tag": "image-embedding",
-   "count": 252
+   "count": 254
   },
   {
    "tag": "ssl-backbone",
-   "count": 163
+   "count": 165
   },
   {
    "tag": "image-retrieval",
-   "count": 157
+   "count": 159
   },
   {
    "tag": "vlm",
-   "count": 141
+   "count": 143
   },
   {
    "tag": "efficient-inference",
-   "count": 137
+   "count": 139
   },
   {
    "tag": "metric-learning",
-   "count": 133
+   "count": 134
   },
   {
    "tag": "forgery-detection",
-   "count": 116
+   "count": 118
+  },
+  {
+   "tag": "segmentation",
+   "count": 109
   },
   {
    "tag": "fine-grained",
    "count": 108
   },
   {
-   "tag": "segmentation",
-   "count": 108
-  },
-  {
    "tag": "industrial-inspection",
-   "count": 101
+   "count": 102
   },
   {
    "tag": "correspondence",
-   "count": 93
+   "count": 96
   },
   {
    "tag": "anomaly-detection",
-   "count": 92
+   "count": 93
   },
   {
    "tag": "dataset-benchmark",
-   "count": 87
+   "count": 88
   },
   {
    "tag": "object-detection",
@@ -10652,12 +10781,12 @@
    "count": 73
   },
   {
-   "tag": "peft",
-   "count": 71
+   "tag": "feature-matching",
+   "count": 72
   },
   {
-   "tag": "feature-matching",
-   "count": 69
+   "tag": "peft",
+   "count": 72
   },
   {
    "tag": "re-identification",
@@ -10665,11 +10794,11 @@
   },
   {
    "tag": "calibration",
-   "count": 56
+   "count": 57
   },
   {
    "tag": "training-free",
-   "count": 45
+   "count": 47
   },
   {
    "tag": "open-vocab-detection",
@@ -10681,11 +10810,11 @@
   },
   {
    "tag": "continual-learning",
-   "count": 27
+   "count": 28
   },
   {
    "tag": "quantization",
-   "count": 23
+   "count": 24
   },
   {
    "tag": "generative",
@@ -10713,7 +10842,7 @@
   },
   {
    "tag": "depth",
-   "count": 9
+   "count": 10
   },
   {
    "tag": "few-shot",
